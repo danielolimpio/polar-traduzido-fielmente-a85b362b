@@ -8,6 +8,7 @@ import NotFound from "./pages/NotFound.tsx";
 import About from "./pages/About.tsx";
 import Technology from "./pages/Technology.tsx";
 import Consultancy from "./pages/Consultancy.tsx";
+import Plans from "./pages/Plans.tsx";
 import Privacy from "./pages/Privacy.tsx";
 import Terms from "./pages/Terms.tsx";
 import RiskDisclosure from "./pages/RiskDisclosure.tsx";
@@ -29,6 +30,7 @@ const App = () => (
           <Route path="/sobre" element={<About />} />
           <Route path="/tecnologia" element={<Technology />} />
           <Route path="/consultoria" element={<Consultancy />} />
+          <Route path="/planos" element={<Plans />} />
           <Route path="/privacidade" element={<Privacy />} />
           <Route path="/termos" element={<Terms />} />
           <Route path="/aviso-de-risco" element={<RiskDisclosure />} />
