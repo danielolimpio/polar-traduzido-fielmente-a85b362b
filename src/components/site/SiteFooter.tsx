@@ -53,15 +53,16 @@ export const SiteFooter = () => (
   <footer className="border-t border-border/50 bg-background py-12">
     <div className="container">
       {/* Regulatory information */}
-      <div className="mb-12 grid gap-4 md:grid-cols-3">
+      <div className="mb-12 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
         {regulations.map((r) => (
           <div
             key={r.name}
             className="rounded-xl border border-border/60 bg-card/40 p-5"
           >
-            <h4 className="mb-3 font-display text-sm font-semibold text-foreground">
+            <h4 className="mb-1 font-display text-sm font-semibold text-foreground">
               {r.name}
             </h4>
+            <p className="mb-3 text-xs text-muted-foreground">{r.description}</p>
             <ul className="space-y-2 text-sm text-muted-foreground">
               {r.items.map((it) => (
                 <li key={it.label} className="flex items-start gap-2">
