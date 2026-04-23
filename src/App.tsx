@@ -13,6 +13,7 @@ import Privacy from "./pages/Privacy.tsx";
 import Terms from "./pages/Terms.tsx";
 import RiskDisclosure from "./pages/RiskDisclosure.tsx";
 import Faq from "./pages/Faq.tsx";
+import Rewards from "./pages/Rewards.tsx";
 import { WhatsAppFloat } from "./components/site/WhatsAppFloat.tsx";
 import { ScrollToTop } from "./components/site/ScrollToTop.tsx";
 
@@ -35,6 +36,7 @@ const App = () => (
           <Route path="/termos" element={<Terms />} />
           <Route path="/aviso-de-risco" element={<RiskDisclosure />} />
           <Route path="/faq" element={<Faq />} />
+          <Route path="/recompensas" element={<Rewards />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
