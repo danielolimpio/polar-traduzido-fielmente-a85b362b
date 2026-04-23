@@ -1,10 +1,58 @@
 import { Link } from "react-router-dom";
-import { Lock } from "lucide-react";
+import { Lock, Dot } from "lucide-react";
 import { Logo } from "./Logo";
+
+const regulations = [
+  {
+    name: "Polar Tensor Corp. (Panamá)",
+    items: [
+      { label: "Número de registro", value: "155771852" },
+      { label: "Número SEC (EUA) CIK", value: "0002085242" },
+    ],
+  },
+  {
+    name: "Polar MSB Inc. (Montana, EUA)",
+    items: [
+      { label: "Número de registro", value: "D1537006" },
+      { label: "Número FinCen", value: "31000306664168" },
+    ],
+  },
+  {
+    name: "Polar Tensor LAB Limited (Hongkong)",
+    items: [
+      { label: "Número de registro", value: "78737300" },
+    ],
+  },
+];
 
 export const SiteFooter = () => (
   <footer className="border-t border-border/50 bg-background py-12">
     <div className="container">
+      {/* Regulatory information */}
+      <div className="mb-12 grid gap-4 md:grid-cols-3">
+        {regulations.map((r) => (
+          <div
+            key={r.name}
+            className="rounded-xl border border-border/60 bg-card/40 p-5"
+          >
+            <h4 className="mb-3 font-display text-sm font-semibold text-foreground">
+              {r.name}
+            </h4>
+            <ul className="space-y-2 text-sm text-muted-foreground">
+              {r.items.map((it) => (
+                <li key={it.label} className="flex items-start gap-2">
+                  <Dot className="mt-0.5 h-4 w-4 shrink-0 text-primary" />
+                  <span>
+                    {it.label}:{" "}
+                    <span className="font-semibold text-foreground">{it.value}</span>
+                  </span>
+                </li>
+              ))}
+            </ul>
+          </div>
+        ))}
+      </div>
+
       <div className="grid gap-8 md:grid-cols-4">
         <div className="space-y-4">
           <Logo />
@@ -39,7 +87,17 @@ export const SiteFooter = () => (
         </div>
       </div>
       <div className="mt-12 flex flex-col items-center justify-between gap-4 border-t border-border/50 pt-8 pb-20 text-xs text-muted-foreground sm:flex-row md:pb-8">
-        <p>© 2026 Polar Tensor. Todos os direitos reservados.</p>
+        <p className="text-center sm:text-left">
+          © 2026 | Polar Tensor | Todos os direitos reservados | Desenvolvido por{" "}
+          <a
+            href="https://danielolimpio.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="font-medium text-foreground hover:text-primary"
+          >
+            Daniel Olímpio
+          </a>
+        </p>
         <p className="flex items-center gap-2">
           <Lock className="h-3 w-3" />
           Trading envolve riscos. Negocie com responsabilidade.

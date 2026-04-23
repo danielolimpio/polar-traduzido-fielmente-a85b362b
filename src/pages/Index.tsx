@@ -281,11 +281,44 @@ const Engine = () => (
 
 const plans = [
   {
+    name: "Iniciante",
+    min: "100 USDT",
+    fee: "40%",
+    features: [
+      "Acesso ao sistema Polar One",
+      "Distribuição semanal de lucros",
+      "Saques automáticos 24/7",
+      "Suporte via comunidade",
+    ],
+  },
+  {
+    name: "Básico",
+    min: "1.000 USDT",
+    fee: "37%",
+    features: [
+      "Tudo do plano Iniciante",
+      "Relatórios mensais de desempenho",
+      "Acesso ao backoffice completo",
+      "Suporte por e-mail",
+    ],
+  },
+  {
+    name: "Avançado",
+    min: "3.000 USDT",
+    fee: "33%",
+    features: [
+      "Tudo do plano Básico",
+      "Alertas de execução em tempo real",
+      "Materiais educativos exclusivos",
+      "Suporte prioritário",
+    ],
+  },
+  {
     name: "Profissional",
     min: "8.000 USDT",
     fee: "30%",
     features: [
-      "Acesso ao sistema Polar One",
+      "Tudo do plano Avançado",
       "Distribuição semanal de lucros",
       "Saques automáticos 24/7",
       "Suporte padrão",
@@ -319,7 +352,7 @@ const plans = [
 const Plans = () => (
   <section id="planos" className="py-24">
     <div className="container">
-      <div className="mx-auto mb-16 max-w-2xl text-center">
+      <div className="mx-auto mb-16 max-w-3xl text-center">
         <Badge variant="outline" className="border-primary/30 bg-primary/10 text-primary">Planos</Badge>
         <h2 className="mt-4 font-display text-4xl font-bold md:text-5xl">
           Escolha o seu <span className="text-gradient-primary">nível de acesso</span>
@@ -329,7 +362,39 @@ const Plans = () => (
         </p>
       </div>
 
-      <div className="grid gap-6 md:grid-cols-3">
+      <div className="mx-auto mb-12 max-w-4xl">
+        <Card className="bg-gradient-card p-6 md:p-8">
+          <div className="flex items-start gap-4">
+            <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-primary/10 text-primary">
+              <Cpu className="h-6 w-6" />
+            </div>
+            <div className="space-y-3 text-sm leading-relaxed text-muted-foreground">
+              <h3 className="font-display text-xl font-semibold text-foreground">
+                Use Nosso Software de Trading
+              </h3>
+              <p>
+                Através da nossa plataforma, você agora pode utilizar o <span className="font-semibold text-foreground">Polar One</span> por
+                conta própria e começar a ganhar imediatamente. Uma <span className="font-semibold text-foreground">taxa de licença única de 10%</span> será
+                deduzida do valor depositado.
+              </p>
+              <p>
+                Estamos cobrando uma <span className="font-semibold text-foreground">taxa de performance</span> sobre os lucros gerados pelo
+                uso do nosso software, baseada no valor adicionado ao trading. Os lucros são distribuídos
+                toda <span className="font-semibold text-foreground">sexta-feira às 23:00 UTC</span>.
+              </p>
+              <p>
+                Você pode retirar todo ou parte da sua contribuição a qualquer momento; no entanto, uma
+                taxa única de <span className="font-semibold text-foreground">10%</span> será aplicada para cobrir os custos operacionais. Após
+                <span className="font-semibold text-foreground"> 12 meses</span>, essa taxa cairá para
+                <span className="font-semibold text-foreground"> 5%</span>, e após
+                <span className="font-semibold text-foreground"> 24 meses</span>, será gratuita.
+              </p>
+            </div>
+          </div>
+        </Card>
+      </div>
+
+      <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
         {plans.map((p) => (
           <Card
             key={p.name}
