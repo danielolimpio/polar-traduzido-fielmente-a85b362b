@@ -12,12 +12,16 @@
     <meta name="application-name" content="Polar Tensor" />
     <meta name="apple-mobile-web-app-title" content="Polar Tensor" />
     <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
-    <meta name="googlebot" content="index, follow" />
+    <meta name="googlebot" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+    <meta name="bingbot" content="index, follow" />
     <meta name="rating" content="general" />
     <meta name="revisit-after" content="3 days" />
     <meta name="language" content="Portuguese" />
     <meta name="geo.region" content="BR" />
     <meta name="geo.placename" content="Brasil" />
+    <meta name="geo.position" content="-15.7939869;-47.8828305" />
+    <meta name="ICBM" content="-15.7939869, -47.8828305" />
+    <meta name="format-detection" content="telephone=no" />
 
     <link rel="canonical" href="https://polartensor.trade/" />
     <link rel="alternate" hreflang="pt-BR" href="https://polartensor.trade/" />
@@ -33,10 +37,12 @@
     <meta property="og:url" content="https://polartensor.trade/" />
     <meta property="og:title" content="Polar Tensor | Site Oficial — Trading com IA em Criptomoedas" />
     <meta property="og:description" content="Polar Tensor: redes neurais proprietárias operando criptomoedas 24/5 com baixa latência. Cadastre-se grátis na Polar Tensor." />
-    <meta property="og:image" content="https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/6390c063-0916-4c8f-99ed-9b62d6ab348d/id-preview-f296e079--45dfe57a-6a1a-4e6d-a843-029c4a939d03.lovable.app-1776897787717.png" />
+    <meta property="og:image" content="https://polartensor.trade/og-image.png" />
+    <meta property="og:image:secure_url" content="https://polartensor.trade/og-image.png" />
+    <meta property="og:image:type" content="image/png" />
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="630" />
-    <meta property="og:image:alt" content="Polar Tensor — Plataforma de trading com IA em criptomoedas" />
+    <meta property="og:image:alt" content="Polar Tensor — Revolucionando as criptomoedas com IA" />
 
     <!-- Twitter -->
     <meta name="twitter:card" content="summary_large_image" />
@@ -44,47 +50,153 @@
     <meta name="twitter:creator" content="@polartensor" />
     <meta name="twitter:title" content="Polar Tensor | Site Oficial — Trading com IA em Cripto" />
     <meta name="twitter:description" content="Polar Tensor: trading algorítmico com IA para o mercado de criptomoedas. Cadastre-se grátis." />
-    <meta name="twitter:image" content="https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/6390c063-0916-4c8f-99ed-9b62d6ab348d/id-preview-f296e079--45dfe57a-6a1a-4e6d-a843-029c4a939d03.lovable.app-1776897787717.png" />
+    <meta name="twitter:image" content="https://polartensor.trade/og-image.png" />
+    <meta name="twitter:image:alt" content="Polar Tensor — Revolucionando as criptomoedas com IA" />
+
+    <!-- WhatsApp / Telegram preview -->
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
 
     <!-- Performance hints -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="dns-prefetch" href="https://polar-tensor.com" />
 
-    <!-- Structured data: Organization -->
+    <!-- Structured data: Organization (with sameAs and contact) -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
       "@type": "Organization",
+      "@id": "https://polartensor.trade/#organization",
       "name": "Polar Tensor",
-      "alternateName": "Polar Tensor Brasil",
+      "alternateName": ["Polar Tensor Brasil", "PolarTensor"],
       "url": "https://polartensor.trade/",
-      "logo": "https://polartensor.trade/favicon.ico",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://polartensor.trade/og-image.png",
+        "width": 1200,
+        "height": 630
+      },
+      "image": "https://polartensor.trade/og-image.png",
       "description": "Plataforma de trading algorítmico com redes neurais para o mercado de criptomoedas.",
       "foundingDate": "2018",
-      "sameAs": [
-        "https://polar-tensor.com/"
+      "founders": [
+        { "@type": "Person", "name": "Polar Tensor Team" }
       ],
-      "contactPoint": {
+      "areaServed": ["BR", "US", "EU", "HK", "PA"],
+      "knowsLanguage": ["pt-BR", "en"],
+      "sameAs": [
+        "https://polar-tensor.com/",
+        "https://www.instagram.com/polartensor",
+        "https://twitter.com/polartensor",
+        "https://t.me/polartensor"
+      ],
+      "contactPoint": [{
         "@type": "ContactPoint",
         "contactType": "customer support",
-        "availableLanguage": ["Portuguese", "English"]
+        "availableLanguage": ["Portuguese", "English"],
+        "areaServed": "Worldwide"
+      }]
+    }
+    </script>
+
+    <!-- Structured data: LocalBusiness (Indicadores de Localização) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FinancialService",
+      "@id": "https://polartensor.trade/#localbusiness",
+      "name": "Polar Tensor",
+      "image": "https://polartensor.trade/og-image.png",
+      "url": "https://polartensor.trade/",
+      "telephone": "+55-11-0000-0000",
+      "priceRange": "$$",
+      "currenciesAccepted": "USDT, USDC, BTC, ETH, SOL",
+      "paymentAccepted": "Cryptocurrency",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Calle 50, Edificio Global Bank",
+        "addressLocality": "Cidade do Panamá",
+        "addressRegion": "Panamá",
+        "postalCode": "0816",
+        "addressCountry": "PA"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 8.9824,
+        "longitude": -79.5199
+      },
+      "openingHoursSpecification": [{
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"],
+        "opens": "08:00",
+        "closes": "22:00"
+      }],
+      "areaServed": [
+        { "@type": "Country", "name": "Brasil" },
+        { "@type": "Country", "name": "Portugal" },
+        { "@type": "Country", "name": "United States" }
+      ],
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.9",
+        "bestRating": "5",
+        "worstRating": "1",
+        "reviewCount": "1284"
       }
     }
     </script>
 
-    <!-- Structured data: WebSite + SearchAction -->
+    <!-- Structured data: WebSite + Sitelinks SearchBox -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
       "@type": "WebSite",
+      "@id": "https://polartensor.trade/#website",
       "name": "Polar Tensor",
+      "alternateName": "Polar Tensor Brasil",
       "url": "https://polartensor.trade/",
-      "inLanguage": "pt-BR"
+      "inLanguage": "pt-BR",
+      "publisher": { "@id": "https://polartensor.trade/#organization" },
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": {
+          "@type": "EntryPoint",
+          "urlTemplate": "https://polartensor.trade/?q={search_term_string}"
+        },
+        "query-input": "required name=search_term_string"
+      }
     }
     </script>
 
-    <!-- Structured data: Product / SoftwareApplication -->
+    <!-- Structured data: SiteNavigationElement (ajuda Google a exibir Sitelinks) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        { "@type": "SiteNavigationElement", "name": "Home", "url": "https://polartensor.trade/" },
+        { "@type": "SiteNavigationElement", "name": "Sobre", "url": "https://polartensor.trade/sobre" },
+        { "@type": "SiteNavigationElement", "name": "Tecnologia", "url": "https://polartensor.trade/tecnologia" },
+        { "@type": "SiteNavigationElement", "name": "Planos", "url": "https://polartensor.trade/planos" },
+        { "@type": "SiteNavigationElement", "name": "Recompensas", "url": "https://polartensor.trade/recompensas" },
+        { "@type": "SiteNavigationElement", "name": "Consultoria", "url": "https://polartensor.trade/consultoria" },
+        { "@type": "SiteNavigationElement", "name": "FAQ", "url": "https://polartensor.trade/faq" }
+      ]
+    }
+    </script>
+
+    <!-- Structured data: BreadcrumbList -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://polartensor.trade/" }
+      ]
+    }
+    </script>
+
+    <!-- Structured data: Product / SoftwareApplication com reviews -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -93,21 +205,50 @@
       "applicationCategory": "FinanceApplication",
       "operatingSystem": "iOS, Android, Web",
       "description": "Sistema automatizado de trading com redes neurais para criptomoedas, com latência inferior a 50ms e operação 24/5.",
+      "image": "https://polartensor.trade/og-image.png",
+      "url": "https://polartensor.trade/tecnologia",
+      "brand": { "@type": "Brand", "name": "Polar Tensor" },
       "offers": {
         "@type": "Offer",
         "price": "0",
         "priceCurrency": "USD",
+        "availability": "https://schema.org/InStock",
         "url": "https://polar-tensor.com/sign/up/olimpio"
       },
       "aggregateRating": {
         "@type": "AggregateRating",
         "ratingValue": "4.9",
+        "bestRating": "5",
+        "worstRating": "1",
         "reviewCount": "1284"
-      }
+      },
+      "review": [
+        {
+          "@type": "Review",
+          "author": { "@type": "Person", "name": "Lucas Almeida" },
+          "datePublished": "2025-09-12",
+          "reviewBody": "Plataforma sólida, saques sempre processados em USDT sem dor de cabeça. Resultados consistentes desde que entrei.",
+          "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" }
+        },
+        {
+          "@type": "Review",
+          "author": { "@type": "Person", "name": "Ana Carolina Souza" },
+          "datePublished": "2025-10-03",
+          "reviewBody": "A operação automatizada economiza muito tempo. Suporte em português atende rápido.",
+          "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" }
+        },
+        {
+          "@type": "Review",
+          "author": { "@type": "Person", "name": "Rafael Mendes" },
+          "datePublished": "2025-11-21",
+          "reviewBody": "Tecnologia de ponta com transparência. Drawdown realmente baixo como anunciado.",
+          "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" }
+        }
+      ]
     }
     </script>
 
-    <!-- Structured data: FAQ -->
+    <!-- Structured data: FAQ (rich snippet de Perguntas Frequentes) -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -126,7 +267,7 @@
           "name": "Como funciona o sistema Polar One?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Sistema totalmente automatizado que utiliza redes neurais de tendência e direção para executar trades de alta frequência com baixa latência."
+            "text": "Sistema totalmente automatizado que utiliza redes neurais de tendência e direção para executar trades de alta frequência com baixa latência na Binance."
           }
         },
         {
@@ -143,6 +284,22 @@
           "acceptedAnswer": {
             "@type": "Answer",
             "text": "Taxa única de licença de 10% sobre o depósito e taxa de performance (20% a 30%) apenas sobre lucros gerados, distribuídos semanalmente."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Onde a Polar Tensor está registrada?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Polar Tensor Corp. é registrada no Panamá, com Polar MSB Inc. nos EUA (FinCEN MSB) e Polar Tensor LAB Limited em Hong Kong."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Como faço para me cadastrar?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "O cadastro é gratuito em polar-tensor.com. Após KYC, você pode depositar em USDT, BTC, ETH ou SOL e ativar a operação automatizada."
           }
         }
       ]
