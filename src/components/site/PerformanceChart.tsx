@@ -69,7 +69,7 @@ export const PerformanceChart = () => {
 
           {/* Chart */}
           <div ref={ref} className="relative">
-            <div className="overflow-x-auto pb-2">
+            <div className="overflow-x-auto overflow-y-visible pb-2">
               <div className="relative flex min-w-[760px] gap-[10px] pl-12 pr-2">
                 {/* Y-axis grid */}
                 <div className="pointer-events-none absolute inset-0 left-12 right-2 h-[340px]">
