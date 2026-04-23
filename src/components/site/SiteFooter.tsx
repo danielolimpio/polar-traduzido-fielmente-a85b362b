@@ -1,83 +1,139 @@
 import { Link } from "react-router-dom";
-import { Lock, Dot } from "lucide-react";
+import { Lock, ShieldCheck, Building2, Landmark, Globe2, Banknote, FlaskConical, MapPin } from "lucide-react";
 import { Logo } from "./Logo";
 
 const regulations = [
   {
-    name: "Polar Tensor Corp. (Panamá)",
+    icon: Building2,
+    name: "Polar Tensor Corp.",
+    jurisdiction: "República do Panamá",
     description: "Tecnologia de Trading Automatizado",
     items: [
-      { label: "Número de registro", value: "155771852" },
-      { label: "Número SEC (EUA) CIK", value: "0002085242" },
+      { label: "Registro", value: "155771852" },
+      { label: "SEC (EUA) CIK", value: "0002085242" },
     ],
   },
   {
-    name: "Polar Tensor USA LLC (Wyoming, EUA)",
+    icon: Landmark,
+    name: "Polar Tensor USA LLC",
+    jurisdiction: "Estados Unidos — Wyoming",
     description: "Entidade cliente para EUA e Internacional (Não-UE)",
     items: [
-      { label: "Jurisdição", value: "Estados Unidos — Wyoming" },
+      { label: "Jurisdição", value: "Wyoming, EUA" },
     ],
   },
   {
-    name: "Polar Tensor Europe SP ZOO (Polônia)",
+    icon: Globe2,
+    name: "Polar Tensor Europe SP ZOO",
+    jurisdiction: "República da Polônia (UE)",
     description: "Entidade cliente para a União Europeia",
     items: [
-      { label: "Jurisdição", value: "República da Polônia (UE)" },
+      { label: "Jurisdição", value: "Polônia — UE" },
     ],
   },
   {
-    name: "Polar MSB Inc. (Montana, EUA)",
+    icon: Banknote,
+    name: "Polar MSB Inc.",
+    jurisdiction: "Estados Unidos — Montana",
     description: "Pagamentos, câmbio fiat e serviços de cartão",
     items: [
-      { label: "Número de registro", value: "D1537006" },
-      { label: "Número FinCen", value: "31000306664168" },
+      { label: "Registro", value: "D1537006" },
+      { label: "FinCEN", value: "31000306664168" },
     ],
   },
   {
-    name: "Polar Tensor LAB Limited (Hong Kong)",
+    icon: FlaskConical,
+    name: "Polar Tensor LAB Limited",
+    jurisdiction: "Hong Kong",
     description: "Empresa de Pesquisa e Desenvolvimento",
     items: [
-      { label: "Número de registro", value: "78737300" },
+      { label: "Registro", value: "78737300" },
     ],
   },
   {
-    name: "Polar Tensor Africa Limited (Nigéria)",
+    icon: MapPin,
+    name: "Polar Tensor Africa Limited",
+    jurisdiction: "República Federal da Nigéria",
     description: "Integração de clientes fora da UE e EUA",
     items: [
-      { label: "Jurisdição", value: "República Federal da Nigéria" },
+      { label: "Jurisdição", value: "Nigéria" },
     ],
   },
 ];
 
 export const SiteFooter = () => (
-  <footer className="border-t border-border/50 bg-background py-12">
-    <div className="container">
-      {/* Regulatory information */}
-      <div className="mb-12 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-        {regulations.map((r) => (
-          <div
-            key={r.name}
-            className="rounded-xl border border-border/60 bg-card/40 p-5"
-          >
-            <h4 className="mb-1 font-display text-sm font-semibold text-foreground">
-              {r.name}
-            </h4>
-            <p className="mb-3 text-xs text-muted-foreground">{r.description}</p>
-            <ul className="space-y-2 text-sm text-muted-foreground">
-              {r.items.map((it) => (
-                <li key={it.label} className="flex items-start gap-2">
-                  <Dot className="mt-0.5 h-4 w-4 shrink-0 text-primary" />
-                  <span>
-                    {it.label}:{" "}
-                    <span className="font-semibold text-foreground">{it.value}</span>
-                  </span>
-                </li>
-              ))}
-            </ul>
+  <footer className="border-t border-border/50 bg-background">
+    {/* Regulatory section — premium corporate band */}
+    <section className="relative border-b border-border/50 bg-gradient-to-b from-secondary/30 via-background to-background">
+      <div className="absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-primary/40 to-transparent" />
+      <div className="container py-14">
+        <div className="mx-auto mb-10 max-w-2xl text-center">
+          <div className="inline-flex items-center gap-2 rounded-full border border-primary/30 bg-primary/10 px-4 py-1.5 text-xs font-semibold uppercase tracking-wider text-primary">
+            <ShieldCheck className="h-3.5 w-3.5" />
+            Estrutura corporativa & regulatória
           </div>
-        ))}
-      </div>
+          <h3 className="mt-4 font-display text-2xl font-bold text-foreground md:text-3xl">
+            Polar Tensor Group™
+          </h3>
+          <p className="mt-2 text-sm text-muted-foreground">
+            Operamos sob um grupo internacional licenciado, com entidades dedicadas
+            em múltiplas jurisdições para garantir conformidade, segurança e transparência.
+          </p>
+        </div>
 
+        <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+          {regulations.map((r) => {
+            const Icon = r.icon;
+            return (
+              <div
+                key={r.name}
+                className="group relative overflow-hidden rounded-xl border border-border/60 bg-card/60 p-5 backdrop-blur-sm transition-all hover:-translate-y-0.5 hover:border-primary/40 hover:shadow-lg hover:shadow-primary/5"
+              >
+                <div className="absolute inset-x-0 top-0 h-0.5 bg-gradient-to-r from-primary/0 via-primary/60 to-primary/0 opacity-0 transition-opacity group-hover:opacity-100" />
+                <div className="flex items-start gap-3">
+                  <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-primary/10 text-primary ring-1 ring-primary/20">
+                    <Icon className="h-5 w-5" />
+                  </div>
+                  <div className="min-w-0 flex-1">
+                    <h4 className="font-display text-sm font-semibold leading-tight text-foreground">
+                      {r.name}
+                    </h4>
+                    <p className="mt-0.5 flex items-center gap-1 text-[11px] font-medium uppercase tracking-wide text-primary/80">
+                      <MapPin className="h-3 w-3" />
+                      {r.jurisdiction}
+                    </p>
+                  </div>
+                </div>
+
+                <p className="mt-3 text-xs leading-relaxed text-muted-foreground">
+                  {r.description}
+                </p>
+
+                <div className="mt-4 flex flex-wrap gap-1.5 border-t border-border/50 pt-3">
+                  {r.items.map((it) => (
+                    <span
+                      key={it.label}
+                      className="inline-flex items-center gap-1.5 rounded-md border border-border/60 bg-background/60 px-2 py-1 text-[11px]"
+                    >
+                      <span className="text-muted-foreground">{it.label}:</span>
+                      <span className="font-mono font-semibold text-foreground">{it.value}</span>
+                    </span>
+                  ))}
+                </div>
+              </div>
+            );
+          })}
+        </div>
+
+        <p className="mx-auto mt-8 max-w-3xl text-center text-xs text-muted-foreground">
+          <ShieldCheck className="mr-1 inline h-3.5 w-3.5 text-primary" />
+          Todas as entidades acima compõem o <strong className="text-foreground">Polar Tensor Group™</strong>,
+          sob holding e propriedade da <strong className="text-foreground">Polar Tensor Corporation™</strong>.
+        </p>
+      </div>
+    </section>
+
+    <div className="container py-12">
       <div className="grid gap-8 md:grid-cols-4">
         <div className="space-y-4">
           <Logo />
