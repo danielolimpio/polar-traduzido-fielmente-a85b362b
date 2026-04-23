@@ -133,6 +133,50 @@ export const SiteFooter = () => (
       </div>
     </section>
 
+    {/* Risk disclaimer */}
+    <section className="border-b border-border/50 bg-background">
+      <div className="container py-12">
+        <div className="mx-auto max-w-4xl rounded-xl border border-destructive/30 bg-destructive/5 p-6 md:p-8">
+          <div className="flex items-start gap-3">
+            <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-destructive/10 text-destructive ring-1 ring-destructive/20">
+              <AlertTriangle className="h-5 w-5" />
+            </div>
+            <div className="min-w-0 flex-1">
+              <h3 className="font-display text-lg font-semibold text-foreground">Aviso de Risco</h3>
+              <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
+                O mercado de criptomoedas envolve riscos significativos e pode não ser adequado para
+                todas as pessoas. O valor das criptomoedas pode ser altamente volátil e pode flutuar
+                rapidamente. Este aviso tem como objetivo fornecer clareza sobre os riscos associados
+                à tecnologia blockchain, às criptomoedas e aos serviços oferecidos pela Polar Tensor.
+                Ao utilizar nossos serviços, você reconhece e concorda com as seguintes divulgações
+                de risco:
+              </p>
+              <ul className="mt-4 grid gap-2 text-sm text-muted-foreground sm:grid-cols-2">
+                {[
+                  "Volatilidade",
+                  "Riscos de Segurança",
+                  "Nenhuma Garantia de Lucro",
+                  "Riscos de Mercado e Regulatórios",
+                  "Riscos de Liquidez e Tecnológicos",
+                ].map((r) => (
+                  <li key={r} className="flex items-center gap-2">
+                    <span className="h-1.5 w-1.5 rounded-full bg-destructive" />
+                    <span className="text-foreground">{r}</span>
+                  </li>
+                ))}
+              </ul>
+              <p className="mt-4 text-sm leading-relaxed text-muted-foreground">
+                Ao interagir com a Polar Tensor, você entende que pode perder parte ou a totalidade
+                de seus criptoativos e concorda em assumir total responsabilidade por suas ações. É
+                fortemente recomendado que você busque aconselhamento financeiro independente e
+                conduza uma pesquisa aprofundada.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <div className="container py-12">
       <div className="grid gap-8 md:grid-cols-4">
         <div className="space-y-4">
