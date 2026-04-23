@@ -110,13 +110,13 @@ const Hero = () => (
         </p>
 
         <div className="flex flex-wrap gap-3">
-          <Button variant="hero" size="lg">
+          <CtaButton size="lg">
             <Download className="mr-2 h-4 w-4" />
-            Baixar App
-          </Button>
-          <Button variant="outline" size="lg">
+            Cadastre-se Grátis
+          </CtaButton>
+          <CtaButton variant="outline" size="lg">
             Consultoria Institucional
-          </Button>
+          </CtaButton>
         </div>
 
         <div className="grid grid-cols-3 gap-6 pt-6">
