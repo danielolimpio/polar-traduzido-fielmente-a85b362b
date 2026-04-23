@@ -148,28 +148,10 @@ export const SiteFooter = () => (
                 todas as pessoas. O valor das criptomoedas pode ser altamente volátil e pode flutuar
                 rapidamente. Este aviso tem como objetivo fornecer clareza sobre os riscos associados
                 à tecnologia blockchain, às criptomoedas e aos serviços oferecidos pela Polar Tensor.
-                Ao utilizar nossos serviços, você reconhece e concorda com as seguintes divulgações
-                de risco:
-              </p>
-              <ul className="mt-3 grid gap-1.5 text-xs text-muted-foreground sm:grid-cols-2">
-                {[
-                  "Volatilidade",
-                  "Riscos de Segurança",
-                  "Nenhuma Garantia de Lucro",
-                  "Riscos de Mercado e Regulatórios",
-                  "Riscos de Liquidez e Tecnológicos",
-                ].map((r) => (
-                  <li key={r} className="flex items-center gap-2">
-                    <span className="h-1 w-1 rounded-full bg-destructive" />
-                    <span className="text-foreground">{r}</span>
-                  </li>
-                ))}
-              </ul>
-              <p className="mt-3 text-xs leading-relaxed text-muted-foreground">
-                Ao interagir com a Polar Tensor, você entende que pode perder parte ou a totalidade
-                de seus criptoativos e concorda em assumir total responsabilidade por suas ações. É
-                fortemente recomendado que você busque aconselhamento financeiro independente e
-                conduza uma pesquisa aprofundada.
+                Ao utilizar nossos serviços, você reconhece e concorda que ao interagir com a Polar
+                Tensor, você entende que pode perder parte ou a totalidade de seus criptoativos e
+                concorda em assumir total responsabilidade por suas ações. É fortemente recomendado
+                que você busque aconselhamento financeiro independente e conduza uma pesquisa aprofundada.
               </p>
             </div>
           </div>
