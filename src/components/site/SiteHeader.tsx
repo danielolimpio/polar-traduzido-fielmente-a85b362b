@@ -11,6 +11,7 @@ const links = [
   { to: "/tecnologia", label: "Tecnologia" },
   { to: "/consultoria", label: "Consultoria" },
   { to: "/planos", label: "Planos" },
+  { to: "/recompensas", label: "Recompensas" },
   { to: "/faq", label: "FAQ" },
 ];
 
