@@ -5,22 +5,46 @@ import { Logo } from "./Logo";
 const regulations = [
   {
     name: "Polar Tensor Corp. (Panamá)",
+    description: "Tecnologia de Trading Automatizado",
     items: [
       { label: "Número de registro", value: "155771852" },
       { label: "Número SEC (EUA) CIK", value: "0002085242" },
     ],
   },
   {
+    name: "Polar Tensor USA LLC (Wyoming, EUA)",
+    description: "Entidade cliente para EUA e Internacional (Não-UE)",
+    items: [
+      { label: "Jurisdição", value: "Estados Unidos — Wyoming" },
+    ],
+  },
+  {
+    name: "Polar Tensor Europe SP ZOO (Polônia)",
+    description: "Entidade cliente para a União Europeia",
+    items: [
+      { label: "Jurisdição", value: "República da Polônia (UE)" },
+    ],
+  },
+  {
     name: "Polar MSB Inc. (Montana, EUA)",
+    description: "Pagamentos, câmbio fiat e serviços de cartão",
     items: [
       { label: "Número de registro", value: "D1537006" },
       { label: "Número FinCen", value: "31000306664168" },
     ],
   },
   {
-    name: "Polar Tensor LAB Limited (Hongkong)",
+    name: "Polar Tensor LAB Limited (Hong Kong)",
+    description: "Empresa de Pesquisa e Desenvolvimento",
     items: [
       { label: "Número de registro", value: "78737300" },
+    ],
+  },
+  {
+    name: "Polar Tensor Africa Limited (Nigéria)",
+    description: "Integração de clientes fora da UE e EUA",
+    items: [
+      { label: "Jurisdição", value: "República Federal da Nigéria" },
     ],
   },
 ];
@@ -29,15 +53,16 @@ export const SiteFooter = () => (
   <footer className="border-t border-border/50 bg-background py-12">
     <div className="container">
       {/* Regulatory information */}
-      <div className="mb-12 grid gap-4 md:grid-cols-3">
+      <div className="mb-12 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
         {regulations.map((r) => (
           <div
             key={r.name}
             className="rounded-xl border border-border/60 bg-card/40 p-5"
           >
-            <h4 className="mb-3 font-display text-sm font-semibold text-foreground">
+            <h4 className="mb-1 font-display text-sm font-semibold text-foreground">
               {r.name}
             </h4>
+            <p className="mb-3 text-xs text-muted-foreground">{r.description}</p>
             <ul className="space-y-2 text-sm text-muted-foreground">
               {r.items.map((it) => (
                 <li key={it.label} className="flex items-start gap-2">
