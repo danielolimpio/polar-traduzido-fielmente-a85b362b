@@ -272,6 +272,39 @@ const Plans = () => (
       </div>
     </section>
 
+    {/* FAQ */}
+    <section className="border-t border-border/50 py-20">
+      <div className="container max-w-4xl">
+        <div className="mx-auto mb-10 max-w-2xl text-center">
+          <Badge variant="outline" className="border-primary/30 bg-primary/10 text-primary">
+            <HelpCircle className="mr-1 h-3 w-3" />
+            Dúvidas frequentes
+          </Badge>
+          <h2 className="mt-4 font-display text-3xl font-bold md:text-4xl">
+            Tudo sobre taxas, lucros e saques
+          </h2>
+          <p className="mt-3 text-muted-foreground">
+            Respostas claras sobre licença, performance, distribuição semanal e regras de saque.
+          </p>
+        </div>
+
+        <Card className="bg-gradient-card p-2 md:p-4">
+          <Accordion type="single" collapsible className="w-full">
+            {planFaqs.map((f, i) => (
+              <AccordionItem key={i} value={`item-${i}`} className="border-border/50">
+                <AccordionTrigger className="text-left font-display text-base font-semibold hover:text-primary">
+                  {f.q}
+                </AccordionTrigger>
+                <AccordionContent className="text-sm leading-relaxed text-muted-foreground">
+                  {f.a}
+                </AccordionContent>
+              </AccordionItem>
+            ))}
+          </Accordion>
+        </Card>
+      </div>
+    </section>
+
     <SiteFooter />
   </main>
 );
