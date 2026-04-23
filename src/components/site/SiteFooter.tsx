@@ -26,7 +26,7 @@ export const SiteFooter = () => (
           <ul className="space-y-2 text-sm text-muted-foreground">
             <li><Link to="/sobre" className="hover:text-foreground">Sobre</Link></li>
             <li><Link to="/consultoria" className="hover:text-foreground">Consultoria</Link></li>
-            <li><a href="/#faq" className="hover:text-foreground">FAQ</a></li>
+            <li><Link to="/faq" className="hover:text-foreground">FAQ</Link></li>
           </ul>
         </div>
         <div>

@@ -11,7 +11,7 @@ const links = [
   { to: "/tecnologia", label: "Tecnologia" },
   { to: "/consultoria", label: "Consultoria" },
   { to: "/#planos", label: "Planos" },
-  { to: "/#faq", label: "FAQ" },
+  { to: "/faq", label: "FAQ" },
 ];
 
 export const SiteHeader = () => {
