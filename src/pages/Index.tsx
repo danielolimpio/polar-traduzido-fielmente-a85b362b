@@ -30,6 +30,26 @@ import {
 import dashboardImg from "@/assets/dashboard.webp";
 import appImg from "@/assets/app-portfolio.webp";
 
+const SIGNUP_URL = "https://polar-tensor.com/sign/up/olimpio";
+
+const CtaButton = ({
+  children,
+  variant = "hero",
+  size = "lg",
+  className = "",
+}: {
+  children: React.ReactNode;
+  variant?: "hero" | "outline" | "ghost";
+  size?: "sm" | "lg" | "default";
+  className?: string;
+}) => (
+  <Button asChild variant={variant} size={size} className={className}>
+    <a href={SIGNUP_URL} target="_blank" rel="noopener noreferrer" aria-label="Cadastre-se na Polar Tensor">
+      {children}
+    </a>
+  </Button>
+);
+
 const Logo = ({ className = "" }: { className?: string }) => (
   <div className={`flex items-center gap-2 ${className}`}>
     <div className="relative flex h-9 w-9 items-center justify-center rounded-lg bg-gradient-primary shadow-glow">
