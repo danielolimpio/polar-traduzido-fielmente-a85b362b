@@ -12,6 +12,7 @@ import Privacy from "./pages/Privacy.tsx";
 import Terms from "./pages/Terms.tsx";
 import RiskDisclosure from "./pages/RiskDisclosure.tsx";
 import { WhatsAppFloat } from "./components/site/WhatsAppFloat.tsx";
+import { ScrollToTop } from "./components/site/ScrollToTop.tsx";
 
 const queryClient = new QueryClient();
 
@@ -21,6 +22,7 @@ const App = () => (
       <Toaster />
       <Sonner />
       <BrowserRouter>
+        <ScrollToTop />
         <Routes>
           <Route path="/" element={<Index />} />
           <Route path="/sobre" element={<About />} />

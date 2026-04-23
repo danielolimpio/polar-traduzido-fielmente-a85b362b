@@ -56,14 +56,14 @@ const Hero = () => (
     <div className="absolute inset-0 grid-bg opacity-40" />
     <div className="absolute left-1/2 top-0 -z-0 h-[500px] w-[900px] -translate-x-1/2 rounded-full bg-primary/10 blur-[120px]" />
 
-    <div className="container relative grid gap-12 py-20 md:py-28 lg:grid-cols-2 lg:items-center">
+    <div className="container relative grid gap-12 py-16 md:py-24 lg:grid-cols-2 lg:items-center lg:py-28">
       <div className="animate-fade-up space-y-8">
         <Badge variant="outline" className="border-primary/30 bg-primary/10 text-primary">
           <Sparkles className="mr-1.5 h-3 w-3" />
           Sistema Polar One — Operacional desde 2024
         </Badge>
 
-        <h1 className="font-display text-5xl font-bold leading-[1.05] md:text-6xl lg:text-7xl">
+        <h1 className="font-display text-4xl font-bold leading-[1.05] sm:text-5xl md:text-6xl lg:text-7xl">
           <span className="text-gradient-primary">Polar Tensor</span>
           <br />
           Trading com IA
