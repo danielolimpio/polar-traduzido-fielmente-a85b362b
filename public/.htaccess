@@ -1,0 +1,89 @@
+# Polar Tensor - SPA fallback + otimizações para Hostinger (Apache)
+
+# ----------------------------------------------------------------------
+# 1) SPA Fallback: todas as rotas internas servem o index.html
+# ----------------------------------------------------------------------
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  RewriteBase /
+
+  # Força HTTPS
+  RewriteCond %{HTTPS} off
+  RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+  # Redireciona www -> domínio raiz (canônico)
+  RewriteCond %{HTTP_HOST} ^www\.polartensor\.trade$ [NC]
+  RewriteRule ^(.*)$ https://polartensor.trade/$1 [L,R=301]
+
+  # Não reescreve arquivos ou diretórios reais (assets, sitemap, robots, etc.)
+  RewriteCond %{REQUEST_FILENAME} -f [OR]
+  RewriteCond %{REQUEST_FILENAME} -d
+  RewriteRule ^ - [L]
+
+  # Qualquer outra rota -> index.html (SPA do React Router resolve)
+  RewriteRule ^ index.html [L]
+</IfModule>
+
+# ----------------------------------------------------------------------
+# 2) Cache de assets estáticos (performance / Core Web Vitals / SEO)
+# ----------------------------------------------------------------------
+<IfModule mod_expires.c>
+  ExpiresActive On
+  ExpiresDefault                              "access plus 1 month"
+
+  ExpiresByType text/html                     "access plus 0 seconds"
+  ExpiresByType application/xml               "access plus 0 seconds"
+  ExpiresByType text/xml                      "access plus 0 seconds"
+  ExpiresByType application/json              "access plus 0 seconds"
+
+  ExpiresByType text/css                      "access plus 1 year"
+  ExpiresByType application/javascript        "access plus 1 year"
+  ExpiresByType text/javascript               "access plus 1 year"
+
+  ExpiresByType image/png                     "access plus 1 year"
+  ExpiresByType image/jpg                     "access plus 1 year"
+  ExpiresByType image/jpeg                    "access plus 1 year"
+  ExpiresByType image/webp                    "access plus 1 year"
+  ExpiresByType image/svg+xml                 "access plus 1 year"
+  ExpiresByType image/x-icon                  "access plus 1 year"
+  ExpiresByType video/mp4                     "access plus 1 year"
+
+  ExpiresByType font/woff                     "access plus 1 year"
+  ExpiresByType font/woff2                    "access plus 1 year"
+  ExpiresByType application/font-woff         "access plus 1 year"
+  ExpiresByType application/font-woff2        "access plus 1 year"
+</IfModule>
+
+# ----------------------------------------------------------------------
+# 3) Compressão (Gzip/Brotli) — reduz tempo de carregamento
+# ----------------------------------------------------------------------
+<IfModule mod_deflate.c>
+  AddOutputFilterByType DEFLATE text/html text/plain text/xml text/css text/javascript
+  AddOutputFilterByType DEFLATE application/javascript application/json application/xml
+  AddOutputFilterByType DEFLATE image/svg+xml font/woff font/woff2
+</IfModule>
+
+# ----------------------------------------------------------------------
+# 4) Headers de segurança (bom para SEO e ranking)
+# ----------------------------------------------------------------------
+<IfModule mod_headers.c>
+  Header set X-Content-Type-Options "nosniff"
+  Header set X-Frame-Options "SAMEORIGIN"
+  Header set Referrer-Policy "strict-origin-when-cross-origin"
+  Header set Permissions-Policy "geolocation=(), microphone=(), camera=()"
+
+  # HTML não deve ser cacheado de forma agressiva (para refletir updates)
+  <FilesMatch "\.(html)$">
+    Header set Cache-Control "no-cache, must-revalidate"
+  </FilesMatch>
+</IfModule>
+
+# ----------------------------------------------------------------------
+# 5) Charset padrão
+# ----------------------------------------------------------------------
+AddDefaultCharset UTF-8
+
+# ----------------------------------------------------------------------
+# 6) Página de erro 404 -> também cai no React Router
+# ----------------------------------------------------------------------
+ErrorDocument 404 /index.html
