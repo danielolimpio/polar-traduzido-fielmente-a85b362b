@@ -135,15 +135,15 @@ export const SiteFooter = () => (
 
     {/* Risk disclaimer */}
     <section className="border-b border-border/50 bg-background">
-      <div className="container py-12">
-        <div className="mx-auto max-w-4xl rounded-xl border border-destructive/30 bg-destructive/5 p-6 md:p-8">
+      <div className="container py-8">
+        <div className="mx-auto max-w-6xl rounded-xl border border-destructive/30 bg-destructive/5 p-5 md:p-6">
           <div className="flex items-start gap-3">
-            <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-destructive/10 text-destructive ring-1 ring-destructive/20">
-              <AlertTriangle className="h-5 w-5" />
+            <div className="flex h-8 w-8 shrink-0 items-center justify-center rounded-lg bg-destructive/10 text-destructive ring-1 ring-destructive/20">
+              <AlertTriangle className="h-4 w-4" />
             </div>
             <div className="min-w-0 flex-1">
-              <h3 className="font-display text-lg font-semibold text-foreground">Aviso de Risco</h3>
-              <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
+              <h3 className="font-display text-base font-semibold text-foreground">Aviso de Risco</h3>
+              <p className="mt-2 text-xs leading-relaxed text-muted-foreground">
                 O mercado de criptomoedas envolve riscos significativos e pode não ser adequado para
                 todas as pessoas. O valor das criptomoedas pode ser altamente volátil e pode flutuar
                 rapidamente. Este aviso tem como objetivo fornecer clareza sobre os riscos associados
@@ -151,7 +151,7 @@ export const SiteFooter = () => (
                 Ao utilizar nossos serviços, você reconhece e concorda com as seguintes divulgações
                 de risco:
               </p>
-              <ul className="mt-4 grid gap-2 text-sm text-muted-foreground sm:grid-cols-2">
+              <ul className="mt-3 grid gap-1.5 text-xs text-muted-foreground sm:grid-cols-2">
                 {[
                   "Volatilidade",
                   "Riscos de Segurança",
@@ -160,12 +160,12 @@ export const SiteFooter = () => (
                   "Riscos de Liquidez e Tecnológicos",
                 ].map((r) => (
                   <li key={r} className="flex items-center gap-2">
-                    <span className="h-1.5 w-1.5 rounded-full bg-destructive" />
+                    <span className="h-1 w-1 rounded-full bg-destructive" />
                     <span className="text-foreground">{r}</span>
                   </li>
                 ))}
               </ul>
-              <p className="mt-4 text-sm leading-relaxed text-muted-foreground">
+              <p className="mt-3 text-xs leading-relaxed text-muted-foreground">
                 Ao interagir com a Polar Tensor, você entende que pode perder parte ou a totalidade
                 de seus criptoativos e concorda em assumir total responsabilidade por suas ações. É
                 fortemente recomendado que você busque aconselhamento financeiro independente e
