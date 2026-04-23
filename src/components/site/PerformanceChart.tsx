@@ -95,7 +95,7 @@ export const PerformanceChart = () => {
                     style={{ top: `${((Y_MAX - AVG) / Y_MAX) * 100}%` }}
                   >
                     <div className="relative h-px w-full bg-destructive/80">
-                      <span className="absolute -left-1 -top-3 rounded bg-destructive px-1.5 py-0.5 text-[9px] font-semibold text-destructive-foreground shadow">
+                      <span className="absolute -left-12 -top-5 rounded bg-destructive px-1.5 py-0.5 text-[9px] font-semibold text-destructive-foreground shadow">
                         Média {AVG.toLocaleString("pt-BR")}%
                       </span>
                     </div>
