@@ -5,164 +5,182 @@ import { Seo } from "@/components/site/Seo";
 import { Card } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
-import { Building2, Globe2, Landmark, ShieldCheck, FileCheck2, Award, ArrowRight } from "lucide-react";
+import {
+  Building2,
+  Target,
+  Sparkles,
+  Bot,
+  CheckCircle2,
+  TrendingUp,
+  Calendar,
+  Users,
+  Code2,
+  Database,
+  Server,
+  Sigma,
+  ArrowRight,
+} from "lucide-react";
 import { SIGNUP_URL, SITE_URL } from "@/lib/constants";
+import felixPhoto from "@/assets/felix-bick.png";
 
-const entities = [
-  {
-    region: "Estados Unidos",
-    name: "Polar MSB Inc.",
-    location: "Sheridan, Wyoming",
-    reg: "Nº D1537006",
-    extra: "FinCEN: 31000306664168",
-  },
-  {
-    region: "Europa",
-    name: "Polar Tensor SP ZOO",
-    location: "República da Polônia",
-    reg: "KRS: 0001234567",
-    extra: "Conformidade com regulação europeia",
-  },
-  {
-    region: "Ásia",
-    name: "Polar Tensor LAB Limited",
-    location: "Hong Kong, RAE",
-    reg: "Nº 78737300",
-    extra: "P&D em redes neurais e trading",
-  },
-  {
-    region: "América Central",
-    name: "Polar Tensor Corp.",
-    location: "Cidade do Panamá",
-    reg: "Nº 155771852",
-    extra: "Operação técnica e execução",
-  },
+const businessInfo = [
+  { icon: Calendar, label: "Empresa registrada desde", value: "2018" },
+  { icon: TrendingUp, label: "Operando trade desde", value: "2020" },
+  { icon: Bot, label: "Operando na Binance desde", value: "2024" },
+  { icon: CheckCircle2, label: "Conta empresarial Binance", value: "VIP 9" },
 ];
 
-const polarFamily = [
-  {
-    name: "Polar Money",
-    desc: "A fintech do grupo, oferecendo contas multi-moeda, cartões VISA, carteiras digitais e corretora de criptomoedas.",
-    items: ["Contas multi-moeda", "Cartões VISA Platinum", "Carteiras digitais", "Exchange cripto"],
-  },
-  {
-    name: "Polar Research",
-    desc: "Centro científico de pesquisa em algoritmos de trading com IA e publicação de papers acadêmicos.",
-    items: ["Pesquisa aplicada", "Publicações científicas", "Análise quantitativa", "Parcerias acadêmicas"],
-  },
+const team = [
+  { icon: Database, role: "Cientistas de Dados em IA", count: "3x" },
+  { icon: Server, role: "DevOps", count: "1x" },
+  { icon: Sigma, role: "Matemático", count: "1x" },
+  { icon: Code2, role: "CTO Fundador", count: "1x" },
 ];
 
 const About = () => (
   <main className="min-h-screen bg-background">
     <Seo
-      title="Sobre a Polar Tensor | Pesquisa em IA para Geração de Riqueza"
-      description="Conheça a Polar Tensor: estrutura corporativa global, entidades licenciadas nos EUA, Europa, Hong Kong e Panamá, e nosso compromisso com pesquisa em IA aplicada ao mercado financeiro."
+      title="Sobre a Polar Tensor | Binance Partner & Pesquisa em IA"
+      description="Polar Tensor — Binance Partner com conta VIP 9. Algoritmos proprietários de trading em criptomoedas desde 2018, sede de P&D em Hong Kong e fundo registrado no Panamá."
       canonical={`${SITE_URL}/sobre`}
     />
     <SiteHeader />
     <PageHero
       badge="Sobre nós"
-      title="Conectando pesquisa em IA à geração de riqueza"
-      subtitle="Exploramos a fronteira da inteligência artificial e da modelagem matemática para desenvolver abordagens inovadoras ainda não testadas no mercado financeiro tradicional."
+      title="Polar Tensor — Binance Partner"
+      subtitle="Revolucionando o mundo cripto com soluções impulsionadas por Inteligência Artificial. Negociação 100% automatizada, executada diretamente na Binance."
       showBack
     />
 
+    {/* Sobre a empresa */}
     <section className="py-20">
-      <div className="container max-w-4xl">
-        <Badge variant="outline" className="border-primary/30 bg-primary/10 text-primary">Visão Geral</Badge>
-        <h2 className="mt-4 font-display text-3xl font-bold md:text-4xl">Quem somos</h2>
-        <p className="mt-6 text-lg leading-relaxed text-muted-foreground">
-          A Polar Tensor é uma empresa global de tecnologia financeira e pesquisa, focada em soluções
-          inovadoras para o setor financeiro. Atuamos em múltiplas jurisdições, mantendo licenças e
-          conformidade regulatória em locais estratégicos como Estados Unidos, União Europeia, Hong Kong
-          e Panamá — sempre com transparência e documentação acessíveis.
-        </p>
+      <div className="container grid gap-10 md:grid-cols-2 md:items-start">
+        <div>
+          <Badge variant="outline" className="border-primary/30 bg-primary/10 text-primary">Sobre a empresa</Badge>
+          <h2 className="mt-4 font-display text-3xl font-bold md:text-4xl">Quem somos</h2>
+          <p className="mt-6 text-lg leading-relaxed text-muted-foreground">
+            Nossa equipe começou a desenvolver algoritmos de trading proprietários para o mercado de
+            criptomoedas em 2018, com nosso primeiro sucesso ocorrendo em 2020. A sede está localizada em
+            Hong Kong, onde todo o P&D é realizado, e o fundo é registrado no Panamá.
+          </p>
+        </div>
+        <Card className="bg-gradient-card p-8">
+          <div className="mb-4 inline-flex h-12 w-12 items-center justify-center rounded-xl bg-primary/10 text-primary">
+            <Target className="h-6 w-6" />
+          </div>
+          <h3 className="font-display text-2xl font-semibold">Visão</h3>
+          <p className="mt-4 leading-relaxed text-muted-foreground">
+            Nosso objetivo é nos tornar o maior provedor de estratégias algorítmicas no setor de
+            criptomoedas até <strong className="text-foreground">2027</strong>. Além disso, planejamos
+            expandir nossa divisão de software para criar ferramentas e algoritmos para outros hedge
+            funds e exchanges de criptomoedas.
+          </p>
+        </Card>
       </div>
     </section>
 
+    {/* Binance Partner / Negócio */}
     <section className="border-y border-border/50 bg-secondary/30 py-20">
       <div className="container">
         <div className="mx-auto mb-12 max-w-2xl text-center">
-          <Badge variant="outline" className="border-primary/30 bg-primary/10 text-primary">Estrutura corporativa</Badge>
-          <h2 className="mt-4 font-display text-3xl font-bold md:text-4xl">Entidades licenciadas</h2>
+          <Badge variant="outline" className="border-primary/30 bg-primary/10 text-primary">Binance Partner</Badge>
+          <h2 className="mt-4 font-display text-3xl font-bold md:text-4xl">
+            Revolucionando o mundo cripto com IA
+          </h2>
           <p className="mt-3 text-muted-foreground">
-            Operamos por meio de entidades dedicadas em diferentes jurisdições, cada uma cumprindo seu
-            papel regulatório e operacional.
+            Negociação automatizada, 100% executada com Inteligência Artificial, diretamente na Binance.
+            Invista e ganhe — sem precisar indicar ninguém.
           </p>
         </div>
 
-        <div className="grid gap-5 md:grid-cols-2">
-          {entities.map((e) => (
-            <Card key={e.region} className="bg-gradient-card p-6">
-              <div className="mb-3 flex items-center gap-3">
-                <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-primary/10 text-primary">
-                  <Globe2 className="h-5 w-5" />
+        <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
+          {businessInfo.map((b) => {
+            const Icon = b.icon;
+            return (
+              <Card key={b.label} className="bg-gradient-card p-6 text-center">
+                <div className="mx-auto mb-4 inline-flex h-12 w-12 items-center justify-center rounded-xl bg-primary/10 text-primary">
+                  <Icon className="h-6 w-6" />
                 </div>
-                <Badge variant="outline" className="border-primary/30 text-xs text-primary">{e.region}</Badge>
-              </div>
-              <h3 className="font-display text-xl font-semibold">{e.name}</h3>
-              <div className="mt-3 space-y-1 text-sm text-muted-foreground">
-                <div><span className="text-foreground">Localização: </span>{e.location}</div>
-                <div><span className="text-foreground">Registro: </span>{e.reg}</div>
-                <div className="text-xs">{e.extra}</div>
-              </div>
-            </Card>
-          ))}
+                <p className="text-xs uppercase tracking-wide text-muted-foreground">{b.label}</p>
+                <p className="mt-2 font-display text-2xl font-bold text-foreground">{b.value}</p>
+              </Card>
+            );
+          })}
         </div>
-      </div>
-    </section>
 
-    <section className="py-20">
-      <div className="container">
-        <Card className="bg-gradient-card p-8 md:p-10">
-          <div className="flex flex-col items-start gap-6 md:flex-row md:items-center">
-            <div className="flex h-14 w-14 shrink-0 items-center justify-center rounded-xl bg-primary/10 text-primary">
-              <FileCheck2 className="h-7 w-7" />
-            </div>
-            <div className="flex-1">
-              <h3 className="font-display text-xl font-semibold">Auditoria por firma global</h3>
-              <p className="mt-2 text-muted-foreground">
-                Toda nossa estrutura legal é revisada e verificada periodicamente por uma das quatro grandes
-                firmas globais de auditoria, reforçando o compromisso com transparência e conformidade.
-              </p>
-            </div>
+        <Card className="mx-auto mt-8 max-w-3xl bg-gradient-card p-6">
+          <div className="flex items-start gap-3">
+            <Sparkles className="mt-0.5 h-5 w-5 shrink-0 text-primary" />
+            <p className="text-sm leading-relaxed text-muted-foreground">
+              <strong className="text-foreground">Modelo direto ao investidor:</strong> você investe e
+              ganha sem precisar indicar ninguém. Sem MMN, sem rede de afiliados — apenas tecnologia
+              aplicada ao mercado.
+            </p>
           </div>
         </Card>
       </div>
     </section>
 
-    <section className="border-y border-border/50 bg-secondary/30 py-20">
+    {/* Nosso time — Felix Bick */}
+    <section className="py-20">
       <div className="container">
         <div className="mx-auto mb-12 max-w-2xl text-center">
-          <Badge variant="outline" className="border-primary/30 bg-primary/10 text-primary">Família Polar</Badge>
-          <h2 className="mt-4 font-display text-3xl font-bold md:text-4xl">O ecossistema Polar Tensor</h2>
-          <p className="mt-3 text-muted-foreground">
-            A Polar Tensor é a empresa âncora de um ecossistema integrado, cada parte desempenhando um
-            papel distinto no novo cenário financeiro e tecnológico.
-          </p>
+          <Badge variant="outline" className="border-primary/30 bg-primary/10 text-primary">Nosso time</Badge>
+          <h2 className="mt-4 font-display text-3xl font-bold md:text-4xl">As pessoas por trás da tecnologia</h2>
         </div>
 
-        <div className="grid gap-6 md:grid-cols-2">
-          {polarFamily.map((f) => (
-            <Card key={f.name} className="bg-gradient-card p-8">
-              <div className="mb-4 inline-flex h-12 w-12 items-center justify-center rounded-xl bg-primary/10 text-primary">
-                {f.name === "Polar Money" ? <Landmark className="h-6 w-6" /> : <Award className="h-6 w-6" />}
-              </div>
-              <h3 className="font-display text-xl font-semibold">{f.name}</h3>
-              <p className="mt-3 text-sm text-muted-foreground">{f.desc}</p>
-              <ul className="mt-4 grid grid-cols-2 gap-2 text-sm">
-                {f.items.map((i) => (
-                  <li key={i} className="flex items-center gap-2">
-                    <ShieldCheck className="h-4 w-4 text-primary" /> {i}
-                  </li>
-                ))}
-              </ul>
-            </Card>
-          ))}
+        <Card className="overflow-hidden bg-gradient-card">
+          <div className="grid gap-0 md:grid-cols-[320px_1fr]">
+            <div className="relative h-[420px] md:h-auto">
+              <img
+                src={felixPhoto}
+                alt="Felix Bick — Fundador da Polar Tensor"
+                className="h-full w-full object-cover"
+                loading="lazy"
+              />
+            </div>
+            <div className="p-8 md:p-10">
+              <Badge variant="outline" className="border-primary/30 text-primary">Fundador</Badge>
+              <h3 className="mt-3 font-display text-2xl font-bold md:text-3xl">Felix Bick</h3>
+              <p className="mt-4 leading-relaxed text-muted-foreground">
+                Nascido em Hamburgo, Felix Bick iniciou sua carreira em um banco privado alemão, onde
+                desenvolveu uma paixão pelo comércio internacional. Sua trajetória posteriormente o
+                levou a Xangai e Hong Kong, onde trabalhou na <strong className="text-foreground">Li & Fung</strong>,
+                especializando-se em gestão e otimização de cadeias de suprimentos.
+              </p>
+              <p className="mt-4 leading-relaxed text-muted-foreground">
+                Com o tempo, sua fascinação por padrões e eficiência, combinada com seu interesse em
+                criptomoedas, levou ele e sua equipe a começar a desenvolver software de trading
+                algorítmico.
+              </p>
+            </div>
+          </div>
+        </Card>
+
+        <div className="mt-10">
+          <div className="mb-6 flex items-center gap-3">
+            <Users className="h-5 w-5 text-primary" />
+            <h3 className="font-display text-xl font-semibold">A equipe</h3>
+          </div>
+          <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+            {team.map((t) => {
+              const Icon = t.icon;
+              return (
+                <Card key={t.role} className="bg-gradient-card p-6">
+                  <div className="mb-4 inline-flex h-11 w-11 items-center justify-center rounded-lg bg-primary/10 text-primary">
+                    <Icon className="h-5 w-5" />
+                  </div>
+                  <p className="font-display text-2xl font-bold text-primary">{t.count}</p>
+                  <p className="mt-1 text-sm text-muted-foreground">{t.role}</p>
+                </Card>
+              );
+            })}
+          </div>
         </div>
       </div>
     </section>
 
+    {/* CTA */}
     <section className="py-20">
       <div className="container">
         <Card className="relative overflow-hidden bg-gradient-card p-10 text-center">
