@@ -409,10 +409,17 @@ const Rewards = () => (
         </div>
       </div>
 
-      <Card className="bg-gradient-card p-8">
+      <Card className="bg-gradient-card p-5 sm:p-8">
         <h3 className="font-display text-xl font-semibold">Patentes</h3>
         <p className="mt-1 text-sm text-muted-foreground">Suba de patente conforme o volume da sua rede cresce.</p>
-        <div className="mt-6 space-y-2">
+
+        <div className="mt-6 grid grid-cols-[auto_1fr_auto] items-center gap-x-3 px-3 pb-2 text-[10px] font-medium uppercase tracking-wider text-muted-foreground sm:gap-x-6 sm:px-4 sm:text-xs">
+          <span>Patente</span>
+          <span className="text-right sm:text-left">Volume</span>
+          <span className="text-right">Bônus</span>
+        </div>
+
+        <div className="space-y-2">
           {[
             { t: "Ferro", v: "100 USDT", b: "—" },
             { t: "Bronze", v: "500 USDT", b: "50 USDT" },
@@ -424,10 +431,13 @@ const Rewards = () => (
             { t: "Esmeralda", v: "3.000.000 USDT", b: "150.000 USDT" },
             { t: "Diamante", v: "8.000.000 USDT", b: "500.000 USDT" },
           ].map((row) => (
-            <div key={row.t} className="flex items-center justify-between rounded-lg border border-border/50 bg-background/40 px-4 py-2.5 text-sm">
+            <div
+              key={row.t}
+              className="grid grid-cols-[auto_1fr_auto] items-center gap-x-3 rounded-lg border border-border/50 bg-background/40 px-3 py-2.5 text-xs sm:gap-x-6 sm:px-4 sm:py-3 sm:text-sm"
+            >
               <span className="font-semibold">{row.t}</span>
-              <span className="text-muted-foreground">{row.v}</span>
-              <span className="text-primary">{row.b}</span>
+              <span className="text-right tabular-nums text-muted-foreground sm:text-left">{row.v}</span>
+              <span className="text-right tabular-nums font-medium text-primary">{row.b}</span>
             </div>
           ))}
         </div>
