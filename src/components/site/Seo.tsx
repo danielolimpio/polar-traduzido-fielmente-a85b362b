@@ -4,6 +4,8 @@ interface SeoProps {
   title: string;
   description: string;
   canonical: string;
+  image?: string;
+  jsonLd?: object | object[];
 }
 
 const setMeta = (selector: string, attr: string, value: string) => {
@@ -17,15 +19,20 @@ const setMeta = (selector: string, attr: string, value: string) => {
   el.setAttribute(attr, value);
 };
 
-export const Seo = ({ title, description, canonical }: SeoProps) => {
+const DEFAULT_OG_IMAGE = "https://polartensor.trade/og-image.png";
+
+export const Seo = ({ title, description, canonical, image, jsonLd }: SeoProps) => {
   useEffect(() => {
+    const ogImage = image || DEFAULT_OG_IMAGE;
     document.title = title;
     setMeta('meta[name="description"]', "content", description);
     setMeta('meta[property="og:title"]', "content", title);
     setMeta('meta[property="og:description"]', "content", description);
     setMeta('meta[property="og:url"]', "content", canonical);
+    setMeta('meta[property="og:image"]', "content", ogImage);
     setMeta('meta[name="twitter:title"]', "content", title);
     setMeta('meta[name="twitter:description"]', "content", description);
+    setMeta('meta[name="twitter:image"]', "content", ogImage);
 
     let link = document.head.querySelector<HTMLLinkElement>('link[rel="canonical"]');
     if (!link) {
@@ -34,6 +41,21 @@ export const Seo = ({ title, description, canonical }: SeoProps) => {
       document.head.appendChild(link);
     }
     link.href = canonical;
-  }, [title, description, canonical]);
+
+    // Inject per-page JSON-LD
+    const id = "seo-page-jsonld";
+    document.getElementById(id)?.remove();
+    if (jsonLd) {
+      const script = document.createElement("script");
+      script.type = "application/ld+json";
+      script.id = id;
+      script.text = JSON.stringify(Array.isArray(jsonLd) ? jsonLd : [jsonLd]);
+      document.head.appendChild(script);
+    }
+
+    return () => {
+      document.getElementById(id)?.remove();
+    };
+  }, [title, description, canonical, image, jsonLd]);
   return null;
 };
