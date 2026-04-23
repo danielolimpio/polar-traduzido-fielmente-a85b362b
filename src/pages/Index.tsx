@@ -26,12 +26,12 @@ import {
   Wallet,
   Zap,
 } from "lucide-react";
-import dashboardImg from "@/assets/dashboard.webp";
 import appImg from "@/assets/app-portfolio.webp";
 import { SiteHeader } from "@/components/site/SiteHeader";
 import { SiteFooter } from "@/components/site/SiteFooter";
 import { SIGNUP_URL } from "@/lib/constants";
 import { PerformanceChart as Performance } from "@/components/site/PerformanceChart";
+import { BinancePanel } from "@/components/site/BinancePanel";
 
 const CtaButton = ({
   children,
@@ -210,9 +210,6 @@ const Technology = () => (
         ))}
       </div>
 
-      <div className="mt-16 overflow-hidden rounded-2xl border border-border/50 bg-card shadow-card">
-        <img src={dashboardImg} alt="Dashboard Polar One mostrando estatísticas de trading" className="w-full" />
-      </div>
     </div>
   </section>
 );
@@ -536,6 +533,7 @@ const Index = () => (
     <Hero />
     <Trust />
     <Technology />
+    <BinancePanel />
     <Engine />
     <Performance />
     <Plans />
