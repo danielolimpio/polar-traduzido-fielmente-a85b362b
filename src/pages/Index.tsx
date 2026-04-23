@@ -571,55 +571,9 @@ const CTA = () => (
   </section>
 );
 
-const Footer = () => (
-  <footer className="border-t border-border/50 bg-background py-12">
-    <div className="container">
-      <div className="grid gap-8 md:grid-cols-4">
-        <div className="space-y-4">
-          <Logo />
-          <p className="text-sm text-muted-foreground">
-            Transformando o trading com estratégias impulsionadas por IA.
-          </p>
-        </div>
-        <div>
-          <h4 className="mb-3 text-sm font-semibold">Plataforma</h4>
-          <ul className="space-y-2 text-sm text-muted-foreground">
-            <li><a href="#tecnologia" className="hover:text-foreground">Tecnologia</a></li>
-            <li><a href="#desempenho" className="hover:text-foreground">Desempenho</a></li>
-            <li><a href="#planos" className="hover:text-foreground">Planos</a></li>
-          </ul>
-        </div>
-        <div>
-          <h4 className="mb-3 text-sm font-semibold">Empresa</h4>
-          <ul className="space-y-2 text-sm text-muted-foreground">
-            <li><a href="#sobre" className="hover:text-foreground">Sobre</a></li>
-            <li><a href="#faq" className="hover:text-foreground">FAQ</a></li>
-            <li><a href="#" className="hover:text-foreground">Contato</a></li>
-          </ul>
-        </div>
-        <div>
-          <h4 className="mb-3 text-sm font-semibold">Legal</h4>
-          <ul className="space-y-2 text-sm text-muted-foreground">
-            <li><a href="#" className="hover:text-foreground">Termos de Uso</a></li>
-            <li><a href="#" className="hover:text-foreground">Política de Privacidade</a></li>
-            <li><a href="#" className="hover:text-foreground">Aviso de Risco</a></li>
-          </ul>
-        </div>
-      </div>
-      <div className="mt-12 flex flex-col items-center justify-between gap-4 border-t border-border/50 pt-8 text-xs text-muted-foreground sm:flex-row">
-        <p>© 2026 Polar Tensor. Todos os direitos reservados.</p>
-        <p className="flex items-center gap-2">
-          <Lock className="h-3 w-3" />
-          Trading envolve riscos. Negocie com responsabilidade.
-        </p>
-      </div>
-    </div>
-  </footer>
-);
-
 const Index = () => (
   <main className="min-h-screen bg-background">
-    <Nav />
+    <SiteHeader />
     <Hero />
     <Trust />
     <Technology />
@@ -629,7 +583,7 @@ const Index = () => (
     <Rewards />
     <FAQ />
     <CTA />
-    <Footer />
+    <SiteFooter />
   </main>
 );
 
