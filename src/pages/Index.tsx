@@ -19,7 +19,6 @@ import {
   Gauge,
   Globe,
   LineChart,
-  Lock,
   Network,
   ShieldCheck,
   Sparkles,
@@ -29,8 +28,9 @@ import {
 } from "lucide-react";
 import dashboardImg from "@/assets/dashboard.webp";
 import appImg from "@/assets/app-portfolio.webp";
-
-const SIGNUP_URL = "https://polar-tensor.com/sign/up/olimpio";
+import { SiteHeader } from "@/components/site/SiteHeader";
+import { SiteFooter } from "@/components/site/SiteFooter";
+import { SIGNUP_URL } from "@/lib/constants";
 
 const CtaButton = ({
   children,
@@ -48,40 +48,6 @@ const CtaButton = ({
       {children}
     </a>
   </Button>
-);
-
-const Logo = ({ className = "" }: { className?: string }) => (
-  <div className={`flex items-center gap-2 ${className}`}>
-    <div className="relative flex h-9 w-9 items-center justify-center rounded-lg bg-gradient-primary shadow-glow">
-      <span className="font-display text-lg font-bold text-primary-foreground">PT</span>
-    </div>
-    <span className="font-display text-lg font-semibold tracking-tight">
-      Polar <span className="text-primary">Tensor</span>
-    </span>
-  </div>
-);
-
-const Nav = () => (
-  <header className="sticky top-0 z-50 border-b border-border/50 bg-background/80 backdrop-blur-xl">
-    <div className="container flex h-16 items-center justify-between">
-      <Logo />
-      <nav className="hidden items-center gap-8 md:flex">
-        <a href="#sobre" className="text-sm text-muted-foreground transition-colors hover:text-foreground">Sobre</a>
-        <a href="#tecnologia" className="text-sm text-muted-foreground transition-colors hover:text-foreground">Tecnologia</a>
-        <a href="#desempenho" className="text-sm text-muted-foreground transition-colors hover:text-foreground">Desempenho</a>
-        <a href="#planos" className="text-sm text-muted-foreground transition-colors hover:text-foreground">Planos</a>
-        <a href="#faq" className="text-sm text-muted-foreground transition-colors hover:text-foreground">FAQ</a>
-      </nav>
-      <div className="flex items-center gap-2">
-        <Button asChild variant="ghost" size="sm" className="hidden sm:inline-flex">
-          <a href={SIGNUP_URL} target="_blank" rel="noopener noreferrer">Entrar</a>
-        </Button>
-        <CtaButton size="sm">
-          Cadastrar <ArrowRight className="ml-1 h-3.5 w-3.5" />
-        </CtaButton>
-      </div>
-    </div>
-  </header>
 );
 
 const Hero = () => (
@@ -605,55 +571,9 @@ const CTA = () => (
   </section>
 );
 
-const Footer = () => (
-  <footer className="border-t border-border/50 bg-background py-12">
-    <div className="container">
-      <div className="grid gap-8 md:grid-cols-4">
-        <div className="space-y-4">
-          <Logo />
-          <p className="text-sm text-muted-foreground">
-            Transformando o trading com estratégias impulsionadas por IA.
-          </p>
-        </div>
-        <div>
-          <h4 className="mb-3 text-sm font-semibold">Plataforma</h4>
-          <ul className="space-y-2 text-sm text-muted-foreground">
-            <li><a href="#tecnologia" className="hover:text-foreground">Tecnologia</a></li>
-            <li><a href="#desempenho" className="hover:text-foreground">Desempenho</a></li>
-            <li><a href="#planos" className="hover:text-foreground">Planos</a></li>
-          </ul>
-        </div>
-        <div>
-          <h4 className="mb-3 text-sm font-semibold">Empresa</h4>
-          <ul className="space-y-2 text-sm text-muted-foreground">
-            <li><a href="#sobre" className="hover:text-foreground">Sobre</a></li>
-            <li><a href="#faq" className="hover:text-foreground">FAQ</a></li>
-            <li><a href="#" className="hover:text-foreground">Contato</a></li>
-          </ul>
-        </div>
-        <div>
-          <h4 className="mb-3 text-sm font-semibold">Legal</h4>
-          <ul className="space-y-2 text-sm text-muted-foreground">
-            <li><a href="#" className="hover:text-foreground">Termos de Uso</a></li>
-            <li><a href="#" className="hover:text-foreground">Política de Privacidade</a></li>
-            <li><a href="#" className="hover:text-foreground">Aviso de Risco</a></li>
-          </ul>
-        </div>
-      </div>
-      <div className="mt-12 flex flex-col items-center justify-between gap-4 border-t border-border/50 pt-8 text-xs text-muted-foreground sm:flex-row">
-        <p>© 2026 Polar Tensor. Todos os direitos reservados.</p>
-        <p className="flex items-center gap-2">
-          <Lock className="h-3 w-3" />
-          Trading envolve riscos. Negocie com responsabilidade.
-        </p>
-      </div>
-    </div>
-  </footer>
-);
-
 const Index = () => (
   <main className="min-h-screen bg-background">
-    <Nav />
+    <SiteHeader />
     <Hero />
     <Trust />
     <Technology />
@@ -663,7 +583,7 @@ const Index = () => (
     <Rewards />
     <FAQ />
     <CTA />
-    <Footer />
+    <SiteFooter />
   </main>
 );
 
