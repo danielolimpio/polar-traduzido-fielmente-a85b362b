@@ -33,6 +33,7 @@ import { SiteFooter } from "@/components/site/SiteFooter";
 import { SIGNUP_URL } from "@/lib/constants";
 import { PerformanceChart as Performance } from "@/components/site/PerformanceChart";
 import { BinancePanel } from "@/components/site/BinancePanel";
+import { VideoShowcase } from "@/components/site/VideoShowcase";
 
 const CtaButton = ({
   children,
@@ -538,6 +539,7 @@ const Index = () => (
   <main className="min-h-screen bg-background">
     <SiteHeader />
     <Hero />
+    <VideoShowcase />
     <Trust />
     <Technology />
     <BinancePanel />
