@@ -63,16 +63,17 @@ const Hero = () => (
         </Badge>
 
         <h1 className="font-display text-5xl font-bold leading-[1.05] md:text-6xl lg:text-7xl">
-          Trading Algorítmico
+          <span className="text-gradient-primary">Polar Tensor</span>
           <br />
-          <span className="text-gradient-primary">com Redes Neurais</span>
+          Trading com IA
           <br />
-          em Cripto
+          em Criptomoedas
         </h1>
 
         <p className="max-w-xl text-lg leading-relaxed text-muted-foreground">
-          Plataforma proprietária de IA para o mercado de criptomoedas — análise multi-timeframe,
-          execução de baixa latência e gestão de risco automatizada operando 24/5.
+          A <strong className="text-foreground">Polar Tensor</strong> é a plataforma de trading
+          algorítmico com redes neurais proprietárias para o mercado de criptomoedas — análise
+          multi-timeframe, execução de baixa latência e gestão de risco automatizada operando 24/5.
         </p>
 
         <div className="flex flex-wrap gap-3">
