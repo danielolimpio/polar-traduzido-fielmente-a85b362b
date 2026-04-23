@@ -31,6 +31,7 @@ import appImg from "@/assets/app-portfolio.webp";
 import { SiteHeader } from "@/components/site/SiteHeader";
 import { SiteFooter } from "@/components/site/SiteFooter";
 import { SIGNUP_URL } from "@/lib/constants";
+import { PerformanceChart as Performance } from "@/components/site/PerformanceChart";
 
 const CtaButton = ({
   children,
@@ -280,7 +281,6 @@ const Engine = () => (
   </section>
 );
 
-import { PerformanceChart as Performance } from "@/components/site/PerformanceChart";
 
 const plans = [
   {
