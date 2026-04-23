@@ -189,6 +189,7 @@ export const SiteFooter = () => (
         <div>
           <h4 className="mb-3 text-sm font-semibold">Plataforma</h4>
           <ul className="space-y-2 text-sm text-muted-foreground">
+            <li><Link to="/" className="hover:text-foreground">Home</Link></li>
             <li><Link to="/tecnologia" className="hover:text-foreground">Tecnologia</Link></li>
             <li><a href="/#desempenho" className="hover:text-foreground">Desempenho</a></li>
             <li><a href="/#planos" className="hover:text-foreground">Planos</a></li>
