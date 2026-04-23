@@ -7,6 +7,7 @@ import { useState } from "react";
 import { cn } from "@/lib/utils";
 
 const links = [
+  { to: "/", label: "Home" },
   { to: "/sobre", label: "Sobre" },
   { to: "/tecnologia", label: "Tecnologia" },
   { to: "/consultoria", label: "Consultoria" },
