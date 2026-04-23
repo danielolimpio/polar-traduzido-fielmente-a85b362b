@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { Lock, ShieldCheck, Building2, Landmark, Globe2, Banknote, FlaskConical, MapPin } from "lucide-react";
+import { Lock, ShieldCheck, Building2, Landmark, Globe2, Banknote, FlaskConical, MapPin, AlertTriangle } from "lucide-react";
 import { Logo } from "./Logo";
 
 const regulations = [
