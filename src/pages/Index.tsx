@@ -30,6 +30,26 @@ import {
 import dashboardImg from "@/assets/dashboard.webp";
 import appImg from "@/assets/app-portfolio.webp";
 
+const SIGNUP_URL = "https://polar-tensor.com/sign/up/olimpio";
+
+const CtaButton = ({
+  children,
+  variant = "hero",
+  size = "lg",
+  className = "",
+}: {
+  children: React.ReactNode;
+  variant?: "hero" | "outline" | "ghost";
+  size?: "sm" | "lg" | "default";
+  className?: string;
+}) => (
+  <Button asChild variant={variant} size={size} className={className}>
+    <a href={SIGNUP_URL} target="_blank" rel="noopener noreferrer" aria-label="Cadastre-se na Polar Tensor">
+      {children}
+    </a>
+  </Button>
+);
+
 const Logo = ({ className = "" }: { className?: string }) => (
   <div className={`flex items-center gap-2 ${className}`}>
     <div className="relative flex h-9 w-9 items-center justify-center rounded-lg bg-gradient-primary shadow-glow">
@@ -53,10 +73,12 @@ const Nav = () => (
         <a href="#faq" className="text-sm text-muted-foreground transition-colors hover:text-foreground">FAQ</a>
       </nav>
       <div className="flex items-center gap-2">
-        <Button variant="ghost" size="sm" className="hidden sm:inline-flex">Entrar</Button>
-        <Button variant="hero" size="sm">
-          Cadastrar <ArrowRight className="ml-1 h-3.5 w-3.5" />
+        <Button asChild variant="ghost" size="sm" className="hidden sm:inline-flex">
+          <a href={SIGNUP_URL} target="_blank" rel="noopener noreferrer">Entrar</a>
         </Button>
+        <CtaButton size="sm">
+          Cadastrar <ArrowRight className="ml-1 h-3.5 w-3.5" />
+        </CtaButton>
       </div>
     </div>
   </header>
@@ -88,13 +110,13 @@ const Hero = () => (
         </p>
 
         <div className="flex flex-wrap gap-3">
-          <Button variant="hero" size="lg">
+          <CtaButton size="lg">
             <Download className="mr-2 h-4 w-4" />
-            Baixar App
-          </Button>
-          <Button variant="outline" size="lg">
+            Cadastre-se Grátis
+          </CtaButton>
+          <CtaButton variant="outline" size="lg">
             Consultoria Institucional
-          </Button>
+          </CtaButton>
         </div>
 
         <div className="grid grid-cols-3 gap-6 pt-6">
@@ -426,11 +448,11 @@ const Plans = () => (
               ))}
             </ul>
 
-            <Button
+            <Button asChild
               variant={p.featured ? "hero" : "outline"}
               className="mt-8 w-full"
             >
-              Começar agora
+              <a href={SIGNUP_URL} target="_blank" rel="noopener noreferrer">Começar agora</a>
             </Button>
           </Card>
         ))}
@@ -567,14 +589,14 @@ const CTA = () => (
         Baixe nosso aplicativo e acesse tecnologia avançada de trading com redes neurais direto do seu celular.
       </p>
       <div className="mt-8 flex flex-wrap justify-center gap-3">
-        <Button variant="hero" size="lg">
+        <CtaButton size="lg">
           <Download className="mr-2 h-4 w-4" />
-          Baixar App
-        </Button>
-        <Button variant="outline" size="lg">
+          Cadastre-se Agora
+        </CtaButton>
+        <CtaButton variant="outline" size="lg">
           <Globe className="mr-2 h-4 w-4" />
-          Acessar Plataforma Web
-        </Button>
+          Acessar Plataforma
+        </CtaButton>
       </div>
       <p className="mt-6 text-xs text-muted-foreground">
         Disponível em App Store e Google Play • Saques automáticos em USDT e USDC

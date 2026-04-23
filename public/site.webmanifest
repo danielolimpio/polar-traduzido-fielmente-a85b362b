@@ -1,0 +1,13 @@
+{
+  "name": "Polar Tensor — Trading com IA em Cripto",
+  "short_name": "Polar Tensor",
+  "description": "Plataforma de trading algorítmico com redes neurais para criptomoedas.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0b1220",
+  "theme_color": "#0b1220",
+  "lang": "pt-BR",
+  "icons": [
+    { "src": "/favicon.ico", "sizes": "any", "type": "image/x-icon" }
+  ]
+}
