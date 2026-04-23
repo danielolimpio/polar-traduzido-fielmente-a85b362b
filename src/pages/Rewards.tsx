@@ -151,7 +151,7 @@ const Rewards = () => (
           <Card className="mx-auto mt-6 inline-flex max-w-xl items-center gap-3 border-primary/30 bg-primary/5 p-4 text-left">
             <Users className="h-5 w-5 shrink-0 text-primary" />
             <p className="text-sm text-muted-foreground">
-              <strong className="text-foreground">Regra:</strong> cada Diretor Ativo desbloqueia um nível.
+              <strong className="text-foreground">Regra:</strong> Cada Direto Ativo Desbloqueia um Nível.
             </p>
           </Card>
         </div>
@@ -191,7 +191,7 @@ const Rewards = () => (
           <Card className="mx-auto mt-6 inline-flex max-w-xl items-center gap-3 border-primary/30 bg-primary/5 p-4 text-left">
             <Sparkles className="h-5 w-5 shrink-0 text-primary" />
             <p className="text-sm text-muted-foreground">
-              <strong className="text-foreground">Regra:</strong> cada Active Direct desbloqueia um nível.
+              <strong className="text-foreground">Regra:</strong> Cada Direto Ativo Desbloqueia um Nível.
             </p>
           </Card>
         </div>
@@ -270,7 +270,7 @@ const Rewards = () => (
           <Card className="mx-auto mt-6 inline-flex max-w-xl items-center gap-3 border-primary/30 bg-primary/5 p-4 text-left">
             <InfinityIcon className="h-5 w-5 shrink-0 text-primary" />
             <p className="text-sm text-muted-foreground">
-              <strong className="text-foreground">Regra:</strong> se houver graduados, o valor é dividido.
+              <strong className="text-foreground">Regra:</strong> Se Houver Graduados, o Valor é Dividido.
             </p>
           </Card>
         </div>
