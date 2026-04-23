@@ -280,59 +280,7 @@ const Engine = () => (
   </section>
 );
 
-const monthlyYields = [
-  { m: "Abr/24", y: 21.53 }, { m: "Mai/24", y: 18.46 }, { m: "Jun/24", y: 21.11 },
-  { m: "Jul/24", y: 17.26 }, { m: "Ago/24", y: 23.94 }, { m: "Set/24", y: 30.60 },
-  { m: "Out/24", y: 39.76 }, { m: "Nov/24", y: 30.23 }, { m: "Dez/24", y: 24.74 },
-  { m: "Jan/25", y: 27.49 }, { m: "Fev/25", y: 20.95 }, { m: "Mar/25", y: 14.45 },
-  { m: "Abr/25", y: 24.28 }, { m: "Mai/25", y: 17.16 }, { m: "Jun/25", y: 17.08 },
-  { m: "Jul/25", y: 27.11 }, { m: "Ago/25", y: 17.50 }, { m: "Set/25", y: 12.88 },
-  { m: "Out/25", y: 12.39 },
-];
-
-const maxY = Math.max(...monthlyYields.map(d => d.y));
-
-const Performance = () => (
-  <section id="desempenho" className="border-y border-border/50 bg-secondary/30 py-24">
-    <div className="container">
-      <div className="mx-auto mb-16 max-w-2xl text-center">
-        <Badge variant="outline" className="border-primary/30 bg-primary/10 text-primary">Desempenho histórico</Badge>
-        <h2 className="mt-4 font-display text-4xl font-bold md:text-5xl">
-          Rendimentos mensais <span className="text-gradient-primary">auditados</span>
-        </h2>
-        <p className="mt-4 text-muted-foreground">
-          Média mensal de 22,04% entre Abr/2024 e Out/2025. Resultados passados não garantem retornos futuros.
-        </p>
-      </div>
-
-      <Card className="bg-gradient-card p-6 md:p-10">
-        <div className="mb-6 flex flex-wrap items-end justify-between gap-4">
-          <div>
-            <div className="text-sm text-muted-foreground">Rendimento médio mensal</div>
-            <div className="font-display text-4xl font-bold text-primary">22,04%</div>
-          </div>
-          <div className="text-right">
-            <div className="text-sm text-muted-foreground">Drawdown diário máximo</div>
-            <div className="font-display text-4xl font-bold">~1,8%</div>
-          </div>
-        </div>
-
-        <div className="flex h-64 items-end gap-1.5 overflow-x-auto pb-2 md:gap-2">
-          {monthlyYields.map((d) => (
-            <div key={d.m} className="flex min-w-[36px] flex-1 flex-col items-center gap-2">
-              <div className="text-[10px] font-medium text-primary">{d.y}%</div>
-              <div
-                className="w-full rounded-t bg-gradient-primary opacity-90 transition-all hover:opacity-100"
-                style={{ height: `${(d.y / maxY) * 100}%` }}
-              />
-              <div className="text-[10px] text-muted-foreground">{d.m}</div>
-            </div>
-          ))}
-        </div>
-      </Card>
-    </div>
-  </section>
-);
+import { PerformanceChart as Performance } from "@/components/site/PerformanceChart";
 
 const plans = [
   {
