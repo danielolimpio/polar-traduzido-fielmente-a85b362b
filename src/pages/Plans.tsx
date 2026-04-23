@@ -5,8 +5,57 @@ import { Seo } from "@/components/site/Seo";
 import { Card } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
-import { CheckCircle2, Cpu, Clock, Wallet, TrendingDown } from "lucide-react";
+import {
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger,
+} from "@/components/ui/accordion";
+import { CheckCircle2, Cpu, Clock, Wallet, TrendingDown, HelpCircle } from "lucide-react";
 import { SIGNUP_URL, SITE_URL } from "@/lib/constants";
+
+const planFaqs = [
+  {
+    q: "Como funciona a taxa de licença única de 10%?",
+    a: "Ao depositar, uma taxa única de 10% é deduzida automaticamente do valor aportado para liberar o uso do Polar One. Ela é cobrada apenas uma vez, no momento do depósito, e cobre o licenciamento do software de trading algorítmico — não há mensalidades nem cobranças recorrentes pelo uso da plataforma.",
+  },
+  {
+    q: "A taxa de licença incide sobre cada novo depósito?",
+    a: "Sim. A taxa de 10% é aplicada sobre cada novo valor depositado, pois corresponde ao licenciamento do capital que será operado pelo Polar One. Saldos reinvestidos a partir de lucros já distribuídos não pagam licença novamente.",
+  },
+  {
+    q: "Como é calculada a taxa de performance?",
+    a: "A taxa de performance incide exclusivamente sobre os lucros gerados pelo Polar One — nunca sobre o capital depositado. O percentual varia conforme o plano escolhido (de 40% no Iniciante até 20% no Empresa). Se não houver lucro na semana, não há cobrança de performance.",
+  },
+  {
+    q: "Existe high-water mark na taxa de performance?",
+    a: "Sim. A performance só é cobrada sobre novos lucros líquidos acima do maior valor já registrado na sua conta. Caso haja semanas com resultado negativo, você só voltará a pagar performance depois que sua conta superar a marca anterior — garantindo que você nunca pague duas vezes pelo mesmo lucro.",
+  },
+  {
+    q: "Quando os lucros são distribuídos?",
+    a: "A distribuição de resultados ocorre toda sexta-feira, às 23:00 UTC, diretamente no seu backoffice. Após o crédito, você pode reinvestir, manter na conta ou solicitar saque a qualquer momento.",
+  },
+  {
+    q: "Os lucros são creditados automaticamente?",
+    a: "Sim. O processo é 100% automatizado: ao final do ciclo semanal, o sistema calcula o resultado líquido, deduz a taxa de performance correspondente ao seu plano e credita o lucro disponível em sua carteira interna no backoffice.",
+  },
+  {
+    q: "Posso sacar meu capital a qualquer momento?",
+    a: "Sim. Você pode solicitar o saque parcial ou total da sua contribuição quando quiser, sem prazo de carência ou bloqueio. Os saques são processados de forma automática 24/7, em USDT.",
+  },
+  {
+    q: "Como funciona a taxa de saída decrescente?",
+    a: "Para cobrir custos operacionais, é aplicada uma taxa única sobre o valor sacado: 10% nos primeiros 12 meses após o depósito, 5% entre 12 e 24 meses, e gratuita após 24 meses. A contagem é feita por depósito, então aportes mais antigos podem já estar isentos.",
+  },
+  {
+    q: "Existe valor mínimo ou máximo para saque?",
+    a: "Não há valor máximo — você pode sacar todo o seu saldo disponível a qualquer momento. O valor mínimo de saque é de 10 USDT para cobrir os custos de rede da blockchain.",
+  },
+  {
+    q: "Posso mudar de plano depois de começar?",
+    a: "Sim. Conforme seu saldo cresce, você pode migrar para planos superiores e passar a pagar uma taxa de performance menor. A mudança é automática quando seu capital atinge a faixa do próximo nível, mas também pode ser solicitada manualmente no backoffice.",
+  },
+];
 
 const plans = [
   {
@@ -220,6 +269,39 @@ const Plans = () => (
             </Card>
           ))}
         </div>
+      </div>
+    </section>
+
+    {/* FAQ */}
+    <section className="border-t border-border/50 py-20">
+      <div className="container max-w-4xl">
+        <div className="mx-auto mb-10 max-w-2xl text-center">
+          <Badge variant="outline" className="border-primary/30 bg-primary/10 text-primary">
+            <HelpCircle className="mr-1 h-3 w-3" />
+            Dúvidas frequentes
+          </Badge>
+          <h2 className="mt-4 font-display text-3xl font-bold md:text-4xl">
+            Tudo sobre taxas, lucros e saques
+          </h2>
+          <p className="mt-3 text-muted-foreground">
+            Respostas claras sobre licença, performance, distribuição semanal e regras de saque.
+          </p>
+        </div>
+
+        <Card className="bg-gradient-card p-2 md:p-4">
+          <Accordion type="single" collapsible className="w-full">
+            {planFaqs.map((f, i) => (
+              <AccordionItem key={i} value={`item-${i}`} className="border-border/50">
+                <AccordionTrigger className="text-left font-display text-base font-semibold hover:text-primary">
+                  {f.q}
+                </AccordionTrigger>
+                <AccordionContent className="text-sm leading-relaxed text-muted-foreground">
+                  {f.a}
+                </AccordionContent>
+              </AccordionItem>
+            ))}
+          </Accordion>
+        </Card>
       </div>
     </section>
 
