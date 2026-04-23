@@ -9,7 +9,8 @@ export const SiteFooter = () => (
         <div className="space-y-4">
           <Logo />
           <p className="text-sm text-muted-foreground">
-            Transformando o trading com estratégias impulsionadas por IA.
+            <strong className="text-foreground">Polar Tensor</strong> — plataforma de trading
+            algorítmico com inteligência artificial para o mercado de criptomoedas.
           </p>
         </div>
         <div>
@@ -37,7 +38,7 @@ export const SiteFooter = () => (
           </ul>
         </div>
       </div>
-      <div className="mt-12 flex flex-col items-center justify-between gap-4 border-t border-border/50 pt-8 text-xs text-muted-foreground sm:flex-row">
+      <div className="mt-12 flex flex-col items-center justify-between gap-4 border-t border-border/50 pt-8 pb-20 text-xs text-muted-foreground sm:flex-row md:pb-8">
         <p>© 2026 Polar Tensor. Todos os direitos reservados.</p>
         <p className="flex items-center gap-2">
           <Lock className="h-3 w-3" />
