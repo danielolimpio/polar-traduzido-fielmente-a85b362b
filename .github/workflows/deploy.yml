@@ -38,3 +38,8 @@ jobs:
           dangerous-clean-slate: true
           dry-run: false
           log-level: verbose
+          # Garante que arquivos ocultos como .htaccess sejam enviados
+          exclude: |
+            **/.git*
+            **/.git*/**
+            **/node_modules/**
