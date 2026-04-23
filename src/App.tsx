@@ -11,6 +11,7 @@ import Consultancy from "./pages/Consultancy.tsx";
 import Privacy from "./pages/Privacy.tsx";
 import Terms from "./pages/Terms.tsx";
 import RiskDisclosure from "./pages/RiskDisclosure.tsx";
+import { WhatsAppFloat } from "./components/site/WhatsAppFloat.tsx";
 
 const queryClient = new QueryClient();
 
@@ -31,6 +32,7 @@ const App = () => (
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
+        <WhatsAppFloat />
       </BrowserRouter>
     </TooltipProvider>
   </QueryClientProvider>
