@@ -19,7 +19,6 @@ import {
   Gauge,
   Globe,
   LineChart,
-  Lock,
   Network,
   ShieldCheck,
   Sparkles,
@@ -29,8 +28,9 @@ import {
 } from "lucide-react";
 import dashboardImg from "@/assets/dashboard.webp";
 import appImg from "@/assets/app-portfolio.webp";
-
-const SIGNUP_URL = "https://polar-tensor.com/sign/up/olimpio";
+import { SiteHeader } from "@/components/site/SiteHeader";
+import { SiteFooter } from "@/components/site/SiteFooter";
+import { SIGNUP_URL } from "@/lib/constants";
 
 const CtaButton = ({
   children,
@@ -48,40 +48,6 @@ const CtaButton = ({
       {children}
     </a>
   </Button>
-);
-
-const Logo = ({ className = "" }: { className?: string }) => (
-  <div className={`flex items-center gap-2 ${className}`}>
-    <div className="relative flex h-9 w-9 items-center justify-center rounded-lg bg-gradient-primary shadow-glow">
-      <span className="font-display text-lg font-bold text-primary-foreground">PT</span>
-    </div>
-    <span className="font-display text-lg font-semibold tracking-tight">
-      Polar <span className="text-primary">Tensor</span>
-    </span>
-  </div>
-);
-
-const Nav = () => (
-  <header className="sticky top-0 z-50 border-b border-border/50 bg-background/80 backdrop-blur-xl">
-    <div className="container flex h-16 items-center justify-between">
-      <Logo />
-      <nav className="hidden items-center gap-8 md:flex">
-        <a href="#sobre" className="text-sm text-muted-foreground transition-colors hover:text-foreground">Sobre</a>
-        <a href="#tecnologia" className="text-sm text-muted-foreground transition-colors hover:text-foreground">Tecnologia</a>
-        <a href="#desempenho" className="text-sm text-muted-foreground transition-colors hover:text-foreground">Desempenho</a>
-        <a href="#planos" className="text-sm text-muted-foreground transition-colors hover:text-foreground">Planos</a>
-        <a href="#faq" className="text-sm text-muted-foreground transition-colors hover:text-foreground">FAQ</a>
-      </nav>
-      <div className="flex items-center gap-2">
-        <Button asChild variant="ghost" size="sm" className="hidden sm:inline-flex">
-          <a href={SIGNUP_URL} target="_blank" rel="noopener noreferrer">Entrar</a>
-        </Button>
-        <CtaButton size="sm">
-          Cadastrar <ArrowRight className="ml-1 h-3.5 w-3.5" />
-        </CtaButton>
-      </div>
-    </div>
-  </header>
 );
 
 const Hero = () => (
