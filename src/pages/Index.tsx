@@ -448,11 +448,11 @@ const Plans = () => (
               ))}
             </ul>
 
-            <Button
+            <Button asChild
               variant={p.featured ? "hero" : "outline"}
               className="mt-8 w-full"
             >
-              Começar agora
+              <a href={SIGNUP_URL} target="_blank" rel="noopener noreferrer">Começar agora</a>
             </Button>
           </Card>
         ))}
@@ -589,14 +589,14 @@ const CTA = () => (
         Baixe nosso aplicativo e acesse tecnologia avançada de trading com redes neurais direto do seu celular.
       </p>
       <div className="mt-8 flex flex-wrap justify-center gap-3">
-        <Button variant="hero" size="lg">
+        <CtaButton size="lg">
           <Download className="mr-2 h-4 w-4" />
-          Baixar App
-        </Button>
-        <Button variant="outline" size="lg">
+          Cadastre-se Agora
+        </CtaButton>
+        <CtaButton variant="outline" size="lg">
           <Globe className="mr-2 h-4 w-4" />
-          Acessar Plataforma Web
-        </Button>
+          Acessar Plataforma
+        </CtaButton>
       </div>
       <p className="mt-6 text-xs text-muted-foreground">
         Disponível em App Store e Google Play • Saques automáticos em USDT e USDC
