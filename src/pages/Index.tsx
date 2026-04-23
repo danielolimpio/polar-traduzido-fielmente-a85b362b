@@ -73,10 +73,12 @@ const Nav = () => (
         <a href="#faq" className="text-sm text-muted-foreground transition-colors hover:text-foreground">FAQ</a>
       </nav>
       <div className="flex items-center gap-2">
-        <Button variant="ghost" size="sm" className="hidden sm:inline-flex">Entrar</Button>
-        <Button variant="hero" size="sm">
-          Cadastrar <ArrowRight className="ml-1 h-3.5 w-3.5" />
+        <Button asChild variant="ghost" size="sm" className="hidden sm:inline-flex">
+          <a href={SIGNUP_URL} target="_blank" rel="noopener noreferrer">Entrar</a>
         </Button>
+        <CtaButton size="sm">
+          Cadastrar <ArrowRight className="ml-1 h-3.5 w-3.5" />
+        </CtaButton>
       </div>
     </div>
   </header>
