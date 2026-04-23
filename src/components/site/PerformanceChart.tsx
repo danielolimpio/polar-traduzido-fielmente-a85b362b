@@ -109,31 +109,30 @@ export const PerformanceChart = () => {
                     return (
                       <div
                         key={d.m}
-                        className="group relative flex flex-1 flex-col items-center justify-end"
+                        className="group relative flex h-full flex-1 items-end justify-center"
                       >
-                        {/* Value label */}
-                        <div
-                          className={`mb-1 origin-bottom text-[10px] font-semibold tabular-nums text-foreground transition-all duration-700 ${
-                            animate ? "opacity-100" : "opacity-0"
-                          }`}
-                          style={{ transitionDelay: `${600 + i * 60}ms` }}
-                        >
-                          {d.y.toLocaleString("pt-BR", { minimumFractionDigits: 2 })}%
-                        </div>
-
                         {/* Bar */}
                         <div
-                          className="relative w-full max-w-[28px] origin-bottom rounded-t-md bg-gradient-to-t from-primary/40 via-primary to-primary-glow shadow-[0_0_18px_-4px_hsl(var(--primary)/0.6)] ring-1 ring-primary/30 transition-[height,opacity,transform] duration-[1100ms] ease-[cubic-bezier(0.22,1,0.36,1)] group-hover:brightness-125"
+                          className="relative w-full max-w-[28px] origin-bottom rounded-t-md bg-gradient-to-t from-primary/40 via-primary to-primary-glow shadow-[0_0_18px_-4px_hsl(var(--primary)/0.6)] ring-1 ring-primary/30 transition-[height,opacity] duration-[1100ms] ease-[cubic-bezier(0.22,1,0.36,1)] group-hover:brightness-125"
                           style={{
                             height: animate ? `${heightPct}%` : "0%",
                             opacity: animate ? 1 : 0,
                             transitionDelay: `${i * 60}ms`,
                           }}
                         >
+                          {/* Value label on top of bar */}
+                          <div
+                            className={`absolute -top-5 left-1/2 -translate-x-1/2 whitespace-nowrap text-[10px] font-semibold tabular-nums text-foreground transition-opacity duration-700 ${
+                              animate ? "opacity-100" : "opacity-0"
+                            }`}
+                            style={{ transitionDelay: `${600 + i * 60}ms` }}
+                          >
+                            {d.y.toLocaleString("pt-BR", { minimumFractionDigits: 2 })}%
+                          </div>
                           {/* Glossy highlight */}
                           <span className="pointer-events-none absolute inset-x-0 top-0 h-1/3 rounded-t-md bg-gradient-to-b from-white/30 to-transparent" />
                           {/* Hover tooltip */}
-                          <div className="pointer-events-none absolute -top-9 left-1/2 -translate-x-1/2 whitespace-nowrap rounded-md border border-border bg-popover px-2 py-1 text-[11px] font-medium text-popover-foreground opacity-0 shadow-md transition-opacity group-hover:opacity-100">
+                          <div className="pointer-events-none absolute -top-12 left-1/2 -translate-x-1/2 whitespace-nowrap rounded-md border border-border bg-popover px-2 py-1 text-[11px] font-medium text-popover-foreground opacity-0 shadow-md transition-opacity group-hover:opacity-100">
                             {d.m} · {d.y.toLocaleString("pt-BR", { minimumFractionDigits: 2 })}%
                           </div>
                         </div>
