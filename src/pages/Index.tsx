@@ -63,7 +63,7 @@ const Hero = () => (
           Sistema Polar One — Operacional desde 2024
         </Badge>
 
-        <h1 className="font-display text-5xl font-bold leading-[1.05] md:text-6xl lg:text-7xl">
+        <h1 className="font-display text-4xl font-bold leading-[1.05] sm:text-5xl md:text-6xl lg:text-7xl">
           <span className="text-gradient-primary">Polar Tensor</span>
           <br />
           Trading com IA
