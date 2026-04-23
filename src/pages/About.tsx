@@ -8,6 +8,7 @@ import { Button } from "@/components/ui/button";
 import {
   Building2,
   Target,
+  History,
   Sparkles,
   Bot,
   CheckCircle2,
@@ -52,30 +53,58 @@ const About = () => (
       showBack
     />
 
-    {/* Sobre a empresa */}
+    {/* História & Visão */}
     <section className="py-20">
-      <div className="container grid gap-10 md:grid-cols-2 md:items-start">
-        <div>
-          <Badge variant="outline" className="border-primary/30 bg-primary/10 text-primary">Sobre a empresa</Badge>
-          <h2 className="mt-4 font-display text-3xl font-bold md:text-4xl">Quem somos</h2>
-          <p className="mt-6 text-lg leading-relaxed text-muted-foreground">
-            Nossa equipe começou a desenvolver algoritmos de trading proprietários para o mercado de
-            criptomoedas em 2018, com nosso primeiro sucesso ocorrendo em 2020. A sede está localizada em
-            Hong Kong, onde todo o P&D é realizado, e o fundo é registrado no Panamá.
+      <div className="container">
+        <div className="mx-auto mb-12 max-w-2xl text-center">
+          <Badge variant="outline" className="border-primary/30 bg-primary/10 text-primary">Quem somos</Badge>
+          <h2 className="mt-4 font-display text-3xl font-bold md:text-4xl">
+            Pesquisa, tecnologia e <span className="text-gradient-primary">trading algorítmico</span>
+          </h2>
+          <p className="mt-3 text-muted-foreground">
+            Da pesquisa em Hong Kong à operação 100% automatizada na Binance — uma trajetória construída
+            sobre engenharia de dados, IA e disciplina de mercado.
           </p>
         </div>
-        <Card className="bg-gradient-card p-8">
-          <div className="mb-4 inline-flex h-12 w-12 items-center justify-center rounded-xl bg-primary/10 text-primary">
-            <Target className="h-6 w-6" />
-          </div>
-          <h3 className="font-display text-2xl font-semibold">Visão</h3>
-          <p className="mt-4 leading-relaxed text-muted-foreground">
-            Nosso objetivo é nos tornar o maior provedor de estratégias algorítmicas no setor de
-            criptomoedas até <strong className="text-foreground">2027</strong>. Além disso, planejamos
-            expandir nossa divisão de software para criar ferramentas e algoritmos para outros hedge
-            funds e exchanges de criptomoedas.
-          </p>
-        </Card>
+
+        <div className="grid gap-6 md:grid-cols-2">
+          <Card className="bg-gradient-card p-8">
+            <div className="mb-5 inline-flex h-12 w-12 items-center justify-center rounded-xl bg-primary/10 text-primary">
+              <History className="h-6 w-6" />
+            </div>
+            <h3 className="font-display text-xl font-semibold">História</h3>
+            <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
+              Nossa equipe começou a desenvolver algoritmos de trading proprietários para o mercado de
+              criptomoedas em <strong className="text-foreground">2018</strong>, com nosso primeiro
+              sucesso ocorrendo em <strong className="text-foreground">2020</strong>. A sede está
+              localizada em <strong className="text-foreground">Hong Kong</strong>, onde todo o P&D é
+              realizado, e o fundo é registrado no <strong className="text-foreground">Panamá</strong>.
+            </p>
+            <ul className="mt-5 space-y-2 text-sm">
+              <li className="flex items-center gap-2"><Sparkles className="h-3.5 w-3.5 text-primary" /> P&D em Hong Kong</li>
+              <li className="flex items-center gap-2"><Sparkles className="h-3.5 w-3.5 text-primary" /> Fundo registrado no Panamá</li>
+              <li className="flex items-center gap-2"><Sparkles className="h-3.5 w-3.5 text-primary" /> Algoritmos proprietários desde 2018</li>
+            </ul>
+          </Card>
+
+          <Card className="bg-gradient-card p-8">
+            <div className="mb-5 inline-flex h-12 w-12 items-center justify-center rounded-xl bg-primary/10 text-primary">
+              <Target className="h-6 w-6" />
+            </div>
+            <h3 className="font-display text-xl font-semibold">Visão</h3>
+            <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
+              Nosso objetivo é nos tornar o maior provedor de estratégias algorítmicas no setor de
+              criptomoedas até <strong className="text-foreground">2027</strong>. Além disso, planejamos
+              expandir nossa divisão de software para criar ferramentas e algoritmos para outros hedge
+              funds e exchanges de criptomoedas.
+            </p>
+            <ul className="mt-5 space-y-2 text-sm">
+              <li className="flex items-center gap-2"><Sparkles className="h-3.5 w-3.5 text-primary" /> Liderança global até 2027</li>
+              <li className="flex items-center gap-2"><Sparkles className="h-3.5 w-3.5 text-primary" /> Expansão da divisão de software</li>
+              <li className="flex items-center gap-2"><Sparkles className="h-3.5 w-3.5 text-primary" /> Ferramentas para hedge funds e exchanges</li>
+            </ul>
+          </Card>
+        </div>
       </div>
     </section>
 
@@ -85,7 +114,7 @@ const About = () => (
         <div className="mx-auto mb-12 max-w-2xl text-center">
           <Badge variant="outline" className="border-primary/30 bg-primary/10 text-primary">Binance Partner</Badge>
           <h2 className="mt-4 font-display text-3xl font-bold md:text-4xl">
-            Revolucionando o mundo cripto com IA
+            Revolucionando o mundo cripto com <span className="text-gradient-primary">IA</span>
           </h2>
           <p className="mt-3 text-muted-foreground">
             Negociação automatizada, 100% executada com Inteligência Artificial, diretamente na Binance.
@@ -108,7 +137,7 @@ const About = () => (
           })}
         </div>
 
-        <Card className="mx-auto mt-8 max-w-3xl bg-gradient-card p-6">
+        <Card className="mx-auto mt-8 max-w-3xl border-primary/30 bg-primary/5 p-6">
           <div className="flex items-start gap-3">
             <Sparkles className="mt-0.5 h-5 w-5 shrink-0 text-primary" />
             <p className="text-sm leading-relaxed text-muted-foreground">
@@ -126,7 +155,12 @@ const About = () => (
       <div className="container">
         <div className="mx-auto mb-12 max-w-2xl text-center">
           <Badge variant="outline" className="border-primary/30 bg-primary/10 text-primary">Nosso time</Badge>
-          <h2 className="mt-4 font-display text-3xl font-bold md:text-4xl">As pessoas por trás da tecnologia</h2>
+          <h2 className="mt-4 font-display text-3xl font-bold md:text-4xl">
+            As pessoas por trás da <span className="text-gradient-primary">tecnologia</span>
+          </h2>
+          <p className="mt-3 text-muted-foreground">
+            Uma equipe enxuta e altamente especializada, focada em pesquisa aplicada e execução.
+          </p>
         </div>
 
         <Card className="overflow-hidden bg-gradient-card">
@@ -140,15 +174,15 @@ const About = () => (
               />
             </div>
             <div className="p-8 md:p-10">
-              <Badge variant="outline" className="border-primary/30 text-primary">Fundador</Badge>
+              <Badge variant="outline" className="border-primary/30 bg-primary/10 text-primary">Fundador</Badge>
               <h3 className="mt-3 font-display text-2xl font-bold md:text-3xl">Felix Bick</h3>
-              <p className="mt-4 leading-relaxed text-muted-foreground">
+              <p className="mt-4 text-sm leading-relaxed text-muted-foreground">
                 Nascido em Hamburgo, Felix Bick iniciou sua carreira em um banco privado alemão, onde
                 desenvolveu uma paixão pelo comércio internacional. Sua trajetória posteriormente o
                 levou a Xangai e Hong Kong, onde trabalhou na <strong className="text-foreground">Li & Fung</strong>,
                 especializando-se em gestão e otimização de cadeias de suprimentos.
               </p>
-              <p className="mt-4 leading-relaxed text-muted-foreground">
+              <p className="mt-4 text-sm leading-relaxed text-muted-foreground">
                 Com o tempo, sua fascinação por padrões e eficiência, combinada com seu interesse em
                 criptomoedas, levou ele e sua equipe a começar a desenvolver software de trading
                 algorítmico.
@@ -157,20 +191,23 @@ const About = () => (
           </div>
         </Card>
 
-        <div className="mt-10">
-          <div className="mb-6 flex items-center gap-3">
-            <Users className="h-5 w-5 text-primary" />
-            <h3 className="font-display text-xl font-semibold">A equipe</h3>
+        <div className="mt-12">
+          <div className="mx-auto mb-8 max-w-2xl text-center">
+            <div className="inline-flex items-center gap-2 text-primary">
+              <Users className="h-5 w-5" />
+              <span className="text-xs font-medium uppercase tracking-wider">A equipe</span>
+            </div>
+            <h3 className="mt-3 font-display text-2xl font-bold md:text-3xl">Especialistas multidisciplinares</h3>
           </div>
-          <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+          <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
             {team.map((t) => {
               const Icon = t.icon;
               return (
-                <Card key={t.role} className="bg-gradient-card p-6">
-                  <div className="mb-4 inline-flex h-11 w-11 items-center justify-center rounded-lg bg-primary/10 text-primary">
-                    <Icon className="h-5 w-5" />
+                <Card key={t.role} className="bg-gradient-card p-6 text-center">
+                  <div className="mx-auto mb-4 inline-flex h-12 w-12 items-center justify-center rounded-xl bg-primary/10 text-primary">
+                    <Icon className="h-6 w-6" />
                   </div>
-                  <p className="font-display text-2xl font-bold text-primary">{t.count}</p>
+                  <p className="font-display text-3xl font-bold text-primary">{t.count}</p>
                   <p className="mt-1 text-sm text-muted-foreground">{t.role}</p>
                 </Card>
               );
@@ -181,15 +218,20 @@ const About = () => (
     </section>
 
     {/* CTA */}
-    <section className="py-20">
+    <section className="border-t border-border/50 bg-secondary/30 py-20">
       <div className="container">
-        <Card className="relative overflow-hidden bg-gradient-card p-10 text-center">
+        <Card className="relative overflow-hidden bg-gradient-card p-10 text-center md:p-14">
           <div className="absolute inset-0 bg-gradient-hero opacity-30" />
           <div className="relative">
-            <Building2 className="mx-auto h-10 w-10 text-primary" />
+            <div className="mx-auto inline-flex h-12 w-12 items-center justify-center rounded-xl bg-primary/10 text-primary">
+              <Building2 className="h-6 w-6" />
+            </div>
             <h2 className="mx-auto mt-4 max-w-2xl font-display text-3xl font-bold md:text-4xl">
-              Faça parte de uma plataforma com fundamentos sólidos
+              Faça parte de uma plataforma com <span className="text-gradient-primary">fundamentos sólidos</span>
             </h2>
+            <p className="mx-auto mt-4 max-w-xl text-muted-foreground">
+              Tecnologia, pesquisa e operação institucional ao alcance de qualquer investidor.
+            </p>
             <Button asChild variant="hero" size="lg" className="mt-8">
               <a href={SIGNUP_URL} target="_blank" rel="noopener noreferrer">
                 Cadastre-se agora <ArrowRight className="ml-1 h-4 w-4" />
