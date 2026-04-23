@@ -69,10 +69,10 @@ export const PerformanceChart = () => {
 
           {/* Chart */}
           <div ref={ref} className="relative">
-            <div className="overflow-x-auto overflow-y-visible pb-2">
-              <div className="relative flex min-w-[760px] gap-[10px] pl-12 pr-2">
+            <div className="overflow-x-auto pb-2">
+              <div className="relative flex min-w-[760px] gap-[10px] pl-28 pr-2">
                 {/* Y-axis grid */}
-                <div className="pointer-events-none absolute inset-0 left-12 right-2 h-[340px]">
+                <div className="pointer-events-none absolute inset-0 left-28 right-2 h-[340px]">
                   {Y_TICKS.slice().reverse().map((t) => {
                     const top = ((Y_MAX - t) / Y_MAX) * 100;
                     return (
@@ -95,7 +95,7 @@ export const PerformanceChart = () => {
                     style={{ top: `${((Y_MAX - AVG) / Y_MAX) * 100}%` }}
                   >
                     <div className="relative h-px w-full bg-destructive/80">
-                      <span className="absolute -left-24 -top-5 rounded bg-destructive px-1.5 py-0.5 text-[9px] font-semibold text-destructive-foreground shadow">
+                      <span className="absolute -left-24 -top-5 z-10 rounded bg-destructive px-1.5 py-0.5 text-[9px] font-semibold text-destructive-foreground shadow">
                         Média {AVG.toLocaleString("pt-BR")}%
                       </span>
                     </div>
@@ -143,7 +143,7 @@ export const PerformanceChart = () => {
               </div>
 
               {/* X-axis labels */}
-              <div className="mt-3 flex min-w-[760px] gap-[10px] pl-12 pr-2">
+              <div className="mt-3 flex min-w-[760px] gap-[10px] pl-28 pr-2">
                 {monthlyYields.map((d) => (
                   <div
                     key={d.m}
