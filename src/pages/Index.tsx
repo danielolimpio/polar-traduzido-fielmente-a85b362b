@@ -22,6 +22,7 @@ import {
   LineChart,
   Network,
   ShieldCheck,
+  Smartphone,
   Sparkles,
   TrendingUp,
   Wallet,
