@@ -1,6 +1,6 @@
 import { Link, NavLink } from "react-router-dom";
 import { Button } from "@/components/ui/button";
-import { ArrowRight, Menu, X } from "lucide-react";
+import { ArrowRight, Menu, Smartphone, X } from "lucide-react";
 import { Logo } from "./Logo";
 import { SIGNUP_URL } from "@/lib/constants";
 import { useState } from "react";
@@ -13,6 +13,7 @@ const links = [
   { to: "/consultoria", label: "Consultoria" },
   { to: "/planos", label: "Planos" },
   { to: "/recompensas", label: "Recompensas" },
+  { to: "/baixar-app", label: "Baixar App" },
   { to: "/faq", label: "FAQ" },
 ];
 
@@ -45,6 +46,12 @@ export const SiteHeader = () => {
           )}
         </nav>
         <div className="flex items-center gap-2">
+          <Button asChild variant="outline" size="sm" className="hidden border-primary/40 bg-primary/5 text-primary hover:bg-primary/10 hover:text-primary lg:inline-flex">
+            <Link to="/baixar-app" aria-label="Baixar App Polar Tensor">
+              <Smartphone className="mr-1.5 h-3.5 w-3.5" />
+              Baixar App
+            </Link>
+          </Button>
           <Button asChild variant="ghost" size="sm" className="hidden sm:inline-flex">
             <a href={SIGNUP_URL} target="_blank" rel="noopener noreferrer">Entrar</a>
           </Button>

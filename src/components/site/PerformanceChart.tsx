@@ -285,6 +285,30 @@ export const PerformanceChart = () => {
             Resultados auditados do sistema Polar One. Passe o mouse sobre cada barra para ver
             rendimento e drawdown exatos.
           </p>
+
+          {/* PDF Download CTA */}
+          <div className="mt-8 flex justify-center">
+            <a
+              href="/apresentacao-polar-tensor.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="group relative inline-flex items-center gap-3 overflow-hidden rounded-xl border border-primary/40 bg-gradient-to-r from-primary/15 via-primary/10 to-primary/5 px-6 py-4 font-semibold text-foreground shadow-[0_0_30px_-10px_hsl(var(--primary)/0.5)] transition-all hover:-translate-y-0.5 hover:border-primary hover:shadow-[0_0_40px_-8px_hsl(var(--primary)/0.7)]"
+              aria-label="Baixar apresentação oficial da Polar Tensor em PDF"
+            >
+              <span className="absolute inset-0 -translate-x-full bg-gradient-to-r from-transparent via-primary/20 to-transparent transition-transform duration-700 group-hover:translate-x-full" />
+              <span className="relative flex h-10 w-10 items-center justify-center rounded-lg bg-primary text-primary-foreground ring-2 ring-primary/30">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" className="h-5 w-5">
+                  <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+                  <polyline points="7 10 12 15 17 10" />
+                  <line x1="12" y1="15" x2="12" y2="3" />
+                </svg>
+              </span>
+              <span className="relative flex flex-col items-start leading-tight">
+                <span className="text-[10px] font-medium uppercase tracking-wider text-primary">Documento oficial · PDF</span>
+                <span className="text-base font-bold">Baixar Apresentação Polar Tensor</span>
+              </span>
+            </a>
+          </div>
         </Card>
       </div>
     </section>
