@@ -1,6 +1,6 @@
 import { Link, NavLink } from "react-router-dom";
 import { Button } from "@/components/ui/button";
-import { ArrowRight, Menu, X } from "lucide-react";
+import { ArrowRight, Menu, Smartphone, X } from "lucide-react";
 import { Logo } from "./Logo";
 import { SIGNUP_URL } from "@/lib/constants";
 import { useState } from "react";
@@ -13,6 +13,7 @@ const links = [
   { to: "/consultoria", label: "Consultoria" },
   { to: "/planos", label: "Planos" },
   { to: "/recompensas", label: "Recompensas" },
+  { to: "/baixar-app", label: "Baixar App" },
   { to: "/faq", label: "FAQ" },
 ];
 
