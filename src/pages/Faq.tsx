@@ -90,7 +90,7 @@ const faqs: FaqEntry[] = [
   {
     category: "Tecnologia & Polar One",
     q: "O sistema usa alavancagem?",
-    a: "O Polar One foi projetado para preservar capital. As estratégias priorizam consistência sobre exposição agressiva, evitando alavancagem elevada que possa resultar em liquidações. Detalhes específicos sobre cada estratégia ficam disponíveis para clientes ativos no painel.",
+    a: "O Polar One opera com alavancagem conservadora, tipicamente entre 1x e 3x, dependendo da estratégia ativa e das condições de mercado. O foco é preservação de capital: o sistema evita exposição agressiva e prioriza consistência semanal sobre retornos pontuais elevados, reduzindo significativamente o risco de liquidação em comparação a estratégias de alta alavancagem.",
   },
   {
     category: "Tecnologia & Polar One",
@@ -112,7 +112,7 @@ const faqs: FaqEntry[] = [
   {
     category: "Depósitos & Saques",
     q: "Qual o valor mínimo para começar?",
-    a: "O valor mínimo varia conforme o plano escolhido. Consulte a seção de planos na página inicial para os valores atualizados de entrada de cada nível.",
+    a: "O valor mínimo de entrada na Polar Tensor é de 1.000 USDT, equivalente ao plano inicial. Os planos intermediários começam em 10.000 USDT e os planos avançados, com taxas de performance reduzidas e gerente de relacionamento dedicado, partem de 50.000 USDT. Todos os valores são depositados em criptomoedas (BTC, ETH, SOL ou USDT) diretamente na sua conta vinculada.",
   },
   {
     category: "Depósitos & Saques",
@@ -169,7 +169,7 @@ const faqs: FaqEntry[] = [
   {
     category: "Taxas & Lucros",
     q: "Existe high water mark?",
-    a: "Sim. A taxa de performance utiliza marca d'água alta (high water mark): só voltamos a cobrar performance quando seu saldo ultrapassa o pico anterior, evitando dupla cobrança em períodos de recuperação.",
+    a: "Sim. A taxa de performance utiliza marca d-agua alta (high water mark): so voltamos a cobrar performance quando seu saldo ultrapassa o pico anterior, evitando dupla cobranca em periodos de recuperacao.",
   },
 
   // Riscos & Segurança
