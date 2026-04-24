@@ -64,6 +64,20 @@ const routes = [
       $100 USDT e juros compostos por reinvestimento automático.`,
   },
   {
+    path: "/baixar-app",
+    title: "Baixar App Polar Tensor | Aplicativo Oficial de Trading com IA",
+    description:
+      "Baixar App Polar Tensor: aplicativo oficial para iOS e Android. Acompanhe seu portfólio em USDT, lucros do Polar One, depósitos, saques e bonificações da rede direto no celular.",
+    h1: "Baixar App Polar Tensor",
+    body: `Baixe o aplicativo oficial Polar Tensor para iOS e Android e acompanhe seu trading
+      automatizado com inteligência artificial direto do celular. O App Polar Tensor permite
+      visualizar saldo da carteira em USDT, lucros semanais do sistema Polar One, histórico
+      completo de transações (depósitos, saques, transferências, comissões e bônus), gerenciar
+      o valor ativo em trading com reinvestimento automático, acompanhar a evolução até o
+      próximo nível e visualizar métricas globais de transparência da empresa com gráficos
+      interativos. Disponível gratuitamente na App Store e no Google Play.`,
+  },
+  {
     path: "/consultoria",
     title: "Consultoria Polar Tensor | Atendimento Personalizado para Investidores",
     description:
