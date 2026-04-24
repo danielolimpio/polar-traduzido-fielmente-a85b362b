@@ -84,9 +84,12 @@ const Hero = () => (
             <Download className="mr-2 h-4 w-4" />
             Cadastre-se Grátis
           </CtaButton>
-          <CtaButton variant="outline" size="lg">
-            Consultoria Institucional
-          </CtaButton>
+          <Button asChild variant="outline" size="lg">
+            <Link to="/baixar-app" aria-label="Baixar App Polar Tensor">
+              <Smartphone className="mr-2 h-4 w-4" />
+              Baixar App Polar Tensor
+            </Link>
+          </Button>
         </div>
 
         <div className="grid grid-cols-3 gap-6 pt-6">
