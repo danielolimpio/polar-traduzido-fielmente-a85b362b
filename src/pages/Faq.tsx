@@ -169,7 +169,7 @@ const faqs: FaqEntry[] = [
   {
     category: "Taxas & Lucros",
     q: "Existe high water mark?",
-    a: "Sim. A taxa de performance utiliza marca d-agua alta (high water mark): so voltamos a cobrar performance quando seu saldo ultrapassa o pico anterior, evitando dupla cobranca em periodos de recuperacao.",
+    a: "Sim. A taxa de performance utiliza marca d'água alta (high water mark): só voltamos a cobrar performance quando seu saldo ultrapassa o pico anterior, evitando dupla cobrança em períodos de recuperação.",
   },
 
   // Riscos & Segurança
