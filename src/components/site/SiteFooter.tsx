@@ -175,6 +175,7 @@ export const SiteFooter = () => (
             <li><Link to="/tecnologia" className="hover:text-foreground">Tecnologia</Link></li>
             <li><a href="/#desempenho" className="hover:text-foreground">Desempenho</a></li>
             <li><a href="/#planos" className="hover:text-foreground">Planos</a></li>
+            <li><Link to="/baixar-app" className="font-medium text-primary hover:text-foreground">Baixar App Polar Tensor</Link></li>
           </ul>
         </div>
         <div>
