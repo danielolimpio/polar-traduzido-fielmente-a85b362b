@@ -180,6 +180,7 @@ function buildHtml(template, route) {
             <li><a href="/tecnologia">Tecnologia</a></li>
             <li><a href="/planos">Planos</a></li>
             <li><a href="/recompensas">Recompensas</a></li>
+            <li><a href="/baixar-app">Baixar App Polar Tensor</a></li>
             <li><a href="/consultoria">Consultoria</a></li>
             <li><a href="/faq">FAQ</a></li>
             <li><a href="/aviso-de-risco">Aviso de Risco</a></li>
