@@ -298,15 +298,10 @@ const Faq = () => {
     return Array.from(map.entries());
   }, [filtered]);
 
-  const jsonLd = {
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    mainEntity: faqs.map((f) => ({
-      "@type": "Question",
-      name: f.q,
-      acceptedAnswer: { "@type": "Answer", text: f.a },
-    })),
-  };
+  // Observação: o JSON-LD do tipo FAQPage é servido globalmente via index.html
+  // (estático, visível ao Googlebot sem necessidade de JS). NÃO injetar outro
+  // FAQPage aqui — duplicação causa erro "O campo FAQPage está duplicado" no
+  // Google Search Console (Rich Results / Dados Estruturados).
 
   return (
     <main className="min-h-screen bg-background">
@@ -315,7 +310,6 @@ const Faq = () => {
         description="Tire suas dúvidas sobre a Polar Tensor: tecnologia, taxas, depósitos, saques, segurança, KYC, riscos e programa de indicações. Mais de 35 perguntas respondidas."
         canonical={`${SITE_URL}/faq`}
       />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
       <SiteHeader />
 
       <PageHero
