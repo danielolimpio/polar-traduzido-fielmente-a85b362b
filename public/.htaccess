@@ -7,11 +7,10 @@
   RewriteEngine On
   RewriteBase /
 
-  # Força HTTPS
-  RewriteCond %{HTTPS} off
-  RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
-
-  # Redireciona www -> domínio raiz (canônico)
+  # Redirect canônico ÚNICO: força HTTPS + remove www em um só salto (301)
+  # Evita cadeia http://www -> https://www -> https:// que o Google marca
+  # como "Erro de redirecionamento" no Search Console.
+  RewriteCond %{HTTPS} off [OR]
   RewriteCond %{HTTP_HOST} ^www\.polartensor\.trade$ [NC]
   RewriteRule ^(.*)$ https://polartensor.trade/$1 [L,R=301]
 
