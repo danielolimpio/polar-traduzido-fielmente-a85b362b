@@ -1,0 +1,217 @@
+{
+  "common": {
+    "signIn": "Sign in",
+    "signUp": "Sign up",
+    "signUpFree": "Sign up Free",
+    "signUpNow": "Sign up Now",
+    "downloadApp": "Download App",
+    "downloadAppFull": "Download Polar Tensor App",
+    "openMenu": "Open menu",
+    "language": "Language"
+  },
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "technology": "Technology",
+    "consultancy": "Consultancy",
+    "plans": "Plans",
+    "rewards": "Rewards",
+    "faq": "FAQ"
+  },
+  "hero": {
+    "badge": "Polar One System — Live since 2024",
+    "title1": "Polar Tensor",
+    "title2": "AI Trading",
+    "title3": "in Crypto",
+    "description": "<1>Polar Tensor</1> is the algorithmic trading platform with proprietary neural networks for the crypto market — multi-timeframe analysis, low-latency execution and automated risk management running 24/5.",
+    "stat1": "Max drawdown",
+    "stat2": "Latency",
+    "stat3": "Trades/day",
+    "imageAlt": "Polar Tensor app showing USDT portfolio"
+  },
+  "trust": {
+    "badge": "Why Polar Tensor",
+    "title1": "Financial engineering meets",
+    "title2": "deep learning",
+    "subtitle": "We have been building proprietary algorithms for the crypto market since 2018. R&D headquarters in Hong Kong, fund registered in Panama.",
+    "items": [
+      { "title": "Robust Data Foundation", "desc": "On-chain, sentiment, order book and market metrics across multiple timeframes feeding our models." },
+      { "title": "Battle-Tested Models", "desc": "Neural networks combining trend and direction analysis, validated across different market regimes since 2020." },
+      { "title": "Rigorous Backtesting", "desc": "Every model is tested against extensive historical data before going live, ensuring statistical edge." }
+    ]
+  },
+  "techHome": {
+    "badge": "Technology",
+    "title1": "Advanced",
+    "title2": "AI trading technology",
+    "subtitle": "Research-driven neural networks designed for excellence in the crypto market.",
+    "items": [
+      { "title": "Multi-Timeframe Analysis", "desc": "CNN architectures with attention modules capture patterns across simultaneous time scales." },
+      { "title": "Data Integration", "desc": "OHLCV, on-chain data, order book and sentiment — unified in a single framework." },
+      { "title": "High-Frequency Execution", "desc": "Sub-50ms latency, direct exchange connections, dynamic position scaling." },
+      { "title": "Proven Performance", "desc": "Active since 2020 (originally on FTX), fully automated and AI-driven since 2024." }
+    ]
+  },
+  "engine": {
+    "badge": "How it works",
+    "title1": "Our",
+    "title2": "smart investment engine",
+    "subtitle": "Two types of neural networks working together to maximize precision and minimize risk.",
+    "items": [
+      { "title": "Trend Networks", "desc": "Analyze BTC dominance, on-chain data and long-term market conditions to determine bullish or bearish regime." },
+      { "title": "Direction Networks", "desc": "Process real-time data, order book changes, news sentiment and blockchain metrics to predict immediate moves." },
+      { "title": "Execution Engine", "desc": "High-frequency trades are executed when models show high confidence, with adaptive position scaling." }
+    ],
+    "opTitle": "Continuous and automated operation",
+    "opDesc": "Monday to Friday, 8:00 UTC to 22:00 UTC — peak liquidity windows. Weekly profit distribution every Friday at 23:00 UTC."
+  },
+  "binance": {
+    "badge": "Institutional Account · Binance VIP9",
+    "title1": "Real operations on",
+    "title2": "Binance",
+    "title3": "with",
+    "title4": "auditable credibility",
+    "subtitle": "Institutional volume, top privilege status on the world's largest exchange and live execution feed straight from the Polar One back office.",
+    "card1": { "label": "Binance Balance", "sub": "Total Value · USDT", "foot": "≈ US$ 192,491,814.64 · updated in real time", "tag": "Direct custody on Binance" },
+    "card2": { "label": "Binance Status", "sub": "My VIP Privilege", "foot": "Top institutional level · Lowest fees and execution priority" },
+    "card3": { "label": "All-time profit", "sub": "Performance Overview", "foot": "Cumulative return · audited Polar One system", "tag": "Last 30 days: +20.55%" },
+    "feed": { "title": "Live Trading Feed", "subtitle": "Real-time executions from the Polar One back office", "open": "Open", "close": "Close", "footer": "Illustrative back-office data · Real audited execution on Binance" }
+  },
+  "video": {
+    "default": {
+      "badge": "Meet Polar Tensor",
+      "titleStart": "A ",
+      "titleHighlight": "100% automated platform",
+      "description": "Watch and discover how our AI technology operates in the crypto market in partnership with Binance.",
+      "cta": "Sign up and Start Now",
+      "ctaFoot": "Instant access • No cost to create your account",
+      "fallback": "Your browser does not support HTML5 video."
+    },
+    "binance": {
+      "badge": "Polar Tensor Behind the Scenes · Binance",
+      "titleStart": "Watch the operation ",
+      "titleHighlight": "live on Binance",
+      "description": "Follow real back-office footage of how the Polar One system executes audited strategies in real time."
+    }
+  },
+  "performance": {
+    "badge": "Historical performance",
+    "title1": "Audited monthly",
+    "title2": "returns",
+    "subtitle": "Monthly average of {{avg}}% between 04/24 and 03/26. Past results do not guarantee future returns.",
+    "avgMonthly": "Average monthly return",
+    "avgDrawdown": "Average monthly drawdown",
+    "legendYield": "Monthly return",
+    "legendDrawdown": "Max drawdown",
+    "average": "Average {{avg}}%",
+    "tooltipProfit": "Profit: {{val}}%",
+    "tooltipDrawdown": "Drawdown: {{val}}%",
+    "footer": "Audited results of the Polar One system. Hover each bar to see exact return and drawdown.",
+    "pdfLabel": "Official document · PDF",
+    "pdfTitle": "Download Polar Tensor Presentation",
+    "pdfAria": "Download Polar Tensor official presentation as PDF"
+  },
+  "plansHome": {
+    "badge": "Plans",
+    "title1": "Choose your",
+    "title2": "access level",
+    "subtitle": "One-time 10% license fee on the deposited amount. Performance fee only on profits.",
+    "popular": "Most popular",
+    "perfFee": "performance fee",
+    "from": "From",
+    "start": "Get started",
+    "seeAll": "See all plans",
+    "items": [
+      { "name": "Professional", "min": "8,000 USDT", "fee": "30%", "features": ["Access to the Polar One system", "Weekly profit distribution", "Automatic 24/7 withdrawals", "Standard support"] },
+      { "name": "Elite", "min": "25,000 USDT", "fee": "25%", "features": ["Everything in Professional", "Reduced performance fee", "Execution priority", "Dedicated support"] },
+      { "name": "Enterprise", "min": "100,000 USDT", "fee": "20%", "features": ["Everything in Elite", "Lowest performance fee", "Exclusive account manager", "Institutional reports"] }
+    ]
+  },
+  "rewardsHome": {
+    "badge": "Rewards Program",
+    "title1": "Build passive income through",
+    "title2": "referrals",
+    "subtitle": "Invite people to the platform and earn rewards up to 15 levels deep on the license fee, plus weekly residual rewards on the profits generated.",
+    "benefits": [
+      { "t": "License Rewards", "d": "Earnings on the license fee up to 15 levels." },
+      { "t": "Residual Rewards", "d": "Weekly income on profits from your referrals." },
+      { "t": "Infinity Reward", "d": "Percentage on the volume of your entire team." },
+      { "t": "Ranks & Bonuses", "d": "USDT bonuses from Bronze to Diamond." }
+    ],
+    "ranksTitle": "Ranks",
+    "ranksSubtitle": "Climb ranks as your network volume grows.",
+    "colRank": "Rank",
+    "colVolume": "Volume",
+    "colBonus": "Bonus",
+    "ranks": [
+      { "t": "Iron", "v": "100 USDT", "b": "—" },
+      { "t": "Bronze", "v": "500 USDT", "b": "50 USDT" },
+      { "t": "Silver", "v": "2,500 USDT", "b": "200 USDT" },
+      { "t": "Gold", "v": "8,000 USDT", "b": "500 USDT" },
+      { "t": "Platinum", "v": "25,000 USDT", "b": "1,500 USDT" },
+      { "t": "Titanium", "v": "100,000 USDT", "b": "20,000 USDT" },
+      { "t": "Ruby", "v": "1,000,000 USDT", "b": "50,000 USDT" },
+      { "t": "Emerald", "v": "3,000,000 USDT", "b": "150,000 USDT" },
+      { "t": "Diamond", "v": "8,000,000 USDT", "b": "500,000 USDT" }
+    ]
+  },
+  "faqHome": {
+    "badge": "FAQ",
+    "title1": "Frequently asked",
+    "title2": "questions",
+    "items": [
+      { "q": "What is Polar Tensor?", "a": "We are a financial technology company focused on developing proprietary trading algorithms with neural networks for the crypto market. Operating since 2018, with our first profitable version in 2020." },
+      { "q": "How does the Polar One system work?", "a": "It is a fully automated trading system that uses two types of neural networks — trend and direction — to identify opportunities and execute high-frequency, low-latency trades on Binance." },
+      { "q": "What are the risks involved?", "a": "Crypto trading involves significant risks, including volatility, market, regulatory, liquidity and technological risks. You may lose part or all of your capital. We strongly recommend seeking independent financial advice." },
+      { "q": "How do the fees work?", "a": "We charge a one-time 10% license fee on the deposited amount and a performance fee (20% to 30% depending on the plan) only on profits generated. Profits are distributed weekly, every Friday at 23:00 UTC." },
+      { "q": "Which cryptocurrencies can I deposit?", "a": "We accept Bitcoin, Ethereum, Solana and USDT. Withdrawals are processed automatically 24/7 in USDT and USDC." },
+      { "q": "Where is the company registered?", "a": "Polar Tensor Corp. is registered in Panama (No. 155771852), with Polar MSB Inc. in the USA (Montana, No. D1537006, FinCEN 31000306664168) and Polar Tensor LAB Limited in Hong Kong (No. 78737300)." }
+    ]
+  },
+  "ctaHome": {
+    "badge": "Get started",
+    "title1": "Start trading with",
+    "title2": "AI today",
+    "subtitle": "Download our app and access advanced neural-network trading technology straight from your phone.",
+    "btn1": "Sign up Now",
+    "btn2": "Open Platform",
+    "footer": "Available on App Store and Google Play • Automatic withdrawals in USDT and USDC"
+  },
+  "footer": {
+    "tagline": "<1>Polar Tensor</1> — algorithmic trading platform with artificial intelligence for the crypto market.",
+    "platform": "Platform",
+    "company": "Company",
+    "legal": "Legal",
+    "links": {
+      "home": "Home",
+      "tech": "Technology",
+      "perf": "Performance",
+      "plans": "Plans",
+      "downloadApp": "Download Polar Tensor App",
+      "about": "About",
+      "consultancy": "Consultancy",
+      "faq": "FAQ",
+      "terms": "Terms of Use",
+      "privacy": "Privacy Policy",
+      "risk": "Risk Disclosure"
+    },
+    "regulationsBadge": "Corporate & regulatory structure",
+    "groupTitle": "Polar Tensor Group™",
+    "groupDesc": "We operate as a licensed international group, with dedicated entities in multiple jurisdictions to ensure compliance, security and transparency.",
+    "groupNote": "All entities above are part of the <1>Polar Tensor Group™</1>, held and owned by <3>Polar Tensor Corporation™</3>.",
+    "registry": "Registry",
+    "jurisdiction": "Jurisdiction",
+    "regulations": [
+      { "name": "Polar Tensor Corp.", "jurisdiction": "Republic of Panama", "description": "Automated Trading Technology" },
+      { "name": "Polar Tensor USA LLC", "jurisdiction": "United States — Wyoming", "description": "Client entity for USA and International (Non-EU)" },
+      { "name": "Polar Tensor Europe SP ZOO", "jurisdiction": "Republic of Poland (EU)", "description": "Client entity for the European Union" },
+      { "name": "Polar MSB Inc.", "jurisdiction": "United States — Montana", "description": "Payments, fiat exchange and card services" },
+      { "name": "Polar Tensor LAB Limited", "jurisdiction": "Hong Kong", "description": "Research and Development company" },
+      { "name": "Polar Tensor Africa Limited", "jurisdiction": "Federal Republic of Nigeria", "description": "Onboarding for clients outside the EU and USA" }
+    ],
+    "riskTitle": "Risk Disclosure",
+    "riskBody": "The cryptocurrency market involves significant risks and may not be suitable for everyone. The value of cryptocurrencies can be highly volatile and may fluctuate rapidly. This notice aims to provide clarity about the risks associated with blockchain technology, cryptocurrencies and the services offered by Polar Tensor. By using our services, you acknowledge and agree that when interacting with Polar Tensor, you understand that you may lose part or all of your crypto assets and agree to assume full responsibility for your actions. We strongly recommend that you seek independent financial advice and conduct thorough research.",
+    "copyright": "© 2026 | Polar Tensor | All rights reserved | Developed by",
+    "riskShort": "Trading involves risk. Trade responsibly."
+  }
+}

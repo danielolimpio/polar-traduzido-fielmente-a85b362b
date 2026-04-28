@@ -1,0 +1,217 @@
+{
+  "common": {
+    "signIn": "Iniciar sesión",
+    "signUp": "Registrarse",
+    "signUpFree": "Regístrate Gratis",
+    "signUpNow": "Regístrate Ahora",
+    "downloadApp": "Descargar App",
+    "downloadAppFull": "Descargar App Polar Tensor",
+    "openMenu": "Abrir menú",
+    "language": "Idioma"
+  },
+  "nav": {
+    "home": "Inicio",
+    "about": "Sobre",
+    "technology": "Tecnología",
+    "consultancy": "Consultoría",
+    "plans": "Planes",
+    "rewards": "Recompensas",
+    "faq": "FAQ"
+  },
+  "hero": {
+    "badge": "Sistema Polar One — Operativo desde 2024",
+    "title1": "Polar Tensor",
+    "title2": "Trading con IA",
+    "title3": "en Criptomonedas",
+    "description": "<1>Polar Tensor</1> es la plataforma de trading algorítmico con redes neuronales propietarias para el mercado de criptomonedas — análisis multi-timeframe, ejecución de baja latencia y gestión de riesgo automatizada operando 24/5.",
+    "stat1": "Drawdown máx.",
+    "stat2": "Latencia",
+    "stat3": "Trades/día",
+    "imageAlt": "Aplicación Polar Tensor mostrando portafolio en USDT"
+  },
+  "trust": {
+    "badge": "Por qué Polar Tensor",
+    "title1": "Ingeniería financiera al encuentro del",
+    "title2": "deep learning",
+    "subtitle": "Desarrollamos algoritmos propietarios para el mercado cripto desde 2018. Sede de I+D en Hong Kong, fondo registrado en Panamá.",
+    "items": [
+      { "title": "Base de Datos Robusta", "desc": "Recolección de datos on-chain, sentimiento, libro de órdenes y métricas de mercado en múltiples timeframes para alimentar nuestros modelos." },
+      { "title": "Modelos Probados en Combate", "desc": "Redes neuronales que combinan análisis de tendencia y dirección, validadas en distintos regímenes de mercado desde 2020." },
+      { "title": "Backtesting Riguroso", "desc": "Cada modelo se prueba con datos históricos extensos antes de operar capital real, asegurando ventaja estadística." }
+    ]
+  },
+  "techHome": {
+    "badge": "Tecnología",
+    "title1": "Tecnología avanzada de",
+    "title2": "trading con IA",
+    "subtitle": "Redes neuronales basadas en investigación, diseñadas para la excelencia en el mercado cripto.",
+    "items": [
+      { "title": "Análisis Multi-Timeframe", "desc": "Arquitecturas CNN con módulos de atención capturan patrones en escalas temporales simultáneas." },
+      { "title": "Integración de Datos", "desc": "OHLCV, datos on-chain, libro de órdenes y sentimiento — unificados en un único framework." },
+      { "title": "Ejecución de Alta Frecuencia", "desc": "Latencia inferior a 50ms, conexiones directas con exchanges, escalado dinámico de posiciones." },
+      { "title": "Rendimiento Comprobado", "desc": "Activo desde 2020 (originalmente en FTX), totalmente automatizado y controlado por IA desde 2024." }
+    ]
+  },
+  "engine": {
+    "badge": "Cómo funciona",
+    "title1": "Nuestro motor de",
+    "title2": "inversión inteligente",
+    "subtitle": "Dos tipos de redes neuronales trabajando juntas para maximizar precisión y minimizar riesgo.",
+    "items": [
+      { "title": "Redes de Tendencia", "desc": "Analizan la dominancia de BTC, datos on-chain y condiciones de mercado de largo plazo para determinar régimen alcista o bajista." },
+      { "title": "Redes de Dirección", "desc": "Procesan datos en tiempo real, cambios en el libro de órdenes, sentimiento de noticias y métricas blockchain para predecir movimientos inmediatos." },
+      { "title": "Motor de Ejecución", "desc": "Trades de alta frecuencia se ejecutan cuando los modelos muestran alta confianza, con escalado de posición adaptativo." }
+    ],
+    "opTitle": "Operación continua y automatizada",
+    "opDesc": "De lunes a viernes, 8:00 UTC a 22:00 UTC — ventanas de máxima liquidez. Distribución semanal de ganancias todos los viernes a las 23:00 UTC."
+  },
+  "binance": {
+    "badge": "Cuenta Institucional · Binance VIP9",
+    "title1": "Operaciones reales en",
+    "title2": "Binance",
+    "title3": "con",
+    "title4": "credibilidad auditable",
+    "subtitle": "Volumen institucional, máximo nivel de privilegio en el exchange más grande del mundo y feed de ejecución en vivo directo del back-office Polar One.",
+    "card1": { "label": "Saldo en Binance", "sub": "Valor Total · USDT", "foot": "≈ US$ 192.491.814,64 · actualizado en tiempo real", "tag": "Custodia directa en Binance" },
+    "card2": { "label": "Estatus en Binance", "sub": "My VIP Privilege", "foot": "Nivel máximo institucional · Tarifas mínimas y prioridad de ejecución" },
+    "card3": { "label": "Ganancia de todo el período", "sub": "Performance Overview", "foot": "Retorno acumulado · sistema Polar One auditado", "tag": "Últimos 30 días: +20,55%" },
+    "feed": { "title": "Feed de Trading en Vivo", "subtitle": "Ejecuciones en tiempo real en el back-office Polar One", "open": "Open", "close": "Close", "footer": "Datos ilustrativos del back-office · Ejecución real auditada en Binance" }
+  },
+  "video": {
+    "default": {
+      "badge": "Conoce Polar Tensor",
+      "titleStart": "Plataforma ",
+      "titleHighlight": "100% automatizada",
+      "description": "Mira y descubre cómo nuestra tecnología de IA opera en el mercado de criptomonedas en alianza con Binance.",
+      "cta": "Regístrate y Empieza Ahora",
+      "ctaFoot": "Acceso inmediato • Sin costos para crear tu cuenta",
+      "fallback": "Tu navegador no soporta video HTML5."
+    },
+    "binance": {
+      "badge": "Detrás de Cámaras Polar Tensor · Binance",
+      "titleStart": "Mira la operación ",
+      "titleHighlight": "en vivo en Binance",
+      "description": "Acompaña con imágenes reales del back-office cómo el sistema Polar One ejecuta estrategias auditadas en tiempo real."
+    }
+  },
+  "performance": {
+    "badge": "Desempeño histórico",
+    "title1": "Rendimientos mensuales",
+    "title2": "auditados",
+    "subtitle": "Promedio mensual de {{avg}}% entre 04/24 y 03/26. Resultados pasados no garantizan retornos futuros.",
+    "avgMonthly": "Rendimiento promedio mensual",
+    "avgDrawdown": "Drawdown mensual promedio",
+    "legendYield": "Rendimiento mensual",
+    "legendDrawdown": "Drawdown máx.",
+    "average": "Promedio {{avg}}%",
+    "tooltipProfit": "Ganancia: {{val}}%",
+    "tooltipDrawdown": "Drawdown: {{val}}%",
+    "footer": "Resultados auditados del sistema Polar One. Pasa el cursor sobre cada barra para ver el rendimiento y drawdown exactos.",
+    "pdfLabel": "Documento oficial · PDF",
+    "pdfTitle": "Descargar Presentación Polar Tensor",
+    "pdfAria": "Descargar la presentación oficial de Polar Tensor en PDF"
+  },
+  "plansHome": {
+    "badge": "Planes",
+    "title1": "Elige tu",
+    "title2": "nivel de acceso",
+    "subtitle": "Tarifa única de licencia del 10% sobre el monto depositado. Tarifa de performance solo sobre las ganancias.",
+    "popular": "Más popular",
+    "perfFee": "tarifa de performance",
+    "from": "Desde",
+    "start": "Empezar ahora",
+    "seeAll": "Ver todos los planes",
+    "items": [
+      { "name": "Profesional", "min": "8.000 USDT", "fee": "30%", "features": ["Acceso al sistema Polar One", "Distribución semanal de ganancias", "Retiros automáticos 24/7", "Soporte estándar"] },
+      { "name": "Elite", "min": "25.000 USDT", "fee": "25%", "features": ["Todo lo del plan Profesional", "Tarifa de performance reducida", "Prioridad en la ejecución", "Soporte dedicado"] },
+      { "name": "Empresa", "min": "100.000 USDT", "fee": "20%", "features": ["Todo lo del plan Elite", "Menor tarifa de performance", "Gestor de cuenta exclusivo", "Reportes institucionales"] }
+    ]
+  },
+  "rewardsHome": {
+    "badge": "Programa de Recompensas",
+    "title1": "Construye ingresos pasivos con",
+    "title2": "referidos",
+    "subtitle": "Invita personas a la plataforma y recibe recompensas hasta 15 niveles de profundidad sobre la tarifa de licencia, además de recompensas residuales semanales sobre las ganancias generadas.",
+    "benefits": [
+      { "t": "Recompensas de Licencia", "d": "Ganancias sobre la tarifa de licencia hasta 15 niveles." },
+      { "t": "Recompensas Residuales", "d": "Ingreso semanal sobre las ganancias de tus referidos." },
+      { "t": "Recompensa Infinita", "d": "Porcentaje sobre el volumen de todo tu equipo." },
+      { "t": "Rangos y Bonos", "d": "Bonos en USDT del Bronce al Diamante." }
+    ],
+    "ranksTitle": "Rangos",
+    "ranksSubtitle": "Sube de rango a medida que crece el volumen de tu red.",
+    "colRank": "Rango",
+    "colVolume": "Volumen",
+    "colBonus": "Bono",
+    "ranks": [
+      { "t": "Hierro", "v": "100 USDT", "b": "—" },
+      { "t": "Bronce", "v": "500 USDT", "b": "50 USDT" },
+      { "t": "Plata", "v": "2.500 USDT", "b": "200 USDT" },
+      { "t": "Oro", "v": "8.000 USDT", "b": "500 USDT" },
+      { "t": "Platino", "v": "25.000 USDT", "b": "1.500 USDT" },
+      { "t": "Titanio", "v": "100.000 USDT", "b": "20.000 USDT" },
+      { "t": "Rubí", "v": "1.000.000 USDT", "b": "50.000 USDT" },
+      { "t": "Esmeralda", "v": "3.000.000 USDT", "b": "150.000 USDT" },
+      { "t": "Diamante", "v": "8.000.000 USDT", "b": "500.000 USDT" }
+    ]
+  },
+  "faqHome": {
+    "badge": "FAQ",
+    "title1": "Preguntas",
+    "title2": "frecuentes",
+    "items": [
+      { "q": "¿Qué es Polar Tensor?", "a": "Somos una empresa de tecnología financiera enfocada en desarrollar algoritmos propietarios de trading con redes neuronales para el mercado de criptomonedas. Operamos desde 2018, con nuestra primera versión rentable en 2020." },
+      { "q": "¿Cómo funciona el sistema Polar One?", "a": "Es un sistema de trading totalmente automatizado que utiliza dos tipos de redes neuronales — tendencia y dirección — para identificar oportunidades y ejecutar trades de alta frecuencia con baja latencia en Binance." },
+      { "q": "¿Cuáles son los riesgos involucrados?", "a": "El trading en criptomonedas implica riesgos significativos, incluyendo volatilidad, riesgos de mercado, regulatorios, de liquidez y tecnológicos. Puedes perder parte o la totalidad del capital. Recomendamos enfáticamente buscar asesoramiento financiero independiente." },
+      { "q": "¿Cómo funcionan las tarifas?", "a": "Cobramos una tarifa única de licencia del 10% sobre el monto depositado y una tarifa de performance (del 20% al 30% según el plan) solo sobre las ganancias generadas. Distribuimos ganancias semanalmente, todos los viernes a las 23:00 UTC." },
+      { "q": "¿En qué criptomonedas puedo depositar?", "a": "Aceptamos Bitcoin, Ethereum, Solana y USDT. Los retiros se procesan automáticamente 24/7 en USDT y USDC." },
+      { "q": "¿Dónde está registrada la empresa?", "a": "Polar Tensor Corp. está registrada en Panamá (Nº 155771852), con Polar MSB Inc. en EE.UU. (Montana, Nº D1537006, FinCEN 31000306664168) y Polar Tensor LAB Limited en Hong Kong (Nº 78737300)." }
+    ]
+  },
+  "ctaHome": {
+    "badge": "Empieza ahora",
+    "title1": "Empieza a operar con",
+    "title2": "IA hoy",
+    "subtitle": "Descarga nuestra aplicación y accede a tecnología avanzada de trading con redes neuronales directo desde tu celular.",
+    "btn1": "Regístrate Ahora",
+    "btn2": "Acceder a la Plataforma",
+    "footer": "Disponible en App Store y Google Play • Retiros automáticos en USDT y USDC"
+  },
+  "footer": {
+    "tagline": "<1>Polar Tensor</1> — plataforma de trading algorítmico con inteligencia artificial para el mercado de criptomonedas.",
+    "platform": "Plataforma",
+    "company": "Empresa",
+    "legal": "Legal",
+    "links": {
+      "home": "Inicio",
+      "tech": "Tecnología",
+      "perf": "Desempeño",
+      "plans": "Planes",
+      "downloadApp": "Descargar App Polar Tensor",
+      "about": "Sobre",
+      "consultancy": "Consultoría",
+      "faq": "FAQ",
+      "terms": "Términos de Uso",
+      "privacy": "Política de Privacidad",
+      "risk": "Aviso de Riesgo"
+    },
+    "regulationsBadge": "Estructura corporativa y regulatoria",
+    "groupTitle": "Polar Tensor Group™",
+    "groupDesc": "Operamos como un grupo internacional licenciado, con entidades dedicadas en múltiples jurisdicciones para garantizar cumplimiento, seguridad y transparencia.",
+    "groupNote": "Todas las entidades anteriores forman parte del <1>Polar Tensor Group™</1>, bajo la propiedad y holding de <3>Polar Tensor Corporation™</3>.",
+    "registry": "Registro",
+    "jurisdiction": "Jurisdicción",
+    "regulations": [
+      { "name": "Polar Tensor Corp.", "jurisdiction": "República de Panamá", "description": "Tecnología de Trading Automatizado" },
+      { "name": "Polar Tensor USA LLC", "jurisdiction": "Estados Unidos — Wyoming", "description": "Entidad cliente para EE.UU. e Internacional (No-UE)" },
+      { "name": "Polar Tensor Europe SP ZOO", "jurisdiction": "República de Polonia (UE)", "description": "Entidad cliente para la Unión Europea" },
+      { "name": "Polar MSB Inc.", "jurisdiction": "Estados Unidos — Montana", "description": "Pagos, cambio fiat y servicios de tarjeta" },
+      { "name": "Polar Tensor LAB Limited", "jurisdiction": "Hong Kong", "description": "Empresa de Investigación y Desarrollo" },
+      { "name": "Polar Tensor Africa Limited", "jurisdiction": "República Federal de Nigeria", "description": "Onboarding para clientes fuera de la UE y EE.UU." }
+    ],
+    "riskTitle": "Aviso de Riesgo",
+    "riskBody": "El mercado de criptomonedas implica riesgos significativos y puede no ser adecuado para todas las personas. El valor de las criptomonedas puede ser altamente volátil y fluctuar rápidamente. Este aviso busca brindar claridad sobre los riesgos asociados a la tecnología blockchain, las criptomonedas y los servicios ofrecidos por Polar Tensor. Al usar nuestros servicios, reconoces y aceptas que al interactuar con Polar Tensor entiendes que puedes perder parte o la totalidad de tus criptoactivos y aceptas asumir total responsabilidad por tus acciones. Recomendamos enfáticamente buscar asesoramiento financiero independiente y realizar una investigación exhaustiva.",
+    "copyright": "© 2026 | Polar Tensor | Todos los derechos reservados | Desarrollado por",
+    "riskShort": "El trading implica riesgos. Opera con responsabilidad."
+  }
+}
