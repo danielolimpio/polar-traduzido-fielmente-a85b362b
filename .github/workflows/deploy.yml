@@ -29,6 +29,11 @@ jobs:
       - name: Pré-renderizar rotas para SEO (Google Search Console)
         run: node scripts/prerender.mjs
 
+      - name: Gerar arquivo de validação IndexNow
+        env:
+          INDEXNOW_KEY: ${{ secrets.INDEXNOW_KEY }}
+        run: node scripts/generate-indexnow-key.mjs
+
       - name: Mostrar arquivos gerados
         run: ls -la dist/
 
