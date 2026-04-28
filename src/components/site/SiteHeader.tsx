@@ -13,7 +13,7 @@ const links = [
   { to: "/consultoria", label: "Consultoria" },
   { to: "/planos", label: "Planos" },
   { to: "/recompensas", label: "Recompensas" },
-  { to: "/baixar-app", label: "Baixar App" },
+  
   { to: "/faq", label: "FAQ" },
 ];
 
