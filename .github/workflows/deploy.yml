@@ -54,3 +54,8 @@ jobs:
             **/.git*
             **/.git*/**
             **/node_modules/**
+
+      - name: Notificar motores de busca (IndexNow + Bing)
+        env:
+          INDEXNOW_KEY: ${{ secrets.INDEXNOW_KEY }}
+        run: node scripts/notify-search-engines.mjs
