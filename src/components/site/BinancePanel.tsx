@@ -1,6 +1,7 @@
 import { Card } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Crown, Gem, Activity, TrendingUp, Wallet, Sparkles, ShieldCheck, Star } from "lucide-react";
+import { useTranslation } from "react-i18next";
 
 const BINANCE = "#F0B90B";
 
@@ -14,6 +15,7 @@ const liveFeed = [
 ];
 
 export const BinancePanel = () => {
+  const { t } = useTranslation();
   return (
     <section className="relative overflow-hidden border-y border-border/50 bg-secondary/30 py-24">
       {/* Premium glows */}
@@ -31,16 +33,13 @@ export const BinancePanel = () => {
             style={{ ["--bnb" as any]: BINANCE }}
           >
             <Crown className="h-3.5 w-3.5" />
-            Conta Institucional · Binance VIP9
+            {t("binance.badge")}
           </Badge>
           <h2 className="mt-4 font-display text-4xl font-bold md:text-5xl">
-            Operações reais na <span style={{ color: BINANCE }}>Binance</span> com{" "}
-            <span className="text-gradient-primary">credibilidade auditável</span>
+            {t("binance.title1")} <span style={{ color: BINANCE }}>{t("binance.title2")}</span> {t("binance.title3")}{" "}
+            <span className="text-gradient-primary">{t("binance.title4")}</span>
           </h2>
-          <p className="mt-4 text-muted-foreground">
-            Volume institucional, status máximo de privilégio na maior exchange do mundo e feed de
-            execução ao vivo direto do back-office Polar One.
-          </p>
+          <p className="mt-4 text-muted-foreground">{t("binance.subtitle")}</p>
         </div>
 
         {/* Top KPI cards */}
@@ -64,10 +63,10 @@ export const BinancePanel = () => {
                 </div>
                 <div>
                   <div className="text-[11px] uppercase tracking-wider text-muted-foreground">
-                    Banca na Binance
+                    {t("binance.card1.label")}
                   </div>
                   <div className="text-xs font-medium" style={{ color: BINANCE }}>
-                    Total Value · USDT
+                    {t("binance.card1.sub")}
                   </div>
                 </div>
               </div>
@@ -81,7 +80,7 @@ export const BinancePanel = () => {
                 192.491.814,64
               </div>
               <div className="mt-1 text-xs text-muted-foreground">
-                ≈ US$ 192.491.814,64 · atualizado em tempo real
+                {t("binance.card1.foot")}
               </div>
             </div>
             <div
@@ -92,7 +91,7 @@ export const BinancePanel = () => {
                 color: BINANCE,
               }}
             >
-              <ShieldCheck className="h-3 w-3" /> Custódia direta na Binance
+              <ShieldCheck className="h-3 w-3" /> {t("binance.card1.tag")}
             </div>
           </Card>
 
@@ -117,10 +116,10 @@ export const BinancePanel = () => {
                 </div>
                 <div>
                   <div className="text-[11px] uppercase tracking-wider text-muted-foreground">
-                    Status na Binance
+                    {t("binance.card2.label")}
                   </div>
                   <div className="text-xs font-medium" style={{ color: BINANCE }}>
-                    My VIP Privilege
+                    {t("binance.card2.sub")}
                   </div>
                 </div>
               </div>
@@ -138,7 +137,7 @@ export const BinancePanel = () => {
                 VIP 9
               </div>
               <div className="mt-1 text-xs text-muted-foreground">
-                Nível máximo institucional · Taxas mínimas e prioridade de execução
+                {t("binance.card2.foot")}
               </div>
             </div>
             <div className="relative mt-5 grid grid-cols-3 gap-2 text-center text-[10px]">
@@ -168,9 +167,9 @@ export const BinancePanel = () => {
                 </div>
                 <div>
                   <div className="text-[11px] uppercase tracking-wider text-muted-foreground">
-                    Lucro em todo o período
+                    {t("binance.card3.label")}
                   </div>
-                  <div className="text-xs font-medium text-primary">Performance Overview</div>
+                  <div className="text-xs font-medium text-primary">{t("binance.card3.sub")}</div>
                 </div>
               </div>
               <Sparkles className="h-5 w-5 text-primary opacity-80" />
@@ -180,11 +179,11 @@ export const BinancePanel = () => {
                 +10.341,76%
               </div>
               <div className="mt-1 text-xs text-muted-foreground">
-                Retorno acumulado · sistema Polar One auditado
+                {t("binance.card3.foot")}
               </div>
             </div>
             <div className="relative mt-5 inline-flex items-center gap-1.5 rounded-full border border-primary/40 bg-primary/10 px-2.5 py-1 text-[11px] font-semibold text-primary">
-              <Activity className="h-3 w-3" /> Últimos 30 dias: +20,55%
+              <Activity className="h-3 w-3" /> {t("binance.card3.tag")}
             </div>
           </Card>
         </div>
@@ -206,10 +205,10 @@ export const BinancePanel = () => {
               </div>
               <div>
                 <div className="font-display text-base font-semibold">
-                  Feed de Trading ao Vivo
+                  {t("binance.feed.title")}
                 </div>
                 <div className="text-xs text-muted-foreground">
-                  Execuções em tempo real no back-office Polar One
+                  {t("binance.feed.subtitle")}
                 </div>
               </div>
             </div>
@@ -237,15 +236,15 @@ export const BinancePanel = () => {
                   </div>
                 </div>
                 <div className="text-[11px] text-muted-foreground sm:text-xs">{row.time}</div>
-                <div className="text-right sm:text-left">
+                  <div className="text-right sm:text-left">
                   <div className="text-[10px] uppercase tracking-wider text-muted-foreground">
-                    Open
+                    {t("binance.feed.open")}
                   </div>
                   <div className="tabular-nums">${row.open}</div>
                 </div>
                 <div className="text-right">
                   <div className="text-[10px] uppercase tracking-wider text-muted-foreground">
-                    Close
+                    {t("binance.feed.close")}
                   </div>
                   <div className="tabular-nums font-semibold text-primary">${row.close}</div>
                 </div>
@@ -257,7 +256,7 @@ export const BinancePanel = () => {
             className="border-t border-border/50 px-5 py-3 text-center text-[11px] text-muted-foreground"
             style={{ background: `${BINANCE}08` }}
           >
-            Dados ilustrativos do back-office · Execução real auditada na Binance
+            {t("binance.feed.footer")}
           </div>
         </Card>
       </div>
