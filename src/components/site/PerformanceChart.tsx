@@ -1,4 +1,5 @@
 import { useEffect, useMemo, useRef, useState } from "react";
+import { useTranslation } from "react-i18next";
 import { Card } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 
@@ -44,6 +45,10 @@ const formatMonth = (m: string) => {
 };
 
 export const PerformanceChart = () => {
+  const { t, i18n } = useTranslation();
+  const localeMap: Record<string, string> = { pt: "pt-BR", en: "en-US", es: "es-ES" };
+  const locale = localeMap[i18n.resolvedLanguage ?? "pt"] ?? "pt-BR";
+  const fmt = (n: number, min = 2) => n.toLocaleString(locale, { maximumFractionDigits: 2, minimumFractionDigits: min });
   const ref = useRef<HTMLDivElement>(null);
   const [animate, setAnimate] = useState(false);
 
@@ -82,29 +87,28 @@ export const PerformanceChart = () => {
       <div className="container">
         <div className="mx-auto mb-12 max-w-2xl text-center">
           <Badge variant="outline" className="border-primary/30 bg-primary/10 text-primary">
-            Desempenho histórico
+            {t("performance.badge")}
           </Badge>
           <h2 className="mt-4 font-display text-4xl font-bold md:text-5xl">
-            Rendimentos mensais <span className="text-gradient-primary">auditados</span>
+            {t("performance.title1")} <span className="text-gradient-primary">{t("performance.title2")}</span>
           </h2>
           <p className="mt-4 text-muted-foreground">
-            Média mensal de {AVG.toLocaleString("pt-BR", { maximumFractionDigits: 2 })}% entre
-            04/24 e 03/26. Resultados passados não garantem retornos futuros.
+            {t("performance.subtitle", { avg: fmt(AVG, 0) })}
           </p>
         </div>
 
         <Card className="bg-gradient-card p-6 md:p-10">
           <div className="mb-8 flex flex-wrap items-end justify-between gap-4">
             <div>
-              <div className="text-sm text-muted-foreground">Rendimento médio mensal</div>
+              <div className="text-sm text-muted-foreground">{t("performance.avgMonthly")}</div>
               <div className="font-display text-4xl font-bold text-primary">
-                {AVG.toLocaleString("pt-BR", { maximumFractionDigits: 2 })}%
+                {fmt(AVG, 0)}%
               </div>
             </div>
             <div className="text-right">
-              <div className="text-sm text-muted-foreground">Drawdown mensal médio</div>
+              <div className="text-sm text-muted-foreground">{t("performance.avgDrawdown")}</div>
               <div className="font-display text-4xl font-bold text-destructive">
-                {AVG_DD.toLocaleString("pt-BR", { maximumFractionDigits: 2 })}%
+                {fmt(AVG_DD, 0)}%
               </div>
             </div>
           </div>
@@ -113,11 +117,11 @@ export const PerformanceChart = () => {
           <div className="mb-4 flex flex-wrap items-center gap-4 text-xs text-muted-foreground">
             <div className="flex items-center gap-2">
               <span className="inline-block h-3 w-3 rounded-sm bg-gradient-to-t from-primary/40 via-primary to-primary-glow" />
-              Rendimento mensal
+              {t("performance.legendYield")}
             </div>
             <div className="flex items-center gap-2">
               <span className="inline-block h-3 w-3 rounded-sm bg-destructive/70" />
-              Drawdown máx.
+              {t("performance.legendDrawdown")}
             </div>
           </div>
 
@@ -175,7 +179,7 @@ export const PerformanceChart = () => {
                   >
                     <div className="relative h-px w-full bg-primary/70">
                       <span className="absolute -top-5 right-0 z-10 rounded bg-primary px-1.5 py-0.5 text-[9px] font-semibold text-primary-foreground shadow">
-                        Média {AVG.toLocaleString("pt-BR", { maximumFractionDigits: 2 })}%
+                        {t("performance.average", { avg: fmt(AVG, 0) })}
                       </span>
                     </div>
                   </div>
@@ -215,7 +219,7 @@ export const PerformanceChart = () => {
                                 }`}
                                 style={{ transitionDelay: `${600 + i * 55}ms` }}
                               >
-                                {d.y.toLocaleString("pt-BR", { minimumFractionDigits: 2 })}%
+                                {fmt(d.y)}%
                               </div>
                               {/* Glossy highlight */}
                               <span className="pointer-events-none absolute inset-x-0 top-0 h-1/3 rounded-t-md bg-gradient-to-b from-white/30 to-transparent" />
@@ -245,7 +249,7 @@ export const PerformanceChart = () => {
                                 }`}
                                 style={{ transitionDelay: `${800 + i * 55}ms` }}
                               >
-                                -{d.dd.toLocaleString("pt-BR", { minimumFractionDigits: 2 })}%
+                                -{fmt(d.dd)}%
                               </div>
                             </div>
                           </div>
@@ -254,10 +258,10 @@ export const PerformanceChart = () => {
                           <div className="pointer-events-none absolute -top-14 left-1/2 z-20 -translate-x-1/2 whitespace-nowrap rounded-md border border-border bg-popover px-2 py-1 text-[11px] font-medium text-popover-foreground opacity-0 shadow-md transition-opacity group-hover:opacity-100">
                             <div>{formatMonth(d.m)}</div>
                             <div className="text-primary">
-                              Lucro: {d.y.toLocaleString("pt-BR", { minimumFractionDigits: 2 })}%
+                              {t("performance.tooltipProfit", { val: fmt(d.y) })}
                             </div>
                             <div className="text-destructive">
-                              Drawdown: {d.dd.toLocaleString("pt-BR", { minimumFractionDigits: 2 })}%
+                              {t("performance.tooltipDrawdown", { val: fmt(d.dd) })}
                             </div>
                           </div>
                         </div>
@@ -282,8 +286,7 @@ export const PerformanceChart = () => {
           </div>
 
           <p className="mt-6 text-center text-xs text-muted-foreground">
-            Resultados auditados do sistema Polar One. Passe o mouse sobre cada barra para ver
-            rendimento e drawdown exatos.
+            {t("performance.footer")}
           </p>
 
           {/* PDF Download CTA */}
@@ -293,7 +296,7 @@ export const PerformanceChart = () => {
               target="_blank"
               rel="noopener noreferrer"
               className="group relative inline-flex items-center gap-3 overflow-hidden rounded-xl border border-primary/40 bg-gradient-to-r from-primary/15 via-primary/10 to-primary/5 px-6 py-4 font-semibold text-foreground shadow-[0_0_30px_-10px_hsl(var(--primary)/0.5)] transition-all hover:-translate-y-0.5 hover:border-primary hover:shadow-[0_0_40px_-8px_hsl(var(--primary)/0.7)]"
-              aria-label="Baixar apresentação oficial da Polar Tensor em PDF"
+              aria-label={t("performance.pdfAria")}
             >
               <span className="absolute inset-0 -translate-x-full bg-gradient-to-r from-transparent via-primary/20 to-transparent transition-transform duration-700 group-hover:translate-x-full" />
               <span className="relative flex h-10 w-10 items-center justify-center rounded-lg bg-primary text-primary-foreground ring-2 ring-primary/30">
@@ -304,8 +307,8 @@ export const PerformanceChart = () => {
                 </svg>
               </span>
               <span className="relative flex flex-col items-start leading-tight">
-                <span className="text-[10px] font-medium uppercase tracking-wider text-primary">Documento oficial · PDF</span>
-                <span className="text-base font-bold">Baixar Apresentação Polar Tensor</span>
+                <span className="text-[10px] font-medium uppercase tracking-wider text-primary">{t("performance.pdfLabel")}</span>
+                <span className="text-base font-bold">{t("performance.pdfTitle")}</span>
               </span>
             </a>
           </div>
