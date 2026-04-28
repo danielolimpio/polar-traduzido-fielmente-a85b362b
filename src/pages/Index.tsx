@@ -547,6 +547,14 @@ const Index = () => (
     <Trust />
     <Technology />
     <BinancePanel />
+    <VideoShowcase
+      badge="Bastidores Polar Tensor · Binance"
+      titleStart="Veja a operação "
+      titleHighlight="ao vivo na Binance"
+      description="Acompanhe nas imagens reais do back-office como o sistema Polar One executa estratégias auditadas em tempo real."
+      videoSrc="/videos/polar-tensor-binance.mp4"
+      showCta={false}
+    />
     <Engine />
     <Performance />
     <Plans />
