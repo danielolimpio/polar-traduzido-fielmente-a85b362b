@@ -1,6 +1,7 @@
 import { Badge } from "@/components/ui/badge";
 import { Link } from "react-router-dom";
 import { ArrowLeft } from "lucide-react";
+import { useTranslation } from "react-i18next";
 
 interface PageHeroProps {
   badge?: string;
@@ -9,14 +10,16 @@ interface PageHeroProps {
   showBack?: boolean;
 }
 
-export const PageHero = ({ badge, title, subtitle, showBack }: PageHeroProps) => (
+export const PageHero = ({ badge, title, subtitle, showBack }: PageHeroProps) => {
+  const { t } = useTranslation();
+  return (
   <section className="relative overflow-hidden border-b border-border/50 bg-gradient-hero">
     <div className="absolute inset-0 grid-bg opacity-40" />
     <div className="absolute left-1/2 top-0 -z-0 h-[300px] w-[700px] -translate-x-1/2 rounded-full bg-primary/10 blur-[120px]" />
     <div className="container relative py-16 md:py-20">
       {showBack && (
         <Link to="/" className="mb-6 inline-flex items-center gap-2 text-sm text-muted-foreground hover:text-foreground">
-          <ArrowLeft className="h-4 w-4" /> Voltar para o início
+          <ArrowLeft className="h-4 w-4" /> {t("common.back")}
         </Link>
       )}
       {badge && (
@@ -32,4 +35,5 @@ export const PageHero = ({ badge, title, subtitle, showBack }: PageHeroProps) =>
       )}
     </div>
   </section>
-);
+  );
+};
