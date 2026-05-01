@@ -1,5 +1,5 @@
 import { useTranslation } from "react-i18next";
-import { Check, Globe } from "lucide-react";
+import { Check } from "lucide-react";
 import {
   DropdownMenu,
   DropdownMenuContent,
@@ -26,11 +26,9 @@ export const LanguageSwitcher = ({ className }: { className?: string }) => {
         aria-label={t("common.language")}
       >
         <span
-          className={`fi fi-${current.flag} !h-3.5 !w-5 rounded-[2px] shadow-sm`}
+          className={`fi fi-${current.flag} !h-4 !w-6 rounded-[2px] shadow-sm`}
           aria-hidden
         />
-        <span className="hidden sm:inline">{current.label}</span>
-        <Globe className="h-3.5 w-3.5 text-muted-foreground sm:hidden" />
       </DropdownMenuTrigger>
       <DropdownMenuContent align="end" className="min-w-[180px]">
         {SUPPORTED_LANGS.map((lng) => {
