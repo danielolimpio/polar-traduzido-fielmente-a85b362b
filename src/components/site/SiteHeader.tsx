@@ -26,34 +26,34 @@ export const SiteHeader = () => {
     <header className="sticky top-0 z-50 border-b border-border/50 bg-background/80 backdrop-blur-xl">
       <div className="container flex h-16 items-center justify-between">
         <Logo />
-        <nav className="hidden items-center gap-8 md:flex">
+        <nav className="hidden items-center gap-6 md:flex">
           {links.map((l) => (
             <NavLink
               key={l.to}
               to={l.to}
               className={({ isActive }) =>
                 cn(
-                  "text-sm transition-colors hover:text-foreground",
+                  "inline-flex justify-center text-center text-sm transition-colors hover:text-foreground",
                   isActive ? "text-foreground" : "text-muted-foreground",
                 )
               }
             >
-              {l.label}
+              <span className="inline-block min-w-[68px]">{l.label}</span>
             </NavLink>
           ))}
         </nav>
         <div className="flex items-center gap-2">
           <LanguageSwitcher className="hidden sm:inline-flex" />
-          <Button asChild variant="outline" size="sm" className="hidden border-primary/40 bg-primary/5 text-primary hover:bg-primary/10 hover:text-primary lg:inline-flex">
+          <Button asChild variant="outline" size="sm" className="hidden w-[88px] justify-center border-primary/40 bg-primary/5 text-primary hover:bg-primary/10 hover:text-primary lg:inline-flex">
             <Link to="/baixar-app" aria-label={t("common.downloadAppFull")}>
               <Smartphone className="mr-1.5 h-3.5 w-3.5" />
               {t("common.downloadApp")}
             </Link>
           </Button>
-          <Button asChild variant="ghost" size="sm" className="hidden sm:inline-flex">
+          <Button asChild variant="ghost" size="sm" className="hidden w-[80px] justify-center sm:inline-flex">
             <a href={SIGNUP_URL} target="_blank" rel="noopener noreferrer">{t("common.signIn")}</a>
           </Button>
-          <Button asChild variant="hero" size="sm">
+          <Button asChild variant="hero" size="sm" className="min-w-[112px] justify-center">
             <a href={SIGNUP_URL} target="_blank" rel="noopener noreferrer">
               {t("common.signUp")} <ArrowRight className="ml-1 h-3.5 w-3.5" />
             </a>
