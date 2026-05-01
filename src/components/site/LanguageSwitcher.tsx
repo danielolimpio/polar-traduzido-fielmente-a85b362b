@@ -1,5 +1,5 @@
 import { useTranslation } from "react-i18next";
-import { Check, Globe } from "lucide-react";
+import { Check } from "lucide-react";
 import {
   DropdownMenu,
   DropdownMenuContent,
