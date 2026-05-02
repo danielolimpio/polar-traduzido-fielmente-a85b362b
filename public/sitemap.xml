@@ -4,8 +4,11 @@
         xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://polartensor.trade/</loc>
-    <lastmod>2026-04-27</lastmod>
+    <lastmod>2026-05-02</lastmod>
     <xhtml:link rel="alternate" hreflang="pt-BR" href="https://polartensor.trade/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://polartensor.trade/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://polartensor.trade/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://polartensor.trade/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://polartensor.trade/"/>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
@@ -17,61 +20,89 @@
   </url>
   <url>
     <loc>https://polartensor.trade/sobre</loc>
-    <lastmod>2026-04-27</lastmod>
+    <lastmod>2026-05-02</lastmod>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://polartensor.trade/sobre"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://polartensor.trade/sobre"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://polartensor.trade/sobre"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://polartensor.trade/sobre"/>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://polartensor.trade/tecnologia</loc>
-    <lastmod>2026-04-27</lastmod>
+    <lastmod>2026-05-02</lastmod>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://polartensor.trade/tecnologia"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://polartensor.trade/tecnologia"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://polartensor.trade/tecnologia"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://polartensor.trade/tecnologia"/>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://polartensor.trade/planos</loc>
-    <lastmod>2026-04-27</lastmod>
+    <lastmod>2026-05-02</lastmod>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://polartensor.trade/planos"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://polartensor.trade/planos"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://polartensor.trade/planos"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://polartensor.trade/planos"/>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://polartensor.trade/recompensas</loc>
-    <lastmod>2026-04-27</lastmod>
+    <lastmod>2026-05-02</lastmod>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://polartensor.trade/recompensas"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://polartensor.trade/recompensas"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://polartensor.trade/recompensas"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://polartensor.trade/recompensas"/>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://polartensor.trade/consultoria</loc>
-    <lastmod>2026-04-27</lastmod>
+    <lastmod>2026-05-02</lastmod>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://polartensor.trade/consultoria"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://polartensor.trade/consultoria"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://polartensor.trade/consultoria"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://polartensor.trade/consultoria"/>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://polartensor.trade/faq</loc>
-    <lastmod>2026-04-27</lastmod>
+    <lastmod>2026-05-02</lastmod>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://polartensor.trade/faq"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://polartensor.trade/faq"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://polartensor.trade/faq"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://polartensor.trade/faq"/>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://polartensor.trade/baixar-app</loc>
-    <lastmod>2026-04-27</lastmod>
+    <lastmod>2026-05-02</lastmod>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://polartensor.trade/baixar-app"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://polartensor.trade/baixar-app"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://polartensor.trade/baixar-app"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://polartensor.trade/baixar-app"/>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://polartensor.trade/aviso-de-risco</loc>
-    <lastmod>2026-04-27</lastmod>
+    <lastmod>2026-05-02</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://polartensor.trade/privacidade</loc>
-    <lastmod>2026-04-27</lastmod>
+    <lastmod>2026-05-02</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.4</priority>
   </url>
   <url>
     <loc>https://polartensor.trade/termos</loc>
-    <lastmod>2026-04-27</lastmod>
+    <lastmod>2026-05-02</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.4</priority>
   </url>
