@@ -32,10 +32,36 @@ i18n
     },
   });
 
-i18n.on("languageChanged", (lng) => {
-  if (typeof document !== "undefined") {
-    document.documentElement.lang = lng;
+const LANG_TO_OG_LOCALE: Record<string, string> = {
+  pt: "pt_BR",
+  en: "en_US",
+  es: "es_ES",
+};
+
+const LANG_TO_HTML_LANG: Record<string, string> = {
+  pt: "pt-BR",
+  en: "en",
+  es: "es",
+};
+
+const setOrCreateMeta = (selector: string, attr: string, value: string) => {
+  if (typeof document === "undefined") return;
+  let el = document.head.querySelector<HTMLMetaElement>(selector);
+  if (!el) {
+    el = document.createElement("meta");
+    const m = selector.match(/\[([^=]+)="([^"]+)"\]/);
+    if (m) el.setAttribute(m[1], m[2]);
+    document.head.appendChild(el);
   }
+  el.setAttribute(attr, value);
+};
+
+i18n.on("languageChanged", (lng) => {
+  if (typeof document === "undefined") return;
+  const base = lng.split("-")[0];
+  document.documentElement.lang = LANG_TO_HTML_LANG[base] || lng;
+  const ogLocale = LANG_TO_OG_LOCALE[base] || "pt_BR";
+  setOrCreateMeta('meta[property="og:locale"]', "content", ogLocale);
 });
 
 export default i18n;
