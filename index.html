@@ -3,7 +3,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="theme-color" content="#0b1220" />
+    <meta name="theme-color" content="#0b1220" media="(prefers-color-scheme: dark)" />
+    <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)" />
+    <meta name="color-scheme" content="dark light" />
 
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-Q3DJXTYP5Y"></script>
@@ -23,9 +25,6 @@
     <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
     <meta name="googlebot" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
     <meta name="bingbot" content="index, follow" />
-    <meta name="rating" content="general" />
-    <meta name="revisit-after" content="3 days" />
-    <meta name="language" content="Portuguese" />
     <meta name="geo.region" content="BR" />
     <meta name="geo.placename" content="Brasil" />
     <meta name="geo.position" content="-15.7939869;-47.8828305" />
@@ -34,6 +33,9 @@
 
     <link rel="canonical" href="https://polartensor.trade/" />
     <link rel="alternate" hreflang="pt-BR" href="https://polartensor.trade/" />
+    <link rel="alternate" hreflang="pt" href="https://polartensor.trade/" />
+    <link rel="alternate" hreflang="en" href="https://polartensor.trade/" />
+    <link rel="alternate" hreflang="es" href="https://polartensor.trade/" />
     <link rel="alternate" hreflang="x-default" href="https://polartensor.trade/" />
     <link rel="icon" type="image/webp" href="/favicon.webp" />
     <link rel="apple-touch-icon" href="/favicon.webp" />
@@ -43,6 +45,8 @@
     <meta property="og:type" content="website" />
     <meta property="og:site_name" content="Polar Tensor" />
     <meta property="og:locale" content="pt_BR" />
+    <meta property="og:locale:alternate" content="en_US" />
+    <meta property="og:locale:alternate" content="es_ES" />
     <meta property="og:url" content="https://polartensor.trade/" />
     <meta property="og:title" content="Polar Tensor | Site Oficial — Trading com IA em Criptomoedas" />
     <meta property="og:description" content="Polar Tensor: redes neurais proprietárias operando criptomoedas 24/5 com baixa latência. Cadastre-se grátis na Polar Tensor." />
@@ -66,10 +70,12 @@
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="630" />
 
-    <!-- Performance hints -->
+    <!-- Performance hints (LCP / Core Web Vitals) -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="dns-prefetch" href="https://polar-tensor.com" />
+    <link rel="dns-prefetch" href="https://www.googletagmanager.com" />
+    <link rel="preload" as="image" href="/og-image.png" fetchpriority="high" />
 
     <!-- Structured data: Organization (with sameAs and contact) -->
     <script type="application/ld+json">
@@ -92,8 +98,8 @@
       "founders": [
         { "@type": "Person", "name": "Polar Tensor Team" }
       ],
-      "areaServed": ["BR", "US", "EU", "HK", "PA"],
-      "knowsLanguage": ["pt-BR", "en"],
+      "areaServed": ["BR", "US", "EU", "HK", "PA", "ES", "MX", "AR", "CO", "PT"],
+      "knowsLanguage": ["pt-BR", "pt-PT", "en", "es"],
       "sameAs": [
         "https://polar-tensor.com/",
         "https://www.instagram.com/polartensor",
@@ -103,7 +109,7 @@
       "contactPoint": [{
         "@type": "ContactPoint",
         "contactType": "customer support",
-        "availableLanguage": ["Portuguese", "English"],
+        "availableLanguage": ["Portuguese", "English", "Spanish"],
         "areaServed": "Worldwide"
       }]
     }
