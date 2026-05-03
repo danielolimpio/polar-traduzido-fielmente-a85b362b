@@ -7,20 +7,22 @@ import { SIGNUP_URL } from "@/lib/constants";
 import { useState } from "react";
 import { useTranslation } from "react-i18next";
 import { cn } from "@/lib/utils";
+import { useLocalizedPath } from "@/lib/routes";
 
 export const SiteHeader = () => {
   const [open, setOpen] = useState(false);
   const { t } = useTranslation();
 
   const links = [
-    { to: "/", label: t("nav.home") },
-    { to: "/sobre", label: t("nav.about") },
-    { to: "/tecnologia", label: t("nav.technology") },
-    { to: "/consultoria", label: t("nav.consultancy") },
-    { to: "/planos", label: t("nav.plans") },
-    { to: "/recompensas", label: t("nav.rewards") },
-    { to: "/faq", label: t("nav.faq") },
+    { to: useLocalizedPath("home"), label: t("nav.home") },
+    { to: useLocalizedPath("about"), label: t("nav.about") },
+    { to: useLocalizedPath("technology"), label: t("nav.technology") },
+    { to: useLocalizedPath("consultancy"), label: t("nav.consultancy") },
+    { to: useLocalizedPath("plans"), label: t("nav.plans") },
+    { to: useLocalizedPath("rewards"), label: t("nav.rewards") },
+    { to: useLocalizedPath("faq"), label: t("nav.faq") },
   ];
+  const downloadAppPath = useLocalizedPath("downloadApp");
 
   return (
     <header className="sticky top-0 z-50 border-b border-border/50 bg-background/80 backdrop-blur-xl">
