@@ -22,6 +22,10 @@
     "rewards": "Rewards",
     "faq": "FAQ"
   },
+  "home": {
+    "seoTitle": "Polar Tensor | AI Algorithmic Crypto Trading",
+    "seoDesc": "Polar Tensor: algorithmic trading platform with proprietary neural networks for cryptocurrencies. 24/5 operation on Binance, full transparency and multilingual support."
+  },
   "hero": {
     "badge": "Polar One System — Operational since 2024",
     "title1": "Polar Tensor",

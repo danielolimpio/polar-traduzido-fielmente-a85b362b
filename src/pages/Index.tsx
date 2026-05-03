@@ -36,6 +36,7 @@ import { SIGNUP_URL } from "@/lib/constants";
 import { PerformanceChart as Performance } from "@/components/site/PerformanceChart";
 import { BinancePanel } from "@/components/site/BinancePanel";
 import { VideoShowcase } from "@/components/site/VideoShowcase";
+import { Seo } from "@/components/site/Seo";
 
 const CtaButton = ({
   children,
@@ -447,23 +448,31 @@ const BinanceVideo = () => {
   );
 };
 
-const Index = () => (
-  <main className="min-h-screen bg-background">
-    <SiteHeader />
-    <Hero />
-    <VideoShowcase />
-    <Trust />
-    <TechnologySection />
-    <BinancePanel />
-    <BinanceVideo />
-    <Engine />
-    <Performance />
-    <Plans />
-    <Rewards />
-    <FAQ />
-    <CTA />
-    <SiteFooter />
-  </main>
-);
+const Index = () => {
+  const { t } = useTranslation();
+  return (
+    <main className="min-h-screen bg-background">
+      <Seo
+        title={t("home.seoTitle")}
+        description={t("home.seoDesc")}
+        routeKey="home"
+      />
+      <SiteHeader />
+      <Hero />
+      <VideoShowcase />
+      <Trust />
+      <TechnologySection />
+      <BinancePanel />
+      <BinanceVideo />
+      <Engine />
+      <Performance />
+      <Plans />
+      <Rewards />
+      <FAQ />
+      <CTA />
+      <SiteFooter />
+    </main>
+  );
+};
 
 export default Index;
