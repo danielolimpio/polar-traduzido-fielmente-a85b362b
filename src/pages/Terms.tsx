@@ -22,7 +22,7 @@ const Terms = () => {
       <Seo
         title={t("terms.seoTitle")}
         description={t("terms.seoDesc")}
-        canonical={`${SITE_URL}/termos`}
+        routeKey="terms"
       />
       <SiteHeader />
       <PageHero

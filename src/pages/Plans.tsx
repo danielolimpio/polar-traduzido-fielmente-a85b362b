@@ -25,7 +25,7 @@ const Plans = () => {
       <Seo
         title={t("plansPage.seoTitle")}
         description={t("plansPage.seoDesc")}
-        canonical={`${SITE_URL}/planos`}
+        routeKey="plans"
       />
       <SiteHeader />
       <PageHero

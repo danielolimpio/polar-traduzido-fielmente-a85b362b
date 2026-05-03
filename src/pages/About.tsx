@@ -28,7 +28,7 @@ const About = () => {
       <Seo
         title={t("about.seoTitle")}
         description={t("about.seoDesc")}
-        canonical={`${SITE_URL}/sobre`}
+        routeKey="about"
       />
       <SiteHeader />
       <PageHero

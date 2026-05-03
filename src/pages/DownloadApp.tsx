@@ -62,7 +62,7 @@ const DownloadApp = () => {
       <Seo
         title={t("downloadAppPage.seoTitle")}
         description={t("downloadAppPage.seoDesc")}
-        canonical={`${SITE_URL}/baixar-app`}
+        routeKey="downloadApp"
         jsonLd={jsonLd}
       />
       <SiteHeader />

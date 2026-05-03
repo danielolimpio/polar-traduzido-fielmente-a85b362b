@@ -22,7 +22,7 @@ const Privacy = () => {
       <Seo
         title={t("privacy.seoTitle")}
         description={t("privacy.seoDesc")}
-        canonical={`${SITE_URL}/privacidade`}
+        routeKey="privacy"
       />
       <SiteHeader />
       <PageHero
