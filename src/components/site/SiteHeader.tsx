@@ -47,7 +47,7 @@ export const SiteHeader = () => {
         <div className="flex items-center gap-2">
           <LanguageSwitcher className="hidden sm:inline-flex" />
           <Button asChild variant="outline" size="sm" className="hidden w-[88px] justify-center border-primary/40 bg-primary/5 text-primary hover:bg-primary/10 hover:text-primary lg:inline-flex">
-            <Link to="/baixar-app" aria-label={t("common.downloadAppFull")}>
+            <Link to={downloadAppPath} aria-label={t("common.downloadAppFull")}>
               <Smartphone className="mr-1.5 h-3.5 w-3.5" />
               {t("common.downloadApp")}
             </Link>
