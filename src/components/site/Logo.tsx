@@ -1,9 +1,10 @@
 import { Link } from "react-router-dom";
 import logo from "@/assets/logo-polar-tensor.webp";
+import { useLocalizedPath } from "@/lib/routes";
 
 export const Logo = ({ className = "" }: { className?: string }) => (
   <Link
-    to="/"
+    to={useLocalizedPath("home")}
     className={`flex items-center gap-2.5 ${className}`}
     aria-label="Polar Tensor — Página inicial"
     title="Polar Tensor"
