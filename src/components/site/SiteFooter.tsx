@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import { Trans, useTranslation } from "react-i18next";
 import { Lock, ShieldCheck, Building2, Landmark, Globe2, Banknote, FlaskConical, MapPin, AlertTriangle } from "lucide-react";
 import { Logo } from "./Logo";
+import { useLocalizedPath } from "@/lib/routes";
 
 const icons = [Building2, Landmark, Globe2, Banknote, FlaskConical, MapPin];
 
