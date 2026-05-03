@@ -36,6 +36,8 @@ import { SIGNUP_URL } from "@/lib/constants";
 import { PerformanceChart as Performance } from "@/components/site/PerformanceChart";
 import { BinancePanel } from "@/components/site/BinancePanel";
 import { VideoShowcase } from "@/components/site/VideoShowcase";
+import { Seo } from "@/components/site/Seo";
+import { useLocalizedPath } from "@/lib/routes";
 
 const CtaButton = ({
   children,
@@ -57,6 +59,7 @@ const CtaButton = ({
 
 const Hero = () => {
   const { t } = useTranslation();
+  const downloadAppPath = useLocalizedPath("downloadApp");
   return (
     <section className="relative overflow-hidden bg-gradient-hero">
       <div className="absolute inset-0 grid-bg opacity-40" />
@@ -87,7 +90,7 @@ const Hero = () => {
               {t("common.signUpFree")}
             </CtaButton>
             <Button asChild variant="outline" size="lg">
-              <Link to="/baixar-app" aria-label={t("common.downloadAppFull")}>
+              <Link to={downloadAppPath} aria-label={t("common.downloadAppFull")}>
                 <Smartphone className="mr-2 h-4 w-4" />
                 {t("common.downloadAppFull")}
               </Link>
@@ -245,6 +248,7 @@ const Engine = () => {
 
 const Plans = () => {
   const { t } = useTranslation();
+  const plansPath = useLocalizedPath("plans");
   const plans = (t("plansHome.items", { returnObjects: true }) as Array<{
     name: string; min: string; fee: string; features: string[];
   }>).map((p, i) => ({ ...p, featured: i === 1 }));
@@ -303,7 +307,7 @@ const Plans = () => {
 
         <div className="mt-10 text-center">
           <Button asChild variant="outline" size="lg">
-            <Link to="/planos">{t("plansHome.seeAll")} <ArrowRight className="ml-1 h-4 w-4" /></Link>
+            <Link to={plansPath}>{t("plansHome.seeAll")} <ArrowRight className="ml-1 h-4 w-4" /></Link>
           </Button>
         </div>
       </div>
@@ -447,23 +451,31 @@ const BinanceVideo = () => {
   );
 };
 
-const Index = () => (
-  <main className="min-h-screen bg-background">
-    <SiteHeader />
-    <Hero />
-    <VideoShowcase />
-    <Trust />
-    <TechnologySection />
-    <BinancePanel />
-    <BinanceVideo />
-    <Engine />
-    <Performance />
-    <Plans />
-    <Rewards />
-    <FAQ />
-    <CTA />
-    <SiteFooter />
-  </main>
-);
+const Index = () => {
+  const { t } = useTranslation();
+  return (
+    <main className="min-h-screen bg-background">
+      <Seo
+        title={t("home.seoTitle")}
+        description={t("home.seoDesc")}
+        routeKey="home"
+      />
+      <SiteHeader />
+      <Hero />
+      <VideoShowcase />
+      <Trust />
+      <TechnologySection />
+      <BinancePanel />
+      <BinanceVideo />
+      <Engine />
+      <Performance />
+      <Plans />
+      <Rewards />
+      <FAQ />
+      <CTA />
+      <SiteFooter />
+    </main>
+  );
+};
 
 export default Index;

@@ -23,7 +23,7 @@ const RiskDisclosure = () => {
       <Seo
         title={t("risk.seoTitle")}
         description={t("risk.seoDesc")}
-        canonical={`${SITE_URL}/aviso-de-risco`}
+        routeKey="risk"
       />
       <SiteHeader />
       <PageHero

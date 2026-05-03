@@ -17,8 +17,37 @@ import Rewards from "./pages/Rewards.tsx";
 import DownloadApp from "./pages/DownloadApp.tsx";
 import { WhatsAppFloat } from "./components/site/WhatsAppFloat.tsx";
 import { ScrollToTop } from "./components/site/ScrollToTop.tsx";
+import { LangFromPathSync } from "./components/site/LangFromPathSync.tsx";
+import { LANGS, ROUTE_SLUGS, RouteKey, langPrefix } from "./lib/routes.ts";
 
 const queryClient = new QueryClient();
+
+const PAGE_BY_KEY: Record<RouteKey, JSX.Element> = {
+  home: <Index />,
+  about: <About />,
+  technology: <Technology />,
+  consultancy: <Consultancy />,
+  plans: <Plans />,
+  rewards: <Rewards />,
+  privacy: <Privacy />,
+  terms: <Terms />,
+  risk: <RiskDisclosure />,
+  faq: <Faq />,
+  downloadApp: <DownloadApp />,
+};
+
+const buildRoutes = () => {
+  const nodes: JSX.Element[] = [];
+  for (const lang of LANGS) {
+    const prefix = langPrefix(lang); // "" para pt, "/en" ou "/es"
+    for (const key of Object.keys(PAGE_BY_KEY) as RouteKey[]) {
+      const slug = ROUTE_SLUGS[key][lang];
+      const path = key === "home" ? prefix || "/" : `${prefix}/${slug}`;
+      nodes.push(<Route key={`${lang}-${key}`} path={path} element={PAGE_BY_KEY[key]} />);
+    }
+  }
+  return nodes;
+};
 
 const App = () => (
   <QueryClientProvider client={queryClient}>
@@ -27,18 +56,9 @@ const App = () => (
       <Sonner />
       <BrowserRouter>
         <ScrollToTop />
+        <LangFromPathSync />
         <Routes>
-          <Route path="/" element={<Index />} />
-          <Route path="/sobre" element={<About />} />
-          <Route path="/tecnologia" element={<Technology />} />
-          <Route path="/consultoria" element={<Consultancy />} />
-          <Route path="/planos" element={<Plans />} />
-          <Route path="/privacidade" element={<Privacy />} />
-          <Route path="/termos" element={<Terms />} />
-          <Route path="/aviso-de-risco" element={<RiskDisclosure />} />
-          <Route path="/faq" element={<Faq />} />
-          <Route path="/recompensas" element={<Rewards />} />
-          <Route path="/baixar-app" element={<DownloadApp />} />
+          {buildRoutes()}
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>

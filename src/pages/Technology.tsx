@@ -28,7 +28,7 @@ const Technology = () => {
       <Seo
         title={t("technology.seoTitle")}
         description={t("technology.seoDesc")}
-        canonical={`${SITE_URL}/tecnologia`}
+        routeKey="technology"
       />
       <SiteHeader />
       <PageHero

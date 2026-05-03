@@ -1,10 +1,20 @@
 import { useEffect } from "react";
 import { useTranslation } from "react-i18next";
+import { RouteKey, buildAlternates, buildUrl } from "@/lib/routes";
 
 interface SeoProps {
   title: string;
   description: string;
-  canonical: string;
+  /**
+   * URL canônica completa. Opcional quando `routeKey` é fornecido —
+   * nesse caso é calculada automaticamente a partir do idioma atual.
+   */
+  canonical?: string;
+  /**
+   * Chave da rota: gera canonical localizada, alternates hreflang e og:url.
+   * Sempre prefira este modo para suportar /en/ e /es/.
+   */
+  routeKey?: RouteKey;
   image?: string;
   jsonLd?: object | object[];
 }
@@ -34,6 +44,12 @@ const upsertLink = (rel: string, href: string, hreflang?: string) => {
   link.href = href;
 };
 
+const removeAlternates = () => {
+  document.head
+    .querySelectorAll('link[rel="alternate"][hreflang]')
+    .forEach((el) => el.remove());
+};
+
 const LANG_TO_OG: Record<string, string> = {
   pt: "pt_BR",
   en: "en_US",
@@ -47,32 +63,39 @@ const LANG_TO_HTML: Record<string, string> = {
 
 const DEFAULT_OG_IMAGE = "https://polartensor.trade/og-image.png";
 
-export const Seo = ({ title, description, canonical, image, jsonLd }: SeoProps) => {
+export const Seo = ({ title, description, canonical, routeKey, image, jsonLd }: SeoProps) => {
   const { i18n } = useTranslation();
   const lang = (i18n.language || "pt").split("-")[0];
 
   useEffect(() => {
     const ogImage = image || DEFAULT_OG_IMAGE;
+    const resolvedCanonical =
+      canonical ||
+      (routeKey ? buildUrl(routeKey, (["pt", "en", "es"].includes(lang) ? lang : "pt") as "pt" | "en" | "es") : "");
+
     document.title = title;
     document.documentElement.lang = LANG_TO_HTML[lang] || lang;
 
     setMeta('meta[name="description"]', "content", description);
     setMeta('meta[property="og:title"]', "content", title);
     setMeta('meta[property="og:description"]', "content", description);
-    setMeta('meta[property="og:url"]', "content", canonical);
+    if (resolvedCanonical) setMeta('meta[property="og:url"]', "content", resolvedCanonical);
     setMeta('meta[property="og:image"]', "content", ogImage);
     setMeta('meta[property="og:locale"]', "content", LANG_TO_OG[lang] || "pt_BR");
     setMeta('meta[name="twitter:title"]', "content", title);
     setMeta('meta[name="twitter:description"]', "content", description);
     setMeta('meta[name="twitter:image"]', "content", ogImage);
 
-    upsertLink("canonical", canonical);
-    // Hreflang alternates (mesma URL para os 3 idiomas - estratégia atual)
-    upsertLink("alternate", canonical, "pt-BR");
-    upsertLink("alternate", canonical, "pt");
-    upsertLink("alternate", canonical, "en");
-    upsertLink("alternate", canonical, "es");
-    upsertLink("alternate", canonical, "x-default");
+    if (resolvedCanonical) upsertLink("canonical", resolvedCanonical);
+
+    // Recalcula alternates por idioma sempre que a rota muda
+    removeAlternates();
+    if (routeKey) {
+      const alts = buildAlternates(routeKey);
+      Object.entries(alts).forEach(([hl, href]) => upsertLink("alternate", href, hl));
+    } else if (resolvedCanonical) {
+      upsertLink("alternate", resolvedCanonical, "x-default");
+    }
 
     // Inject per-page JSON-LD
     const id = "seo-page-jsonld";
@@ -88,6 +111,6 @@ export const Seo = ({ title, description, canonical, image, jsonLd }: SeoProps) 
     return () => {
       document.getElementById(id)?.remove();
     };
-  }, [title, description, canonical, image, jsonLd, lang]);
+  }, [title, description, canonical, routeKey, image, jsonLd, lang]);
   return null;
 };

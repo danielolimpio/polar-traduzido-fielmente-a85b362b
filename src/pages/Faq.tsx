@@ -70,7 +70,7 @@ const Faq = () => {
       <Seo
         title={t("faqPage.seoTitle")}
         description={t("faqPage.seoDesc")}
-        canonical={`${SITE_URL}/faq`}
+        routeKey="faq"
       />
       <SiteHeader />
 

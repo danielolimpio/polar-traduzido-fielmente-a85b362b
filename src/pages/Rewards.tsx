@@ -34,7 +34,7 @@ const Rewards = () => {
       <Seo
         title={t("rewardsPage.seoTitle")}
         description={t("rewardsPage.seoDesc")}
-        canonical={`${SITE_URL}/recompensas`}
+        routeKey="rewards"
       />
       <SiteHeader />
       <PageHero

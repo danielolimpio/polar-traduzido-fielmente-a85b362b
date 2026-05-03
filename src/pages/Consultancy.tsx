@@ -41,7 +41,7 @@ const Consultancy = () => {
       <Seo
         title={t("consultancy.seoTitle")}
         description={t("consultancy.seoDesc")}
-        canonical={`${SITE_URL}/consultoria`}
+        routeKey="consultancy"
       />
       <SiteHeader />
       <PageHero

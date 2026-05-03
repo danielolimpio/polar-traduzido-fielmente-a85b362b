@@ -1,4 +1,5 @@
 import { useTranslation } from "react-i18next";
+import { useNavigate } from "react-router-dom";
 import { Check } from "lucide-react";
 import {
   DropdownMenu,
@@ -8,13 +9,23 @@ import {
 } from "@/components/ui/dropdown-menu";
 import { cn } from "@/lib/utils";
 import { SUPPORTED_LANGS } from "@/i18n";
+import { buildPath, useMatchedRouteKey, type LangCode } from "@/lib/routes";
 import "flag-icons/css/flag-icons.min.css";
 
 export const LanguageSwitcher = ({ className }: { className?: string }) => {
   const { i18n, t } = useTranslation();
+  const navigate = useNavigate();
+  const routeKey = useMatchedRouteKey();
   const current =
     SUPPORTED_LANGS.find((l) => l.code === i18n.resolvedLanguage) ??
     SUPPORTED_LANGS[0];
+
+  const handleChange = (code: string) => {
+    i18n.changeLanguage(code);
+    if (routeKey) {
+      navigate(buildPath(routeKey, code as LangCode));
+    }
+  };
 
   return (
     <DropdownMenu>
@@ -36,7 +47,7 @@ export const LanguageSwitcher = ({ className }: { className?: string }) => {
           return (
             <DropdownMenuItem
               key={lng.code}
-              onClick={() => i18n.changeLanguage(lng.code)}
+              onClick={() => handleChange(lng.code)}
               className={cn(
                 "flex cursor-pointer items-center gap-3 text-sm",
                 active && "bg-primary/10 text-primary",
