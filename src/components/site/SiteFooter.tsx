@@ -23,6 +23,16 @@ const items = [
 
 export const SiteFooter = () => {
   const { t } = useTranslation();
+  const homePath = useLocalizedPath("home");
+  const techPath = useLocalizedPath("technology");
+  const plansPath = useLocalizedPath("plans");
+  const downloadAppPath = useLocalizedPath("downloadApp");
+  const aboutPath = useLocalizedPath("about");
+  const consultancyPath = useLocalizedPath("consultancy");
+  const faqPath = useLocalizedPath("faq");
+  const termsPath = useLocalizedPath("terms");
+  const privacyPath = useLocalizedPath("privacy");
+  const riskPath = useLocalizedPath("risk");
   const regulations = (t("footer.regulations", { returnObjects: true }) as Array<{
     name: string; jurisdiction: string; description: string;
   }>) || [];
@@ -128,27 +138,27 @@ export const SiteFooter = () => {
           <div>
             <h4 className="mb-3 text-sm font-semibold">{t("footer.platform")}</h4>
             <ul className="space-y-2 text-sm text-muted-foreground">
-              <li><Link to="/" className="hover:text-foreground">{t("footer.links.home")}</Link></li>
-              <li><Link to="/tecnologia" className="hover:text-foreground">{t("footer.links.tech")}</Link></li>
-              <li><a href="/#desempenho" className="hover:text-foreground">{t("footer.links.perf")}</a></li>
-              <li><a href="/#planos" className="hover:text-foreground">{t("footer.links.plans")}</a></li>
-              <li><Link to="/baixar-app" className="font-medium text-primary hover:text-foreground">{t("footer.links.downloadApp")}</Link></li>
+              <li><Link to={homePath} className="hover:text-foreground">{t("footer.links.home")}</Link></li>
+              <li><Link to={techPath} className="hover:text-foreground">{t("footer.links.tech")}</Link></li>
+              <li><a href={`${homePath === "/" ? "" : homePath}/#desempenho`} className="hover:text-foreground">{t("footer.links.perf")}</a></li>
+              <li><a href={`${homePath === "/" ? "" : homePath}/#planos`} className="hover:text-foreground">{t("footer.links.plans")}</a></li>
+              <li><Link to={downloadAppPath} className="font-medium text-primary hover:text-foreground">{t("footer.links.downloadApp")}</Link></li>
             </ul>
           </div>
           <div>
             <h4 className="mb-3 text-sm font-semibold">{t("footer.company")}</h4>
             <ul className="space-y-2 text-sm text-muted-foreground">
-              <li><Link to="/sobre" className="hover:text-foreground">{t("footer.links.about")}</Link></li>
-              <li><Link to="/consultoria" className="hover:text-foreground">{t("footer.links.consultancy")}</Link></li>
-              <li><Link to="/faq" className="hover:text-foreground">{t("footer.links.faq")}</Link></li>
+              <li><Link to={aboutPath} className="hover:text-foreground">{t("footer.links.about")}</Link></li>
+              <li><Link to={consultancyPath} className="hover:text-foreground">{t("footer.links.consultancy")}</Link></li>
+              <li><Link to={faqPath} className="hover:text-foreground">{t("footer.links.faq")}</Link></li>
             </ul>
           </div>
           <div>
             <h4 className="mb-3 text-sm font-semibold">{t("footer.legal")}</h4>
             <ul className="space-y-2 text-sm text-muted-foreground">
-              <li><Link to="/termos" className="hover:text-foreground">{t("footer.links.terms")}</Link></li>
-              <li><Link to="/privacidade" className="hover:text-foreground">{t("footer.links.privacy")}</Link></li>
-              <li><Link to="/aviso-de-risco" className="hover:text-foreground">{t("footer.links.risk")}</Link></li>
+              <li><Link to={termsPath} className="hover:text-foreground">{t("footer.links.terms")}</Link></li>
+              <li><Link to={privacyPath} className="hover:text-foreground">{t("footer.links.privacy")}</Link></li>
+              <li><Link to={riskPath} className="hover:text-foreground">{t("footer.links.risk")}</Link></li>
             </ul>
           </div>
         </div>
