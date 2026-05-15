@@ -9,7 +9,7 @@ import {
   Smartphone, Apple, Bell, Wallet, TrendingUp, BarChart3, ShieldCheck, Zap, Eye, ArrowRight,
 } from "lucide-react";
 import { SIGNUP_URL, SITE_URL } from "@/lib/constants";
-import appHome from "@/assets/app-home.jpeg";
+import appHome from "@/assets/hero-app.webp";
 import appWallet from "@/assets/app-wallet.webp";
 import appTrading from "@/assets/app-trading.webp";
 import appTransparency from "@/assets/app-transparency.webp";
@@ -88,6 +88,10 @@ const DownloadApp = () => {
                 <img
                   src={appHome}
                   alt={t("downloadAppPage.imgAlt")}
+                  width={260}
+                  height={528}
+                  fetchPriority="high"
+                  decoding="async"
                   className="mx-auto w-[260px] rounded-[2.5rem] border border-border/50 shadow-card"
                   loading="eager"
                 />
@@ -131,6 +135,9 @@ const DownloadApp = () => {
                   <img
                     src={featureImages[idx]}
                     alt={t("downloadAppPage.featureAlt", { title: f.title })}
+                    width={280}
+                    height={568}
+                    decoding="async"
                     className="relative mx-auto w-full rounded-[2rem] border border-border/50 shadow-card"
                     loading="lazy"
                   />

@@ -11,7 +11,7 @@ import {
   TrendingUp, Calendar, Users, Code2, Database, Server, Sigma, ArrowRight,
 } from "lucide-react";
 import { SIGNUP_URL, SITE_URL } from "@/lib/constants";
-import felixPhoto from "@/assets/felix-bick.png";
+import felixPhoto from "@/assets/felix-bick.webp";
 
 const businessIcons = [Calendar, TrendingUp, Bot, CheckCircle2];
 const teamIcons = [Database, Server, Sigma, Code2];
@@ -131,7 +131,7 @@ const About = () => {
           <Card className="overflow-hidden bg-gradient-card">
             <div className="grid gap-0 md:grid-cols-[320px_1fr]">
               <div className="relative h-[420px] md:h-auto">
-                <img src={felixPhoto} alt={t("about.founderPhotoAlt")} className="h-full w-full object-cover" loading="lazy" />
+                <img src={felixPhoto} alt={t("about.founderPhotoAlt")} width={400} height={400} className="h-full w-full object-cover" loading="lazy" decoding="async" />
               </div>
               <div className="p-8 md:p-10">
                 <Badge variant="outline" className="border-primary/30 bg-primary/10 text-primary">{t("about.founderBadge")}</Badge>

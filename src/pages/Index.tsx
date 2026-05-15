@@ -29,7 +29,7 @@ import {
   Wallet,
   Zap,
 } from "lucide-react";
-import appImg from "@/assets/hero-app.jpeg";
+import appImg from "@/assets/hero-app.webp";
 import { SiteHeader } from "@/components/site/SiteHeader";
 import { SiteFooter } from "@/components/site/SiteFooter";
 import { SIGNUP_URL } from "@/lib/constants";
@@ -119,6 +119,11 @@ const Hero = () => {
             <img
               src={appImg}
               alt={t("hero.imageAlt")}
+              width={320}
+              height={650}
+              fetchPriority="high"
+              loading="eager"
+              decoding="async"
               className="mx-auto w-[280px] rounded-[2.5rem] border border-border/50 shadow-card md:w-[320px]"
             />
           </div>
