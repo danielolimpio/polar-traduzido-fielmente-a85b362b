@@ -3,24 +3,39 @@
 # ----------------------------------------------------------------------
 # 1) SPA Fallback: todas as rotas internas servem o index.html
 # ----------------------------------------------------------------------
+# Desabilita o auto-redirect 301 do mod_dir que adiciona "/" ao final
+# (causa "Página com redirecionamento" no Google Search Console).
+DirectoryIndex index.html
+<IfModule mod_dir.c>
+  DirectorySlash Off
+</IfModule>
+
 <IfModule mod_rewrite.c>
   RewriteEngine On
   RewriteBase /
 
-  # Redirect canônico ÚNICO: força HTTPS + remove www em um só salto (301)
-  # Evita cadeia http://www -> https://www -> https:// que o Google marca
-  # como "Erro de redirecionamento" no Search Console.
+  # 1) Canônico ÚNICO: força HTTPS + remove www em um só salto (301)
   RewriteCond %{HTTPS} off [OR]
   RewriteCond %{HTTP_HOST} ^www\.polartensor\.trade$ [NC]
   RewriteRule ^(.*)$ https://polartensor.trade/$1 [L,R=301]
 
-  # Não reescreve arquivos ou diretórios reais (assets, sitemap, robots, etc.)
-  RewriteCond %{REQUEST_FILENAME} -f [OR]
-  RewriteCond %{REQUEST_FILENAME} -d
+  # 2) Remove barra final de URLs (canonicalização) — evita duplicidade
+  #    /sobre/  -> /sobre   (301)
+  RewriteCond %{REQUEST_URI} !^/$
+  RewriteRule ^(.+)/$ /$1 [L,R=301]
+
+  # 3) Não reescreve arquivos reais (assets, sitemap.xml, robots.txt, etc.)
+  RewriteCond %{REQUEST_FILENAME} -f
   RewriteRule ^ - [L]
 
-  # Qualquer outra rota -> index.html (SPA do React Router resolve)
-  RewriteRule ^ index.html [L]
+  # 4) Se existir um diretório com index.html (rotas pré-renderizadas:
+  #    /sobre/index.html, /en/about/index.html, etc.), serve internamente
+  #    SEM redirect — assim a URL canônica /sobre responde 200 direto.
+  RewriteCond %{DOCUMENT_ROOT}/$1/index.html -f
+  RewriteRule ^(.+?)/?$ /$1/index.html [L]
+
+  # 5) Fallback SPA: qualquer outra rota -> index.html (React Router resolve)
+  RewriteRule ^ /index.html [L]
 </IfModule>
 
 # ----------------------------------------------------------------------
