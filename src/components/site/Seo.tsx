@@ -61,7 +61,7 @@ const LANG_TO_HTML: Record<string, string> = {
   es: "es",
 };
 
-const DEFAULT_OG_IMAGE = "https://polartensor.trade/og-image.png";
+const DEFAULT_OG_IMAGE = "https://polartensor.trade/og-image.jpg";
 
 export const Seo = ({ title, description, canonical, routeKey, image, jsonLd }: SeoProps) => {
   const { i18n } = useTranslation();
