@@ -9,7 +9,7 @@ import {
   Smartphone, Apple, Bell, Wallet, TrendingUp, BarChart3, ShieldCheck, Zap, Eye, ArrowRight,
 } from "lucide-react";
 import { SIGNUP_URL, SITE_URL } from "@/lib/constants";
-import appHome from "@/assets/app-home.jpeg";
+import appHome from "@/assets/hero-app.webp";
 import appWallet from "@/assets/app-wallet.webp";
 import appTrading from "@/assets/app-trading.webp";
 import appTransparency from "@/assets/app-transparency.webp";

@@ -29,7 +29,7 @@ import {
   Wallet,
   Zap,
 } from "lucide-react";
-import appImg from "@/assets/hero-app.jpeg";
+import appImg from "@/assets/hero-app.webp";
 import { SiteHeader } from "@/components/site/SiteHeader";
 import { SiteFooter } from "@/components/site/SiteFooter";
 import { SIGNUP_URL } from "@/lib/constants";
