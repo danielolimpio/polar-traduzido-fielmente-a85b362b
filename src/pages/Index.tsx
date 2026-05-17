@@ -39,6 +39,7 @@ import { BinancePanel } from "@/components/site/BinancePanel";
 import { VideoShowcase } from "@/components/site/VideoShowcase";
 import { Seo } from "@/components/site/Seo";
 import { useLocalizedPath } from "@/lib/routes";
+import { ResponsiveImage } from "@/components/site/ResponsiveImage";
 
 const CtaButton = ({
   children,
