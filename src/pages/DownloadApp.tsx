@@ -152,7 +152,7 @@ const DownloadApp = () => {
                     alt={t("downloadAppPage.featureAlt", { title: f.title })}
                     width={280}
                     height={568}
-                    sizes="(min-width: 1024px) 280px, 80vw"
+                    sizes="280px"
                     wrapperClassName="relative mx-auto w-full rounded-[2rem] border border-border/50 shadow-card"
                     className="block h-auto w-full"
                   />
