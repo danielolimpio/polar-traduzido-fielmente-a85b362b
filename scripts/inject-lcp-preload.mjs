@@ -1,7 +1,7 @@
-// Injeta <link rel="preload" as="image" imagesrcset=... imagesizes=...
-// type="image/avif" fetchpriority="high"> nas páginas com LCP de imagem.
-// Roda DEPOIS do vite build + prerender. Lê dist/assets/ para descobrir os
-// arquivos com hash gerados pelo vite-imagetools e monta o srcset correto.
+// Injeta <link rel="preload" as="image" ...> nas páginas com LCP de imagem.
+// Roda DEPOIS do vite build + prerender.
+// Extrai os srcsets diretamente do bundle JS (string literais emitidas por
+// vite-imagetools com `?as=picture`).
 
 import { readdir, readFile, writeFile } from "node:fs/promises";
 import { existsSync } from "node:fs";
@@ -12,7 +12,7 @@ const __dirname = dirname(fileURLToPath(import.meta.url));
 const distDir = join(__dirname, "..", "dist");
 const assetsDir = join(distDir, "assets");
 
-// Para cada rota, qual imagem é o LCP, quais larguras esperar e qual sizes usar.
+// Por rota: imagem LCP, widths esperados e atributo sizes.
 const TARGETS = [
   {
     htmlPaths: ["index.html", "en/index.html", "es/index.html"],
@@ -32,24 +32,41 @@ const TARGETS = [
   },
 ];
 
-async function findAssetFiles() {
-  if (!existsSync(assetsDir)) return [];
-  return readdir(assetsDir);
+async function loadBundles() {
+  if (!existsSync(assetsDir)) return "";
+  const files = await readdir(assetsDir);
+  const jsFiles = files.filter((f) => f.endsWith(".js"));
+  const chunks = await Promise.all(
+    jsFiles.map((f) => readFile(join(assetsDir, f), "utf8").catch(() => "")),
+  );
+  return chunks.join("\n");
 }
 
-function matchVariant(files, basename, width, ext) {
-  // vite-imagetools emite algo como: hero-app-280.<hash>.avif
-  const re = new RegExp(`^${basename}-${width}\\.[a-z0-9]+\\.${ext}$`, "i");
-  return files.find((f) => re.test(f));
+function escapeRegex(s) {
+  return s.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
 }
 
-function buildSrcset(files, basename, widths, ext) {
-  const parts = [];
-  for (const w of widths) {
-    const f = matchVariant(files, basename, w, ext);
-    if (f) parts.push(`/assets/${f} ${w}w`);
+// Procura no bundle um srcset que case com o basename, formato e EXATAMENTE
+// os widths esperados (para distinguir variantes diferentes do mesmo arquivo).
+function findSrcset(bundle, basename, widths, ext) {
+  const baseEsc = escapeRegex(basename);
+  const segment = `/assets/${baseEsc}-[A-Za-z0-9_-]+\\.${ext} (\\d+)w`;
+  // Casa uma lista contígua de N segmentos separados por ", "
+  const listRe = new RegExp(
+    `(?:${segment})(?:, ${segment}){${widths.length - 1}}`,
+    "g",
+  );
+  const matches = bundle.match(listRe) || [];
+  for (const m of matches) {
+    const ws = [...m.matchAll(/ (\d+)w/g)].map((x) => Number(x[1]));
+    if (
+      ws.length === widths.length &&
+      ws.every((w, i) => w === widths[i])
+    ) {
+      return m;
+    }
   }
-  return parts.join(", ");
+  return null;
 }
 
 async function injectInto(htmlRelPath, srcsetAvif, srcsetWebp, sizes) {
@@ -59,11 +76,7 @@ async function injectInto(htmlRelPath, srcsetAvif, srcsetWebp, sizes) {
     return false;
   }
   let html = await readFile(fullPath, "utf8");
-
-  // Evita duplicação se rodar de novo.
-  if (html.includes('data-lcp-preload="1"')) {
-    return false;
-  }
+  if (html.includes('data-lcp-preload="1"')) return false;
 
   const tags = [];
   if (srcsetAvif) {
@@ -89,13 +102,15 @@ async function main() {
     console.error("[lcp-preload] dist/ não existe — rode o build antes.");
     process.exit(1);
   }
-  const files = await findAssetFiles();
+  const bundle = await loadBundles();
   let total = 0;
   for (const t of TARGETS) {
-    const srcsetAvif = buildSrcset(files, t.basename, t.widths, "avif");
-    const srcsetWebp = buildSrcset(files, t.basename, t.widths, "webp");
+    const srcsetAvif = findSrcset(bundle, t.basename, t.widths, "avif");
+    const srcsetWebp = findSrcset(bundle, t.basename, t.widths, "webp");
     if (!srcsetAvif && !srcsetWebp) {
-      console.warn(`[lcp-preload] nenhum asset encontrado para ${t.basename}`);
+      console.warn(
+        `[lcp-preload] srcset não encontrado para ${t.basename} (${t.widths.join("/")})`,
+      );
       continue;
     }
     for (const p of t.htmlPaths) {
