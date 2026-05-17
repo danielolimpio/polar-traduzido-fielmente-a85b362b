@@ -24,7 +24,13 @@ import appPortfolioBlur from "@/assets/app-portfolio.webp?w=24&blur=400&format=w
 const APP_STORE_URL = "https://apps.apple.com/app/polar-tensor";
 const PLAY_STORE_URL = "https://play.google.com/store/apps/details?id=com.polartensor";
 
-const featureImages = [appHome, appWallet, appTrading, appTransparency];
+appPortfolioPic; appPortfolioBlur; // (reserved for future feature slot)
+const featurePictures = [
+  { pic: appHomePic, blur: appHomeBlur },
+  { pic: appWalletPic, blur: appWalletBlur },
+  { pic: appTradingPic, blur: appTradingBlur },
+  { pic: appTransparencyPic, blur: appTransparencyBlur },
+];
 const featureIcons = [Eye, Wallet, TrendingUp, BarChart3];
 const highlightIcons = [Zap, Bell, ShieldCheck];
 
