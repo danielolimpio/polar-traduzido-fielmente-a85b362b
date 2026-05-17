@@ -9,10 +9,17 @@ import {
   Smartphone, Apple, Bell, Wallet, TrendingUp, BarChart3, ShieldCheck, Zap, Eye, ArrowRight,
 } from "lucide-react";
 import { SIGNUP_URL, SITE_URL } from "@/lib/constants";
-import appHome from "@/assets/hero-app.webp";
-import appWallet from "@/assets/app-wallet.webp";
-import appTrading from "@/assets/app-trading.webp";
-import appTransparency from "@/assets/app-transparency.webp";
+import { ResponsiveImage } from "@/components/site/ResponsiveImage";
+import appHomePic from "@/assets/hero-app.webp?w=260;520&format=avif;webp&as=picture";
+import appHomeBlur from "@/assets/hero-app.webp?w=24&blur=400&format=webp&as=src";
+import appWalletPic from "@/assets/app-wallet.webp?w=280;560&format=avif;webp&as=picture";
+import appWalletBlur from "@/assets/app-wallet.webp?w=24&blur=400&format=webp&as=src";
+import appTradingPic from "@/assets/app-trading.webp?w=280;560&format=avif;webp&as=picture";
+import appTradingBlur from "@/assets/app-trading.webp?w=24&blur=400&format=webp&as=src";
+import appTransparencyPic from "@/assets/app-transparency.webp?w=280;560&format=avif;webp&as=picture";
+import appTransparencyBlur from "@/assets/app-transparency.webp?w=24&blur=400&format=webp&as=src";
+import appPortfolioPic from "@/assets/app-portfolio.webp?w=280;560&format=avif;webp&as=picture";
+import appPortfolioBlur from "@/assets/app-portfolio.webp?w=24&blur=400&format=webp&as=src";
 
 const APP_STORE_URL = "https://apps.apple.com/app/polar-tensor";
 const PLAY_STORE_URL = "https://play.google.com/store/apps/details?id=com.polartensor";
