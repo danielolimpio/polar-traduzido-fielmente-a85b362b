@@ -11,7 +11,9 @@ import {
   TrendingUp, Calendar, Users, Code2, Database, Server, Sigma, ArrowRight,
 } from "lucide-react";
 import { SIGNUP_URL, SITE_URL } from "@/lib/constants";
-import felixPhoto from "@/assets/felix-bick.webp";
+import felixPicture from "@/assets/felix-bick.webp?w=200;400;600&format=avif;webp&as=picture";
+import felixBlur from "@/assets/felix-bick.webp?w=24&blur=400&format=webp&as=src";
+import { ResponsiveImage } from "@/components/site/ResponsiveImage";
 
 const businessIcons = [Calendar, TrendingUp, Bot, CheckCircle2];
 const teamIcons = [Database, Server, Sigma, Code2];
