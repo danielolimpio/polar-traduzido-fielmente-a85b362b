@@ -98,15 +98,16 @@ const DownloadApp = () => {
             <div className="relative">
               <div className="absolute -inset-6 rounded-[3rem] bg-gradient-primary opacity-25 blur-2xl" />
               <div className="relative animate-float">
-                <img
-                  src={appHome}
+                <ResponsiveImage
+                  picture={appHomePic}
+                  placeholder={appHomeBlur}
                   alt={t("downloadAppPage.imgAlt")}
                   width={260}
                   height={528}
-                  fetchPriority="high"
-                  decoding="async"
-                  className="mx-auto w-[260px] rounded-[2.5rem] border border-border/50 shadow-card"
-                  loading="eager"
+                  sizes="260px"
+                  eager
+                  wrapperClassName="mx-auto w-[260px] rounded-[2.5rem] border border-border/50 shadow-card"
+                  className="block h-auto w-full"
                 />
               </div>
             </div>
