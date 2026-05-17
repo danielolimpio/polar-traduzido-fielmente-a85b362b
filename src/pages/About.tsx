@@ -11,7 +11,7 @@ import {
   TrendingUp, Calendar, Users, Code2, Database, Server, Sigma, ArrowRight,
 } from "lucide-react";
 import { SIGNUP_URL, SITE_URL } from "@/lib/constants";
-import felixPicture from "@/assets/felix-bick.webp?w=200;400;600&format=avif;webp&as=picture";
+import felixPicture from "@/assets/felix-bick.webp?w=160;240;320&format=avif;webp&as=picture";
 import felixBlur from "@/assets/felix-bick.webp?w=24&blur=400&format=webp&as=src";
 import { ResponsiveImage } from "@/components/site/ResponsiveImage";
 
