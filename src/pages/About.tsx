@@ -11,7 +11,9 @@ import {
   TrendingUp, Calendar, Users, Code2, Database, Server, Sigma, ArrowRight,
 } from "lucide-react";
 import { SIGNUP_URL, SITE_URL } from "@/lib/constants";
-import felixPhoto from "@/assets/felix-bick.webp";
+import felixPicture from "@/assets/felix-bick.webp?w=200;400;600&format=avif;webp&as=picture";
+import felixBlur from "@/assets/felix-bick.webp?w=24&blur=400&format=webp&as=src";
+import { ResponsiveImage } from "@/components/site/ResponsiveImage";
 
 const businessIcons = [Calendar, TrendingUp, Bot, CheckCircle2];
 const teamIcons = [Database, Server, Sigma, Code2];
@@ -131,7 +133,16 @@ const About = () => {
           <Card className="overflow-hidden bg-gradient-card">
             <div className="grid gap-0 md:grid-cols-[320px_1fr]">
               <div className="relative h-[420px] md:h-auto">
-                <img src={felixPhoto} alt={t("about.founderPhotoAlt")} width={400} height={400} className="h-full w-full object-cover" loading="lazy" decoding="async" />
+                <ResponsiveImage
+                  picture={felixPicture}
+                  placeholder={felixBlur}
+                  alt={t("about.founderPhotoAlt")}
+                  width={400}
+                  height={400}
+                  sizes="(min-width: 768px) 320px, 100vw"
+                  wrapperClassName="h-full w-full"
+                  className="h-full w-full object-cover"
+                />
               </div>
               <div className="p-8 md:p-10">
                 <Badge variant="outline" className="border-primary/30 bg-primary/10 text-primary">{t("about.founderBadge")}</Badge>

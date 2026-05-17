@@ -29,7 +29,8 @@ import {
   Wallet,
   Zap,
 } from "lucide-react";
-import appImg from "@/assets/hero-app.webp";
+import heroPicture from "@/assets/hero-app.webp?w=280;320;560;640&format=avif;webp&as=picture";
+import heroPlaceholder from "@/assets/hero-app.webp?w=24&blur=400&format=webp&as=src";
 import { SiteHeader } from "@/components/site/SiteHeader";
 import { SiteFooter } from "@/components/site/SiteFooter";
 import { SIGNUP_URL } from "@/lib/constants";
@@ -38,6 +39,7 @@ import { BinancePanel } from "@/components/site/BinancePanel";
 import { VideoShowcase } from "@/components/site/VideoShowcase";
 import { Seo } from "@/components/site/Seo";
 import { useLocalizedPath } from "@/lib/routes";
+import { ResponsiveImage } from "@/components/site/ResponsiveImage";
 
 const CtaButton = ({
   children,
@@ -116,15 +118,16 @@ const Hero = () => {
         <div className="relative animate-fade-up [animation-delay:200ms]">
           <div className="absolute -inset-4 rounded-3xl bg-gradient-primary opacity-20 blur-2xl" />
           <div className="relative animate-float">
-            <img
-              src={appImg}
+            <ResponsiveImage
+              picture={heroPicture}
+              placeholder={heroPlaceholder}
               alt={t("hero.imageAlt")}
               width={320}
               height={650}
-              fetchPriority="high"
-              loading="eager"
-              decoding="async"
-              className="mx-auto w-[280px] rounded-[2.5rem] border border-border/50 shadow-card md:w-[320px]"
+              sizes="(min-width: 768px) 320px, 280px"
+              eager
+              wrapperClassName="mx-auto w-[280px] rounded-[2.5rem] border border-border/50 shadow-card md:w-[320px]"
+              className="block h-auto w-full"
             />
           </div>
         </div>

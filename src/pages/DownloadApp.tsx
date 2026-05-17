@@ -9,15 +9,28 @@ import {
   Smartphone, Apple, Bell, Wallet, TrendingUp, BarChart3, ShieldCheck, Zap, Eye, ArrowRight,
 } from "lucide-react";
 import { SIGNUP_URL, SITE_URL } from "@/lib/constants";
-import appHome from "@/assets/hero-app.webp";
-import appWallet from "@/assets/app-wallet.webp";
-import appTrading from "@/assets/app-trading.webp";
-import appTransparency from "@/assets/app-transparency.webp";
+import { ResponsiveImage } from "@/components/site/ResponsiveImage";
+import appHomePic from "@/assets/hero-app.webp?w=260;520&format=avif;webp&as=picture";
+import appHomeBlur from "@/assets/hero-app.webp?w=24&blur=400&format=webp&as=src";
+import appWalletPic from "@/assets/app-wallet.webp?w=280;560&format=avif;webp&as=picture";
+import appWalletBlur from "@/assets/app-wallet.webp?w=24&blur=400&format=webp&as=src";
+import appTradingPic from "@/assets/app-trading.webp?w=280;560&format=avif;webp&as=picture";
+import appTradingBlur from "@/assets/app-trading.webp?w=24&blur=400&format=webp&as=src";
+import appTransparencyPic from "@/assets/app-transparency.webp?w=280;560&format=avif;webp&as=picture";
+import appTransparencyBlur from "@/assets/app-transparency.webp?w=24&blur=400&format=webp&as=src";
+import appPortfolioPic from "@/assets/app-portfolio.webp?w=280;560&format=avif;webp&as=picture";
+import appPortfolioBlur from "@/assets/app-portfolio.webp?w=24&blur=400&format=webp&as=src";
 
 const APP_STORE_URL = "https://apps.apple.com/app/polar-tensor";
 const PLAY_STORE_URL = "https://play.google.com/store/apps/details?id=com.polartensor";
 
-const featureImages = [appHome, appWallet, appTrading, appTransparency];
+appPortfolioPic; appPortfolioBlur; // (reserved for future feature slot)
+const featurePictures = [
+  { pic: appHomePic, blur: appHomeBlur },
+  { pic: appWalletPic, blur: appWalletBlur },
+  { pic: appTradingPic, blur: appTradingBlur },
+  { pic: appTransparencyPic, blur: appTransparencyBlur },
+];
 const featureIcons = [Eye, Wallet, TrendingUp, BarChart3];
 const highlightIcons = [Zap, Bell, ShieldCheck];
 
@@ -85,15 +98,16 @@ const DownloadApp = () => {
             <div className="relative">
               <div className="absolute -inset-6 rounded-[3rem] bg-gradient-primary opacity-25 blur-2xl" />
               <div className="relative animate-float">
-                <img
-                  src={appHome}
+                <ResponsiveImage
+                  picture={appHomePic}
+                  placeholder={appHomeBlur}
                   alt={t("downloadAppPage.imgAlt")}
                   width={260}
                   height={528}
-                  fetchPriority="high"
-                  decoding="async"
-                  className="mx-auto w-[260px] rounded-[2.5rem] border border-border/50 shadow-card"
-                  loading="eager"
+                  sizes="260px"
+                  eager
+                  wrapperClassName="mx-auto w-[260px] rounded-[2.5rem] border border-border/50 shadow-card"
+                  className="block h-auto w-full"
                 />
               </div>
             </div>
@@ -132,14 +146,15 @@ const DownloadApp = () => {
               >
                 <div className="relative mx-auto w-full max-w-[280px]">
                   <div className="absolute -inset-4 rounded-[2.5rem] bg-gradient-primary opacity-20 blur-2xl" />
-                  <img
-                    src={featureImages[idx]}
+                  <ResponsiveImage
+                    picture={featurePictures[idx].pic}
+                    placeholder={featurePictures[idx].blur}
                     alt={t("downloadAppPage.featureAlt", { title: f.title })}
                     width={280}
                     height={568}
-                    decoding="async"
-                    className="relative mx-auto w-full rounded-[2rem] border border-border/50 shadow-card"
-                    loading="lazy"
+                    sizes="(min-width: 1024px) 280px, 80vw"
+                    wrapperClassName="relative mx-auto w-full rounded-[2rem] border border-border/50 shadow-card"
+                    className="block h-auto w-full"
                   />
                 </div>
                 <div>
