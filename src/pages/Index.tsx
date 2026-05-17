@@ -29,7 +29,8 @@ import {
   Wallet,
   Zap,
 } from "lucide-react";
-import appImg from "@/assets/hero-app.webp";
+import heroPicture from "@/assets/hero-app.webp?w=280;320;560;640&format=avif;webp&as=picture";
+import heroPlaceholder from "@/assets/hero-app.webp?w=24&blur=400&format=webp&as=src";
 import { SiteHeader } from "@/components/site/SiteHeader";
 import { SiteFooter } from "@/components/site/SiteFooter";
 import { SIGNUP_URL } from "@/lib/constants";
