@@ -146,14 +146,15 @@ const DownloadApp = () => {
               >
                 <div className="relative mx-auto w-full max-w-[280px]">
                   <div className="absolute -inset-4 rounded-[2.5rem] bg-gradient-primary opacity-20 blur-2xl" />
-                  <img
-                    src={featureImages[idx]}
+                  <ResponsiveImage
+                    picture={featurePictures[idx].pic}
+                    placeholder={featurePictures[idx].blur}
                     alt={t("downloadAppPage.featureAlt", { title: f.title })}
                     width={280}
                     height={568}
-                    decoding="async"
-                    className="relative mx-auto w-full rounded-[2rem] border border-border/50 shadow-card"
-                    loading="lazy"
+                    sizes="(min-width: 1024px) 280px, 80vw"
+                    wrapperClassName="relative mx-auto w-full rounded-[2rem] border border-border/50 shadow-card"
+                    className="block h-auto w-full"
                   />
                 </div>
                 <div>
