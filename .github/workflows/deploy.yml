@@ -29,6 +29,9 @@ jobs:
       - name: Pré-renderizar rotas para SEO (Google Search Console)
         run: node scripts/prerender.mjs
 
+      - name: Injetar preload da imagem LCP (Core Web Vitals)
+        run: node scripts/inject-lcp-preload.mjs
+
       - name: Gerar arquivo de validação IndexNow
         env:
           INDEXNOW_KEY: ${{ secrets.INDEXNOW_KEY }}
