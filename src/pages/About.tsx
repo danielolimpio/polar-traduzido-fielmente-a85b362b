@@ -139,7 +139,7 @@ const About = () => {
                   alt={t("about.founderPhotoAlt")}
                   width={400}
                   height={400}
-                  sizes="(min-width: 768px) 320px, 100vw"
+                  sizes="(min-width: 768px) 320px, (min-width: 640px) 50vw, 100vw"
                   wrapperClassName="h-full w-full"
                   className="h-full w-full object-cover"
                 />
