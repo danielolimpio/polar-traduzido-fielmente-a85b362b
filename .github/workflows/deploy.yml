@@ -45,8 +45,8 @@ jobs:
           FTP_HOST: ${{ secrets.FTP_HOST }}
           FTP_USER: ${{ secrets.FTP_USER }}
           FTP_PASS: ${{ secrets.FTP_PASS }}
-          FTP_PORT: ${{ secrets.FTP_PORT || '65002' }}
-          FTP_PROTOCOL: ${{ secrets.FTP_PROTOCOL || 'sftp' }}
+          FTP_PORT: ${{ secrets.FTP_PORT }}
+          FTP_PROTOCOL: ${{ secrets.FTP_PROTOCOL }}
           FTP_SERVER_DIR: ${{ secrets.FTP_SERVER_DIR || '/' }}
         run: |
           sudo apt-get update
@@ -54,19 +54,31 @@ jobs:
           test -n "$FTP_HOST"
           test -n "$FTP_USER"
           test -n "$FTP_PASS"
-          mkdir -p ~/.ssh
-          ssh-keyscan -p "$FTP_PORT" -H "$FTP_HOST" >> ~/.ssh/known_hosts
-          chmod 600 ~/.ssh/known_hosts
-          lftp -u "$FTP_USER","$FTP_PASS" -p "$FTP_PORT" "$FTP_PROTOCOL://$FTP_HOST" <<EOF
-          set net:timeout 30
-          set net:max-retries 3
+          deploy_attempt() {
+            protocol="$1"
+            port="$2"
+            if [ "$protocol" = "sftp" ]; then
+              mkdir -p ~/.ssh
+              ssh-keyscan -p "$port" -H "$FTP_HOST" >> ~/.ssh/known_hosts 2>/dev/null || true
+              chmod 600 ~/.ssh/known_hosts
+            fi
+            lftp -u "$FTP_USER","$FTP_PASS" -p "$port" "$protocol://$FTP_HOST" <<EOF
+          set net:timeout 25
+          set net:max-retries 2
           set net:reconnect-interval-base 5
           set sftp:auto-confirm yes
           set ftp:ssl-allow true
+          set ftp:passive-mode true
           set ssl:verify-certificate no
-          mirror --reverse --delete --verbose --parallel=2 ./dist/ "$FTP_SERVER_DIR"
+          mirror --reverse --delete --verbose --parallel=1 ./dist/ "$FTP_SERVER_DIR"
           bye
           EOF
+          }
+          if [ -n "$FTP_PROTOCOL" ] && [ -n "$FTP_PORT" ]; then
+            deploy_attempt "$FTP_PROTOCOL" "$FTP_PORT"
+          else
+            deploy_attempt sftp 65002 || deploy_attempt ftps 21 || deploy_attempt ftp 21
+          fi
 
       - name: Notificar motores de busca (IndexNow + Bing)
         env:
