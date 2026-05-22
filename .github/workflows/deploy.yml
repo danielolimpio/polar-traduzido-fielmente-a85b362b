@@ -54,10 +54,14 @@ jobs:
           test -n "$FTP_HOST"
           test -n "$FTP_USER"
           test -n "$FTP_PASS"
+          mkdir -p ~/.ssh
+          ssh-keyscan -p "$FTP_PORT" -H "$FTP_HOST" >> ~/.ssh/known_hosts
+          chmod 600 ~/.ssh/known_hosts
           lftp -u "$FTP_USER","$FTP_PASS" -p "$FTP_PORT" "$FTP_PROTOCOL://$FTP_HOST" <<EOF
           set net:timeout 30
           set net:max-retries 3
           set net:reconnect-interval-base 5
+          set sftp:auto-confirm yes
           set ftp:ssl-allow true
           set ssl:verify-certificate no
           mirror --reverse --delete --verbose --parallel=2 ./dist/ "$FTP_SERVER_DIR"
