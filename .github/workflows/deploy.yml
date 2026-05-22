@@ -40,23 +40,29 @@ jobs:
       - name: Mostrar arquivos gerados
         run: ls -la dist/
 
-      - name: Deploy FTP para Hostinger
-        uses: SamKirkland/FTP-Deploy-Action@v4.3.4
-        with:
-          server: ${{ secrets.FTP_HOST }}
-          port: 21
-          username: ${{ secrets.FTP_USER }}
-          password: ${{ secrets.FTP_PASS }}
-          local-dir: ./dist/
-          server-dir: /
-          dangerous-clean-slate: true
-          dry-run: false
-          log-level: verbose
-          # Garante que arquivos ocultos como .htaccess sejam enviados
-          exclude: |
-            **/.git*
-            **/.git*/**
-            **/node_modules/**
+      - name: Deploy para Hostinger via SFTP/FTP
+        env:
+          FTP_HOST: ${{ secrets.FTP_HOST }}
+          FTP_USER: ${{ secrets.FTP_USER }}
+          FTP_PASS: ${{ secrets.FTP_PASS }}
+          FTP_PORT: ${{ secrets.FTP_PORT || '65002' }}
+          FTP_PROTOCOL: ${{ secrets.FTP_PROTOCOL || 'sftp' }}
+          FTP_SERVER_DIR: ${{ secrets.FTP_SERVER_DIR || '/' }}
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y lftp
+          test -n "$FTP_HOST"
+          test -n "$FTP_USER"
+          test -n "$FTP_PASS"
+          lftp -u "$FTP_USER","$FTP_PASS" -p "$FTP_PORT" "$FTP_PROTOCOL://$FTP_HOST" <<EOF
+          set net:timeout 30
+          set net:max-retries 3
+          set net:reconnect-interval-base 5
+          set ftp:ssl-allow true
+          set ssl:verify-certificate no
+          mirror --reverse --delete --verbose --parallel=2 ./dist/ "$FTP_SERVER_DIR"
+          bye
+          EOF
 
       - name: Notificar motores de busca (IndexNow + Bing)
         env:
