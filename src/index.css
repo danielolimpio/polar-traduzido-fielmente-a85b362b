@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap');
+/* Fonts are loaded from index.html with non-blocking <link rel="stylesheet" media="print" onload="..."> for better LCP. */
 
 @tailwind base;
 @tailwind components;
