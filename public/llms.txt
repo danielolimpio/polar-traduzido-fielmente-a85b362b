@@ -1,0 +1,25 @@
+# Polar Tensor
+
+> Polar Tensor é uma plataforma de trading algorítmico com redes neurais proprietárias que opera criptomoedas 24/5 na Binance com baixa latência. Resultados auditados, operação automatizada e suporte em português.
+
+## Pages
+
+- [Home](https://polartensor.trade/): Visão geral da Polar Tensor, tecnologia Polar One e cadastro.
+- [Sobre](https://polartensor.trade/sobre): História, missão e estrutura corporativa (Panamá, EUA, Hong Kong).
+- [Tecnologia](https://polartensor.trade/tecnologia): Como funciona o sistema Polar One com redes neurais.
+- [Planos](https://polartensor.trade/planos): Planos, taxas de licença (10%) e taxas de performance (20–30%).
+- [Recompensas](https://polartensor.trade/recompensas): Programa de recompensas e benefícios.
+- [Consultoria](https://polartensor.trade/consultoria): Serviços de consultoria para investidores.
+- [Baixar App](https://polartensor.trade/baixar-app): Download do aplicativo Polar Tensor (iOS, Android, Web).
+- [FAQ](https://polartensor.trade/faq): Perguntas frequentes sobre cadastro, taxas, riscos e operação.
+- [Aviso de Risco](https://polartensor.trade/aviso-de-risco): Riscos do trading em criptomoedas.
+- [Privacidade](https://polartensor.trade/privacidade): Política de privacidade e tratamento de dados.
+- [Termos](https://polartensor.trade/termos): Termos de uso da plataforma.
+
+## About
+
+- Empresa: Polar Tensor Corp. (Panamá), Polar MSB Inc. (EUA, FinCEN MSB), Polar Tensor LAB Limited (Hong Kong)
+- Fundada: 2018
+- Produto principal: Polar One — sistema automatizado de trading com redes neurais, latência < 50ms
+- Mercados: Criptomoedas (BTC, ETH, SOL, USDT, USDC) na Binance
+- Idiomas: Português, Inglês, Espanhol
