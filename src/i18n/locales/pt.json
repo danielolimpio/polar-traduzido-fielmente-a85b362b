@@ -24,7 +24,7 @@
   },
   "home": {
     "seoTitle": "Polar Tensor | Trading Algorítmico com IA em Criptomoedas",
-    "seoDesc": "Polar Tensor: plataforma de trading algorítmico com redes neurais proprietárias para criptomoedas. Operação 24/5 na Binance, transparência total e suporte em português."
+    "seoDesc": "Polar Tensor: trading algorítmico com redes neurais para criptomoedas. Operação 24/5 na Binance, transparência total e suporte em português."
   },
   "hero": {
     "badge": "Sistema Polar One — Operacional desde 2024",
@@ -43,9 +43,18 @@
     "title2": "deep learning",
     "subtitle": "Desenvolvemos algoritmos proprietários para o mercado cripto desde 2018. Sede de P&D em Hong Kong, fundo registrado no Panamá.",
     "items": [
-      { "title": "Base de Dados Robusta", "desc": "Coleta de dados on-chain, sentimento, livro de ordens e métricas de mercado em múltiplos timeframes para alimentar nossos modelos." },
-      { "title": "Modelos Testados em Combate", "desc": "Redes neurais que combinam análise de tendência e direção, validadas em diferentes regimes de mercado desde 2020." },
-      { "title": "Backtesting Rigoroso", "desc": "Cada modelo é testado contra dados históricos extensos antes de operar capital real, garantindo edge estatístico." }
+      {
+        "title": "Base de Dados Robusta",
+        "desc": "Coleta de dados on-chain, sentimento, livro de ordens e métricas de mercado em múltiplos timeframes para alimentar nossos modelos."
+      },
+      {
+        "title": "Modelos Testados em Combate",
+        "desc": "Redes neurais que combinam análise de tendência e direção, validadas em diferentes regimes de mercado desde 2020."
+      },
+      {
+        "title": "Backtesting Rigoroso",
+        "desc": "Cada modelo é testado contra dados históricos extensos antes de operar capital real, garantindo edge estatístico."
+      }
     ]
   },
   "techHome": {
@@ -54,10 +63,22 @@
     "title2": "trading com IA",
     "subtitle": "Redes neurais baseadas em pesquisa, projetadas para a excelência no mercado cripto.",
     "items": [
-      { "title": "Análise Multi-Timeframe", "desc": "Arquiteturas CNN com módulos de atenção capturam padrões em escalas temporais simultâneas." },
-      { "title": "Integração de Dados", "desc": "OHLCV, dados on-chain, livro de ordens e sentimento — unificados em um único framework." },
-      { "title": "Execução de Alta Frequência", "desc": "Latência sub-50ms, conexões diretas com exchanges, escalonamento dinâmico de posições." },
-      { "title": "Performance Comprovada", "desc": "Ativo desde 2020 (originalmente FTX), totalmente automatizado e controlado por IA desde 2024." }
+      {
+        "title": "Análise Multi-Timeframe",
+        "desc": "Arquiteturas CNN com módulos de atenção capturam padrões em escalas temporais simultâneas."
+      },
+      {
+        "title": "Integração de Dados",
+        "desc": "OHLCV, dados on-chain, livro de ordens e sentimento — unificados em um único framework."
+      },
+      {
+        "title": "Execução de Alta Frequência",
+        "desc": "Latência sub-50ms, conexões diretas com exchanges, escalonamento dinâmico de posições."
+      },
+      {
+        "title": "Performance Comprovada",
+        "desc": "Ativo desde 2020 (originalmente FTX), totalmente automatizado e controlado por IA desde 2024."
+      }
     ]
   },
   "engine": {
@@ -66,9 +87,18 @@
     "title2": "investimento inteligente",
     "subtitle": "Dois tipos de redes neurais trabalhando em conjunto para maximizar precisão e minimizar risco.",
     "items": [
-      { "title": "Redes de Tendência", "desc": "Analisam dominância do BTC, dados on-chain e condições de mercado de longo prazo para determinar regime de alta ou baixa." },
-      { "title": "Redes de Direção", "desc": "Processam dados em tempo real, alterações no livro de ordens, sentimento de notícias e métricas blockchain para prever movimentos imediatos." },
-      { "title": "Engine de Execução", "desc": "Trades de alta frequência são executados quando os modelos apresentam alta confiança, com escalonamento de posição adaptativo." }
+      {
+        "title": "Redes de Tendência",
+        "desc": "Analisam dominância do BTC, dados on-chain e condições de mercado de longo prazo para determinar regime de alta ou baixa."
+      },
+      {
+        "title": "Redes de Direção",
+        "desc": "Processam dados em tempo real, alterações no livro de ordens, sentimento de notícias e métricas blockchain para prever movimentos imediatos."
+      },
+      {
+        "title": "Engine de Execução",
+        "desc": "Trades de alta frequência são executados quando os modelos apresentam alta confiança, com escalonamento de posição adaptativo."
+      }
     ],
     "opTitle": "Operação contínua e automatizada",
     "opDesc": "Segunda a sexta, 8:00 UTC às 22:00 UTC — janelas de máxima liquidez. Distribuição semanal de lucros toda sexta às 23:00 UTC."
@@ -80,10 +110,30 @@
     "title3": "com",
     "title4": "credibilidade auditável",
     "subtitle": "Volume institucional, status máximo de privilégio na maior exchange do mundo e feed de execução ao vivo direto do back-office Polar One.",
-    "card1": { "label": "Banca na Binance", "sub": "Total Value · USDT", "foot": "≈ US$ 192.491.814,64 · atualizado em tempo real", "tag": "Custódia direta na Binance" },
-    "card2": { "label": "Status na Binance", "sub": "My VIP Privilege", "foot": "Nível máximo institucional · Taxas mínimas e prioridade de execução" },
-    "card3": { "label": "Lucro em todo o período", "sub": "Performance Overview", "foot": "Retorno acumulado · sistema Polar One auditado", "tag": "Últimos 30 dias: +20,55%" },
-    "feed": { "title": "Feed de Trading ao Vivo", "subtitle": "Execuções em tempo real no back-office Polar One", "open": "Open", "close": "Close", "footer": "Dados ilustrativos do back-office · Execução real auditada na Binance" }
+    "card1": {
+      "label": "Banca na Binance",
+      "sub": "Total Value · USDT",
+      "foot": "≈ US$ 192.491.814,64 · atualizado em tempo real",
+      "tag": "Custódia direta na Binance"
+    },
+    "card2": {
+      "label": "Status na Binance",
+      "sub": "My VIP Privilege",
+      "foot": "Nível máximo institucional · Taxas mínimas e prioridade de execução"
+    },
+    "card3": {
+      "label": "Lucro em todo o período",
+      "sub": "Performance Overview",
+      "foot": "Retorno acumulado · sistema Polar One auditado",
+      "tag": "Últimos 30 dias: +20,55%"
+    },
+    "feed": {
+      "title": "Feed de Trading ao Vivo",
+      "subtitle": "Execuções em tempo real no back-office Polar One",
+      "open": "Open",
+      "close": "Close",
+      "footer": "Dados ilustrativos do back-office · Execução real auditada na Binance"
+    }
   },
   "video": {
     "default": {
@@ -130,9 +180,39 @@
     "start": "Começar agora",
     "seeAll": "Ver todos os planos",
     "items": [
-      { "name": "Profissional", "min": "8.000 USDT", "fee": "30%", "features": ["Acesso ao sistema Polar One", "Distribuição semanal de lucros", "Saques automáticos 24/7", "Suporte padrão"] },
-      { "name": "Elite", "min": "25.000 USDT", "fee": "25%", "features": ["Tudo do plano Profissional", "Taxa de desempenho reduzida", "Prioridade na execução", "Suporte dedicado"] },
-      { "name": "Empresa", "min": "100.000 USDT", "fee": "20%", "features": ["Tudo do plano Elite", "Menor taxa de desempenho", "Gestor de conta exclusivo", "Relatórios institucionais"] }
+      {
+        "name": "Profissional",
+        "min": "8.000 USDT",
+        "fee": "30%",
+        "features": [
+          "Acesso ao sistema Polar One",
+          "Distribuição semanal de lucros",
+          "Saques automáticos 24/7",
+          "Suporte padrão"
+        ]
+      },
+      {
+        "name": "Elite",
+        "min": "25.000 USDT",
+        "fee": "25%",
+        "features": [
+          "Tudo do plano Profissional",
+          "Taxa de desempenho reduzida",
+          "Prioridade na execução",
+          "Suporte dedicado"
+        ]
+      },
+      {
+        "name": "Empresa",
+        "min": "100.000 USDT",
+        "fee": "20%",
+        "features": [
+          "Tudo do plano Elite",
+          "Menor taxa de desempenho",
+          "Gestor de conta exclusivo",
+          "Relatórios institucionais"
+        ]
+      }
     ]
   },
   "rewardsHome": {
@@ -141,10 +221,22 @@
     "title2": "indicações",
     "subtitle": "Convide pessoas para a plataforma e receba recompensas até 15 níveis de profundidade na taxa de licença, além de recompensas residuais semanais sobre os lucros gerados.",
     "benefits": [
-      { "t": "Recompensas de Licença", "d": "Ganhos sobre a taxa de licença até 15 níveis." },
-      { "t": "Recompensas Residuais", "d": "Renda semanal sobre lucros dos indicados." },
-      { "t": "Recompensa Infinita", "d": "Percentual sobre o volume de toda a equipe." },
-      { "t": "Patentes & Bônus", "d": "Bônus em USDT do Bronze ao Diamante." }
+      {
+        "t": "Recompensas de Licença",
+        "d": "Ganhos sobre a taxa de licença até 15 níveis."
+      },
+      {
+        "t": "Recompensas Residuais",
+        "d": "Renda semanal sobre lucros dos indicados."
+      },
+      {
+        "t": "Recompensa Infinita",
+        "d": "Percentual sobre o volume de toda a equipe."
+      },
+      {
+        "t": "Patentes & Bônus",
+        "d": "Bônus em USDT do Bronze ao Diamante."
+      }
     ],
     "ranksTitle": "Patentes",
     "ranksSubtitle": "Suba de patente conforme o volume da sua rede cresce.",
@@ -152,15 +244,51 @@
     "colVolume": "Volume",
     "colBonus": "Bônus",
     "ranks": [
-      { "t": "Ferro", "v": "100 USDT", "b": "—" },
-      { "t": "Bronze", "v": "500 USDT", "b": "50 USDT" },
-      { "t": "Prata", "v": "2.500 USDT", "b": "200 USDT" },
-      { "t": "Ouro", "v": "8.000 USDT", "b": "500 USDT" },
-      { "t": "Platina", "v": "25.000 USDT", "b": "1.500 USDT" },
-      { "t": "Titânio", "v": "100.000 USDT", "b": "20.000 USDT" },
-      { "t": "Rubi", "v": "1.000.000 USDT", "b": "50.000 USDT" },
-      { "t": "Esmeralda", "v": "3.000.000 USDT", "b": "150.000 USDT" },
-      { "t": "Diamante", "v": "8.000.000 USDT", "b": "500.000 USDT" }
+      {
+        "t": "Ferro",
+        "v": "100 USDT",
+        "b": "—"
+      },
+      {
+        "t": "Bronze",
+        "v": "500 USDT",
+        "b": "50 USDT"
+      },
+      {
+        "t": "Prata",
+        "v": "2.500 USDT",
+        "b": "200 USDT"
+      },
+      {
+        "t": "Ouro",
+        "v": "8.000 USDT",
+        "b": "500 USDT"
+      },
+      {
+        "t": "Platina",
+        "v": "25.000 USDT",
+        "b": "1.500 USDT"
+      },
+      {
+        "t": "Titânio",
+        "v": "100.000 USDT",
+        "b": "20.000 USDT"
+      },
+      {
+        "t": "Rubi",
+        "v": "1.000.000 USDT",
+        "b": "50.000 USDT"
+      },
+      {
+        "t": "Esmeralda",
+        "v": "3.000.000 USDT",
+        "b": "150.000 USDT"
+      },
+      {
+        "t": "Diamante",
+        "v": "8.000.000 USDT",
+        "b": "500.000 USDT"
+      }
     ]
   },
   "faqHome": {
@@ -168,12 +296,30 @@
     "title1": "Perguntas",
     "title2": "frequentes",
     "items": [
-      { "q": "O que é a Polar Tensor?", "a": "Somos uma empresa de tecnologia financeira focada em desenvolver algoritmos proprietários de trading com redes neurais para o mercado de criptomoedas. Operamos desde 2018, com nossa primeira versão lucrativa em 2020." },
-      { "q": "Como funciona o sistema Polar One?", "a": "É um sistema de trading totalmente automatizado que utiliza dois tipos de redes neurais — tendência e direção — para identificar oportunidades e executar trades de alta frequência com baixa latência na Binance." },
-      { "q": "Quais são os riscos envolvidos?", "a": "Trading em criptomoedas envolve riscos significativos, incluindo volatilidade, riscos de mercado, regulatórios, de liquidez e tecnológicos. Você pode perder parte ou a totalidade do capital. Recomendamos fortemente buscar aconselhamento financeiro independente." },
-      { "q": "Como funcionam as taxas?", "a": "Cobramos uma taxa única de licença de 10% sobre o valor depositado e uma taxa de performance (20% a 30% conforme o plano) apenas sobre os lucros gerados. Distribuímos lucros semanalmente, toda sexta às 23:00 UTC." },
-      { "q": "Em quais criptomoedas posso depositar?", "a": "Aceitamos Bitcoin, Ethereum, Solana e USDT. Saques são processados automaticamente 24/7 em USDT e USDC." },
-      { "q": "Onde a empresa está registrada?", "a": "Polar Tensor Corp. é registrada no Panamá (Nº 155771852), com Polar MSB Inc. nos EUA (Montana, Nº D1537006, FinCEN 31000306664168) e Polar Tensor LAB Limited em Hong Kong (Nº 78737300)." }
+      {
+        "q": "O que é a Polar Tensor?",
+        "a": "Somos uma empresa de tecnologia financeira focada em desenvolver algoritmos proprietários de trading com redes neurais para o mercado de criptomoedas. Operamos desde 2018, com nossa primeira versão lucrativa em 2020."
+      },
+      {
+        "q": "Como funciona o sistema Polar One?",
+        "a": "É um sistema de trading totalmente automatizado que utiliza dois tipos de redes neurais — tendência e direção — para identificar oportunidades e executar trades de alta frequência com baixa latência na Binance."
+      },
+      {
+        "q": "Quais são os riscos envolvidos?",
+        "a": "Trading em criptomoedas envolve riscos significativos, incluindo volatilidade, riscos de mercado, regulatórios, de liquidez e tecnológicos. Você pode perder parte ou a totalidade do capital. Recomendamos fortemente buscar aconselhamento financeiro independente."
+      },
+      {
+        "q": "Como funcionam as taxas?",
+        "a": "Cobramos uma taxa única de licença de 10% sobre o valor depositado e uma taxa de performance (20% a 30% conforme o plano) apenas sobre os lucros gerados. Distribuímos lucros semanalmente, toda sexta às 23:00 UTC."
+      },
+      {
+        "q": "Em quais criptomoedas posso depositar?",
+        "a": "Aceitamos Bitcoin, Ethereum, Solana e USDT. Saques são processados automaticamente 24/7 em USDT e USDC."
+      },
+      {
+        "q": "Onde a empresa está registrada?",
+        "a": "Polar Tensor Corp. é registrada no Panamá (Nº 155771852), com Polar MSB Inc. nos EUA (Montana, Nº D1537006, FinCEN 31000306664168) e Polar Tensor LAB Limited em Hong Kong (Nº 78737300)."
+      }
     ]
   },
   "ctaHome": {
@@ -210,12 +356,36 @@
     "registry": "Registro",
     "jurisdiction": "Jurisdição",
     "regulations": [
-      { "name": "Polar Tensor Corp.", "jurisdiction": "República do Panamá", "description": "Tecnologia de Trading Automatizado" },
-      { "name": "Polar Tensor USA LLC", "jurisdiction": "Estados Unidos — Wyoming", "description": "Entidade cliente para EUA e Internacional (Não-UE)" },
-      { "name": "Polar Tensor Europe SP ZOO", "jurisdiction": "República da Polônia (UE)", "description": "Entidade cliente para a União Europeia" },
-      { "name": "Polar MSB Inc.", "jurisdiction": "Estados Unidos — Montana", "description": "Pagamentos, câmbio fiat e serviços de cartão" },
-      { "name": "Polar Tensor LAB Limited", "jurisdiction": "Hong Kong", "description": "Empresa de Pesquisa e Desenvolvimento" },
-      { "name": "Polar Tensor Africa Limited", "jurisdiction": "República Federal da Nigéria", "description": "Integração de clientes fora da UE e EUA" }
+      {
+        "name": "Polar Tensor Corp.",
+        "jurisdiction": "República do Panamá",
+        "description": "Tecnologia de Trading Automatizado"
+      },
+      {
+        "name": "Polar Tensor USA LLC",
+        "jurisdiction": "Estados Unidos — Wyoming",
+        "description": "Entidade cliente para EUA e Internacional (Não-UE)"
+      },
+      {
+        "name": "Polar Tensor Europe SP ZOO",
+        "jurisdiction": "República da Polônia (UE)",
+        "description": "Entidade cliente para a União Europeia"
+      },
+      {
+        "name": "Polar MSB Inc.",
+        "jurisdiction": "Estados Unidos — Montana",
+        "description": "Pagamentos, câmbio fiat e serviços de cartão"
+      },
+      {
+        "name": "Polar Tensor LAB Limited",
+        "jurisdiction": "Hong Kong",
+        "description": "Empresa de Pesquisa e Desenvolvimento"
+      },
+      {
+        "name": "Polar Tensor Africa Limited",
+        "jurisdiction": "República Federal da Nigéria",
+        "description": "Integração de clientes fora da UE e EUA"
+      }
     ],
     "riskTitle": "Aviso de Risco",
     "riskBody": "O mercado de criptomoedas envolve riscos significativos e pode não ser adequado para todas as pessoas. O valor das criptomoedas pode ser altamente volátil e pode flutuar rapidamente. Este aviso tem como objetivo fornecer clareza sobre os riscos associados à tecnologia blockchain, às criptomoedas e aos serviços oferecidos pela Polar Tensor. Ao utilizar nossos serviços, você reconhece e concorda que ao interagir com a Polar Tensor, você entende que pode perder parte ou a totalidade de seus criptoativos e concorda em assumir total responsabilidade por suas ações. É fortemente recomendado que você busque aconselhamento financeiro independente e conduza uma pesquisa aprofundada.",
@@ -224,7 +394,7 @@
   },
   "about": {
     "seoTitle": "Sobre a Polar Tensor | Binance Partner & Pesquisa em IA",
-    "seoDesc": "Polar Tensor — Binance Partner com conta VIP 9. Algoritmos proprietários de trading em criptomoedas desde 2018, sede de P&D em Hong Kong e fundo registrado no Panamá.",
+    "seoDesc": "Polar Tensor — Binance Partner VIP 9. Algoritmos próprios de trading cripto desde 2018, P&D em Hong Kong e fundo registrado no Panamá.",
     "heroBadge": "Sobre nós",
     "heroTitle": "Polar Tensor — Binance Partner",
     "heroSubtitle": "Revolucionando o mundo cripto com soluções impulsionadas por Inteligência Artificial. Negociação 100% automatizada, executada diretamente na Binance.",
@@ -234,19 +404,39 @@
     "whoSubtitle": "Da pesquisa em Hong Kong à operação 100% automatizada na Binance — uma trajetória construída sobre engenharia de dados, IA e disciplina de mercado.",
     "historyTitle": "História",
     "historyText": "Nossa equipe começou a desenvolver algoritmos de trading proprietários para o mercado de criptomoedas em <1>2018</1>, com nosso primeiro sucesso ocorrendo em <3>2020</3>. A sede está localizada em <5>Hong Kong</5>, onde todo o P&D é realizado, e o fundo é registrado no <7>Panamá</7>.",
-    "historyBullets": ["P&D em Hong Kong", "Fundo registrado no Panamá", "Algoritmos proprietários desde 2018"],
+    "historyBullets": [
+      "P&D em Hong Kong",
+      "Fundo registrado no Panamá",
+      "Algoritmos proprietários desde 2018"
+    ],
     "visionTitle": "Visão",
     "visionText": "Nosso objetivo é nos tornar o maior provedor de estratégias algorítmicas no setor de criptomoedas até <1>2027</1>. Além disso, planejamos expandir nossa divisão de software para criar ferramentas e algoritmos para outros hedge funds e exchanges de criptomoedas.",
-    "visionBullets": ["Liderança global até 2027", "Expansão da divisão de software", "Ferramentas para hedge funds e exchanges"],
+    "visionBullets": [
+      "Liderança global até 2027",
+      "Expansão da divisão de software",
+      "Ferramentas para hedge funds e exchanges"
+    ],
     "partnerBadge": "Binance Partner",
     "partnerTitle1": "Revolucionando o mundo cripto com",
     "partnerTitle2": "IA",
     "partnerSubtitle": "Negociação automatizada, 100% executada com Inteligência Artificial, diretamente na Binance. Invista e ganhe — sem precisar indicar ninguém.",
     "businessInfo": [
-      { "label": "Empresa registrada desde", "value": "2018" },
-      { "label": "Operando trade desde", "value": "2020" },
-      { "label": "Operando na Binance desde", "value": "2024" },
-      { "label": "Conta empresarial Binance", "value": "VIP 9" }
+      {
+        "label": "Empresa registrada desde",
+        "value": "2018"
+      },
+      {
+        "label": "Operando trade desde",
+        "value": "2020"
+      },
+      {
+        "label": "Operando na Binance desde",
+        "value": "2024"
+      },
+      {
+        "label": "Conta empresarial Binance",
+        "value": "VIP 9"
+      }
     ],
     "directInvestor": "<1>Modelo direto ao investidor:</1> você investe e ganha sem precisar indicar ninguém. Sem MMN, sem rede de afiliados — apenas tecnologia aplicada ao mercado.",
     "teamBadge": "Nosso time",
@@ -261,25 +451,61 @@
     "teamLabel": "A equipe",
     "teamSpecialists": "Especialistas multidisciplinares",
     "team": [
-      { "role": "Cientistas de Dados em IA", "count": "3x" },
-      { "role": "DevOps", "count": "1x" },
-      { "role": "Matemático", "count": "1x" },
-      { "role": "CTO Fundador", "count": "1x" }
+      {
+        "role": "Cientistas de Dados em IA",
+        "count": "3x"
+      },
+      {
+        "role": "DevOps",
+        "count": "1x"
+      },
+      {
+        "role": "Matemático",
+        "count": "1x"
+      },
+      {
+        "role": "CTO Fundador",
+        "count": "1x"
+      }
     ],
     "ctaTitle1": "Faça parte de uma plataforma com",
     "ctaTitle2": "fundamentos sólidos",
     "ctaSubtitle": "Tecnologia, pesquisa e operação institucional ao alcance de qualquer investidor."
   },
   "technology": {
-    "seoTitle": "Tecnologia | Polar Tensor — Redes Neurais para Trading Cripto",
-    "seoDesc": "Conheça a tecnologia da Polar Tensor: arquiteturas CNN com atenção, redes neurais de tendência e direção, execução de baixa latência e integração massiva de dados.",
+    "seoTitle": "Tecnologia | Polar Tensor — Redes Neurais Cripto",
+    "seoDesc": "Tecnologia Polar Tensor: CNNs com atenção, redes neurais de tendência e direção, execução de baixa latência e integração massiva de dados.",
     "heroBadge": "Como funciona",
     "heroTitle": "Engenharia de redes neurais para mercados de cripto",
     "heroSubtitle": "Abordagem em duas etapas que combina análise de tendências e previsão direcional de alta frequência para o melhor timing de execução.",
     "stages": [
-      { "title": "Redes de Tendência", "desc": "Analisam dominância do BTC, volumes de transações e médias multi-timeframe para definir a direção primária do mercado.", "bullets": ["Avaliação diária", "Integração on-chain", "Ciclos longos"] },
-      { "title": "Redes de Direção", "desc": "Arquitetura CNN multi-eixo com mecanismos de atenção que processa três timeframes simultaneamente para previsões de curto prazo.", "bullets": ["Sinais de alta frequência", "Câmera de quase tempo real", "Análise de livro de ordens"] },
-      { "title": "Engine de Execução", "desc": "Conjunto em tempo real com pontuação dinâmica de confiança e dimensionamento adaptativo de posições para gestão de risco.", "bullets": ["Decisões tick a tick", "Conexão direta com exchanges", "Controles de risco rígidos"] }
+      {
+        "title": "Redes de Tendência",
+        "desc": "Analisam dominância do BTC, volumes de transações e médias multi-timeframe para definir a direção primária do mercado.",
+        "bullets": [
+          "Avaliação diária",
+          "Integração on-chain",
+          "Ciclos longos"
+        ]
+      },
+      {
+        "title": "Redes de Direção",
+        "desc": "Arquitetura CNN multi-eixo com mecanismos de atenção que processa três timeframes simultaneamente para previsões de curto prazo.",
+        "bullets": [
+          "Sinais de alta frequência",
+          "Câmera de quase tempo real",
+          "Análise de livro de ordens"
+        ]
+      },
+      {
+        "title": "Engine de Execução",
+        "desc": "Conjunto em tempo real com pontuação dinâmica de confiança e dimensionamento adaptativo de posições para gestão de risco.",
+        "bullets": [
+          "Decisões tick a tick",
+          "Conexão direta com exchanges",
+          "Controles de risco rígidos"
+        ]
+      }
     ],
     "hypothesisBadge": "Hipótese central",
     "hypothesisText": "A informação flui bidirecionalmente entre timeframes: timeframes maiores restringem movimentos mais curtos, enquanto dados de microestrutura fornecem sinais antecipados que se propagam para cima. Nosso sistema captura ambas as dimensões simultaneamente para desempenho ótimo.",
@@ -287,33 +513,79 @@
     "edgeTitle": "Vantagem mensurável e replicável",
     "edgeSubtitle": "Abordagens sistemáticas de exploração do mercado com confiança quantificável e controles rigorosos de risco.",
     "edge": [
-      { "t": "Execução baseada em confiança", "d": "Cada operação carrega um nível quantificado de confiança, regulando dinamicamente o tamanho da posição." },
-      { "t": "Consenso multi-modelo", "d": "Múltiplas redes neurais devem concordar antes da execução, reduzindo viés de modelo único." },
-      { "t": "Adaptação ao regime de mercado", "d": "Detecção automática de regime para manter o edge sob diferentes condições." },
-      { "t": "Timing de execução ótimo", "d": "Análise de microestrutura para reduzir slippage e impacto de mercado." },
-      { "t": "Verificação contínua", "d": "Backtests estatísticos garantem que o edge se mantém significativo e não degrada." },
-      { "t": "Escalonamento dinâmico de risco", "d": "Monitoramento de drawdown em tempo real reduz exposição em cenários adversos." }
+      {
+        "t": "Execução baseada em confiança",
+        "d": "Cada operação carrega um nível quantificado de confiança, regulando dinamicamente o tamanho da posição."
+      },
+      {
+        "t": "Consenso multi-modelo",
+        "d": "Múltiplas redes neurais devem concordar antes da execução, reduzindo viés de modelo único."
+      },
+      {
+        "t": "Adaptação ao regime de mercado",
+        "d": "Detecção automática de regime para manter o edge sob diferentes condições."
+      },
+      {
+        "t": "Timing de execução ótimo",
+        "d": "Análise de microestrutura para reduzir slippage e impacto de mercado."
+      },
+      {
+        "t": "Verificação contínua",
+        "d": "Backtests estatísticos garantem que o edge se mantém significativo e não degrada."
+      },
+      {
+        "t": "Escalonamento dinâmico de risco",
+        "d": "Monitoramento de drawdown em tempo real reduz exposição em cenários adversos."
+      }
     ],
     "dataBadge": "Integração de dados",
     "dataTitle": "Inteligência a partir de múltiplas fontes",
     "data": [
-      { "t": "Dados de Mercado", "d": "OHLCV, volumes e indicadores técnicos em múltiplos timeframes, do diário ao sub-segundo." },
-      { "t": "Análises On-Chain", "d": "Atividade de rede, padrões de transações e métricas de adoção." },
-      { "t": "Dinâmica do Order Book", "d": "Captura de microestrutura, desbalanço, profundidade e spreads." },
-      { "t": "Sentimento", "d": "Notícias e mídias sociais com janela de 15 minutos para contexto de mercado." }
+      {
+        "t": "Dados de Mercado",
+        "d": "OHLCV, volumes e indicadores técnicos em múltiplos timeframes, do diário ao sub-segundo."
+      },
+      {
+        "t": "Análises On-Chain",
+        "d": "Atividade de rede, padrões de transações e métricas de adoção."
+      },
+      {
+        "t": "Dinâmica do Order Book",
+        "d": "Captura de microestrutura, desbalanço, profundidade e spreads."
+      },
+      {
+        "t": "Sentimento",
+        "d": "Notícias e mídias sociais com janela de 15 minutos para contexto de mercado."
+      }
     ],
     "metricsBadge": "Métricas",
     "metricsTitle": "Resultados validados por pesquisa",
     "metrics": [
-      { "v": "1.15", "t": "Profit Factor", "d": "Consistente em diferentes regimes." },
-      { "v": "<50ms", "t": "Latência de Predição", "d": "Limites ultra-baixos para decisões em tempo real." },
-      { "v": "10K+", "t": "Trades diários", "d": "Execução de alta frequência em vários mercados." },
-      { "v": "24/7", "t": "Cobertura", "d": "Monitoramento e operação contínuos." }
+      {
+        "v": "1.15",
+        "t": "Profit Factor",
+        "d": "Consistente em diferentes regimes."
+      },
+      {
+        "v": "<50ms",
+        "t": "Latência de Predição",
+        "d": "Limites ultra-baixos para decisões em tempo real."
+      },
+      {
+        "v": "10K+",
+        "t": "Trades diários",
+        "d": "Execução de alta frequência em vários mercados."
+      },
+      {
+        "v": "24/7",
+        "t": "Cobertura",
+        "d": "Monitoramento e operação contínuos."
+      }
     ]
   },
   "plansPage": {
     "seoTitle": "Planos | Polar Tensor",
-    "seoDesc": "Conheça os planos da Polar Tensor: Iniciante, Básico, Avançado, Profissional, Elite e Empresa. Use o Polar One com licença única de 10% e taxa de performance sobre lucros.",
+    "seoDesc": "Planos Polar Tensor: Iniciante, Básico, Avançado, Profissional, Elite e Empresa. Licença única de 10% e taxa de performance sobre lucros.",
     "heroBadge": "Planos",
     "heroTitle": "Escolha o seu nível de acesso",
     "heroSubtitle": "Use o Polar One por conta própria e comece a ganhar imediatamente. Taxa de licença única e performance apenas sobre os lucros gerados.",
@@ -322,9 +594,18 @@
     "softwareP2": "Estamos cobrando uma <1>taxa de performance</1> sobre os lucros gerados pelo uso do nosso software, baseada no valor adicionado ao trading. Os lucros são distribuídos toda <3>sexta-feira às 23:00 UTC</3>.",
     "softwareP3": "Você pode retirar todo ou parte da sua contribuição a qualquer momento; no entanto, uma taxa única de <1>10%</1> será aplicada para cobrir os custos operacionais. Após <3>12 meses</3>, essa taxa cairá para <5>5%</5>, e após <7>24 meses</7>, será gratuita.",
     "highlights": [
-      { "title": "Licença única de 10%", "desc": "Cobrada uma única vez sobre o valor depositado para liberar o uso do Polar One." },
-      { "title": "Lucros toda sexta-feira", "desc": "Distribuição semanal de resultados às 23:00 UTC, direto no seu backoffice." },
-      { "title": "Taxa de saída decrescente", "desc": "10% nos primeiros 12 meses, 5% após 12 meses e gratuita após 24 meses." }
+      {
+        "title": "Licença única de 10%",
+        "desc": "Cobrada uma única vez sobre o valor depositado para liberar o uso do Polar One."
+      },
+      {
+        "title": "Lucros toda sexta-feira",
+        "desc": "Distribuição semanal de resultados às 23:00 UTC, direto no seu backoffice."
+      },
+      {
+        "title": "Taxa de saída decrescente",
+        "desc": "10% nos primeiros 12 meses, 5% após 12 meses e gratuita após 24 meses."
+      }
     ],
     "allBadge": "Todos os planos",
     "allTitle": "Do Iniciante ao Empresa",
@@ -333,32 +614,122 @@
     "perfFee": "taxa de performance",
     "from": "A partir de",
     "plans": [
-      { "name": "Iniciante", "min": "100 USDT", "fee": "40%", "features": ["Acesso ao sistema Polar One", "Distribuição semanal de lucros", "Saques automáticos 24/7", "Suporte via comunidade"] },
-      { "name": "Básico", "min": "1.000 USDT", "fee": "37%", "features": ["Tudo do plano Iniciante", "Relatórios mensais de desempenho", "Acesso ao backoffice completo", "Suporte por e-mail"] },
-      { "name": "Avançado", "min": "3.000 USDT", "fee": "33%", "features": ["Tudo do plano Básico", "Alertas de execução em tempo real", "Materiais educativos exclusivos", "Suporte prioritário"] },
-      { "name": "Profissional", "min": "8.000 USDT", "fee": "30%", "features": ["Tudo do plano Avançado", "Distribuição semanal de lucros", "Saques automáticos 24/7", "Suporte padrão"] },
-      { "name": "Elite", "min": "25.000 USDT", "fee": "25%", "features": ["Tudo do plano Profissional", "Taxa de desempenho reduzida", "Prioridade na execução", "Suporte dedicado"] },
-      { "name": "Empresa", "min": "100.000 USDT", "fee": "20%", "features": ["Tudo do plano Elite", "Menor taxa de desempenho", "Gestor de conta exclusivo", "Relatórios institucionais"] }
+      {
+        "name": "Iniciante",
+        "min": "100 USDT",
+        "fee": "40%",
+        "features": [
+          "Acesso ao sistema Polar One",
+          "Distribuição semanal de lucros",
+          "Saques automáticos 24/7",
+          "Suporte via comunidade"
+        ]
+      },
+      {
+        "name": "Básico",
+        "min": "1.000 USDT",
+        "fee": "37%",
+        "features": [
+          "Tudo do plano Iniciante",
+          "Relatórios mensais de desempenho",
+          "Acesso ao backoffice completo",
+          "Suporte por e-mail"
+        ]
+      },
+      {
+        "name": "Avançado",
+        "min": "3.000 USDT",
+        "fee": "33%",
+        "features": [
+          "Tudo do plano Básico",
+          "Alertas de execução em tempo real",
+          "Materiais educativos exclusivos",
+          "Suporte prioritário"
+        ]
+      },
+      {
+        "name": "Profissional",
+        "min": "8.000 USDT",
+        "fee": "30%",
+        "features": [
+          "Tudo do plano Avançado",
+          "Distribuição semanal de lucros",
+          "Saques automáticos 24/7",
+          "Suporte padrão"
+        ]
+      },
+      {
+        "name": "Elite",
+        "min": "25.000 USDT",
+        "fee": "25%",
+        "features": [
+          "Tudo do plano Profissional",
+          "Taxa de desempenho reduzida",
+          "Prioridade na execução",
+          "Suporte dedicado"
+        ]
+      },
+      {
+        "name": "Empresa",
+        "min": "100.000 USDT",
+        "fee": "20%",
+        "features": [
+          "Tudo do plano Elite",
+          "Menor taxa de desempenho",
+          "Gestor de conta exclusivo",
+          "Relatórios institucionais"
+        ]
+      }
     ],
     "faqBadge": "Dúvidas frequentes",
     "faqTitle": "Tudo sobre taxas, lucros e saques",
     "faqSubtitle": "Respostas claras sobre licença, performance, distribuição semanal e regras de saque.",
     "faqs": [
-      { "q": "Como funciona a taxa de licença única de 10%?", "a": "Ao depositar, uma taxa única de 10% é deduzida automaticamente do valor aportado para liberar o uso do Polar One. Ela é cobrada apenas uma vez, no momento do depósito, e cobre o licenciamento do software de trading algorítmico — não há mensalidades nem cobranças recorrentes pelo uso da plataforma." },
-      { "q": "A taxa de licença incide sobre cada novo depósito?", "a": "Sim. A taxa de 10% é aplicada sobre cada novo valor depositado, pois corresponde ao licenciamento do capital que será operado pelo Polar One. Saldos reinvestidos a partir de lucros já distribuídos não pagam licença novamente." },
-      { "q": "Como é calculada a taxa de performance?", "a": "A taxa de performance incide exclusivamente sobre os lucros gerados pelo Polar One — nunca sobre o capital depositado. O percentual varia conforme o plano escolhido (de 40% no Iniciante até 20% no Empresa). Se não houver lucro na semana, não há cobrança de performance." },
-      { "q": "Existe high-water mark na taxa de performance?", "a": "Sim. A performance só é cobrada sobre novos lucros líquidos acima do maior valor já registrado na sua conta. Caso haja semanas com resultado negativo, você só voltará a pagar performance depois que sua conta superar a marca anterior — garantindo que você nunca pague duas vezes pelo mesmo lucro." },
-      { "q": "Quando os lucros são distribuídos?", "a": "A distribuição de resultados ocorre toda sexta-feira, às 23:00 UTC, diretamente no seu backoffice. Após o crédito, você pode reinvestir, manter na conta ou solicitar saque a qualquer momento." },
-      { "q": "Os lucros são creditados automaticamente?", "a": "Sim. O processo é 100% automatizado: ao final do ciclo semanal, o sistema calcula o resultado líquido, deduz a taxa de performance correspondente ao seu plano e credita o lucro disponível em sua carteira interna no backoffice." },
-      { "q": "Posso sacar meu capital a qualquer momento?", "a": "Sim. Você pode solicitar o saque parcial ou total da sua contribuição quando quiser, sem prazo de carência ou bloqueio. Os saques são processados de forma automática 24/7, em USDT." },
-      { "q": "Como funciona a taxa de saída decrescente?", "a": "Para cobrir custos operacionais, é aplicada uma taxa única sobre o valor sacado: 10% nos primeiros 12 meses após o depósito, 5% entre 12 e 24 meses, e gratuita após 24 meses. A contagem é feita por depósito, então aportes mais antigos podem já estar isentos." },
-      { "q": "Existe valor mínimo ou máximo para saque?", "a": "Não há valor máximo — você pode sacar todo o seu saldo disponível a qualquer momento. O valor mínimo de saque é de 10 USDT para cobrir os custos de rede da blockchain." },
-      { "q": "Posso mudar de plano depois de começar?", "a": "Sim. Conforme seu saldo cresce, você pode migrar para planos superiores e passar a pagar uma taxa de performance menor. A mudança é automática quando seu capital atinge a faixa do próximo nível, mas também pode ser solicitada manualmente no backoffice." }
+      {
+        "q": "Como funciona a taxa de licença única de 10%?",
+        "a": "Ao depositar, uma taxa única de 10% é deduzida automaticamente do valor aportado para liberar o uso do Polar One. Ela é cobrada apenas uma vez, no momento do depósito, e cobre o licenciamento do software de trading algorítmico — não há mensalidades nem cobranças recorrentes pelo uso da plataforma."
+      },
+      {
+        "q": "A taxa de licença incide sobre cada novo depósito?",
+        "a": "Sim. A taxa de 10% é aplicada sobre cada novo valor depositado, pois corresponde ao licenciamento do capital que será operado pelo Polar One. Saldos reinvestidos a partir de lucros já distribuídos não pagam licença novamente."
+      },
+      {
+        "q": "Como é calculada a taxa de performance?",
+        "a": "A taxa de performance incide exclusivamente sobre os lucros gerados pelo Polar One — nunca sobre o capital depositado. O percentual varia conforme o plano escolhido (de 40% no Iniciante até 20% no Empresa). Se não houver lucro na semana, não há cobrança de performance."
+      },
+      {
+        "q": "Existe high-water mark na taxa de performance?",
+        "a": "Sim. A performance só é cobrada sobre novos lucros líquidos acima do maior valor já registrado na sua conta. Caso haja semanas com resultado negativo, você só voltará a pagar performance depois que sua conta superar a marca anterior — garantindo que você nunca pague duas vezes pelo mesmo lucro."
+      },
+      {
+        "q": "Quando os lucros são distribuídos?",
+        "a": "A distribuição de resultados ocorre toda sexta-feira, às 23:00 UTC, diretamente no seu backoffice. Após o crédito, você pode reinvestir, manter na conta ou solicitar saque a qualquer momento."
+      },
+      {
+        "q": "Os lucros são creditados automaticamente?",
+        "a": "Sim. O processo é 100% automatizado: ao final do ciclo semanal, o sistema calcula o resultado líquido, deduz a taxa de performance correspondente ao seu plano e credita o lucro disponível em sua carteira interna no backoffice."
+      },
+      {
+        "q": "Posso sacar meu capital a qualquer momento?",
+        "a": "Sim. Você pode solicitar o saque parcial ou total da sua contribuição quando quiser, sem prazo de carência ou bloqueio. Os saques são processados de forma automática 24/7, em USDT."
+      },
+      {
+        "q": "Como funciona a taxa de saída decrescente?",
+        "a": "Para cobrir custos operacionais, é aplicada uma taxa única sobre o valor sacado: 10% nos primeiros 12 meses após o depósito, 5% entre 12 e 24 meses, e gratuita após 24 meses. A contagem é feita por depósito, então aportes mais antigos podem já estar isentos."
+      },
+      {
+        "q": "Existe valor mínimo ou máximo para saque?",
+        "a": "Não há valor máximo — você pode sacar todo o seu saldo disponível a qualquer momento. O valor mínimo de saque é de 10 USDT para cobrir os custos de rede da blockchain."
+      },
+      {
+        "q": "Posso mudar de plano depois de começar?",
+        "a": "Sim. Conforme seu saldo cresce, você pode migrar para planos superiores e passar a pagar uma taxa de performance menor. A mudança é automática quando seu capital atinge a faixa do próximo nível, mas também pode ser solicitada manualmente no backoffice."
+      }
     ]
   },
   "rewardsPage": {
     "seoTitle": "Recompensas | Polar Tensor — Plano de Ganhos & Bonificações",
-    "seoDesc": "Conheça o plano de recompensas Polar Tensor: ganhos por indicação em até 15 níveis, residuais em 10 níveis, bônus de ranking até $500.000 e Recompensa Infinita por graduação.",
+    "seoDesc": "Plano de recompensas Polar Tensor: até 15 níveis de indicação, residuais em 10 níveis, bônus de ranking até $500.000 e Recompensa Infinita.",
     "heroBadge": "Recompensas",
     "heroTitle": "Plano de Recompensas Polar Tensor",
     "heroSubtitle": "Ganhos por indicação, residuais, bônus de ranking e Recompensa Infinita — um modelo transparente, escalável e alinhado ao seu crescimento.",
@@ -367,15 +738,42 @@
     "rulesTitle2": "operação",
     "rulesSubtitle": "Parâmetros operacionais que sustentam todo o plano de recompensas.",
     "businessRules": [
-      { "label": "Operação", "value": "100% automatizada com IA" },
-      { "label": "Retorno médio mensal", "value": "22%" },
-      { "label": "Funcionamento", "value": "Segunda a sexta" },
-      { "label": "Pagamentos comerciais", "value": "Sextas-feiras" },
-      { "label": "Investimento mínimo", "value": "$100" },
-      { "label": "Saque mínimo", "value": "$20" },
-      { "label": "Retiradas", "value": "24h, todos os dias" },
-      { "label": "Taxa de saque", "value": "$2 USD" },
-      { "label": "Juros compostos", "value": "Reinvestimento automático" }
+      {
+        "label": "Operação",
+        "value": "100% automatizada com IA"
+      },
+      {
+        "label": "Retorno médio mensal",
+        "value": "22%"
+      },
+      {
+        "label": "Funcionamento",
+        "value": "Segunda a sexta"
+      },
+      {
+        "label": "Pagamentos comerciais",
+        "value": "Sextas-feiras"
+      },
+      {
+        "label": "Investimento mínimo",
+        "value": "$100"
+      },
+      {
+        "label": "Saque mínimo",
+        "value": "$20"
+      },
+      {
+        "label": "Retiradas",
+        "value": "24h, todos os dias"
+      },
+      {
+        "label": "Taxa de saque",
+        "value": "$2 USD"
+      },
+      {
+        "label": "Juros compostos",
+        "value": "Reinvestimento automático"
+      }
     ],
     "referralBadge": "Indicação",
     "referralTitle1": "Ganhos por indicação —",
@@ -397,16 +795,46 @@
     "rankLabel": "Rank",
     "bonusLabel": "de bônus",
     "ranks": [
-      { "name": "Ferro", "bonus": "$0" },
-      { "name": "Bronze", "bonus": "$50" },
-      { "name": "Prata", "bonus": "$200" },
-      { "name": "Ouro", "bonus": "$500" },
-      { "name": "Platina", "bonus": "$1.500" },
-      { "name": "Titânio", "bonus": "$6.000" },
-      { "name": "Safira", "bonus": "$20.000" },
-      { "name": "Ruby", "bonus": "$50.000" },
-      { "name": "Esmeralda", "bonus": "$150.000" },
-      { "name": "Diamante", "bonus": "$500.000" }
+      {
+        "name": "Ferro",
+        "bonus": "$0"
+      },
+      {
+        "name": "Bronze",
+        "bonus": "$50"
+      },
+      {
+        "name": "Prata",
+        "bonus": "$200"
+      },
+      {
+        "name": "Ouro",
+        "bonus": "$500"
+      },
+      {
+        "name": "Platina",
+        "bonus": "$1.500"
+      },
+      {
+        "name": "Titânio",
+        "bonus": "$6.000"
+      },
+      {
+        "name": "Safira",
+        "bonus": "$20.000"
+      },
+      {
+        "name": "Ruby",
+        "bonus": "$50.000"
+      },
+      {
+        "name": "Esmeralda",
+        "bonus": "$150.000"
+      },
+      {
+        "name": "Diamante",
+        "bonus": "$500.000"
+      }
     ],
     "infiniteBadge": "Recompensa Infinita",
     "infiniteTitle1": "Recompensa",
@@ -416,13 +844,34 @@
     "infiniteRule": "<1>Regra:</1> Se Houver Graduados, o Valor é Dividido.",
     "ofTeam": "de toda a equipe",
     "infiniteRewards": [
-      { "name": "Ouro", "value": "5%" },
-      { "name": "Platina", "value": "7,5%" },
-      { "name": "Titânio", "value": "10%" },
-      { "name": "Safira", "value": "12,5%" },
-      { "name": "Ruby", "value": "15%" },
-      { "name": "Esmeralda", "value": "17,5%" },
-      { "name": "Diamante", "value": "20%" }
+      {
+        "name": "Ouro",
+        "value": "5%"
+      },
+      {
+        "name": "Platina",
+        "value": "7,5%"
+      },
+      {
+        "name": "Titânio",
+        "value": "10%"
+      },
+      {
+        "name": "Safira",
+        "value": "12,5%"
+      },
+      {
+        "name": "Ruby",
+        "value": "15%"
+      },
+      {
+        "name": "Esmeralda",
+        "value": "17,5%"
+      },
+      {
+        "name": "Diamante",
+        "value": "20%"
+      }
     ],
     "ctaTitle1": "Pronto para começar a",
     "ctaTitle2": "construir sua rede",
@@ -454,45 +903,201 @@
     "ctaSubtitle": "Nosso time fala português e está disponível para esclarecer qualquer dúvida antes ou depois do cadastro.",
     "ctaButton": "Falar com a Polar Tensor",
     "items": [
-      { "category": "company", "q": "Há quanto tempo a Polar Tensor existe?", "a": "A Polar Tensor foi fundada em 2018 como um centro de pesquisa em algoritmos de trading com inteligência artificial. A primeira versão lucrativa do nosso sistema entrou em produção em 2020, e desde então passamos por múltiplas iterações até a versão atual do Polar One." },
-      { "category": "company", "q": "Quem são os fundadores e a equipe por trás do projeto?", "a": "A Polar Tensor é composta por uma equipe multidisciplinar de cientistas de dados, engenheiros de machine learning, matemáticos quantitativos e profissionais com experiência em mercados financeiros tradicionais e de cripto. A equipe está distribuída entre nossas operações nos EUA, Europa, Hong Kong e Panamá." },
-      { "category": "company", "q": "A Polar Tensor é uma corretora ou um fundo de investimento?", "a": "Nem uma coisa nem outra. Somos uma empresa de tecnologia que licencia o uso de um sistema proprietário de trading automatizado. Você mantém o controle dos seus depósitos, e o sistema apenas executa operações através de APIs autorizadas em corretoras como a Binance." },
-      { "category": "company", "q": "Por que a Polar Tensor possui entidades em vários países?", "a": "Cada jurisdição cumpre um papel específico: os EUA (Wyoming) abrigam a estrutura financeira regulada (FinCEN MSB), a Polônia atende às exigências europeias, Hong Kong concentra a pesquisa e desenvolvimento, e o Panamá centraliza a operação técnica. Essa estrutura garante conformidade global e resiliência regulatória." },
-      { "category": "company", "q": "A empresa é auditada por terceiros independentes?", "a": "Sim. Nossa estrutura legal e financeira é revisada periodicamente por uma das quatro grandes firmas globais de auditoria (Big Four), garantindo transparência sobre a constituição corporativa, conformidade regulatória e governança." },
-      { "category": "tech", "q": "O que diferencia o Polar One de bots de trading comuns?", "a": "Bots tradicionais executam regras fixas (grid, DCA, médias móveis). O Polar One utiliza duas redes neurais distintas — uma de tendência e outra de direção — treinadas com bilhões de pontos de dados de mercado. O sistema aprende padrões não-lineares que estratégias baseadas em regras simplesmente não conseguem identificar." },
-      { "category": "tech", "q": "Em qual exchange o sistema opera?", "a": "Atualmente operamos exclusivamente na Binance, devido à profundidade de liquidez, baixas taxas institucionais e robustez da infraestrutura de API. Isso permite execução de alta frequência com latência mínima." },
-      { "category": "tech", "q": "Quais ativos o Polar One opera?", "a": "O sistema opera principalmente nos pares de maior liquidez do mercado de criptomoedas, com foco em BTC e ETH contra USDT, podendo expandir para outros pares conforme as condições de mercado e liquidez disponível." },
-      { "category": "tech", "q": "O sistema usa alavancagem?", "a": "O Polar One opera com alavancagem conservadora, tipicamente entre 1x e 3x, dependendo da estratégia ativa e das condições de mercado. O foco é preservação de capital: o sistema evita exposição agressiva e prioriza consistência semanal sobre retornos pontuais elevados, reduzindo significativamente o risco de liquidação em comparação a estratégias de alta alavancagem." },
-      { "category": "tech", "q": "O algoritmo é treinado novamente com o tempo?", "a": "Sim. As redes neurais passam por re-treinamento contínuo conforme novos dados de mercado são incorporados. Isso permite que o sistema se adapte a mudanças de regime — bull market, bear market, alta volatilidade ou consolidação." },
-      { "category": "tech", "q": "O que acontece em caso de queda da Binance ou da internet?", "a": "Nossa infraestrutura roda em servidores redundantes em data centers próximos aos servidores da Binance, com failover automático. Em caso de instabilidade da própria exchange, o sistema entra em modo seguro, fechando posições abertas conforme protocolos pré-definidos." },
-      { "category": "tech", "q": "Posso ver o histórico de operações do sistema?", "a": "Sim. Após o cadastro, você tem acesso ao painel com histórico detalhado das operações, performance semanal, drawdown, win rate e demais métricas relevantes. Toda transparência possível dentro do que não compromete a propriedade intelectual do algoritmo." },
-      { "category": "deposits", "q": "Qual o valor mínimo para começar?", "a": "O valor mínimo de entrada na Polar Tensor é de 1.000 USDT, equivalente ao plano inicial. Os planos intermediários começam em 10.000 USDT e os planos avançados, com taxas de performance reduzidas e gerente de relacionamento dedicado, partem de 50.000 USDT. Todos os valores são depositados em criptomoedas (BTC, ETH, SOL ou USDT) diretamente na sua conta vinculada." },
-      { "category": "deposits", "q": "Quanto tempo leva para o depósito ser confirmado?", "a": "Depósitos em Bitcoin, Ethereum, Solana e USDT são confirmados após o número padrão de confirmações da rede blockchain — geralmente entre 10 e 30 minutos, dependendo da rede utilizada e do congestionamento." },
-      { "category": "deposits", "q": "Como funcionam os saques?", "a": "Saques são processados automaticamente 24 horas por dia, 7 dias por semana, em USDT ou USDC. Após a solicitação no painel, o valor é enviado para a carteira indicada após validação de segurança." },
-      { "category": "deposits", "q": "Existe um período mínimo de permanência (lock-up)?", "a": "Não há lock-up obrigatório do capital. No entanto, recomendamos um horizonte mínimo de algumas semanas para que o efeito da composição dos lucros semanais se manifeste de forma significativa." },
-      { "category": "deposits", "q": "Posso depositar via PIX ou cartão de crédito?", "a": "Não diretamente. A entrada de capital é exclusivamente em criptomoedas. Você pode adquirir cripto facilmente em corretoras locais via PIX e transferir para o endereço fornecido no seu painel." },
-      { "category": "deposits", "q": "Posso fazer aportes adicionais depois de iniciar?", "a": "Sim. Aportes adicionais são permitidos a qualquer momento e passam a render junto com o capital já existente. Se o aporte ultrapassar o limite do plano atual, você pode migrar para um plano superior." },
-      { "category": "fees", "q": "Quando e como os lucros são distribuídos?", "a": "Os lucros são distribuídos semanalmente, toda sexta-feira às 23:00 UTC, automaticamente no seu painel. Você pode optar por sacar ou reinvestir para potencializar a composição." },
-      { "category": "fees", "q": "A taxa de performance incide sobre o capital ou só sobre os lucros?", "a": "Apenas sobre os lucros. Se em uma semana não houver lucro, não há cobrança de performance. A taxa varia entre 20% e 30% conforme o plano contratado." },
-      { "category": "fees", "q": "A taxa de licença de 10% é cobrada todo mês?", "a": "Não. A taxa de licença de 10% é única, cobrada uma vez sobre o valor inicial depositado, dando direito ao uso vitalício do sistema dentro daquele plano." },
-      { "category": "fees", "q": "Existe alguma taxa oculta de saque ou movimentação?", "a": "Não cobramos taxas adicionais sobre saques. Você arca apenas com a taxa de rede da blockchain (gas fee) no momento do envio para sua carteira externa." },
-      { "category": "fees", "q": "Os lucros são garantidos?", "a": "Não. Nenhum sistema de trading sério oferece garantia de lucro. Apresentamos resultados históricos auditados, mas performance passada não garante resultados futuros. Trading envolve riscos reais de perda." },
-      { "category": "fees", "q": "Existe high water mark?", "a": "Sim. A taxa de performance utiliza marca d'água alta (high water mark): só voltamos a cobrar performance quando seu saldo ultrapassa o pico anterior, evitando dupla cobrança em períodos de recuperação." },
-      { "category": "risk", "q": "Meus fundos ficam custodiados pela Polar Tensor?", "a": "Os fundos operacionais ficam em contas dedicadas na Binance, vinculadas ao seu cadastro. A Polar Tensor opera via APIs com permissão restrita a trading — sem permissão de saque para endereços externos." },
-      { "category": "risk", "q": "O que acontece se a Polar Tensor encerrar atividades?", "a": "Por se tratar de capital alocado em ambiente segregado e por mantermos estrutura corporativa em múltiplas jurisdições com auditoria Big Four, há protocolos formais de devolução de capital e encerramento ordenado descritos nos termos de uso." },
-      { "category": "risk", "q": "Como vocês protegem meus dados pessoais?", "a": "Seguimos práticas alinhadas à LGPD (Brasil) e ao GDPR (Europa). Dados são criptografados em trânsito e em repouso, com acesso restrito por níveis de permissão e auditoria interna periódica." },
-      { "category": "risk", "q": "A plataforma exige autenticação em dois fatores (2FA)?", "a": "Sim. O 2FA é obrigatório para todas as contas, utilizando aplicativos como Google Authenticator ou Authy. Saques exigem confirmação adicional por e-mail." },
-      { "category": "risk", "q": "Vocês têm seguro contra falhas tecnológicas?", "a": "Mantemos protocolos de mitigação de risco operacional, incluindo redundância de infraestrutura e fundo de reserva técnica. Os termos específicos de cobertura constam na documentação contratual disponibilizada após o cadastro." },
-      { "category": "risk", "q": "Isso é uma pirâmide ou esquema Ponzi?", "a": "Não. Pirâmides remuneram participantes antigos com capital de novos entrantes; nosso modelo gera receita exclusivamente da execução algorítmica em mercado real, com extratos verificáveis na Binance e auditoria externa. Não há promessa de retorno fixo nem dependência de recrutamento." },
-      { "category": "account", "q": "Quem pode abrir uma conta na Polar Tensor?", "a": "Pessoas físicas maiores de 18 anos com documentação válida, residentes em jurisdições onde nossos serviços são autorizados. Não atendemos residentes de países sob sanções internacionais ou em listas restritivas." },
-      { "category": "account", "q": "Preciso passar por verificação KYC?", "a": "Sim. Como entidade regulada (Polar MSB Inc., FinCEN), seguimos políticas de KYC e AML. A verificação envolve documento oficial, comprovante de endereço e prova de vida (selfie)." },
-      { "category": "account", "q": "Quanto tempo leva para aprovar minha conta?", "a": "Após o envio completo da documentação, a verificação geralmente é concluída em até 48 horas úteis. Em casos que exigem análise adicional, o time de compliance entra em contato diretamente." },
-      { "category": "account", "q": "Como posso falar com o suporte?", "a": "O suporte oficial está disponível pelo painel logado, e-mail e WhatsApp. Para clientes dos planos superiores, oferecemos atendimento dedicado com gerente de relacionamento." },
-      { "category": "account", "q": "Vocês oferecem suporte em português?", "a": "Sim. Todo o suporte ao cliente brasileiro é prestado em português, em horário comercial estendido, por profissionais treinados nos detalhes técnicos da plataforma." },
-      { "category": "account", "q": "Posso ter mais de uma conta?", "a": "Não. Mantemos a política de uma conta por CPF/documento, em conformidade com nossas políticas de KYC e prevenção a abuso de plataforma." },
-      { "category": "referral", "q": "Como funciona o programa de indicações?", "a": "Ao indicar novos clientes através do seu link único, você recebe uma comissão sobre as taxas de performance geradas pelos seus indicados. O modelo é transparente, sem múltiplos níveis de recrutamento que caracterizam pirâmides." },
-      { "category": "referral", "q": "Preciso ser cliente ativo para indicar pessoas?", "a": "Sim. O programa de indicação é exclusivo para clientes ativos, com depósito vigente. Isso garante que quem recomenda a Polar Tensor realmente conhece a plataforma." },
-      { "category": "referral", "q": "Existe limite de indicações?", "a": "Não há limite no número de pessoas que você pode indicar. As comissões são creditadas semanalmente junto com a distribuição de lucros." }
+      {
+        "category": "company",
+        "q": "Há quanto tempo a Polar Tensor existe?",
+        "a": "A Polar Tensor foi fundada em 2018 como um centro de pesquisa em algoritmos de trading com inteligência artificial. A primeira versão lucrativa do nosso sistema entrou em produção em 2020, e desde então passamos por múltiplas iterações até a versão atual do Polar One."
+      },
+      {
+        "category": "company",
+        "q": "Quem são os fundadores e a equipe por trás do projeto?",
+        "a": "A Polar Tensor é composta por uma equipe multidisciplinar de cientistas de dados, engenheiros de machine learning, matemáticos quantitativos e profissionais com experiência em mercados financeiros tradicionais e de cripto. A equipe está distribuída entre nossas operações nos EUA, Europa, Hong Kong e Panamá."
+      },
+      {
+        "category": "company",
+        "q": "A Polar Tensor é uma corretora ou um fundo de investimento?",
+        "a": "Nem uma coisa nem outra. Somos uma empresa de tecnologia que licencia o uso de um sistema proprietário de trading automatizado. Você mantém o controle dos seus depósitos, e o sistema apenas executa operações através de APIs autorizadas em corretoras como a Binance."
+      },
+      {
+        "category": "company",
+        "q": "Por que a Polar Tensor possui entidades em vários países?",
+        "a": "Cada jurisdição cumpre um papel específico: os EUA (Wyoming) abrigam a estrutura financeira regulada (FinCEN MSB), a Polônia atende às exigências europeias, Hong Kong concentra a pesquisa e desenvolvimento, e o Panamá centraliza a operação técnica. Essa estrutura garante conformidade global e resiliência regulatória."
+      },
+      {
+        "category": "company",
+        "q": "A empresa é auditada por terceiros independentes?",
+        "a": "Sim. Nossa estrutura legal e financeira é revisada periodicamente por uma das quatro grandes firmas globais de auditoria (Big Four), garantindo transparência sobre a constituição corporativa, conformidade regulatória e governança."
+      },
+      {
+        "category": "tech",
+        "q": "O que diferencia o Polar One de bots de trading comuns?",
+        "a": "Bots tradicionais executam regras fixas (grid, DCA, médias móveis). O Polar One utiliza duas redes neurais distintas — uma de tendência e outra de direção — treinadas com bilhões de pontos de dados de mercado. O sistema aprende padrões não-lineares que estratégias baseadas em regras simplesmente não conseguem identificar."
+      },
+      {
+        "category": "tech",
+        "q": "Em qual exchange o sistema opera?",
+        "a": "Atualmente operamos exclusivamente na Binance, devido à profundidade de liquidez, baixas taxas institucionais e robustez da infraestrutura de API. Isso permite execução de alta frequência com latência mínima."
+      },
+      {
+        "category": "tech",
+        "q": "Quais ativos o Polar One opera?",
+        "a": "O sistema opera principalmente nos pares de maior liquidez do mercado de criptomoedas, com foco em BTC e ETH contra USDT, podendo expandir para outros pares conforme as condições de mercado e liquidez disponível."
+      },
+      {
+        "category": "tech",
+        "q": "O sistema usa alavancagem?",
+        "a": "O Polar One opera com alavancagem conservadora, tipicamente entre 1x e 3x, dependendo da estratégia ativa e das condições de mercado. O foco é preservação de capital: o sistema evita exposição agressiva e prioriza consistência semanal sobre retornos pontuais elevados, reduzindo significativamente o risco de liquidação em comparação a estratégias de alta alavancagem."
+      },
+      {
+        "category": "tech",
+        "q": "O algoritmo é treinado novamente com o tempo?",
+        "a": "Sim. As redes neurais passam por re-treinamento contínuo conforme novos dados de mercado são incorporados. Isso permite que o sistema se adapte a mudanças de regime — bull market, bear market, alta volatilidade ou consolidação."
+      },
+      {
+        "category": "tech",
+        "q": "O que acontece em caso de queda da Binance ou da internet?",
+        "a": "Nossa infraestrutura roda em servidores redundantes em data centers próximos aos servidores da Binance, com failover automático. Em caso de instabilidade da própria exchange, o sistema entra em modo seguro, fechando posições abertas conforme protocolos pré-definidos."
+      },
+      {
+        "category": "tech",
+        "q": "Posso ver o histórico de operações do sistema?",
+        "a": "Sim. Após o cadastro, você tem acesso ao painel com histórico detalhado das operações, performance semanal, drawdown, win rate e demais métricas relevantes. Toda transparência possível dentro do que não compromete a propriedade intelectual do algoritmo."
+      },
+      {
+        "category": "deposits",
+        "q": "Qual o valor mínimo para começar?",
+        "a": "O valor mínimo de entrada na Polar Tensor é de 1.000 USDT, equivalente ao plano inicial. Os planos intermediários começam em 10.000 USDT e os planos avançados, com taxas de performance reduzidas e gerente de relacionamento dedicado, partem de 50.000 USDT. Todos os valores são depositados em criptomoedas (BTC, ETH, SOL ou USDT) diretamente na sua conta vinculada."
+      },
+      {
+        "category": "deposits",
+        "q": "Quanto tempo leva para o depósito ser confirmado?",
+        "a": "Depósitos em Bitcoin, Ethereum, Solana e USDT são confirmados após o número padrão de confirmações da rede blockchain — geralmente entre 10 e 30 minutos, dependendo da rede utilizada e do congestionamento."
+      },
+      {
+        "category": "deposits",
+        "q": "Como funcionam os saques?",
+        "a": "Saques são processados automaticamente 24 horas por dia, 7 dias por semana, em USDT ou USDC. Após a solicitação no painel, o valor é enviado para a carteira indicada após validação de segurança."
+      },
+      {
+        "category": "deposits",
+        "q": "Existe um período mínimo de permanência (lock-up)?",
+        "a": "Não há lock-up obrigatório do capital. No entanto, recomendamos um horizonte mínimo de algumas semanas para que o efeito da composição dos lucros semanais se manifeste de forma significativa."
+      },
+      {
+        "category": "deposits",
+        "q": "Posso depositar via PIX ou cartão de crédito?",
+        "a": "Não diretamente. A entrada de capital é exclusivamente em criptomoedas. Você pode adquirir cripto facilmente em corretoras locais via PIX e transferir para o endereço fornecido no seu painel."
+      },
+      {
+        "category": "deposits",
+        "q": "Posso fazer aportes adicionais depois de iniciar?",
+        "a": "Sim. Aportes adicionais são permitidos a qualquer momento e passam a render junto com o capital já existente. Se o aporte ultrapassar o limite do plano atual, você pode migrar para um plano superior."
+      },
+      {
+        "category": "fees",
+        "q": "Quando e como os lucros são distribuídos?",
+        "a": "Os lucros são distribuídos semanalmente, toda sexta-feira às 23:00 UTC, automaticamente no seu painel. Você pode optar por sacar ou reinvestir para potencializar a composição."
+      },
+      {
+        "category": "fees",
+        "q": "A taxa de performance incide sobre o capital ou só sobre os lucros?",
+        "a": "Apenas sobre os lucros. Se em uma semana não houver lucro, não há cobrança de performance. A taxa varia entre 20% e 30% conforme o plano contratado."
+      },
+      {
+        "category": "fees",
+        "q": "A taxa de licença de 10% é cobrada todo mês?",
+        "a": "Não. A taxa de licença de 10% é única, cobrada uma vez sobre o valor inicial depositado, dando direito ao uso vitalício do sistema dentro daquele plano."
+      },
+      {
+        "category": "fees",
+        "q": "Existe alguma taxa oculta de saque ou movimentação?",
+        "a": "Não cobramos taxas adicionais sobre saques. Você arca apenas com a taxa de rede da blockchain (gas fee) no momento do envio para sua carteira externa."
+      },
+      {
+        "category": "fees",
+        "q": "Os lucros são garantidos?",
+        "a": "Não. Nenhum sistema de trading sério oferece garantia de lucro. Apresentamos resultados históricos auditados, mas performance passada não garante resultados futuros. Trading envolve riscos reais de perda."
+      },
+      {
+        "category": "fees",
+        "q": "Existe high water mark?",
+        "a": "Sim. A taxa de performance utiliza marca d'água alta (high water mark): só voltamos a cobrar performance quando seu saldo ultrapassa o pico anterior, evitando dupla cobrança em períodos de recuperação."
+      },
+      {
+        "category": "risk",
+        "q": "Meus fundos ficam custodiados pela Polar Tensor?",
+        "a": "Os fundos operacionais ficam em contas dedicadas na Binance, vinculadas ao seu cadastro. A Polar Tensor opera via APIs com permissão restrita a trading — sem permissão de saque para endereços externos."
+      },
+      {
+        "category": "risk",
+        "q": "O que acontece se a Polar Tensor encerrar atividades?",
+        "a": "Por se tratar de capital alocado em ambiente segregado e por mantermos estrutura corporativa em múltiplas jurisdições com auditoria Big Four, há protocolos formais de devolução de capital e encerramento ordenado descritos nos termos de uso."
+      },
+      {
+        "category": "risk",
+        "q": "Como vocês protegem meus dados pessoais?",
+        "a": "Seguimos práticas alinhadas à LGPD (Brasil) e ao GDPR (Europa). Dados são criptografados em trânsito e em repouso, com acesso restrito por níveis de permissão e auditoria interna periódica."
+      },
+      {
+        "category": "risk",
+        "q": "A plataforma exige autenticação em dois fatores (2FA)?",
+        "a": "Sim. O 2FA é obrigatório para todas as contas, utilizando aplicativos como Google Authenticator ou Authy. Saques exigem confirmação adicional por e-mail."
+      },
+      {
+        "category": "risk",
+        "q": "Vocês têm seguro contra falhas tecnológicas?",
+        "a": "Mantemos protocolos de mitigação de risco operacional, incluindo redundância de infraestrutura e fundo de reserva técnica. Os termos específicos de cobertura constam na documentação contratual disponibilizada após o cadastro."
+      },
+      {
+        "category": "risk",
+        "q": "Isso é uma pirâmide ou esquema Ponzi?",
+        "a": "Não. Pirâmides remuneram participantes antigos com capital de novos entrantes; nosso modelo gera receita exclusivamente da execução algorítmica em mercado real, com extratos verificáveis na Binance e auditoria externa. Não há promessa de retorno fixo nem dependência de recrutamento."
+      },
+      {
+        "category": "account",
+        "q": "Quem pode abrir uma conta na Polar Tensor?",
+        "a": "Pessoas físicas maiores de 18 anos com documentação válida, residentes em jurisdições onde nossos serviços são autorizados. Não atendemos residentes de países sob sanções internacionais ou em listas restritivas."
+      },
+      {
+        "category": "account",
+        "q": "Preciso passar por verificação KYC?",
+        "a": "Sim. Como entidade regulada (Polar MSB Inc., FinCEN), seguimos políticas de KYC e AML. A verificação envolve documento oficial, comprovante de endereço e prova de vida (selfie)."
+      },
+      {
+        "category": "account",
+        "q": "Quanto tempo leva para aprovar minha conta?",
+        "a": "Após o envio completo da documentação, a verificação geralmente é concluída em até 48 horas úteis. Em casos que exigem análise adicional, o time de compliance entra em contato diretamente."
+      },
+      {
+        "category": "account",
+        "q": "Como posso falar com o suporte?",
+        "a": "O suporte oficial está disponível pelo painel logado, e-mail e WhatsApp. Para clientes dos planos superiores, oferecemos atendimento dedicado com gerente de relacionamento."
+      },
+      {
+        "category": "account",
+        "q": "Vocês oferecem suporte em português?",
+        "a": "Sim. Todo o suporte ao cliente brasileiro é prestado em português, em horário comercial estendido, por profissionais treinados nos detalhes técnicos da plataforma."
+      },
+      {
+        "category": "account",
+        "q": "Posso ter mais de uma conta?",
+        "a": "Não. Mantemos a política de uma conta por CPF/documento, em conformidade com nossas políticas de KYC e prevenção a abuso de plataforma."
+      },
+      {
+        "category": "referral",
+        "q": "Como funciona o programa de indicações?",
+        "a": "Ao indicar novos clientes através do seu link único, você recebe uma comissão sobre as taxas de performance geradas pelos seus indicados. O modelo é transparente, sem múltiplos níveis de recrutamento que caracterizam pirâmides."
+      },
+      {
+        "category": "referral",
+        "q": "Preciso ser cliente ativo para indicar pessoas?",
+        "a": "Sim. O programa de indicação é exclusivo para clientes ativos, com depósito vigente. Isso garante que quem recomenda a Polar Tensor realmente conhece a plataforma."
+      },
+      {
+        "category": "referral",
+        "q": "Existe limite de indicações?",
+        "a": "Não há limite no número de pessoas que você pode indicar. As comissões são creditadas semanalmente junto com a distribuição de lucros."
+      }
     ]
   },
   "consultancy": {
@@ -502,9 +1107,18 @@
     "heroTitle": "Consultoria Institucional & Alto Patrimônio",
     "heroSubtitle": "Para clientes corporativos, investidores institucionais e indivíduos de alto patrimônio que requerem estratégias de investimento sob medida e suporte dedicado.",
     "segments": [
-      { "t": "Clientes Corporativos", "d": "Empresas em busca de gestão estratégica de investimentos." },
-      { "t": "Investidores Institucionais", "d": "Instituições financeiras que demandam estratégias avançadas." },
-      { "t": "Indivíduos de Alto Patrimônio", "d": "Clientes privados com portfólios significativos." }
+      {
+        "t": "Clientes Corporativos",
+        "d": "Empresas em busca de gestão estratégica de investimentos."
+      },
+      {
+        "t": "Investidores Institucionais",
+        "d": "Instituições financeiras que demandam estratégias avançadas."
+      },
+      {
+        "t": "Indivíduos de Alto Patrimônio",
+        "d": "Clientes privados com portfólios significativos."
+      }
     ],
     "formTitle": "Solicite uma consultoria",
     "formSubtitle": "Preencha o formulário e nossa equipe entrará em contato em até 1 dia útil.",
@@ -535,8 +1149,8 @@
     "toastDesc": "Nossa equipe institucional entrará em contato em até 1 dia útil."
   },
   "downloadAppPage": {
-    "seoTitle": "Baixar App Polar Tensor | Aplicativo Oficial de Trading com IA",
-    "seoDesc": "Baixar App Polar Tensor: aplicativo oficial para iOS e Android. Acompanhe seu portfólio em USDT, lucros automáticos do Polar One, depósitos, saques e bonificações da rede direto no celular.",
+    "seoTitle": "Baixar App Polar Tensor | Trading com IA",
+    "seoDesc": "App oficial Polar Tensor para iOS e Android. Acompanhe portfólio em USDT, lucros do Polar One, depósitos, saques e bonificações no celular.",
     "available": "Disponível para iOS e Android",
     "title1": "Baixar",
     "title2": "App Polar Tensor",
@@ -547,15 +1161,36 @@
     "appStoreAria": "Baixar Polar Tensor na App Store",
     "playStoreAria": "Baixar Polar Tensor no Google Play",
     "highlights": [
-      { "title": "Trading com IA no seu bolso", "desc": "O sistema Polar One opera 24/5 — você acompanha cada movimento direto do celular." },
-      { "title": "Notificações em tempo real", "desc": "Receba alertas de distribuição de lucros, depósitos, saques e bonificações da rede." },
-      { "title": "Segurança bancária", "desc": "Autenticação biométrica, criptografia de ponta-a-ponta e KYC integrado." }
+      {
+        "title": "Trading com IA no seu bolso",
+        "desc": "O sistema Polar One opera 24/5 — você acompanha cada movimento direto do celular."
+      },
+      {
+        "title": "Notificações em tempo real",
+        "desc": "Receba alertas de distribuição de lucros, depósitos, saques e bonificações da rede."
+      },
+      {
+        "title": "Segurança bancária",
+        "desc": "Autenticação biométrica, criptografia de ponta-a-ponta e KYC integrado."
+      }
     ],
     "features": [
-      { "title": "Painel da Conta", "desc": "Acompanhe sua carteira completa em tempo real. Monitore saldo disponível, valor investido em trading e lucros semanais com gráficos intuitivos. Mantenha-se informado com métricas de desempenho atualizadas e visualize seus rendimentos com detalhamento diário." },
-      { "title": "Gestão Inteligente da Carteira", "desc": "Controle total sobre seus fundos com depósitos, transferências e saques de forma fluida. Veja o histórico completo de transações — incluindo lucros de trading, depósitos, saques e toda atividade da conta — com data, hora e valores detalhados." },
-      { "title": "Interface Avançada de Trading", "desc": "Gerencie seu valor ativo de trading com a opção de reinvestimento automático (Auto-Reinvest). Acompanhe seu nível atual, taxa de performance, evolução até o próximo nível e veja métricas detalhadas de lucro da semana, semana passada e últimos 30 dias." },
-      { "title": "Transparência Total", "desc": "Veja as métricas globais de desempenho da empresa e estatísticas de todos os tempos com transparência completa. Acompanhe percentuais semanais, compare períodos diferentes (semana, mês, 3M, 6M, ano e todos) e analise retornos cumulativos com gráficos interativos." }
+      {
+        "title": "Painel da Conta",
+        "desc": "Acompanhe sua carteira completa em tempo real. Monitore saldo disponível, valor investido em trading e lucros semanais com gráficos intuitivos. Mantenha-se informado com métricas de desempenho atualizadas e visualize seus rendimentos com detalhamento diário."
+      },
+      {
+        "title": "Gestão Inteligente da Carteira",
+        "desc": "Controle total sobre seus fundos com depósitos, transferências e saques de forma fluida. Veja o histórico completo de transações — incluindo lucros de trading, depósitos, saques e toda atividade da conta — com data, hora e valores detalhados."
+      },
+      {
+        "title": "Interface Avançada de Trading",
+        "desc": "Gerencie seu valor ativo de trading com a opção de reinvestimento automático (Auto-Reinvest). Acompanhe seu nível atual, taxa de performance, evolução até o próximo nível e veja métricas detalhadas de lucro da semana, semana passada e últimos 30 dias."
+      },
+      {
+        "title": "Transparência Total",
+        "desc": "Veja as métricas globais de desempenho da empresa e estatísticas de todos os tempos com transparência completa. Acompanhe percentuais semanais, compare períodos diferentes (semana, mês, 3M, 6M, ano e todos) e analise retornos cumulativos com gráficos interativos."
+      }
     ],
     "featureAlt": "Tela {{title}} do App Polar Tensor",
     "ctaTitle": "Pronto para começar?",
@@ -569,19 +1204,111 @@
     "heroTitle": "Aviso de Privacidade & Proteção de Dados",
     "heroSubtitle": "Tratamento de dados pessoais e segurança da informação.",
     "sections": [
-      { "title": "Finalidade e status legal", "paragraphs": ["Este Aviso de Privacidade descreve como dados pessoais são coletados, armazenados, compartilhados e protegidos no âmbito dos serviços oferecidos pelo grupo Polar Tensor.", "Este Aviso é fornecido em conformidade com as leis de proteção de dados aplicáveis, incluindo, quando relevante:"], "list": ["Regulamento (UE) 2016/679 (RGPD);", "Leis estaduais e federais de privacidade dos EUA;", "Outras normas internacionais aplicáveis."] },
-      { "title": "Controladores e escopo", "paragraphs": ["Dependendo do serviço utilizado, os dados pessoais podem ser tratados por uma ou mais entidades do grupo, atuando como controladores independentes em seus respectivos escopos:"], "list": ["Polar Tensor US LLC — onboarding e operações nos EUA;", "Polar Tensor Europe SP ZOO — operações na União Europeia;", "Polar MSB Inc. — serviços de pagamento e on/off-ramp;", "Polar Tensor Corp. — execução técnica e operações de plataforma."] },
-      { "title": "Categorias de dados pessoais", "paragraphs": ["As seguintes categorias de dados pessoais podem ser tratadas, conforme aplicável:"], "list": ["Dados de identificação (nome, data de nascimento, nacionalidade);", "Informações de contato (e-mail, telefone);", "Dados de conta e onboarding;", "Dados de verificação KYC e AML, incluindo documentos de identidade e prova de vida;", "Dados transacionais e de atividade;", "Dados técnicos (IP, identificadores de dispositivo, logs);", "Comunicações e registros de suporte."], "after": ["Dados sensíveis somente são tratados quando estritamente necessário e permitido por lei."] },
-      { "title": "Finalidades do tratamento", "paragraphs": ["Os dados são tratados para finalidades legítimas como: onboarding e administração de contas, verificação de identidade, prevenção a fraudes, prestação dos serviços, registro contábil, segurança e integridade dos sistemas, obrigações regulatórias, e comunicação com o cliente.", "Não realizamos decisões automatizadas com efeitos jurídicos relevantes sem salvaguardas adequadas."] },
-      { "title": "Bases legais", "paragraphs": ["O tratamento é realizado com base em uma ou mais das seguintes hipóteses, conforme aplicável: execução de contrato, cumprimento de obrigações legais e regulatórias, legítimo interesse (incluindo segurança e prevenção a fraudes) e consentimento, quando exigido."] },
-      { "title": "Compartilhamento e destinatários", "paragraphs": ["Os dados podem ser compartilhados, quando necessário e permitido por lei, com: entidades do grupo, prestadores regulados (KYC, fornecedores, processadores de pagamento), parceiros de execução e infraestrutura, auditores, consultores legais e autoridades regulatórias.", "Não vendemos dados pessoais a terceiros."] },
-      { "title": "Transferências internacionais", "paragraphs": ["Quando ocorrem transferências internacionais, aplicamos salvaguardas adequadas como decisões de adequação, cláusulas contratuais padrão ou outros mecanismos legalmente reconhecidos. Limitamos transferências ao necessário para fins operacionais e de conformidade."] },
-      { "title": "Retenção de dados", "paragraphs": ["Os dados são retidos pelo tempo necessário para cumprir obrigações contratuais, legais e regulatórias, ou para defesa de direitos. Os prazos variam de acordo com o tipo de dado e a legislação aplicável."] },
-      { "title": "Segurança dos dados", "paragraphs": ["Adotamos medidas técnicas e organizacionais adequadas para proteger os dados contra acesso não autorizado, perda, destruição, alteração e uso indevido. Apesar disso, nenhum sistema é 100% seguro."] },
-      { "title": "Direitos dos titulares", "paragraphs": ["Conforme a legislação aplicável, você pode ter o direito de: acessar seus dados, solicitar correção ou exclusão, restringir ou se opor ao tratamento, solicitar portabilidade e apresentar reclamação à autoridade competente.", "As solicitações podem estar sujeitas a verificação e limites legais."] },
-      { "title": "Cookies e tecnologias de rastreamento", "paragraphs": ["Nossos sites podem usar cookies e tecnologias semelhantes para: segurança, funcionalidade, analytics, monitoramento de desempenho e otimização da experiência do usuário. Mecanismos de consentimento são fornecidos quando exigido."] },
-      { "title": "Sem renúncia de obrigações", "paragraphs": ["Nada neste Aviso limita ou exclui direitos ou obrigações impostos por leis de proteção de dados aplicáveis."] },
-      { "title": "Alterações", "paragraphs": ["Este Aviso pode ser atualizado periodicamente para refletir mudanças legais, regulatórias ou operacionais. A versão mais recente estará sempre disponível em nosso site."] }
+      {
+        "title": "Finalidade e status legal",
+        "paragraphs": [
+          "Este Aviso de Privacidade descreve como dados pessoais são coletados, armazenados, compartilhados e protegidos no âmbito dos serviços oferecidos pelo grupo Polar Tensor.",
+          "Este Aviso é fornecido em conformidade com as leis de proteção de dados aplicáveis, incluindo, quando relevante:"
+        ],
+        "list": [
+          "Regulamento (UE) 2016/679 (RGPD);",
+          "Leis estaduais e federais de privacidade dos EUA;",
+          "Outras normas internacionais aplicáveis."
+        ]
+      },
+      {
+        "title": "Controladores e escopo",
+        "paragraphs": [
+          "Dependendo do serviço utilizado, os dados pessoais podem ser tratados por uma ou mais entidades do grupo, atuando como controladores independentes em seus respectivos escopos:"
+        ],
+        "list": [
+          "Polar Tensor US LLC — onboarding e operações nos EUA;",
+          "Polar Tensor Europe SP ZOO — operações na União Europeia;",
+          "Polar MSB Inc. — serviços de pagamento e on/off-ramp;",
+          "Polar Tensor Corp. — execução técnica e operações de plataforma."
+        ]
+      },
+      {
+        "title": "Categorias de dados pessoais",
+        "paragraphs": [
+          "As seguintes categorias de dados pessoais podem ser tratadas, conforme aplicável:"
+        ],
+        "list": [
+          "Dados de identificação (nome, data de nascimento, nacionalidade);",
+          "Informações de contato (e-mail, telefone);",
+          "Dados de conta e onboarding;",
+          "Dados de verificação KYC e AML, incluindo documentos de identidade e prova de vida;",
+          "Dados transacionais e de atividade;",
+          "Dados técnicos (IP, identificadores de dispositivo, logs);",
+          "Comunicações e registros de suporte."
+        ],
+        "after": [
+          "Dados sensíveis somente são tratados quando estritamente necessário e permitido por lei."
+        ]
+      },
+      {
+        "title": "Finalidades do tratamento",
+        "paragraphs": [
+          "Os dados são tratados para finalidades legítimas como: onboarding e administração de contas, verificação de identidade, prevenção a fraudes, prestação dos serviços, registro contábil, segurança e integridade dos sistemas, obrigações regulatórias, e comunicação com o cliente.",
+          "Não realizamos decisões automatizadas com efeitos jurídicos relevantes sem salvaguardas adequadas."
+        ]
+      },
+      {
+        "title": "Bases legais",
+        "paragraphs": [
+          "O tratamento é realizado com base em uma ou mais das seguintes hipóteses, conforme aplicável: execução de contrato, cumprimento de obrigações legais e regulatórias, legítimo interesse (incluindo segurança e prevenção a fraudes) e consentimento, quando exigido."
+        ]
+      },
+      {
+        "title": "Compartilhamento e destinatários",
+        "paragraphs": [
+          "Os dados podem ser compartilhados, quando necessário e permitido por lei, com: entidades do grupo, prestadores regulados (KYC, fornecedores, processadores de pagamento), parceiros de execução e infraestrutura, auditores, consultores legais e autoridades regulatórias.",
+          "Não vendemos dados pessoais a terceiros."
+        ]
+      },
+      {
+        "title": "Transferências internacionais",
+        "paragraphs": [
+          "Quando ocorrem transferências internacionais, aplicamos salvaguardas adequadas como decisões de adequação, cláusulas contratuais padrão ou outros mecanismos legalmente reconhecidos. Limitamos transferências ao necessário para fins operacionais e de conformidade."
+        ]
+      },
+      {
+        "title": "Retenção de dados",
+        "paragraphs": [
+          "Os dados são retidos pelo tempo necessário para cumprir obrigações contratuais, legais e regulatórias, ou para defesa de direitos. Os prazos variam de acordo com o tipo de dado e a legislação aplicável."
+        ]
+      },
+      {
+        "title": "Segurança dos dados",
+        "paragraphs": [
+          "Adotamos medidas técnicas e organizacionais adequadas para proteger os dados contra acesso não autorizado, perda, destruição, alteração e uso indevido. Apesar disso, nenhum sistema é 100% seguro."
+        ]
+      },
+      {
+        "title": "Direitos dos titulares",
+        "paragraphs": [
+          "Conforme a legislação aplicável, você pode ter o direito de: acessar seus dados, solicitar correção ou exclusão, restringir ou se opor ao tratamento, solicitar portabilidade e apresentar reclamação à autoridade competente.",
+          "As solicitações podem estar sujeitas a verificação e limites legais."
+        ]
+      },
+      {
+        "title": "Cookies e tecnologias de rastreamento",
+        "paragraphs": [
+          "Nossos sites podem usar cookies e tecnologias semelhantes para: segurança, funcionalidade, analytics, monitoramento de desempenho e otimização da experiência do usuário. Mecanismos de consentimento são fornecidos quando exigido."
+        ]
+      },
+      {
+        "title": "Sem renúncia de obrigações",
+        "paragraphs": [
+          "Nada neste Aviso limita ou exclui direitos ou obrigações impostos por leis de proteção de dados aplicáveis."
+        ]
+      },
+      {
+        "title": "Alterações",
+        "paragraphs": [
+          "Este Aviso pode ser atualizado periodicamente para refletir mudanças legais, regulatórias ou operacionais. A versão mais recente estará sempre disponível em nosso site."
+        ]
+      }
     ]
   },
   "terms": {
@@ -591,21 +1318,112 @@
     "heroTitle": "Termos de Uso",
     "heroSubtitle": "Plataforma de tecnologia e interface de execução.",
     "sections": [
-      { "title": "Finalidade e status legal", "paragraphs": ["Estes Termos de Uso regem o acesso e o uso das plataformas tecnológicas, interfaces, dashboards, sites e ferramentas de software relacionadas à execução, disponibilizadas no âmbito do grupo Polar Tensor.", "Estes Termos não substituem nenhum acordo cliente aplicável que reja custódia, pagamentos ou relações com entidades licenciadas.", "Ao acessar ou usar a Plataforma, você reconhece que leu, compreendeu e concorda em estar vinculado a estes Termos."] },
-      { "title": "Partes e escopo", "paragraphs": ["A Plataforma é operada e disponibilizada pelas seguintes entidades, atuando estritamente em seus respectivos papéis:"], "list": ["Polar Tensor Corp. — operação da tecnologia de execução e infraestrutura de trading automatizado;", "Polar Tensor US LLC — acesso ao cliente para usuários dos EUA e não-UE;", "Polar Tensor Europe SP ZOO — acesso ao cliente para usuários da UE."], "after": ["Os direitos de acesso e a funcionalidade podem variar conforme a jurisdição e o status regulatório."] },
-      { "title": "Natureza da Plataforma", "paragraphs": ["A Plataforma fornece funcionalidade somente de tecnologia e execução, incluindo: acesso a ferramentas automatizadas de execução, exibição de informações da conta, iniciação de processos de execução por instrução explícita do usuário e conectividade técnica com locais de execução de terceiros.", "A Plataforma não fornece consultoria de investimento, gestão discricionária de portfólio nem recomendações personalizadas."] },
-      { "title": "Elegibilidade e acesso", "paragraphs": ["Você pode acessar e usar a Plataforma somente se: foi devidamente onboarded pela entidade licenciada aplicável, atende aos requisitos legais de elegibilidade em sua jurisdição e seu acesso não foi suspenso ou rescindido.", "O grupo se reserva o direito de restringir ou negar o acesso quando exigido por lei, regulamentação ou obrigações de conformidade."] },
-      { "title": "Controle e ativação pelo usuário", "paragraphs": ["A funcionalidade de execução automatizada: está inativa por padrão; requer ativação manual e explícita pelo usuário; pode ser desativada pelo usuário a qualquer momento, sujeito a restrições técnicas de processamento.", "Nenhuma execução ocorre sem iniciação do usuário."] },
-      { "title": "Caráter somente de execução", "paragraphs": ["Toda execução realizada pela Plataforma: é não discricionária; segue lógica de sistema pré-definida; não é adaptada a usuários individuais; é limitada a transações spot de criptoativos.", "Nenhum relacionamento fiduciário, consultivo ou discricionário é criado pelo uso da Plataforma."] },
-      { "title": "Obrigações do usuário", "paragraphs": ["Você concorda em: usar a Plataforma somente para fins lícitos; cumprir todas as leis e regulamentos aplicáveis; manter a confidencialidade das credenciais de acesso; monitorar a atividade associada à sua conta; notificar prontamente a entidade aplicável sobre qualquer acesso não autorizado ou incidente de segurança."] },
-      { "title": "Conduta proibida", "paragraphs": ["Você não deve: usar indevidamente ou interferir na Plataforma ou em sua operação; tentar acesso não autorizado a sistemas ou dados; fazer engenharia reversa ou contornar salvaguardas técnicas; usar a Plataforma para fins ilícitos ou abusivos; engajar-se em condutas que possam prejudicar a integridade ou a segurança da Plataforma."] },
-      { "title": "Disponibilidade e modificações", "paragraphs": ["A Plataforma é fornecida \"no estado em que se encontra\" e \"conforme disponível\". O grupo pode: modificar, suspender ou descontinuar funcionalidades; realizar manutenção ou atualizações; restringir acesso quando exigido por motivos legais, técnicos ou de segurança.", "Não há garantia de disponibilidade ininterrupta."] },
-      { "title": "Serviços de terceiros", "paragraphs": ["A Plataforma pode integrar-se ou conectar-se a serviços de terceiros, incluindo locais de execução e provedores de infraestrutura. O grupo não controla tais terceiros e não é responsável por suas ações, disponibilidade ou desempenho."] },
-      { "title": "Limitação de responsabilidade", "paragraphs": ["Na máxima extensão permitida por lei: nenhuma responsabilidade é aceita por perdas decorrentes de movimentos de mercado, atrasos de execução, interrupções do sistema ou falhas de terceiros; nenhuma responsabilidade é aceita por danos indiretos ou consequenciais; a responsabilidade é limitada conforme estabelecido no acordo cliente aplicável.", "Nada nestes Termos exclui responsabilidades que não possam ser excluídas pela lei aplicável."] },
-      { "title": "Propriedade intelectual", "paragraphs": ["Toda a propriedade intelectual associada à Plataforma permanece de propriedade do grupo Polar Tensor ou de seus licenciadores. O uso da Plataforma não transfere quaisquer direitos de propriedade ou propriedade intelectual."] },
-      { "title": "Suspensão e rescisão", "paragraphs": ["O acesso à Plataforma pode ser suspenso ou rescindido: por violação destes Termos; quando exigido por lei ou regulamentação; por motivos de segurança ou conformidade; após o término do relacionamento subjacente com o cliente."] },
-      { "title": "Lei aplicável e jurisdição", "paragraphs": ["Estes Termos são regidos pelas leis especificadas no acordo cliente aplicável, sem prejuízo das leis obrigatórias de proteção ao consumidor."] },
-      { "title": "Alterações", "paragraphs": ["Estes Termos podem ser atualizados periodicamente. O uso continuado da Plataforma constitui aceitação da versão mais atual."] }
+      {
+        "title": "Finalidade e status legal",
+        "paragraphs": [
+          "Estes Termos de Uso regem o acesso e o uso das plataformas tecnológicas, interfaces, dashboards, sites e ferramentas de software relacionadas à execução, disponibilizadas no âmbito do grupo Polar Tensor.",
+          "Estes Termos não substituem nenhum acordo cliente aplicável que reja custódia, pagamentos ou relações com entidades licenciadas.",
+          "Ao acessar ou usar a Plataforma, você reconhece que leu, compreendeu e concorda em estar vinculado a estes Termos."
+        ]
+      },
+      {
+        "title": "Partes e escopo",
+        "paragraphs": [
+          "A Plataforma é operada e disponibilizada pelas seguintes entidades, atuando estritamente em seus respectivos papéis:"
+        ],
+        "list": [
+          "Polar Tensor Corp. — operação da tecnologia de execução e infraestrutura de trading automatizado;",
+          "Polar Tensor US LLC — acesso ao cliente para usuários dos EUA e não-UE;",
+          "Polar Tensor Europe SP ZOO — acesso ao cliente para usuários da UE."
+        ],
+        "after": [
+          "Os direitos de acesso e a funcionalidade podem variar conforme a jurisdição e o status regulatório."
+        ]
+      },
+      {
+        "title": "Natureza da Plataforma",
+        "paragraphs": [
+          "A Plataforma fornece funcionalidade somente de tecnologia e execução, incluindo: acesso a ferramentas automatizadas de execução, exibição de informações da conta, iniciação de processos de execução por instrução explícita do usuário e conectividade técnica com locais de execução de terceiros.",
+          "A Plataforma não fornece consultoria de investimento, gestão discricionária de portfólio nem recomendações personalizadas."
+        ]
+      },
+      {
+        "title": "Elegibilidade e acesso",
+        "paragraphs": [
+          "Você pode acessar e usar a Plataforma somente se: foi devidamente onboarded pela entidade licenciada aplicável, atende aos requisitos legais de elegibilidade em sua jurisdição e seu acesso não foi suspenso ou rescindido.",
+          "O grupo se reserva o direito de restringir ou negar o acesso quando exigido por lei, regulamentação ou obrigações de conformidade."
+        ]
+      },
+      {
+        "title": "Controle e ativação pelo usuário",
+        "paragraphs": [
+          "A funcionalidade de execução automatizada: está inativa por padrão; requer ativação manual e explícita pelo usuário; pode ser desativada pelo usuário a qualquer momento, sujeito a restrições técnicas de processamento.",
+          "Nenhuma execução ocorre sem iniciação do usuário."
+        ]
+      },
+      {
+        "title": "Caráter somente de execução",
+        "paragraphs": [
+          "Toda execução realizada pela Plataforma: é não discricionária; segue lógica de sistema pré-definida; não é adaptada a usuários individuais; é limitada a transações spot de criptoativos.",
+          "Nenhum relacionamento fiduciário, consultivo ou discricionário é criado pelo uso da Plataforma."
+        ]
+      },
+      {
+        "title": "Obrigações do usuário",
+        "paragraphs": [
+          "Você concorda em: usar a Plataforma somente para fins lícitos; cumprir todas as leis e regulamentos aplicáveis; manter a confidencialidade das credenciais de acesso; monitorar a atividade associada à sua conta; notificar prontamente a entidade aplicável sobre qualquer acesso não autorizado ou incidente de segurança."
+        ]
+      },
+      {
+        "title": "Conduta proibida",
+        "paragraphs": [
+          "Você não deve: usar indevidamente ou interferir na Plataforma ou em sua operação; tentar acesso não autorizado a sistemas ou dados; fazer engenharia reversa ou contornar salvaguardas técnicas; usar a Plataforma para fins ilícitos ou abusivos; engajar-se em condutas que possam prejudicar a integridade ou a segurança da Plataforma."
+        ]
+      },
+      {
+        "title": "Disponibilidade e modificações",
+        "paragraphs": [
+          "A Plataforma é fornecida \"no estado em que se encontra\" e \"conforme disponível\". O grupo pode: modificar, suspender ou descontinuar funcionalidades; realizar manutenção ou atualizações; restringir acesso quando exigido por motivos legais, técnicos ou de segurança.",
+          "Não há garantia de disponibilidade ininterrupta."
+        ]
+      },
+      {
+        "title": "Serviços de terceiros",
+        "paragraphs": [
+          "A Plataforma pode integrar-se ou conectar-se a serviços de terceiros, incluindo locais de execução e provedores de infraestrutura. O grupo não controla tais terceiros e não é responsável por suas ações, disponibilidade ou desempenho."
+        ]
+      },
+      {
+        "title": "Limitação de responsabilidade",
+        "paragraphs": [
+          "Na máxima extensão permitida por lei: nenhuma responsabilidade é aceita por perdas decorrentes de movimentos de mercado, atrasos de execução, interrupções do sistema ou falhas de terceiros; nenhuma responsabilidade é aceita por danos indiretos ou consequenciais; a responsabilidade é limitada conforme estabelecido no acordo cliente aplicável.",
+          "Nada nestes Termos exclui responsabilidades que não possam ser excluídas pela lei aplicável."
+        ]
+      },
+      {
+        "title": "Propriedade intelectual",
+        "paragraphs": [
+          "Toda a propriedade intelectual associada à Plataforma permanece de propriedade do grupo Polar Tensor ou de seus licenciadores. O uso da Plataforma não transfere quaisquer direitos de propriedade ou propriedade intelectual."
+        ]
+      },
+      {
+        "title": "Suspensão e rescisão",
+        "paragraphs": [
+          "O acesso à Plataforma pode ser suspenso ou rescindido: por violação destes Termos; quando exigido por lei ou regulamentação; por motivos de segurança ou conformidade; após o término do relacionamento subjacente com o cliente."
+        ]
+      },
+      {
+        "title": "Lei aplicável e jurisdição",
+        "paragraphs": [
+          "Estes Termos são regidos pelas leis especificadas no acordo cliente aplicável, sem prejuízo das leis obrigatórias de proteção ao consumidor."
+        ]
+      },
+      {
+        "title": "Alterações",
+        "paragraphs": [
+          "Estes Termos podem ser atualizados periodicamente. O uso continuado da Plataforma constitui aceitação da versão mais atual."
+        ]
+      }
     ]
   },
   "risk": {
@@ -616,20 +1434,104 @@
     "heroSubtitle": "Ativos digitais, trading automatizado e serviços de tecnologia.",
     "warning": "Trading em ativos digitais envolve riscos significativos. Você pode perder parte ou a totalidade do capital. Esta declaração não constitui consultoria de investimento, recomendação ou garantia de desempenho.",
     "sections": [
-      { "title": "Finalidade desta declaração", "paragraphs": ["Esta Declaração de Aviso de Risco visa informar clientes e potenciais usuários dos serviços sobre os principais riscos relacionados a: ativos digitais e mercados de criptoativos, tecnologia de trading automatizado e algorítmico, serviços de execução e o uso de infraestrutura e serviços de terceiros.", "Esta declaração faz parte das informações pré-contratuais fornecidas ao cliente e deve ser lida em conjunto com os termos, divulgações e acordos aplicáveis."] },
-      { "title": "Aviso geral de risco", "paragraphs": ["Ativos digitais são produtos de alto risco. A participação nos mercados de ativos digitais e o uso de tecnologia de trading automatizado podem resultar em perda parcial ou total do capital.", "Você só deve usar os serviços se compreender plenamente a natureza dos riscos envolvidos e puder arcar com a perda integral dos valores alocados.", "Desempenho passado, real ou simulado, não é indicativo de resultados futuros."] },
-      { "title": "Risco de mercado", "paragraphs": ["Mercados de ativos digitais estão sujeitos a alta volatilidade. Os preços podem flutuar rápida e imprevisivelmente devido a, entre outros: sentimento e especulação do mercado, condições de liquidez, eventos regulatórios, mudanças tecnológicas, eventos macroeconômicos e ações de participantes do mercado.", "Movimentos adversos podem resultar em perdas rápidas e sem aviso."] },
-      { "title": "Sem garantia de desempenho ou proteção de capital", "paragraphs": ["Nenhuma entidade do grupo oferece: garantias de lucro ou retorno; seguro ou preservação de capital; metas mínimas de desempenho; representações sobre resultados esperados.", "Toda atividade de trading é realizada por conta e risco exclusivo do cliente."] },
-      { "title": "Risco de trading automatizado e algorítmico", "paragraphs": ["Sistemas automatizados e algorítmicos operam com base em regras e lógica pré-definidas. Os riscos associados ao trading automatizado incluem, entre outros: condições de mercado adversas não antecipadas pelo sistema, execução em preços desfavoráveis, latência sob certas condições de mercado, limitações inerentes a dados históricos ou suposições do modelo.", "Sistemas automatizados podem performar mal ou de forma imprevisível em determinadas condições de mercado."] },
-      { "title": "Sem consultoria de investimento ou discricionariedade", "paragraphs": ["Os serviços são prestados em base apenas de execução e tecnologia. Não fornecemos consultoria de investimento, avaliação de adequação, monitoramento contínuo de portfólio do cliente ou atuação como gestor de investimentos.", "Decisões de avaliar, desativar, depositar, sacar ou alocar fundos permanecem inteiramente com o cliente."] },
-      { "title": "Risco tecnológico e operacional", "paragraphs": ["Os serviços dependem de sistemas tecnológicos complexos, incluindo software, hardware, redes e infraestrutura de terceiros. Os riscos potenciais incluem: paralisações ou tempo de inatividade do sistema, atrasos de latência ou execução, erros ou bugs de software, incidentes de cibersegurança e falha de provedores terceirizados.", "Embora medidas razoáveis sejam implementadas para manter integridade do sistema, operação ininterrupta e livre de erros não pode ser garantida."] },
-      { "title": "Risco de custódia e camada de execução", "paragraphs": ["Os ativos do cliente podem estar sujeitos a arranjos de custódia, incluindo riscos operacionais, riscos de domínio, falhas em provedores de serviços de terceiros, congestionamento ou falha da rede blockchain e riscos associados a locais de execução e provedores de liquidez.", "Transferências temporárias de ativos para fins de execução estão sujeitas a riscos operacionais da camada de execução."] },
-      { "title": "Risco regulatório e legal", "paragraphs": ["O tratamento regulatório dos ativos digitais pode mudar. Ações legislativas, regulatórias ou de fiscalização futuras podem: restringir ou proibir certas atividades, impor obrigações adicionais de conformidade, afetar a disponibilidade dos serviços ou impactar o valor ou a comerciabilidade dos ativos digitais.", "Mudanças regulatórias podem ocorrer com pouca ou nenhuma antecedência."] },
-      { "title": "Risco de liquidez", "paragraphs": ["Certos ativos digitais podem apresentar liquidez limitada. Isso pode resultar em: dificuldade em entrar ou sair de posições, slippage aumentado, execução em preços materialmente diferentes do esperado e incapacidade de executar nos prazos desejados."] },
-      { "title": "Risco de contraparte e terceiros", "paragraphs": ["Os serviços dependem de provedores terceirizados, incluindo: exchanges, provedores de liquidez, processadores de pagamento, provedores de tecnologia de custódia e fornecedores de infraestrutura.", "Falhas, insolvência, má conduta ou interrupções operacionais de terceiros podem afetar adversamente a disponibilidade do serviço ou os resultados de execução."] },
-      { "title": "Eventos extraordinários e força maior", "paragraphs": ["Eventos extraordinários fora do controle razoável — incluindo, entre outros, desastres naturais, guerra, emergências regulatórias, falhas de mercado ou rede — podem prejudicar ou suspender os serviços.", "Tais eventos podem resultar em perdas ou atrasos para os quais nenhuma garantia ou compensação pode ser fornecida."] },
-      { "title": "Reconhecimento de responsabilidade do cliente", "paragraphs": ["Ao usar os serviços, os clientes reconhecem e aceitam que: leram e entenderam estes riscos; avaliaram independentemente os riscos envolvidos; são os únicos responsáveis por suas decisões e ações; conhecem possíveis perdas e expectativas.", "Os clientes devem buscar aconselhamento profissional independente se tiverem dúvidas sobre os riscos."] },
-      { "title": "Sem declaração de confiança", "paragraphs": ["Os clientes não devem confiar em quaisquer declarações, materiais ou comunicações como garantias de rentabilidade, segurança ou resultados.", "Apenas a documentação contratual vinculante governa a relação legal."] }
+      {
+        "title": "Finalidade desta declaração",
+        "paragraphs": [
+          "Esta Declaração de Aviso de Risco visa informar clientes e potenciais usuários dos serviços sobre os principais riscos relacionados a: ativos digitais e mercados de criptoativos, tecnologia de trading automatizado e algorítmico, serviços de execução e o uso de infraestrutura e serviços de terceiros.",
+          "Esta declaração faz parte das informações pré-contratuais fornecidas ao cliente e deve ser lida em conjunto com os termos, divulgações e acordos aplicáveis."
+        ]
+      },
+      {
+        "title": "Aviso geral de risco",
+        "paragraphs": [
+          "Ativos digitais são produtos de alto risco. A participação nos mercados de ativos digitais e o uso de tecnologia de trading automatizado podem resultar em perda parcial ou total do capital.",
+          "Você só deve usar os serviços se compreender plenamente a natureza dos riscos envolvidos e puder arcar com a perda integral dos valores alocados.",
+          "Desempenho passado, real ou simulado, não é indicativo de resultados futuros."
+        ]
+      },
+      {
+        "title": "Risco de mercado",
+        "paragraphs": [
+          "Mercados de ativos digitais estão sujeitos a alta volatilidade. Os preços podem flutuar rápida e imprevisivelmente devido a, entre outros: sentimento e especulação do mercado, condições de liquidez, eventos regulatórios, mudanças tecnológicas, eventos macroeconômicos e ações de participantes do mercado.",
+          "Movimentos adversos podem resultar em perdas rápidas e sem aviso."
+        ]
+      },
+      {
+        "title": "Sem garantia de desempenho ou proteção de capital",
+        "paragraphs": [
+          "Nenhuma entidade do grupo oferece: garantias de lucro ou retorno; seguro ou preservação de capital; metas mínimas de desempenho; representações sobre resultados esperados.",
+          "Toda atividade de trading é realizada por conta e risco exclusivo do cliente."
+        ]
+      },
+      {
+        "title": "Risco de trading automatizado e algorítmico",
+        "paragraphs": [
+          "Sistemas automatizados e algorítmicos operam com base em regras e lógica pré-definidas. Os riscos associados ao trading automatizado incluem, entre outros: condições de mercado adversas não antecipadas pelo sistema, execução em preços desfavoráveis, latência sob certas condições de mercado, limitações inerentes a dados históricos ou suposições do modelo.",
+          "Sistemas automatizados podem performar mal ou de forma imprevisível em determinadas condições de mercado."
+        ]
+      },
+      {
+        "title": "Sem consultoria de investimento ou discricionariedade",
+        "paragraphs": [
+          "Os serviços são prestados em base apenas de execução e tecnologia. Não fornecemos consultoria de investimento, avaliação de adequação, monitoramento contínuo de portfólio do cliente ou atuação como gestor de investimentos.",
+          "Decisões de avaliar, desativar, depositar, sacar ou alocar fundos permanecem inteiramente com o cliente."
+        ]
+      },
+      {
+        "title": "Risco tecnológico e operacional",
+        "paragraphs": [
+          "Os serviços dependem de sistemas tecnológicos complexos, incluindo software, hardware, redes e infraestrutura de terceiros. Os riscos potenciais incluem: paralisações ou tempo de inatividade do sistema, atrasos de latência ou execução, erros ou bugs de software, incidentes de cibersegurança e falha de provedores terceirizados.",
+          "Embora medidas razoáveis sejam implementadas para manter integridade do sistema, operação ininterrupta e livre de erros não pode ser garantida."
+        ]
+      },
+      {
+        "title": "Risco de custódia e camada de execução",
+        "paragraphs": [
+          "Os ativos do cliente podem estar sujeitos a arranjos de custódia, incluindo riscos operacionais, riscos de domínio, falhas em provedores de serviços de terceiros, congestionamento ou falha da rede blockchain e riscos associados a locais de execução e provedores de liquidez.",
+          "Transferências temporárias de ativos para fins de execução estão sujeitas a riscos operacionais da camada de execução."
+        ]
+      },
+      {
+        "title": "Risco regulatório e legal",
+        "paragraphs": [
+          "O tratamento regulatório dos ativos digitais pode mudar. Ações legislativas, regulatórias ou de fiscalização futuras podem: restringir ou proibir certas atividades, impor obrigações adicionais de conformidade, afetar a disponibilidade dos serviços ou impactar o valor ou a comerciabilidade dos ativos digitais.",
+          "Mudanças regulatórias podem ocorrer com pouca ou nenhuma antecedência."
+        ]
+      },
+      {
+        "title": "Risco de liquidez",
+        "paragraphs": [
+          "Certos ativos digitais podem apresentar liquidez limitada. Isso pode resultar em: dificuldade em entrar ou sair de posições, slippage aumentado, execução em preços materialmente diferentes do esperado e incapacidade de executar nos prazos desejados."
+        ]
+      },
+      {
+        "title": "Risco de contraparte e terceiros",
+        "paragraphs": [
+          "Os serviços dependem de provedores terceirizados, incluindo: exchanges, provedores de liquidez, processadores de pagamento, provedores de tecnologia de custódia e fornecedores de infraestrutura.",
+          "Falhas, insolvência, má conduta ou interrupções operacionais de terceiros podem afetar adversamente a disponibilidade do serviço ou os resultados de execução."
+        ]
+      },
+      {
+        "title": "Eventos extraordinários e força maior",
+        "paragraphs": [
+          "Eventos extraordinários fora do controle razoável — incluindo, entre outros, desastres naturais, guerra, emergências regulatórias, falhas de mercado ou rede — podem prejudicar ou suspender os serviços.",
+          "Tais eventos podem resultar em perdas ou atrasos para os quais nenhuma garantia ou compensação pode ser fornecida."
+        ]
+      },
+      {
+        "title": "Reconhecimento de responsabilidade do cliente",
+        "paragraphs": [
+          "Ao usar os serviços, os clientes reconhecem e aceitam que: leram e entenderam estes riscos; avaliaram independentemente os riscos envolvidos; são os únicos responsáveis por suas decisões e ações; conhecem possíveis perdas e expectativas.",
+          "Os clientes devem buscar aconselhamento profissional independente se tiverem dúvidas sobre os riscos."
+        ]
+      },
+      {
+        "title": "Sem declaração de confiança",
+        "paragraphs": [
+          "Os clientes não devem confiar em quaisquer declarações, materiais ou comunicações como garantias de rentabilidade, segurança ou resultados.",
+          "Apenas a documentação contratual vinculante governa a relação legal."
+        ]
+      }
     ]
   }
 }
