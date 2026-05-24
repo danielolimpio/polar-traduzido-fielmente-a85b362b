@@ -65,12 +65,23 @@ const Faq = () => {
       .map((c) => [c, map.get(c)!] as const);
   }, [filtered]);
 
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: faqs.map((f) => ({
+      "@type": "Question",
+      name: f.q,
+      acceptedAnswer: { "@type": "Answer", text: f.a },
+    })),
+  };
+
   return (
     <main className="min-h-screen bg-background">
       <Seo
         title={t("faqPage.seoTitle")}
         description={t("faqPage.seoDesc")}
         routeKey="faq"
+        jsonLd={jsonLd}
       />
       <SiteHeader />
 

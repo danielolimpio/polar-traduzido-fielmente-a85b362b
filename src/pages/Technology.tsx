@@ -23,12 +23,24 @@ const Technology = () => {
   const data = t("technology.data", { returnObjects: true }) as { t: string; d: string }[];
   const metrics = t("technology.metrics", { returnObjects: true }) as { v: string; t: string; d: string }[];
 
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    name: "Polar Tensor",
+    applicationCategory: "FinanceApplication",
+    operatingSystem: "Web, iOS, Android",
+    description: t("technology.seoDesc"),
+    url: SITE_URL,
+    offers: { "@type": "Offer", price: "0", priceCurrency: "USD" },
+  };
+
   return (
     <main className="min-h-screen bg-background">
       <Seo
         title={t("technology.seoTitle")}
         description={t("technology.seoDesc")}
         routeKey="technology"
+        jsonLd={jsonLd}
       />
       <SiteHeader />
       <PageHero

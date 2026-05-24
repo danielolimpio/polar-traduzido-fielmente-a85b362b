@@ -25,12 +25,23 @@ const About = () => {
   const historyBullets = t("about.historyBullets", { returnObjects: true }) as string[];
   const visionBullets = t("about.visionBullets", { returnObjects: true }) as string[];
 
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    name: "Polar Tensor",
+    url: SITE_URL,
+    logo: `${SITE_URL}/og-image.jpg`,
+    description: t("about.seoDesc"),
+    sameAs: [SIGNUP_URL],
+  };
+
   return (
     <main className="min-h-screen bg-background">
       <Seo
         title={t("about.seoTitle")}
         description={t("about.seoDesc")}
         routeKey="about"
+        jsonLd={jsonLd}
       />
       <SiteHeader />
       <PageHero
