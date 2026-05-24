@@ -292,9 +292,10 @@ export const PerformanceChart = () => {
           {/* PDF Download CTA */}
           <div className="mt-8 flex justify-center">
             <a
-              href="/apresentacao-polar-tensor.pdf"
+              href={`/presentations/polar-tensor-${(["pt","en","es","fr","de","it","vi"].includes((i18n.resolvedLanguage || i18n.language || "pt").split("-")[0]) ? (i18n.resolvedLanguage || i18n.language || "pt").split("-")[0] : "pt")}.pdf`}
               target="_blank"
               rel="noopener noreferrer"
+              download
               className="group relative inline-flex items-center gap-3 overflow-hidden rounded-xl border border-primary/40 bg-gradient-to-r from-primary/15 via-primary/10 to-primary/5 px-6 py-4 font-semibold text-foreground shadow-[0_0_30px_-10px_hsl(var(--primary)/0.5)] transition-all hover:-translate-y-0.5 hover:border-primary hover:shadow-[0_0_40px_-8px_hsl(var(--primary)/0.7)]"
               aria-label={t("performance.pdfAria")}
             >
