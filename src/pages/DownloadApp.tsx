@@ -54,7 +54,7 @@ const DownloadApp = () => {
     "@context": "https://schema.org",
     "@type": "MobileApplication",
     name: "Polar Tensor App",
-    operatingSystem: "iOS, Android",
+    operatingSystem: "Android",
     applicationCategory: "FinanceApplication",
     description: t("downloadAppPage.seoDesc"),
     offers: { "@type": "Offer", price: "0", priceCurrency: "USD" },
