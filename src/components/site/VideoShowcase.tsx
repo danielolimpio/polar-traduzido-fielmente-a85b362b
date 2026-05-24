@@ -65,7 +65,8 @@ export const VideoShowcase = ({
           <div className="relative rounded-[1.4rem] border border-primary/30 bg-gradient-card p-2 shadow-glow md:p-3">
             <div className="overflow-hidden rounded-[1rem] border border-border/50 bg-background">
               <video
-                src={videoSrc}
+                src={_videoSrc}
+                key={_videoSrc}
                 controls
                 playsInline
                 preload="metadata"
