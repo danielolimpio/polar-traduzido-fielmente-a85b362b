@@ -80,7 +80,7 @@ export const Seo = ({ title, description, canonical, routeKey, image, jsonLd }: 
     const ogImage = image || DEFAULT_OG_IMAGE;
     const resolvedCanonical =
       canonical ||
-      (routeKey ? buildUrl(routeKey, (["pt", "en", "es"].includes(lang) ? lang : "pt") as "pt" | "en" | "es") : "");
+      (routeKey ? buildUrl(routeKey, (SUPPORTED.includes(lang as typeof SUPPORTED[number]) ? lang : "pt") as typeof SUPPORTED[number]) : "");
 
     document.title = title;
     document.documentElement.lang = LANG_TO_HTML[lang] || lang;
