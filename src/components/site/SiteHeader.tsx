@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button";
 import { ArrowRight, Menu, Smartphone, X } from "lucide-react";
 import { Logo } from "./Logo";
 import { LanguageSwitcher } from "./LanguageSwitcher";
-import { SIGNUP_URL } from "@/lib/constants";
+import { SIGNUP_URL, SIGNIN_URL } from "@/lib/constants";
 import { useState } from "react";
 import { useTranslation } from "react-i18next";
 import { cn } from "@/lib/utils";
@@ -53,7 +53,7 @@ export const SiteHeader = () => {
             </Link>
           </Button>
           <Button asChild variant="ghost" size="sm" className="hidden w-[80px] justify-center sm:inline-flex">
-            <a href={SIGNUP_URL} target="_blank" rel="noopener noreferrer">{t("common.signIn")}</a>
+            <a href={SIGNIN_URL} target="_blank" rel="noopener noreferrer">{t("common.signIn")}</a>
           </Button>
           <Button asChild variant="hero" size="sm" className="min-w-[112px] justify-center">
             <a href={SIGNUP_URL} target="_blank" rel="noopener noreferrer">

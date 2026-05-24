@@ -6,9 +6,9 @@ import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Card } from "@/components/ui/card";
 import {
-  Smartphone, Apple, Bell, Wallet, TrendingUp, BarChart3, ShieldCheck, Zap, Eye, ArrowRight,
+  Smartphone, Bell, Wallet, TrendingUp, BarChart3, ShieldCheck, Zap, Eye, ArrowRight,
 } from "lucide-react";
-import { SIGNUP_URL, SITE_URL } from "@/lib/constants";
+import { SIGNUP_URL, SITE_URL, PLAY_STORE_URL } from "@/lib/constants";
 import { ResponsiveImage } from "@/components/site/ResponsiveImage";
 import appHomePic from "@/assets/hero-app.webp?w=260;520&format=avif;webp&as=picture";
 import appHomeBlur from "@/assets/hero-app.webp?w=24&blur=400&format=webp&as=src";
@@ -21,8 +21,6 @@ import appTransparencyBlur from "@/assets/app-transparency.webp?w=24&blur=400&fo
 import appPortfolioPic from "@/assets/app-portfolio.webp?w=280;560&format=avif;webp&as=picture";
 import appPortfolioBlur from "@/assets/app-portfolio.webp?w=24&blur=400&format=webp&as=src";
 
-const APP_STORE_URL = "https://apps.apple.com/app/polar-tensor";
-const PLAY_STORE_URL = "https://play.google.com/store/apps/details?id=com.polartensor";
 
 appPortfolioPic; appPortfolioBlur; // (reserved for future feature slot)
 const featurePictures = [
@@ -42,12 +40,6 @@ const DownloadApp = () => {
   const StoreButtons = ({ className = "" }: { className?: string }) => (
     <div className={`flex flex-col items-center justify-center gap-3 sm:flex-row ${className}`}>
       <Button asChild variant="hero" size="lg" className="w-full sm:w-auto">
-        <a href={APP_STORE_URL} target="_blank" rel="noopener noreferrer" aria-label={t("downloadAppPage.appStoreAria")}>
-          <Apple className="mr-2 h-5 w-5" />
-          {t("downloadAppPage.appStore")}
-        </a>
-      </Button>
-      <Button asChild variant="hero" size="lg" className="w-full sm:w-auto">
         <a href={PLAY_STORE_URL} target="_blank" rel="noopener noreferrer" aria-label={t("downloadAppPage.playStoreAria")}>
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" className="mr-2 h-5 w-5 fill-current">
             <path d="M3.609 1.814L13.792 12 3.61 22.186a.996.996 0 01-.61-.92V2.734a1 1 0 01.609-.92zm10.89 10.893l2.302 2.302-10.937 6.333 8.635-8.635zm3.199-3.198l2.807 1.626a1 1 0 010 1.73l-2.808 1.626L15.205 12l2.493-2.491zM5.864 2.658L16.802 8.99l-2.302 2.302-8.636-8.634z"/>
@@ -62,7 +54,7 @@ const DownloadApp = () => {
     "@context": "https://schema.org",
     "@type": "MobileApplication",
     name: "Polar Tensor App",
-    operatingSystem: "iOS, Android",
+    operatingSystem: "Android",
     applicationCategory: "FinanceApplication",
     description: t("downloadAppPage.seoDesc"),
     offers: { "@type": "Offer", price: "0", priceCurrency: "USD" },
