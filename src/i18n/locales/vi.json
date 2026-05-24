@@ -1,0 +1,1537 @@
+{
+  "common": {
+    "signIn": "Đăng nhập",
+    "signUp": "Đăng ký",
+    "signUpFree": "Đăng ký miễn phí",
+    "signUpNow": "Đăng ký ngay",
+    "downloadApp": "Ứng dụng",
+    "downloadAppFull": "Tải xuống ứng dụng Polar Tensor",
+    "openMenu": "Mở menu",
+    "language": "Ngôn ngữ",
+    "back": "Quay lại trang chủ",
+    "startNow": "Bắt đầu ngay",
+    "signUpCta": "Đăng ký ngay",
+    "accessPlatform": "Truy cập nền tảng"
+  },
+  "nav": {
+    "home": "Trang chủ",
+    "about": "Giới thiệu",
+    "technology": "Công nghệ",
+    "consultancy": "Tư vấn",
+    "plans": "Gói sản phẩm",
+    "rewards": "Phần thưởng",
+    "faq": "Câu hỏi thường gặp"
+  },
+  "home": {
+    "seoTitle": "Polar Tensor | Giao dịch Algo crypto AI",
+    "seoDesc": "Polar Tensor: giao dịch thuật toán tiền mã hóa bằng mạng nơ-ron độc quyền. Hoạt động 24/5 trên Binance, minh bạch hoàn toàn và hỗ trợ đa ngôn ngữ."
+  },
+  "hero": {
+    "badge": "Hệ thống Polar One — Hoạt động từ năm 2024",
+    "title1": "Polar Tensor",
+    "title2": "Giao dịch AI",
+    "title3": "trong Tiền điện tử",
+    "description": "<1>Polar Tensor</1> là nền tảng giao dịch thuật toán được hỗ trợ bởi các mạng thần kinh độc quyền cho thị trường tiền điện tử — phân tích đa khung thời gian, thực hiện độ trễ thấp và quản lý rủi ro tự động hoạt động 24/5.",
+    "stat1": "Mức giảm tối đa",
+    "stat2": "Độ trễ",
+    "stat3": "Giao dịch/ngày",
+    "imageAlt": "Ứng dụng Polar Tensor hiển thị danh mục đầu tư USDT"
+  },
+  "trust": {
+    "badge": "Tại sao chọn Polar Tensor",
+    "title1": "Kỹ thuật tài chính kết hợp với",
+    "title2": "học sâu",
+    "subtitle": "Chúng tôi đã phát triển các thuật toán độc quyền cho thị trường tiền điện tử từ năm 2018. Trụ sở R&D tại Hồng Kông, quỹ được đăng ký tại Panama.",
+    "items": [
+      {
+        "title": "Cơ sở dữ liệu mạnh mẽ",
+        "desc": "Dữ liệu trên chuỗi, tâm lý thị trường, sổ lệnh và các chỉ số thị trường trên nhiều khung thời gian cung cấp cho các mô hình của chúng tôi."
+      },
+      {
+        "title": "Mô hình đã được thử nghiệm",
+        "desc": "Mạng thần kinh kết hợp phân tích xu hướng và phương hướng, được xác nhận qua các chế độ thị trường khác nhau từ năm 2020."
+      },
+      {
+        "title": "Thử nghiệm ngược nghiêm ngặt",
+        "desc": "Mỗi mô hình được kiểm tra với dữ liệu lịch sử phong phú trước khi giao dịch vốn thực, đảm bảo lợi thế thống kê."
+      }
+    ]
+  },
+  "techHome": {
+    "badge": "Công nghệ",
+    "title1": "Công nghệ",
+    "title2": "AI giao dịch tiên tiến",
+    "subtitle": "Mạng lưới thần kinh dựa trên nghiên cứu được thiết kế để đạt được hiệu suất vượt trội trên thị trường tiền điện tử.",
+    "items": [
+      {
+        "title": "Phân tích đa khung thời gian",
+        "desc": "Kiến trúc CNN với các mô-đun chú ý nắm bắt các mẫu trên các thang thời gian đồng thời."
+      },
+      {
+        "title": "Tích hợp dữ liệu",
+        "desc": "OHLCV, dữ liệu trên chuỗi, sổ lệnh và tâm lý — được hợp nhất trong một khung duy nhất."
+      },
+      {
+        "title": "Thực thi tần số cao",
+        "desc": "Độ trễ dưới 50 mili giây, kết nối trực tiếp với sàn giao dịch, điều chỉnh quy mô vị thế động."
+      },
+      {
+        "title": "Hiệu suất đã được chứng minh",
+        "desc": "Hoạt động từ năm 2020 (ban đầu là FTX), hoàn toàn tự động và được điều khiển bằng AI từ năm 2024."
+      }
+    ]
+  },
+  "engine": {
+    "badge": "Cách hoạt động",
+    "title1": "Cơ chế",
+    "title2": "đầu tư thông minh",
+    "subtitle": "Hai loại mạng thần kinh hoạt động cùng nhau để tối đa hóa độ chính xác và giảm thiểu rủi ro.",
+    "items": [
+      {
+        "title": "Mạng Xu hướng",
+        "desc": "Phân tích sự thống trị của BTC, dữ liệu on-chain và điều kiện thị trường dài hạn để xác định chế độ tăng giá hoặc giảm giá."
+      },
+      {
+        "title": "Mạng Định hướng",
+        "desc": "Xử lý dữ liệu thời gian thực, thay đổi sổ lệnh, tâm lý tin tức và các chỉ số blockchain để dự đoán các động thái ngay lập tức."
+      },
+      {
+        "title": "Cơ chế Thực thi",
+        "desc": "Các giao dịch tần suất cao được thực hiện khi các mô hình cho thấy độ tin cậy cao, với tỷ lệ vị thế thích ứng."
+      }
+    ],
+    "opTitle": "Vận hành liên tục và tự động",
+    "opDesc": "Thứ Hai đến Thứ Sáu, từ 8:00 UTC đến 22:00 UTC – thời gian thanh khoản cao điểm. Phân phối lợi nhuận hàng tuần vào Thứ Sáu lúc 23:00 UTC."
+  },
+  "binance": {
+    "badge": "Tài khoản tổ chức · Binance VIP9",
+    "title1": "Hoạt động thực tế trên",
+    "title2": "Binance",
+    "title3": "với",
+    "title4": "uy tín có thể kiểm toán",
+    "subtitle": "Khối lượng thể chế, trạng thái đặc quyền cao nhất trên sàn giao dịch lớn nhất thế giới và nguồn cấp dữ liệu thực hiện trực tiếp từ văn phòng hỗ trợ của Polar One.",
+    "card1": {
+      "label": "Số dư Binance",
+      "sub": "Tổng giá trị · USDT",
+      "foot": "≈ 192.491.814,64 USD · cập nhật theo thời gian thực",
+      "tag": "Giữ hộ trực tiếp trên Binance"
+    },
+    "card2": {
+      "label": "Trạng thái Binance",
+      "sub": "Đặc quyền VIP của tôi",
+      "foot": "Cấp độ tổ chức hàng đầu · Phí thấp nhất và ưu tiên thực hiện"
+    },
+    "card3": {
+      "label": "Lợi nhuận mọi thời đại",
+      "sub": "Tổng quan hiệu suất",
+      "foot": "Lợi nhuận tích lũy · hệ thống Polar One đã kiểm toán",
+      "tag": "30 ngày gần nhất: +20,55%"
+    },
+    "feed": {
+      "title": "Nguồn cấp dữ liệu giao dịch trực tiếp",
+      "subtitle": "Thực hiện theo thời gian thực trong văn phòng hỗ trợ của Polar One",
+      "open": "Mở",
+      "close": "Đóng",
+      "footer": "Dữ liệu văn phòng hỗ trợ minh họa · Thực hiện đã kiểm toán thực tế trên Binance"
+    }
+  },
+  "video": {
+    "default": {
+      "badge": "Gặp gỡ Polar Tensor",
+      "titleStart": "Một giải pháp ",
+      "titleHighlight": "tự động 100%",
+      "description": "Xem và khám phá cách công nghệ AI của chúng tôi hoạt động trên thị trường tiền điện tử với sự hợp tác của Binance.",
+      "cta": "Đăng ký và bắt đầu ngay",
+      "ctaFoot": "Truy cập tức thì • Không mất phí tạo tài khoản của bạn",
+      "fallback": "Trình duyệt của bạn không hỗ trợ video HTML5."
+    },
+    "binance": {
+      "badge": "Polar Tensor Hậu trường · Binance",
+      "titleStart": "Xem hoạt động ",
+      "titleHighlight": "trực tiếp trên Binance",
+      "description": "Xem các cảnh quay hậu trường thực tế khi hệ thống Polar One thực hiện các chiến lược đã được kiểm toán trong thời gian thực."
+    }
+  },
+  "performance": {
+    "badge": "Hiệu suất lịch sử",
+    "title1": "Đã kiểm toán",
+    "title2": "lợi nhuận hàng tháng",
+    "subtitle": "Mức trung bình hàng tháng {{avg}}% trong khoảng từ 04/24 đến 03/26. Kết quả trong quá khứ không đảm bảo lợi nhuận trong tương lai.",
+    "avgMonthly": "Lợi nhuận trung bình hàng tháng",
+    "avgDrawdown": "Mức sụt giảm trung bình hàng tháng",
+    "legendYield": "Lợi nhuận hàng tháng",
+    "legendDrawdown": "Tối đa sụt giảm",
+    "average": "Trung bình {{avg}}%",
+    "tooltipProfit": "Lợi nhuận: {{val}}%",
+    "tooltipDrawdown": "Sụt giảm: {{val}}%",
+    "footer": "Kết quả đã được kiểm toán từ hệ thống Polar One. Di chuyển chuột qua từng cột để xem lợi nhuận chính xác và mức sụt giảm.",
+    "pdfLabel": "Tài liệu chính thức · PDF",
+    "pdfTitle": "Tải xuống Bản trình bày Polar Tensor",
+    "pdfAria": "Tải xuống bản trình bày chính thức của Polar Tensor dưới dạng PDF"
+  },
+  "plansHome": {
+    "badge": "Gói",
+    "title1": "Chọn",
+    "title2": "cấp độ truy cập của bạn",
+    "subtitle": "Phí cấp phép một lần 10% trên số tiền gửi. Phí hiệu suất chỉ tính trên lợi nhuận.",
+    "popular": "Phổ biến nhất",
+    "perfFee": "phí hiệu suất",
+    "from": "Bắt đầu từ",
+    "start": "Bắt đầu ngay",
+    "seeAll": "Xem tất cả các gói",
+    "items": [
+      {
+        "name": "Chuyên nghiệp",
+        "min": "8.000 USDT",
+        "fee": "30%",
+        "features": [
+          "Truy cập vào hệ thống Polar One",
+          "Phân phối lợi nhuận hàng tuần",
+          "Rút tiền tự động 24/7",
+          "Hỗ trợ tiêu chuẩn"
+        ]
+      },
+      {
+        "name": "Cao cấp",
+        "min": "25.000 USDT",
+        "fee": "25%",
+        "features": [
+          "Tất cả từ gói Chuyên nghiệp",
+          "Giảm phí hiệu suất",
+          "Ưu tiên thực hiện",
+          "Hỗ trợ chuyên biệt"
+        ]
+      },
+      {
+        "name": "Doanh nghiệp",
+        "min": "100.000 USDT",
+        "fee": "20%",
+        "features": [
+          "Tất cả từ gói Cao cấp",
+          "Phí hiệu suất thấp nhất",
+          "Quản lý tài khoản độc quyền",
+          "Báo cáo thể chế"
+        ]
+      }
+    ]
+  },
+  "rewardsHome": {
+    "badge": "Chương trình phần thưởng",
+    "title1": "Xây dựng thu nhập thụ động với",
+    "title2": "giới thiệu",
+    "subtitle": "Mời mọi người tham gia nền tảng và kiếm phần thưởng lên đến 15 cấp sâu từ phí cấp phép, cộng với phần thưởng định kỳ hàng tuần từ lợi nhuận tạo ra.",
+    "benefits": [
+      {
+        "t": "Phần thưởng cấp phép",
+        "d": "Thu nhập từ phí cấp phép lên đến 15 cấp."
+      },
+      {
+        "t": "Phần thưởng định kỳ",
+        "d": "Thu nhập hàng tuần từ lợi nhuận của người được giới thiệu."
+      },
+      {
+        "t": "Phần thưởng vô hạn",
+        "d": "Phần trăm trên tổng khối lượng của toàn bộ đội ngũ."
+      },
+      {
+        "t": "Xếp hạng & Thưởng",
+        "d": "Phần thưởng USDT từ hạng Đồng đến Kim Cương."
+      }
+    ],
+    "ranksTitle": "Xếp hạng",
+    "ranksSubtitle": "Thăng cấp khi khối lượng mạng lưới của bạn phát triển.",
+    "colRank": "Hạng",
+    "colVolume": "Khối lượng",
+    "colBonus": "Thưởng",
+    "ranks": [
+      {
+        "t": "Sắt",
+        "v": "100 USDT",
+        "b": "—"
+      },
+      {
+        "t": "Đồng",
+        "v": "500 USDT",
+        "b": "50 USDT"
+      },
+      {
+        "t": "Bạc",
+        "v": "2,500 USDT",
+        "b": "200 USDT"
+      },
+      {
+        "t": "Vàng",
+        "v": "8,000 USDT",
+        "b": "500 USDT"
+      },
+      {
+        "t": "Bạch kim",
+        "v": "25,000 USDT",
+        "b": "1,500 USDT"
+      },
+      {
+        "t": "Titan",
+        "v": "100,000 USDT",
+        "b": "20,000 USDT"
+      },
+      {
+        "t": "Hồng ngọc",
+        "v": "1,000,000 USDT",
+        "b": "50,000 USDT"
+      },
+      {
+        "t": "Lục bảo",
+        "v": "3,000,000 USDT",
+        "b": "150,000 USDT"
+      },
+      {
+        "t": "Kim cương",
+        "v": "8,000,000 USDT",
+        "b": "500,000 USDT"
+      }
+    ]
+  },
+  "faqHome": {
+    "badge": "HỎI ĐÁP",
+    "title1": "Các câu hỏi",
+    "title2": "thường gặp",
+    "items": [
+      {
+        "q": "Polar Tensor là gì?",
+        "a": "Chúng tôi là một công ty công nghệ tài chính tập trung vào việc phát triển các thuật toán giao dịch mạng lưới thần kinh độc quyền cho thị trường tiền điện tử. Chúng tôi đã hoạt động từ năm 2018, với phiên bản lợi nhuận đầu tiên vào năm 2020."
+      },
+      {
+        "q": "Hệ thống Polar One hoạt động như thế nào?",
+        "a": "Đây là một hệ thống giao dịch hoàn toàn tự động sử dụng hai loại mạng lưới thần kinh — xu hướng và định hướng — để xác định cơ hội và thực hiện các giao dịch tần số cao với độ trễ thấp trên Binance."
+      },
+      {
+        "q": "Những rủi ro liên quan là gì?",
+        "a": "Giao dịch tiền điện tử tiềm ẩn những rủi ro đáng kể, bao gồm tính biến động, rủi ro thị trường, quy định, thanh khoản và công nghệ. Bạn có thể mất một phần hoặc toàn bộ số vốn của mình. Chúng tôi đặc biệt khuyên bạn nên tìm kiếm lời khuyên tài chính độc lập."
+      },
+      {
+        "q": "Cách tính phí hoạt động như thế nào?",
+        "a": "Chúng tôi tính phí cấp phép một lần 10% trên số tiền gửi và phí hiệu suất (20% đến 30% tùy thuộc vào gói) chỉ trên lợi nhuận đã tạo ra. Chúng tôi phân phối lợi nhuận hàng tuần, vào thứ Sáu lúc 23:00 UTC."
+      },
+      {
+        "q": "Tôi có thể gửi những loại tiền điện tử nào?",
+        "a": "Chúng tôi chấp nhận Bitcoin, Ethereum, Solana và USDT. Các khoản rút tiền được xử lý tự động 24/7 bằng USDT và USDC."
+      },
+      {
+        "q": "Công ty được đăng ký ở đâu?",
+        "a": "Polar Tensor Corp. được đăng ký tại Panama (Số 155771852), với Polar MSB Inc. tại Hoa Kỳ (Montana, Số D1537006, FinCEN 31000306664168) và Polar Tensor LAB Limited tại Hong Kong (Số 78737300)."
+      }
+    ]
+  },
+  "ctaHome": {
+    "badge": "Bắt đầu ngay",
+    "title1": "Bắt đầu giao dịch với",
+    "title2": "AI hôm nay",
+    "subtitle": "Tải ứng dụng của chúng tôi và truy cập công nghệ giao dịch mạng lưới thần kinh tiên tiến trực tiếp từ điện thoại của bạn.",
+    "btn1": "Đăng ký ngay",
+    "btn2": "Truy cập nền tảng",
+    "footer": "Có sẵn trên App Store và Google Play • Rút tiền tự động bằng USDT và USDC"
+  },
+  "footer": {
+    "tagline": "<1>Polar Tensor</1> — nền tảng giao dịch thuật toán với trí tuệ nhân tạo cho thị trường tiền mã hóa.",
+    "platform": "Nền tảng",
+    "company": "Công ty",
+    "legal": "Pháp lý",
+    "links": {
+      "home": "Trang chủ",
+      "tech": "Công nghệ",
+      "perf": "Hiệu suất",
+      "plans": "Gói dịch vụ",
+      "downloadApp": "Tải ứng dụng Polar Tensor",
+      "about": "Về chúng tôi",
+      "consultancy": "Tư vấn",
+      "faq": "Câu hỏi thường gặp",
+      "terms": "Điều khoản sử dụng",
+      "privacy": "Chính sách bảo mật",
+      "risk": "Tiết lộ rủi ro"
+    },
+    "regulationsBadge": "Cơ cấu công ty & quy định",
+    "groupTitle": "Polar Tensor Group™",
+    "groupDesc": "Chúng tôi hoạt động dưới một nhóm quốc tế được cấp phép, với các pháp nhân chuyên biệt ở nhiều khu vực pháp lý để đảm bảo tuân thủ, an ninh và minh bạch.",
+    "groupNote": "Tất cả các pháp nhân trên tạo thành <1>Polar Tensor Group™</1>, thuộc sở hữu và điều hành của <3>Polar Tensor Corporation™</3>.",
+    "registry": "Đăng ký",
+    "jurisdiction": "Khu vực pháp lý",
+    "regulations": [
+      {
+        "name": "Polar Tensor Corp.",
+        "jurisdiction": "Cộng hòa Panama",
+        "description": "Công nghệ giao dịch tự động"
+      },
+      {
+        "name": "Polar Tensor USA LLC",
+        "jurisdiction": "Hoa Kỳ — Wyoming",
+        "description": "Thực thể khách hàng cho Hoa Kỳ và Quốc tế (ngoài EU)"
+      },
+      {
+        "name": "Polar Tensor Europe SP ZOO",
+        "jurisdiction": "Cộng hòa Ba Lan (EU)",
+        "description": "Thực thể khách hàng cho Liên minh Châu Âu"
+      },
+      {
+        "name": "Polar MSB Inc.",
+        "jurisdiction": "Hoa Kỳ — Montana",
+        "description": "Thanh toán, sàn giao dịch tiền pháp định và dịch vụ thẻ"
+      },
+      {
+        "name": "Polar Tensor LAB Limited",
+        "jurisdiction": "Hong Kong",
+        "description": "Công ty nghiên cứu và phát triển"
+      },
+      {
+        "name": "Polar Tensor Africa Limited",
+        "jurisdiction": "Cộng hòa Liên bang Nigeria",
+        "description": "Tuyển dụng khách hàng ngoài EU và Hoa Kỳ"
+      }
+    ],
+    "riskTitle": "Tiết lộ rủi ro",
+    "riskBody": "Thị trường tiền mã hóa tiềm ẩn nhiều rủi ro đáng kể và có thể không phù hợp với tất cả mọi người. Giá trị của tiền mã hóa có thể rất biến động và thay đổi nhanh chóng. Thông báo này nhằm mục đích làm rõ các rủi ro liên quan đến công nghệ blockchain, tiền mã hóa và các dịch vụ do Polar Tensor cung cấp. Bằng cách sử dụng dịch vụ của chúng tôi, bạn thừa nhận và đồng ý rằng khi tương tác với Polar Tensor, bạn hiểu rằng bạn có thể mất một phần hoặc toàn bộ tài sản tiền mã hóa của mình và đồng ý chịu hoàn toàn trách nhiệm về hành động của mình. Chúng tôi đặc biệt khuyến nghị bạn nên tìm kiếm lời khuyên tài chính độc lập và tiến hành nghiên cứu kỹ lưỡng.",
+    "copyright": "© 2026 | Polar Tensor | Mọi quyền được bảo lưu | Được phát triển bởi",
+    "riskShort": "Giao dịch có rủi ro. Giao dịch có trách nhiệm."
+  },
+  "about": {
+    "seoTitle": "Về Polar Tensor | Đối tác Binance & Nghiên cứu AI",
+    "seoDesc": "Polar Tensor — Đối tác Binance với VIP 9. Các thuật toán giao dịch crypto độc quyền từ năm 2018, R&D tại Hồng Kông và quỹ đăng ký tại Panama.",
+    "heroBadge": "Về chúng tôi",
+    "heroTitle": "Polar Tensor — Đối tác Binance",
+    "heroSubtitle": "Cách mạng hóa thế giới tiền điện tử với các giải pháp được hỗ trợ bởi AI. Giao dịch tự động 100%, được thực hiện trực tiếp trên Binance.",
+    "whoBadge": "Chúng tôi là ai",
+    "whoTitle1": "Nghiên cứu, công nghệ và",
+    "whoTitle2": "giao dịch thuật toán",
+    "whoSubtitle": "Từ nghiên cứu tại Hồng Kông đến hoạt động tự động 100% trên Binance — một hành trình được xây dựng trên kỹ thuật dữ liệu, AI và kỷ luật thị trường.",
+    "historyTitle": "Lịch sử",
+    "historyText": "Đội ngũ của chúng tôi bắt đầu phát triển các thuật toán giao dịch độc quyền cho thị trường tiền điện tử vào <1>năm 2018</1>, với thành công đầu tiên vào <3>năm 2020</3>. Trụ sở chính đặt tại <5>Hồng Kông</5>, nơi tất cả các hoạt động R&D được thực hiện, và quỹ được đăng ký tại <7>Panama</7>.",
+    "historyBullets": [
+      "R&D tại Hồng Kông",
+      "Quỹ đăng ký tại Panama",
+      "Thuật toán độc quyền từ năm 2018"
+    ],
+    "visionTitle": "Tầm nhìn",
+    "visionText": "Mục tiêu của chúng tôi là trở thành nhà cung cấp lớn nhất các chiến lược thuật toán trong lĩnh vực tiền điện tử vào <1>năm 2027</1>. Ngoài ra, chúng tôi có kế hoạch mở rộng bộ phận phần mềm của mình để tạo ra các công cụ và thuật toán cho các quỹ phòng hộ và sàn giao dịch tiền điện tử khác.",
+    "visionBullets": [
+      "Dẫn đầu toàn cầu vào năm 2027",
+      "Mở rộng bộ phận phần mềm",
+      "Công cụ cho các quỹ phòng hộ và sàn giao dịch"
+    ],
+    "partnerBadge": "Đối tác Binance",
+    "partnerTitle1": "Cách mạng hóa thế giới tiền điện tử với",
+    "partnerTitle2": "AI",
+    "partnerSubtitle": "Giao dịch tự động, 100% được thực hiện bằng Trí tuệ nhân tạo, trực tiếp trên Binance. Đầu tư và kiếm tiền — không cần giới thiệu bất kỳ ai.",
+    "businessInfo": [
+      {
+        "label": "Công ty đăng ký từ",
+        "value": "2018"
+      },
+      {
+        "label": "Giao dịch từ",
+        "value": "2020"
+      },
+      {
+        "label": "Hoạt động trên Binance từ",
+        "value": "2024"
+      },
+      {
+        "label": "Tài khoản doanh nghiệp Binance",
+        "value": "VIP 9"
+      }
+    ],
+    "directInvestor": "<1>Mô hình trực tiếp đến nhà đầu tư:</1> bạn đầu tư và kiếm tiền mà không cần giới thiệu bất kỳ ai. Không MLM, không mạng lưới liên kết — chỉ có công nghệ được áp dụng vào thị trường.",
+    "teamBadge": "Đội ngũ của chúng tôi",
+    "teamTitle1": "Những con người đằng sau",
+    "teamTitle2": "công nghệ",
+    "teamSubtitle": "Một đội ngũ tinh gọn, chuyên biệt cao, tập trung vào nghiên cứu và thực thi ứng dụng.",
+    "founderBadge": "Người sáng lập",
+    "founderName": "Felix Bick",
+    "founderBio1": "Sinh ra tại Hamburg, Felix Bick bắt đầu sự nghiệp của mình tại một ngân hàng tư nhân của Đức, nơi ông phát triển niềm đam mê thương mại quốc tế. Con đường của ông sau đó đã đưa ông đến Thượng Hải và Hồng Kông, nơi ông làm việc tại <1>Li & Fung</1>, chuyên về quản lý và tối ưu hóa chuỗi cung ứng.",
+    "founderBio2": "Theo thời gian, sự say mê của ông đối với các mẫu và hiệu quả, kết hợp với sự quan tâm của ông đến tiền điện tử, đã dẫn ông và đội ngũ của mình bắt đầu phát triển phần mềm giao dịch thuật toán.",
+    "founderPhotoAlt": "Felix Bick — Người sáng lập Polar Tensor",
+    "teamLabel": "Đội ngũ",
+    "teamSpecialists": "Các chuyên gia đa ngành",
+    "team": [
+      {
+        "role": "Nhà khoa học dữ liệu AI",
+        "count": "3x"
+      },
+      {
+        "role": "DevOps",
+        "count": "1x"
+      },
+      {
+        "role": "Nhà toán học",
+        "count": "1x"
+      },
+      {
+        "role": "Giám đốc công nghệ sáng lập",
+        "count": "1x"
+      }
+    ],
+    "ctaTitle1": "Hãy trở thành một phần của nền tảng với",
+    "ctaTitle2": "những nền tảng vững chắc",
+    "ctaSubtitle": "Công nghệ, nghiên cứu và hoạt động thể chế trong tầm tay của mọi nhà đầu tư."
+  },
+  "technology": {
+    "seoTitle": "Technology | Polar Tensor — Neural Crypto Trading",
+    "seoDesc": "Polar Tensor's tech: CNN architectures with attention, trend and direction neural networks, low-latency execution and massive data integration.",
+    "heroBadge": "How it works",
+    "heroTitle": "Neural network engineering for crypto markets",
+    "heroSubtitle": "A two-stage approach combining trend analysis and high-frequency directional prediction for the best execution timing.",
+    "stages": [
+      {
+        "title": "Trend Networks",
+        "desc": "Analyze BTC dominance, transaction volumes and multi-timeframe averages to define the primary market direction.",
+        "bullets": [
+          "Daily evaluation",
+          "On-chain integration",
+          "Long cycles"
+        ]
+      },
+      {
+        "title": "Direction Networks",
+        "desc": "Multi-axis CNN architecture with attention mechanisms processing three timeframes simultaneously for short-term predictions.",
+        "bullets": [
+          "High-frequency signals",
+          "Near-real-time view",
+          "Order book analysis"
+        ]
+      },
+      {
+        "title": "Execution Engine",
+        "desc": "Real-time ensemble with dynamic confidence scoring and adaptive position sizing for risk management.",
+        "bullets": [
+          "Tick-by-tick decisions",
+          "Direct exchange connection",
+          "Strict risk controls"
+        ]
+      }
+    ],
+    "hypothesisBadge": "Core hypothesis",
+    "hypothesisText": "Information flows bidirectionally between timeframes: larger timeframes constrain shorter moves, while microstructure data provides early signals that propagate upwards. Our system captures both dimensions simultaneously for optimal performance.",
+    "edgeBadge": "Statistical edge",
+    "edgeTitle": "Measurable, replicable edge",
+    "edgeSubtitle": "Systematic approaches to market exploitation with quantifiable confidence and rigorous risk controls.",
+    "edge": [
+      {
+        "t": "Confidence-based execution",
+        "d": "Each trade carries a quantified confidence level, dynamically regulating position size."
+      },
+      {
+        "t": "Multi-model consensus",
+        "d": "Multiple neural networks must agree before execution, reducing single-model bias."
+      },
+      {
+        "t": "Market regime adaptation",
+        "d": "Automatic regime detection to maintain edge under different conditions."
+      },
+      {
+        "t": "Optimal execution timing",
+        "d": "Microstructure analysis to reduce slippage and market impact."
+      },
+      {
+        "t": "Continuous verification",
+        "d": "Statistical backtests ensure the edge remains significant and does not degrade."
+      },
+      {
+        "t": "Dynamic risk scaling",
+        "d": "Real-time drawdown monitoring reduces exposure under adverse scenarios."
+      }
+    ],
+    "dataBadge": "Data integration",
+    "dataTitle": "Intelligence from multiple sources",
+    "data": [
+      {
+        "t": "Market Data",
+        "d": "OHLCV, volumes and technical indicators across multiple timeframes, from daily to sub-second."
+      },
+      {
+        "t": "On-Chain Analytics",
+        "d": "Network activity, transaction patterns and adoption metrics."
+      },
+      {
+        "t": "Order Book Dynamics",
+        "d": "Microstructure capture, imbalance, depth and spreads."
+      },
+      {
+        "t": "Sentiment",
+        "d": "News and social media with a 15-minute window for market context."
+      }
+    ],
+    "metricsBadge": "Metrics",
+    "metricsTitle": "Research-validated results",
+    "metrics": [
+      {
+        "v": "1.15",
+        "t": "Profit Factor",
+        "d": "Consistent across regimes."
+      },
+      {
+        "v": "<50ms",
+        "t": "Prediction Latency",
+        "d": "Ultra-low limits for real-time decisions."
+      },
+      {
+        "v": "10K+",
+        "t": "Daily trades",
+        "d": "High-frequency execution across multiple markets."
+      },
+      {
+        "v": "24/7",
+        "t": "Coverage",
+        "d": "Continuous monitoring and operation."
+      }
+    ]
+  },
+  "plansPage": {
+    "seoTitle": "Gói dịch vụ | Polar Tensor",
+    "seoDesc": "Các gói dịch vụ của Polar Tensor: Starter, Basic, Advanced, Professional, Elite và Enterprise. Phí cấp phép một lần 10% và phí hiệu suất trên lợi nhuận.",
+    "heroBadge": "Các gói dịch vụ",
+    "heroTitle": "Chọn cấp độ truy cập của bạn",
+    "heroSubtitle": "Sử dụng Polar One một mình và bắt đầu kiếm tiền ngay lập tức. Phí cấp phép một lần và phí hiệu suất chỉ trên lợi nhuận tạo ra.",
+    "softwareTitle": "Sử dụng Phần mềm giao dịch của chúng tôi",
+    "softwareP1": "Thông qua nền tảng của chúng tôi, bạn có thể tự mình sử dụng <1>Polar One</1> và bắt đầu kiếm tiền ngay lập tức. Một <3>phí cấp phép 10% một lần</3> sẽ được khấu trừ từ số tiền gửi.",
+    "softwareP2": "Chúng tôi tính <1>phí hiệu suất</1> trên lợi nhuận được tạo ra nhờ việc sử dụng phần mềm của chúng tôi, dựa trên giá trị gia tăng trong giao dịch. Lợi nhuận được phân phối vào mỗi <3>Thứ Sáu lúc 23:00 UTC</3>.",
+    "softwareP3": "Bạn có thể rút toàn bộ hoặc một phần đóng góp của mình bất cứ lúc nào; tuy nhiên, một khoản phí một lần <1>10%</1> sẽ được áp dụng để bù đắp chi phí hoạt động. Sau <3>12 tháng</3>, khoản phí này giảm xuống <5>5%</5>, và sau <7>24 tháng</7>, nó trở nên miễn phí.",
+    "highlights": [
+      {
+        "title": "Phí cấp phép 10% một lần",
+        "desc": "Được tính một lần trên số tiền gửi để mở khóa quyền sử dụng Polar One."
+      },
+      {
+        "title": "Lợi nhuận mỗi Thứ Sáu",
+        "desc": "Phân phối kết quả hàng tuần vào lúc 23:00 UTC, trực tiếp trong văn phòng quản lý của bạn."
+      },
+      {
+        "title": "Phí rút giảm dần",
+        "desc": "10% trong 12 tháng đầu, 5% sau 12 tháng và miễn phí sau 24 tháng."
+      }
+    ],
+    "allBadge": "Tất cả các gói",
+    "allTitle": "Từ Starter đến Enterprise",
+    "allSubtitle": "Cấp độ càng cao, phí hiệu suất trên lợi nhuận càng thấp.",
+    "popular": "Phổ biến nhất",
+    "perfFee": "phí hiệu suất",
+    "from": "Bắt đầu từ",
+    "plans": [
+      {
+        "name": "Starter",
+        "min": "100 USDT",
+        "fee": "40%",
+        "features": [
+          "Truy cập vào hệ thống Polar One",
+          "Phân phối lợi nhuận hàng tuần",
+          "Rút tiền tự động 24/7",
+          "Hỗ trợ cộng đồng"
+        ]
+      },
+      {
+        "name": "Basic",
+        "min": "1,000 USDT",
+        "fee": "37%",
+        "features": [
+          "Tất cả các tính năng của gói Starter",
+          "Báo cáo hiệu suất hàng tháng",
+          "Truy cập đầy đủ vào văn phòng quản lý",
+          "Hỗ trợ qua email"
+        ]
+      },
+      {
+        "name": "Advanced",
+        "min": "3,000 USDT",
+        "fee": "33%",
+        "features": [
+          "Tất cả các tính năng của gói Basic",
+          "Cảnh báo thực hiện theo thời gian thực",
+          "Tài liệu giáo dục độc quyền",
+          "Hỗ trợ ưu tiên"
+        ]
+      },
+      {
+        "name": "Professional",
+        "min": "8,000 USDT",
+        "fee": "30%",
+        "features": [
+          "Tất cả các tính năng của gói Advanced",
+          "Phân phối lợi nhuận hàng tuần",
+          "Rút tiền tự động 24/7",
+          "Hỗ trợ tiêu chuẩn"
+        ]
+      },
+      {
+        "name": "Elite",
+        "min": "25,000 USDT",
+        "fee": "25%",
+        "features": [
+          "Tất cả các tính năng của gói Professional",
+          "Phí hiệu suất giảm",
+          "Ưu tiên thực hiện",
+          "Hỗ trợ riêng"
+        ]
+      },
+      {
+        "name": "Enterprise",
+        "min": "100,000 USDT",
+        "fee": "20%",
+        "features": [
+          "Tất cả các tính năng của gói Elite",
+          "Phí hiệu suất thấp nhất",
+          "Quản lý tài khoản độc quyền",
+          "Báo cáo cấp tổ chức"
+        ]
+      }
+    ],
+    "faqBadge": "Thường xuyên hỏi",
+    "faqTitle": "Tất cả về phí, lợi nhuận và rút tiền",
+    "faqSubtitle": "Trả lời rõ ràng về cấp phép, hiệu suất, phân phối hàng tuần và quy tắc rút tiền.",
+    "faqs": [
+      {
+        "q": "Phí cấp phép 10% một lần hoạt động như thế nào?",
+        "a": "Khi bạn gửi tiền, phí 10% một lần sẽ được tự động khấu trừ từ số tiền đóng góp để mở khóa quyền sử dụng Polar One. Khoản phí này chỉ được tính một lần, tại thời điểm gửi tiền và bao gồm phí cấp phép phần mềm giao dịch thuật toán — không có khoản phí hàng tháng hoặc phí định kỳ để sử dụng nền tảng."
+      },
+      {
+        "q": "Phí cấp phép có được tính trên mỗi lần gửi tiền mới không?",
+        "a": "Có. Phí 10% được áp dụng cho mỗi khoản tiền gửi mới, vì nó tương ứng với việc cấp phép vốn sẽ được vận hành bởi Polar One. Số dư tái đầu tư từ lợi nhuận đã phân phối sẽ không phải trả phí cấp phép lại."
+      },
+      {
+        "q": "Phí hiệu suất được tính như thế nào?",
+        "a": "Phí hiệu suất chỉ áp dụng cho lợi nhuận được tạo ra bởi Polar One — không bao giờ trên vốn gửi. Tỷ lệ phần trăm thay đổi tùy theo gói (từ 40% trên Starter đến 20% trên Enterprise). Nếu không có lợi nhuận trong tuần, sẽ không có phí hiệu suất nào được tính."
+      },
+      {
+        "q": "Có mức cao nhất (high-water mark) về phí hiệu suất không?",
+        "a": "Có. Hiệu suất chỉ được tính trên lợi nhuận ròng mới vượt quá giá trị cao nhất từng được ghi nhận trong tài khoản của bạn. Nếu có những tuần có kết quả âm, bạn chỉ bắt đầu trả phí hiệu suất lại sau khi tài khoản của bạn vượt quá mức trước đó — đảm bảo bạn không bao giờ trả tiền hai lần cho cùng một lợi nhuận."
+      },
+      {
+        "q": "Lợi nhuận được phân phối khi nào?",
+        "a": "Kết quả được phân phối vào mỗi Thứ Sáu lúc 23:00 UTC, trực tiếp trong văn phòng quản lý của bạn. Sau khi ghi có, bạn có thể tái đầu tư, giữ lại trong tài khoản hoặc yêu cầu rút tiền bất cứ lúc nào."
+      },
+      {
+        "q": "Lợi nhuận có được ghi có tự động không?",
+        "a": "Có. Quy trình này hoàn toàn tự động: vào cuối chu kỳ hàng tuần, hệ thống sẽ tính toán kết quả ròng, khấu trừ phí hiệu suất tương ứng với gói của bạn và ghi có lợi nhuận khả dụng vào ví nội bộ của bạn trong văn phòng quản lý."
+      },
+      {
+        "q": "Tôi có thể rút vốn của mình bất cứ lúc nào không?",
+        "a": "Có. Bạn có thể yêu cầu rút một phần hoặc toàn bộ số tiền đóng góp của mình bất cứ khi nào bạn muốn, không có thời gian khóa. Các khoản rút tiền được xử lý tự động 24/7, bằng USDT."
+      },
+      {
+        "q": "Phí rút tiền giảm dần hoạt động như thế nào?",
+        "a": "Để bù đắp chi phí hoạt động, một khoản phí một lần được áp dụng trên số tiền rút: 10% trong 12 tháng đầu sau khi gửi tiền, 5% từ 12 đến 24 tháng và miễn phí sau 24 tháng. Việc tính toán là theo từng khoản gửi, vì vậy các khoản đóng góp cũ hơn có thể đã được miễn."
+      },
+      {
+        "q": "Có số tiền rút tối thiểu hoặc tối đa không?",
+        "a": "Không có số tiền tối đa — bạn có thể rút toàn bộ số dư khả dụng của mình bất cứ lúc nào. Số tiền rút tối thiểu là 10 USDT để bù đắp chi phí mạng blockchain."
+      },
+      {
+        "q": "Tôi có thể thay đổi gói sau khi bắt đầu không?",
+        "a": "Có. Khi số dư của bạn tăng lên, bạn có thể chuyển sang các gói cao hơn và bắt đầu trả phí hiệu suất thấp hơn. Sự thay đổi là tự động khi vốn của bạn đạt đến phạm vi cấp độ tiếp theo, nhưng nó cũng có thể được yêu cầu thủ công trong văn phòng quản lý."
+      }
+    ]
+  },
+  "rewardsPage": {
+    "seoTitle": "Phần thưởng | Polar Tensor — Kế hoạch thu nhập & Tiền thưởng",
+    "seoDesc": "Kế hoạch phần thưởng Polar Tensor: giới thiệu lên đến 15 cấp, lợi nhuận định kỳ trên 10 cấp, tiền thưởng xếp hạng lên đến 500.000 đô la và Phần thưởng Vô hạn.",
+    "heroBadge": "Phần thưởng",
+    "heroTitle": "Kế hoạch Phần thưởng Polar Tensor",
+    "heroSubtitle": "Thu nhập giới thiệu, lợi nhuận định kỳ, tiền thưởng xếp hạng và Phần thưởng Vô hạn — một mô hình minh bạch, có thể mở rộng phù hợp với sự phát triển của bạn.",
+    "rulesBadge": "Quy tắc kinh doanh",
+    "rulesTitle1": "Cách thức vận hành của",
+    "rulesTitle2": "Polar Tensor",
+    "rulesSubtitle": "Các thông số vận hành hỗ trợ toàn bộ kế hoạch phần thưởng.",
+    "businessRules": [
+      {
+        "label": "Hoạt động",
+        "value": "100% tự động với AI"
+      },
+      {
+        "label": "Lợi nhuận trung bình hàng tháng",
+        "value": "22%"
+      },
+      {
+        "label": "Lịch trình",
+        "value": "Thứ Hai đến Thứ Sáu"
+      },
+      {
+        "label": "Thanh toán thương mại",
+        "value": "Các ngày thứ Sáu"
+      },
+      {
+        "label": "Đầu tư tối thiểu",
+        "value": "$100"
+      },
+      {
+        "label": "Rút tiền tối thiểu",
+        "value": "$20"
+      },
+      {
+        "label": "Rút tiền",
+        "value": "24h, mỗi ngày"
+      },
+      {
+        "label": "Phí rút tiền",
+        "value": "2 USD"
+      },
+      {
+        "label": "Lãi kép",
+        "value": "Tái đầu tư tự động"
+      }
+    ],
+    "referralBadge": "Giới thiệu",
+    "referralTitle1": "Thu nhập giới thiệu —",
+    "referralTitle2": "lên đến 15 cấp",
+    "referralSubtitle": "Thưởng trực tiếp trên Phí Giấy phép của những người bạn giới thiệu.",
+    "referralRule": "<1>Quy tắc:</1> Mỗi Giới thiệu Trực tiếp Hoạt động mở khóa một cấp độ.",
+    "levelLabel": "Cấp độ",
+    "ofLicense": "của Giấy phép",
+    "ofTrade": "của Giao dịch",
+    "residualBadge": "Lợi nhuận định kỳ",
+    "residualTitle1": "Thu nhập định kỳ —",
+    "residualTitle2": "lên đến 10 cấp",
+    "residualSubtitle": "Kiếm phần trăm trên các giao dịch của mạng lưới của bạn.",
+    "rankBadge": "Xếp hạng",
+    "rankTitle1": "Tiền thưởng",
+    "rankTitle2": "Xếp hạng",
+    "rankSubtitle": "Đạt được các thứ hạng dựa trên khối lượng và giới hạn tối đa, đồng thời mở khóa các khoản tiền thưởng ngày càng tăng.",
+    "rankRule": "<1>Quy tắc:</1> Khối lượng + Giới hạn tối đa.",
+    "rankLabel": "Xếp hạng",
+    "bonusLabel": "tiền thưởng",
+    "ranks": [
+      {
+        "name": "Sắt",
+        "bonus": "$0"
+      },
+      {
+        "name": "Đồng",
+        "bonus": "$50"
+      },
+      {
+        "name": "Bạc",
+        "bonus": "$200"
+      },
+      {
+        "name": "Vàng",
+        "bonus": "$500"
+      },
+      {
+        "name": "Bạch kim",
+        "bonus": "$1,500"
+      },
+      {
+        "name": "Titan",
+        "bonus": "$6,000"
+      },
+      {
+        "name": "Ngọc bích",
+        "bonus": "$20,000"
+      },
+      {
+        "name": "Hồng ngọc",
+        "bonus": "$50,000"
+      },
+      {
+        "name": "Lục bảo",
+        "bonus": "$150,000"
+      },
+      {
+        "name": "Kim cương",
+        "bonus": "$500,000"
+      }
+    ],
+    "infiniteBadge": "Phần thưởng Vô hạn",
+    "infiniteTitle1": "Phần thưởng",
+    "infiniteTitle2": "Vô hạn ♾",
+    "infiniteTitle3": "theo thứ hạng",
+    "infiniteSubtitle": "Tham gia vào một nhóm toàn cầu được phân phối giữa các thành viên tốt nghiệp.",
+    "infiniteRule": "<1>Quy tắc:</1> Nếu có thành viên tốt nghiệp, số tiền sẽ được chia.",
+    "ofTeam": "của toàn bộ đội",
+    "infiniteRewards": [
+      {
+        "name": "Vàng",
+        "value": "5%"
+      },
+      {
+        "name": "Bạch kim",
+        "value": "7.5%"
+      },
+      {
+        "name": "Titan",
+        "value": "10%"
+      },
+      {
+        "name": "Ngọc bích",
+        "value": "12.5%"
+      },
+      {
+        "name": "Hồng ngọc",
+        "value": "15%"
+      },
+      {
+        "name": "Lục bảo",
+        "value": "17.5%"
+      },
+      {
+        "name": "Kim cương",
+        "value": "20%"
+      }
+    ],
+    "ctaTitle1": "Sẵn sàng bắt đầu",
+    "ctaTitle2": "xây dựng mạng lưới của bạn",
+    "ctaSubtitle": "Đăng ký và mở khóa tất cả các cấp độ của kế hoạch phần thưởng Polar Tensor."
+  },
+  "faqPage": {
+    "seoTitle": "Câu hỏi thường gặp về Polar Tensor | Câu hỏi thường gặp về Polar One",
+    "seoDesc": "Nhận câu trả lời cho các câu hỏi của bạn về Polar Tensor: công nghệ, phí, nạp tiền, rút tiền, bảo mật, KYC, rủi ro và chương trình giới thiệu. Hơn 35 câu hỏi đã được trả lời.",
+    "heroBadge": "Trung tâm trợ giúp",
+    "heroTitle": "Câu hỏi thường gặp về Polar Tensor",
+    "heroSubtitle": "Câu trả lời trực tiếp cho các câu hỏi chính về công nghệ, hoạt động, bảo mật, phí, KYC và nhiều hơn nữa.",
+    "searchPlaceholder": "Tìm kiếm câu hỏi… (ví dụ: rút tiền, KYC, phí, rủi ro)",
+    "searchAria": "Tìm kiếm câu hỏi",
+    "all": "Tất cả",
+    "categories": {
+      "company": "Về công ty",
+      "tech": "Công nghệ & Polar One",
+      "deposits": "Nạp tiền & Rút tiền",
+      "fees": "Phí & Lợi nhuận",
+      "risk": "Rủi ro & Bảo mật",
+      "account": "Tài khoản & Hỗ trợ",
+      "referral": "Chương trình giới thiệu"
+    },
+    "questionSingular": "câu hỏi",
+    "questionPlural": "câu hỏi",
+    "noResultsTitle": "Không tìm thấy câu hỏi nào",
+    "noResultsDesc": "Thử một thuật ngữ tìm kiếm khác hoặc chọn một danh mục khác.",
+    "ctaTitle": "Bạn không tìm thấy thứ mình đang tìm kiếm?",
+    "ctaSubtitle": "Đội ngũ của chúng tôi nói nhiều ngôn ngữ và sẵn sàng giải đáp mọi thắc mắc trước hoặc sau khi đăng ký.",
+    "ctaButton": "Nói chuyện với Polar Tensor",
+    "items": [
+      {
+        "category": "company",
+        "q": "Polar Tensor đã tồn tại bao lâu?",
+        "a": "Polar Tensor được thành lập vào năm 2018 với tư cách là một trung tâm nghiên cứu các thuật toán giao dịch AI. Phiên bản có lợi nhuận đầu tiên của hệ thống chúng tôi đã đi vào sản xuất vào năm 2020, và chúng tôi đã trải qua nhiều lần lặp lại cho đến phiên bản Polar One hiện tại."
+      },
+      {
+        "category": "company",
+        "q": "Ai là người sáng lập và đội ngũ đằng sau dự án?",
+        "a": "Polar Tensor bao gồm một đội ngũ đa ngành gồm các nhà khoa học dữ liệu, kỹ sư học máy, nhà toán học định lượng và các chuyên gia có kinh nghiệm trong thị trường tài chính truyền thống và tiền điện tử. Đội ngũ này phân bố trên các hoạt động của chúng tôi ở Hoa Kỳ, Châu Âu, Hong Kong và Panama."
+      },
+      {
+        "category": "company",
+        "q": "Polar Tensor là môi giới hay quỹ đầu tư?",
+        "a": "Không phải cả hai. Chúng tôi là một công ty công nghệ cấp phép sử dụng hệ thống giao dịch tự động độc quyền. Bạn giữ quyền kiểm soát tiền gửi của mình và hệ thống chỉ thực hiện các hoạt động thông qua các API được ủy quyền trên các sàn giao dịch như Binance."
+      },
+      {
+        "category": "company",
+        "q": "Tại sao Polar Tensor có các thực thể ở nhiều quốc gia?",
+        "a": "Mỗi khu vực pháp lý đóng một vai trò cụ thể: Hoa Kỳ (Wyoming) là nơi đặt cấu trúc tài chính được quản lý (FinCEN MSB), Ba Lan đáp ứng các yêu cầu của Châu Âu, Hong Kong tập trung nghiên cứu và phát triển, và Panama tập trung hoạt động kỹ thuật. Cấu trúc này đảm bảo tuân thủ toàn cầu và khả năng phục hồi theo quy định."
+      },
+      {
+        "category": "company",
+        "q": "Công ty có được kiểm toán bởi bên thứ ba độc lập không?",
+        "a": "Có. Cấu trúc pháp lý và tài chính của chúng tôi được định kỳ xem xét bởi một trong bốn công ty kiểm toán toàn cầu lớn (Big Four), đảm bảo tính minh bạch về thành lập công ty, tuân thủ quy định và quản trị."
+      },
+      {
+        "category": "tech",
+        "q": "Điều gì khiến Polar One khác biệt so với các bot giao dịch thông thường?",
+        "a": "Các bot truyền thống thực hiện các quy tắc cố định (lưới, DCA, đường trung bình động). Polar One sử dụng hai mạng thần kinh riêng biệt — một cho xu hướng và một cho định hướng — được huấn luyện với hàng tỷ điểm dữ liệu thị trường. Hệ thống học các mẫu phi tuyến tính mà các chiến lược dựa trên quy tắc đơn giản là không thể xác định."
+      },
+      {
+        "category": "tech",
+        "q": "Hệ thống hoạt động trên sàn giao dịch nào?",
+        "a": "Hiện tại chúng tôi hoạt động độc quyền trên Binance, do độ sâu thanh khoản, phí tổ chức thấp và tính mạnh mẽ của cơ sở hạ tầng API. Điều này cho phép thực hiện tần số cao với độ trễ tối thiểu."
+      },
+      {
+        "category": "tech",
+        "q": "Polar One giao dịch những tài sản nào?",
+        "a": "Hệ thống chủ yếu hoạt động trên các cặp thanh khoản nhất trên thị trường tiền điện tử, tập trung vào BTC và ETH so với USDT, với tiềm năng mở rộng sang các cặp khác tùy thuộc vào điều kiện thị trường và thanh khoản có sẵn."
+      },
+      {
+        "category": "tech",
+        "q": "Hệ thống có sử dụng đòn bẩy không?",
+        "a": "Polar One hoạt động với đòn bẩy thận trọng, thường từ 1x đến 3x, tùy thuộc vào chiến lược đang hoạt động và điều kiện thị trường. Trọng tâm là bảo toàn vốn: hệ thống tránh tiếp xúc quá mức và ưu tiên tính nhất quán hàng tuần hơn là lợi nhuận cao một lần, giảm đáng kể rủi ro thanh lý so với các chiến lược đòn bẩy cao."
+      },
+      {
+        "category": "tech",
+        "q": "Thuật toán có được huấn luyện lại theo thời gian không?",
+        "a": "Có. Các mạng thần kinh trải qua quá trình huấn luyện lại liên tục khi dữ liệu thị trường mới được tích hợp. Điều này cho phép hệ thống thích ứng với các thay đổi chế độ – thị trường tăng, thị trường giảm, biến động cao hoặc củng cố."
+      },
+      {
+        "category": "tech",
+        "q": "Điều gì xảy ra nếu Binance hoặc internet bị sập?",
+        "a": "Cơ sở hạ tầng của chúng tôi chạy trên các máy chủ dự phòng trong các trung tâm dữ liệu gần máy chủ của Binance, với tính năng tự động chuyển đổi dự phòng. Trong trường hợp có sự cố của chính sàn giao dịch, hệ thống sẽ chuyển sang chế độ an toàn, đóng các vị thế mở theo các giao thức được xác định trước."
+      },
+      {
+        "category": "tech",
+        "q": "Tôi có thể xem lịch sử hoạt động của hệ thống không?",
+        "a": "Có. Sau khi đăng ký, bạn có quyền truy cập vào bảng điều khiển với lịch sử hoạt động chi tiết, hiệu suất hàng tuần, mức sụt giảm, tỷ lệ thắng và các chỉ số liên quan khác. Tất cả sự minh bạch có thể có trong giới hạn không ảnh hưởng đến sở hữu trí tuệ của thuật toán."
+      },
+      {
+        "category": "deposits",
+        "q": "Số tiền tối thiểu để bắt đầu là bao nhiêu?",
+        "a": "Số tiền nhập tối thiểu tại Polar Tensor là 1.000 USDT, tương đương với gói ban đầu. Các gói trung cấp bắt đầu từ 10.000 USDT và các gói nâng cao, với phí hiệu suất giảm và quản lý quan hệ chuyên biệt, bắt đầu từ 50.000 USDT. Tất cả số tiền được gửi bằng tiền điện tử (BTC, ETH, SOL hoặc USDT) trực tiếp vào tài khoản được liên kết của bạn."
+      },
+      {
+        "category": "deposits",
+        "q": "Mất bao lâu để xác nhận khoản tiền gửi?",
+        "a": "Tiền gửi bằng Bitcoin, Ethereum, Solana và USDT được xác nhận sau số lần xác nhận mạng blockchain tiêu chuẩn — thường là từ 10 đến 30 phút, tùy thuộc vào mạng được sử dụng và tình trạng tắc nghẽn."
+      },
+      {
+        "category": "deposits",
+        "q": "Rút tiền hoạt động như thế nào?",
+        "a": "Việc rút tiền được xử lý tự động 24 giờ một ngày, 7 ngày một tuần, bằng USDT hoặc USDC. Sau khi yêu cầu trong bảng điều khiển, số tiền sẽ được gửi đến ví được chỉ định sau khi xác thực bảo mật."
+      },
+      {
+        "category": "deposits",
+        "q": "Có thời gian khóa tối thiểu không?",
+        "a": "Không có yêu cầu khóa vốn bắt buộc. Tuy nhiên, chúng tôi khuyến nghị một khoảng thời gian tối thiểu vài tuần để hiệu ứng lợi nhuận tích lũy hàng tuần thể hiện một cách đáng kể."
+      },
+      {
+        "category": "deposits",
+        "q": "Tôi có thể nạp tiền qua PIX hoặc thẻ tín dụng không?",
+        "a": "Không trực tiếp. Việc nạp vốn chỉ chấp nhận tiền điện tử. Bạn có thể dễ dàng mua tiền điện tử trên các sàn giao dịch địa phương qua PIX và chuyển đến địa chỉ được cung cấp trong bảng điều khiển của bạn."
+      },
+      {
+        "category": "deposits",
+        "q": "Tôi có thể thực hiện thêm khoản nạp sau khi bắt đầu không?",
+        "a": "Có. Các khoản nạp bổ sung được phép bất cứ lúc nào và bắt đầu tạo lợi nhuận cùng với số vốn hiện có. Nếu khoản nạp vượt quá giới hạn gói hiện tại, bạn có thể chuyển sang gói cao hơn."
+      },
+      {
+        "category": "fees",
+        "q": "Khi nào và làm thế nào lợi nhuận được phân phối?",
+        "a": "Lợi nhuận được phân phối hàng tuần, mỗi thứ Sáu lúc 23:00 UTC, tự động trong bảng điều khiển của bạn. Bạn có thể chọn rút hoặc tái đầu tư để tăng cường lãi kép."
+      },
+      {
+        "category": "fees",
+        "q": "Phí hiệu suất áp dụng cho vốn hay chỉ cho lợi nhuận?",
+        "a": "Chỉ áp dụng cho lợi nhuận. Nếu không có lợi nhuận trong một tuần, sẽ không có phí hiệu suất nào được tính. Phí thay đổi từ 20% đến 30% tùy thuộc vào gói đã ký hợp đồng."
+      },
+      {
+        "category": "fees",
+        "q": "Phí cấp phép 10% có được tính hàng tháng không?",
+        "a": "Không. Phí cấp phép 10% là một lần, chỉ thu một lần trên số tiền gửi ban đầu, cấp quyền sử dụng hệ thống trọn đời trong gói đó."
+      },
+      {
+        "category": "fees",
+        "q": "Có bất kỳ phí rút tiền hoặc phí giao dịch ẩn nào không?",
+        "a": "Chúng tôi không tính thêm phí rút tiền. Bạn chỉ chịu phí mạng blockchain (phí gas) khi gửi đến ví bên ngoài của bạn."
+      },
+      {
+        "category": "fees",
+        "q": "Lợi nhuận có được đảm bảo không?",
+        "a": "Không. Không có hệ thống giao dịch nghiêm túc nào đảm bảo lợi nhuận. Chúng tôi trình bày kết quả lịch sử đã được kiểm toán, nhưng hiệu suất trong quá khứ không đảm bảo kết quả trong tương lai. Giao dịch luôn tiềm ẩn rủi ro thua lỗ."
+      },
+      {
+        "category": "fees",
+        "q": "Có điểm cao nhất (high water mark) không?",
+        "a": "Có. Phí hiệu suất sử dụng điểm cao nhất (high water mark): chúng tôi chỉ tính phí hiệu suất lại khi số dư của bạn vượt quá đỉnh trước đó, tránh tính phí hai lần trong thời gian phục hồi."
+      },
+      {
+        "category": "risk",
+        "q": "Tiền của tôi có được Polar Tensor lưu ký không?",
+        "a": "Quỹ hoạt động vẫn nằm trong các tài khoản chuyên dụng trên Binance, được liên kết với đăng ký của bạn. Polar Tensor hoạt động thông qua API với quyền hạn được giới hạn cho giao dịch — không có quyền rút tiền đến các địa chỉ bên ngoài."
+      },
+      {
+        "category": "risk",
+        "q": "Điều gì xảy ra nếu Polar Tensor ngừng hoạt động?",
+        "a": "Do vốn được phân bổ trong môi trường tách biệt và chúng tôi duy trì cấu trúc doanh nghiệp trên nhiều khu vực pháp lý với kiểm toán Big Four, có các giao thức hoàn trả vốn chính thức và đóng cửa có trật tự được mô tả trong các điều khoản sử dụng."
+      },
+      {
+        "category": "risk",
+        "q": "Bạn bảo vệ dữ liệu cá nhân của tôi như thế nào?",
+        "a": "Chúng tôi tuân thủ các thực hành phù hợp với LGPD (Brazil) và GDPR (Châu Âu). Dữ liệu được mã hóa khi truyền và khi lưu trữ, với quyền truy cập bị giới hạn theo cấp độ quyền và kiểm toán nội bộ định kỳ."
+      },
+      {
+        "category": "risk",
+        "q": "Nền tảng có yêu cầu xác thực hai yếu tố (2FA) không?",
+        "a": "Có. 2FA là bắt buộc đối với tất cả các tài khoản, sử dụng các ứng dụng như Google Authenticator hoặc Authy. Việc rút tiền yêu cầu xác nhận email bổ sung."
+      },
+      {
+        "category": "risk",
+        "q": "Bạn có bảo hiểm chống lại các sự cố công nghệ không?",
+        "a": "Chúng tôi duy trì các giao thức giảm thiểu rủi ro hoạt động, bao gồm dự phòng cơ sở hạ tầng và quỹ dự trữ kỹ thuật. Các điều khoản bảo hiểm cụ thể có trong tài liệu hợp đồng được cung cấp sau khi đăng ký."
+      },
+      {
+        "category": "risk",
+        "q": "Đây có phải là mô hình kim tự tháp hoặc Ponzi không?",
+        "a": "Không. Các mô hình kim tự tháp trả tiền cho những người tham gia cũ bằng vốn từ những người mới tham gia; mô hình của chúng tôi tạo ra doanh thu độc quyền từ việc thực hiện thuật toán trên thị trường thực, với các báo cáo có thể kiểm chứng trên Binance và kiểm toán bên ngoài. Không có lời hứa về lợi nhuận cố định hoặc sự phụ thuộc vào việc tuyển dụng."
+      },
+      {
+        "category": "account",
+        "q": "Ai có thể mở tài khoản tại Polar Tensor?",
+        "a": "Cá nhân trên 18 tuổi có giấy tờ tùy thân hợp lệ, cư trú tại các khu vực pháp lý nơi dịch vụ của chúng tôi được ủy quyền. Chúng tôi không phục vụ cư dân của các quốc gia bị trừng phạt quốc tế hoặc trong danh sách hạn chế."
+      },
+      {
+        "category": "account",
+        "q": "Tôi có cần phải trải qua xác minh KYC không?",
+        "a": "Có. Là một thực thể được quản lý (Polar MSB Inc., FinCEN), chúng tôi tuân thủ các chính sách KYC và AML. Xác minh bao gồm tài liệu chính thức, bằng chứng địa chỉ và bằng chứng sinh hoạt (ảnh tự chụp)."
+      },
+      {
+        "category": "account",
+        "q": "Mất bao lâu để tài khoản của tôi được phê duyệt?",
+        "a": "Sau khi nộp đầy đủ tài liệu, quá trình xác minh thường hoàn tất trong vòng 48 giờ làm việc. Trong trường hợp cần xem xét bổ sung, nhóm tuân thủ sẽ liên hệ trực tiếp."
+      },
+      {
+        "category": "account",
+        "q": "Làm thế nào tôi có thể liên hệ với bộ phận hỗ trợ?",
+        "a": "Hỗ trợ chính thức có sẵn thông qua bảng điều khiển đăng nhập, email và WhatsApp. Đối với khách hàng gói cao hơn, chúng tôi cung cấp dịch vụ chuyên dụng với người quản lý quan hệ."
+      },
+      {
+        "category": "account",
+        "q": "Bạn có hỗ trợ tiếng Anh không?",
+        "a": "Có. Hỗ trợ khách hàng được cung cấp bằng tiếng Anh (và các ngôn ngữ khác), trong giờ làm việc kéo dài, bởi các chuyên gia được đào tạo về các chi tiết kỹ thuật của nền tảng."
+      },
+      {
+        "category": "account",
+        "q": "Tôi có thể có nhiều hơn một tài khoản không?",
+        "a": "Không. Chúng tôi duy trì chính sách một tài khoản cho mỗi cá nhân, theo chính sách KYC và phòng chống lạm dụng nền tảng của chúng tôi."
+      },
+      {
+        "category": "referral",
+        "q": "Chương trình giới thiệu hoạt động như thế nào?",
+        "a": "Bằng cách giới thiệu khách hàng mới thông qua liên kết duy nhất của bạn, bạn sẽ nhận được hoa hồng dựa trên phí hiệu suất do người bạn giới thiệu tạo ra. Mô hình này minh bạch, không có nhiều cấp độ tuyển dụng đặc trưng của các mô hình kim tự tháp."
+      },
+      {
+        "category": "referral",
+        "q": "Tôi có cần phải là khách hàng đang hoạt động để giới thiệu người khác không?",
+        "a": "Có. Chương trình giới thiệu dành riêng cho khách hàng đang hoạt động có khoản tiền gửi hiện tại. Điều này đảm bảo rằng những người giới thiệu Polar Tensor thực sự hiểu về nền tảng."
+      },
+      {
+        "category": "referral",
+        "q": "Có giới hạn giới thiệu không?",
+        "a": "Không có giới hạn về số lượng người bạn có thể giới thiệu. Hoa hồng được ghi có hàng tuần cùng với việc phân phối lợi nhuận."
+      }
+    ]
+  },
+  "consultancy": {
+    "seoTitle": "Tư vấn Tổ chức | Polar Tensor",
+    "seoDesc": "Dịch vụ tư vấn chuyên biệt cho khách hàng doanh nghiệp, nhà đầu tư tổ chức và cá nhân có giá trị tài sản cao. Chiến lược AI chuyên sâu từ Polar Tensor.",
+    "heroBadge": "Dịch vụ tổ chức",
+    "heroTitle": "Tư vấn Tổ chức & Khách hàng có giá trị tài sản cao",
+    "heroSubtitle": "Dành cho khách hàng doanh nghiệp, nhà đầu tư tổ chức và cá nhân có giá trị tài sản cao, những người yêu cầu chiến lược đầu tư phù hợp và hỗ trợ tận tâm.",
+    "segments": [
+      {
+        "t": "Khách hàng Doanh nghiệp",
+        "d": "Các công ty đang tìm kiếm quản lý đầu tư chiến lược."
+      },
+      {
+        "t": "Nhà đầu tư Tổ chức",
+        "d": "Các tổ chức tài chính yêu cầu chiến lược tiên tiến."
+      },
+      {
+        "t": "Cá nhân có giá trị tài sản cao",
+        "d": "Khách hàng cá nhân với danh mục đầu tư đáng kể."
+      }
+    ],
+    "formTitle": "Yêu cầu tư vấn",
+    "formSubtitle": "Vui lòng điền vào biểu mẫu và đội ngũ của chúng tôi sẽ liên hệ với bạn trong vòng 1 ngày làm việc.",
+    "fullName": "Họ và tên *",
+    "fullNamePh": "Tên của bạn",
+    "org": "Công ty / Tổ chức",
+    "orgPh": "Công ty (tùy chọn)",
+    "email": "Email *",
+    "emailPh": "you@company.com",
+    "phone": "Số điện thoại (tùy chọn)",
+    "phonePh": "+1 (555) 000-0000",
+    "clientType": "Loại khách hàng",
+    "clientTypePh": "Chọn một tùy chọn",
+    "clientCorporate": "Khách hàng Doanh nghiệp",
+    "clientInstitutional": "Nhà đầu tư Tổ chức",
+    "clientHnw": "Cá nhân có giá trị tài sản cao",
+    "investRange": "Phạm vi đầu tư",
+    "investRangePh": "Chọn một phạm vi",
+    "range1": "100k – 500k USDT",
+    "range2": "500k – 1M USDT",
+    "range3": "1M – 5M USDT",
+    "range4": "Trên 5M USDT",
+    "msg": "Hãy cho chúng tôi biết về mục tiêu và nhu cầu của bạn",
+    "msgPh": "Chia sẻ ngữ cảnh, mục tiêu và thời gian biểu...",
+    "submit": "Yêu cầu tư vấn",
+    "submitting": "Đang gửi...",
+    "toastTitle": "Yêu cầu đã được gửi",
+    "toastDesc": "Đội ngũ dịch vụ tổ chức của chúng tôi sẽ liên hệ với bạn trong vòng 1 ngày làm việc."
+  },
+  "downloadAppPage": {
+    "seoTitle": "Tải ứng dụng Polar Tensor | Giao dịch AI",
+    "seoDesc": "Ứng dụng Polar Tensor chính thức dành cho iOS và Android. Theo dõi danh mục USDT, lợi nhuận Polar One, tiền gửi, rút tiền và tiền thưởng mạng trên thiết bị di động.",
+    "available": "Có sẵn cho iOS và Android",
+    "title1": "Tải xuống",
+    "title2": "Ứng dụng Polar Tensor",
+    "subtitle": "Truy cập giao dịch tự động được hỗ trợ bởi AI, giám sát ví của bạn và quản lý tiền của bạn — tất cả trong lòng bàn tay của bạn.",
+    "imgAlt": "Ứng dụng Polar Tensor — màn hình chính với số dư USDT",
+    "appStore": "Tải xuống trên App Store",
+    "playStore": "Tải xuống trên Google Play",
+    "appStoreAria": "Tải xuống Polar Tensor trên App Store",
+    "playStoreAria": "Tải xuống Polar Tensor trên Google Play",
+    "highlights": [
+      {
+        "title": "Giao dịch AI trong túi của bạn",
+        "desc": "Hệ thống Polar One hoạt động 24/5 — bạn theo dõi mọi giao dịch trực tiếp từ điện thoại của mình."
+      },
+      {
+        "title": "Thông báo thời gian thực",
+        "desc": "Nhận thông báo về phân phối lợi nhuận, tiền gửi, rút tiền và tiền thưởng mạng."
+      },
+      {
+        "title": "Bảo mật cấp ngân hàng",
+        "desc": "Xác thực sinh trắc học, mã hóa đầu cuối và KYC tích hợp."
+      }
+    ],
+    "features": [
+      {
+        "title": "Bảng điều khiển tài khoản",
+        "desc": "Theo dõi toàn bộ ví của bạn trong thời gian thực. Giám sát số dư khả dụng, giá trị đầu tư vào giao dịch và lợi nhuận hàng tuần với các biểu đồ trực quan. Luôn cập nhật các chỉ số hiệu suất mới nhất và xem thu nhập của bạn với chi tiết hàng ngày."
+      },
+      {
+        "title": "Quản lý ví thông minh",
+        "desc": "Kiểm soát hoàn toàn tiền của bạn với các khoản tiền gửi, chuyển khoản và rút tiền liền mạch. Xem lịch sử giao dịch đầy đủ — bao gồm lợi nhuận giao dịch, tiền gửi, rút tiền và tất cả hoạt động tài khoản — với ngày, giờ và số tiền chi tiết."
+      },
+      {
+        "title": "Giao diện giao dịch nâng cao",
+        "desc": "Quản lý số tiền giao dịch đang hoạt động của bạn với tùy chọn tái đầu tư tự động (Tái đầu tư tự động). Theo dõi cấp độ hiện tại của bạn, phí hiệu suất, sự phát triển đến cấp độ tiếp theo và xem các chỉ số lợi nhuận chi tiết cho tuần, tuần trước và 30 ngày qua."
+      },
+      {
+        "title": "Minh bạch toàn diện",
+        "desc": "Xem các chỉ số hiệu suất toàn cầu của công ty và thống kê mọi thời đại với tính minh bạch hoàn toàn. Theo dõi phần trăm hàng tuần, so sánh các giai đoạn khác nhau (tuần, tháng, 3 tháng, 6 tháng, năm và tất cả) và phân tích lợi nhuận tích lũy bằng các biểu đồ tương tác."
+      }
+    ],
+    "featureAlt": "Màn hình {{title}} của Ứng dụng Polar Tensor",
+    "ctaTitle": "Sẵn sàng để bắt đầu?",
+    "ctaSubtitle": "Tải xuống Ứng dụng Polar Tensor và bắt đầu giao dịch với độ chính xác của trí tuệ nhân tạo trực tiếp từ điện thoại của bạn.",
+    "ctaSignup": "Đăng ký tài khoản của tôi trước"
+  },
+  "privacy": {
+    "seoTitle": "Chính sách quyền riêng tư | Polar Tensor",
+    "seoDesc": "Thông báo quyền riêng tư và Bảo vệ dữ liệu của Polar Tensor: cách chúng tôi thu thập, lưu trữ, chia sẻ và bảo vệ dữ liệu cá nhân trong các hoạt động toàn cầu của mình.",
+    "heroBadge": "Pháp lý",
+    "heroTitle": "Thông báo về Quyền riêng tư & Bảo vệ Dữ liệu",
+    "heroSubtitle": "Xử lý dữ liệu cá nhân và bảo mật thông tin.",
+    "sections": [
+      {
+        "title": "Mục đích và tình trạng pháp lý",
+        "paragraphs": [
+          "Thông báo về Quyền riêng tư này mô tả cách dữ liệu cá nhân được thu thập, lưu trữ, chia sẻ và bảo vệ trong phạm vi các dịch vụ do tập đoàn Polar Tensor cung cấp.",
+          "Thông báo này được cung cấp tuân thủ theo các luật bảo vệ dữ liệu hiện hành, bao gồm, nếu có liên quan:"
+        ],
+        "list": [
+          "Quy định (EU) 2016/679 (GDPR);",
+          "Luật riêng tư của tiểu bang và Liên bang Hoa Kỳ;",
+          "Các tiêu chuẩn quốc tế hiện hành khác."
+        ]
+      },
+      {
+        "title": "Bộ điều khiển và phạm vi",
+        "paragraphs": [
+          "Tùy thuộc vào dịch vụ được sử dụng, dữ liệu cá nhân có thể được xử lý bởi một hoặc nhiều đơn vị trong tập đoàn, hoạt động như các bộ điều khiển độc lập trong phạm vi tương ứng của họ:"
+        ],
+        "list": [
+          "Polar Tensor US LLC — giới thiệu và hoạt động tại Hoa Kỳ;",
+          "Polar Tensor Europe SP ZOO — hoạt động tại Liên minh Châu Âu;",
+          "Polar MSB Inc. — dịch vụ thanh toán và on/off-ramp;",
+          "Polar Tensor Corp. — thực hiện kỹ thuật và vận hành nền tảng."
+        ]
+      },
+      {
+        "title": "Danh mục dữ liệu cá nhân",
+        "paragraphs": [
+          "Các danh mục dữ liệu cá nhân sau đây có thể được xử lý, nếu có:"
+        ],
+        "list": [
+          "Dữ liệu nhận dạng (tên, ngày sinh, quốc tịch);",
+          "Thông tin liên hệ (email, điện thoại);",
+          "Dữ liệu tài khoản và giới thiệu;",
+          "Dữ liệu xác minh KYC và AML, bao gồm giấy tờ tùy thân và bằng chứng sự sống;",
+          "Dữ liệu giao dịch và hoạt động;",
+          "Dữ liệu kỹ thuật (IP, mã định danh thiết bị, nhật ký);",
+          "Bản ghi liên lạc và hỗ trợ."
+        ],
+        "after": [
+          "Dữ liệu nhạy cảm chỉ được xử lý khi thực sự cần thiết và được pháp luật cho phép."
+        ]
+      },
+      {
+        "title": "Mục đích xử lý",
+        "paragraphs": [
+          "Dữ liệu được xử lý cho các mục đích hợp pháp như: giới thiệu và quản lý tài khoản, xác minh danh tính, ngăn chặn gian lận, cung cấp dịch vụ, ghi nhận kế toán, bảo mật và toàn vẹn hệ thống, nghĩa vụ pháp lý, và giao tiếp với khách hàng.",
+          "Chúng tôi không thực hiện các quyết định tự động có hiệu lực pháp lý liên quan mà không có biện pháp bảo vệ đầy đủ."
+        ]
+      },
+      {
+        "title": "Cơ sở pháp lý",
+        "paragraphs": [
+          "Việc xử lý được thực hiện trên một hoặc nhiều cơ sở sau, nếu có: thực hiện hợp đồng, tuân thủ các nghĩa vụ pháp lý và quy định, lợi ích hợp pháp (bao gồm bảo mật và ngăn chặn gian lận) và sự đồng ý, nếu được yêu cầu."
+        ]
+      },
+      {
+        "title": "Chia sẻ và người nhận",
+        "paragraphs": [
+          "Dữ liệu có thể được chia sẻ, khi cần thiết và được pháp luật cho phép, với: các thực thể trong tập đoàn, nhà cung cấp được quản lý (KYC, nhà cung cấp, bộ xử lý thanh toán), đối tác thực hiện và cơ sở hạ tầng, kiểm toán viên, cố vấn pháp lý và cơ quan quản lý.",
+          "Chúng tôi không bán dữ liệu cá nhân cho các bên thứ ba."
+        ]
+      },
+      {
+        "title": "Chuyển giao quốc tế",
+        "paragraphs": [
+          "Khi có các chuyển giao quốc tế, chúng tôi áp dụng các biện pháp bảo vệ đầy đủ như các quyết định đầy đủ, điều khoản hợp đồng tiêu chuẩn hoặc các cơ chế được pháp luật công nhận khác. Chúng tôi giới hạn các chuyển giao ở mức cần thiết cho các mục đích vận hành và tuân thủ."
+        ]
+      },
+      {
+        "title": "Lưu giữ dữ liệu",
+        "paragraphs": [
+          "Dữ liệu được lưu giữ trong thời gian cần thiết để tuân thủ các nghĩa vụ hợp đồng, pháp lý và quy định, hoặc để bảo vệ quyền. Thời gian thay đổi tùy theo loại dữ liệu và luật pháp hiện hành."
+        ]
+      },
+      {
+        "title": "Bảo mật dữ liệu",
+        "paragraphs": [
+          "Chúng tôi áp dụng các biện pháp kỹ thuật và tổ chức đầy đủ để bảo vệ dữ liệu khỏi truy cập trái phép, mất mát, hủy hoại, thay đổi và lạm dụng. Mặc dù vậy, không có hệ thống nào an toàn 100%."
+        ]
+      },
+      {
+        "title": "Quyền của chủ thể dữ liệu",
+        "paragraphs": [
+          "Theo luật pháp hiện hành, bạn có thể có quyền: truy cập dữ liệu của mình, yêu cầu sửa hoặc xóa, hạn chế hoặc phản đối việc xử lý, yêu cầu khả năng di chuyển và gửi khiếu nại đến cơ quan có thẩm quyền.",
+          "Các yêu cầu có thể phải chịu xác minh và giới hạn pháp lý."
+        ]
+      },
+      {
+        "title": "Cookie và công nghệ theo dõi",
+        "paragraphs": [
+          "Các trang web của chúng tôi có thể sử dụng cookie và các công nghệ tương tự cho: bảo mật, chức năng, phân tích, giám sát hiệu suất và tối ưu hóa trải nghiệm người dùng. Các cơ chế đồng ý được cung cấp khi được yêu cầu."
+        ]
+      },
+      {
+        "title": "Không từ bỏ nghĩa vụ",
+        "paragraphs": [
+          "Không có gì trong Thông báo này giới hạn hoặc loại trừ các quyền hoặc nghĩa vụ do luật bảo vệ dữ liệu hiện hành áp đặt."
+        ]
+      },
+      {
+        "title": "Thay đổi",
+        "paragraphs": [
+          "Thông báo này có thể được cập nhật định kỳ để phản ánh các thay đổi về mặt pháp lý, quy định hoặc hoạt động. Phiên bản mới nhất sẽ luôn có sẵn trên trang web của chúng tôi."
+        ]
+      }
+    ]
+  },
+  "terms": {
+    "seoTitle": "Điều khoản sử dụng | Polar Tensor",
+    "seoDesc": "Điều khoản sử dụng nền tảng Polar Tensor: quy tắc truy cập, điều kiện hợp lệ, nghĩa vụ người dùng, giới hạn trách nhiệm và hơn thế nữa.",
+    "heroBadge": "Pháp lý",
+    "heroTitle": "Điều khoản sử dụng",
+    "heroSubtitle": "Nền tảng công nghệ và giao diện thực thi.",
+    "sections": [
+      {
+        "title": "Mục đích và tình trạng pháp lý",
+        "paragraphs": [
+          "Các Điều khoản Sử dụng này điều chỉnh việc truy cập và sử dụng các nền tảng công nghệ, giao diện, bảng điều khiển, trang web và các công cụ phần mềm liên quan đến thực thi, được cung cấp trong phạm vi nhóm Polar Tensor.",
+          "Các Điều khoản này không thay thế bất kỳ thỏa thuận khách hàng hiện hành nào điều chỉnh việc lưu ký, thanh toán hoặc mối quan hệ với các pháp nhân được cấp phép.",
+          "Bằng cách truy cập hoặc sử dụng Nền tảng, bạn thừa nhận rằng bạn đã đọc, hiểu và đồng ý bị ràng buộc bởi các Điều khoản này."
+        ]
+      },
+      {
+        "title": "Các bên và phạm vi",
+        "paragraphs": [
+          "Nền tảng được vận hành và cung cấp bởi các pháp nhân sau, hành động nghiêm ngặt trong vai trò tương ứng của họ:"
+        ],
+        "list": [
+          "Polar Tensor Corp. — vận hành công nghệ thực thi và hạ tầng giao dịch tự động;",
+          "Polar Tensor US LLC — quyền truy cập của khách hàng cho người dùng Hoa Kỳ và ngoài EU;",
+          "Polar Tensor Europe SP ZOO — quyền truy cập của khách hàng cho người dùng EU."
+        ],
+        "after": [
+          "Quyền truy cập và chức năng có thể khác nhau tùy theo khu vực pháp lý và tình trạng pháp lý."
+        ]
+      },
+      {
+        "title": "Bản chất của Nền tảng",
+        "paragraphs": [
+          "Nền tảng chỉ cung cấp chức năng công nghệ và thực thi, bao gồm: quyền truy cập vào các công cụ thực thi tự động, hiển thị thông tin tài khoản, khởi tạo các quy trình thực thi theo hướng dẫn rõ ràng của người dùng và kết nối kỹ thuật với các địa điểm thực thi của bên thứ ba.",
+          "Nền tảng không cung cấp tư vấn đầu tư, quản lý danh mục đầu tư tùy ý hoặc khuyến nghị cá nhân."
+        ]
+      },
+      {
+        "title": "Điều kiện hợp lệ và quyền truy cập",
+        "paragraphs": [
+          "Bạn chỉ có thể truy cập và sử dụng Nền tảng nếu: bạn đã được pháp nhân được cấp phép có liên quan tiếp nhận đúng cách, bạn đáp ứng các yêu cầu pháp lý về tư cách hợp lệ trong khu vực tài phán của bạn và quyền truy cập của bạn chưa bị tạm ngừng hoặc chấm dứt.",
+          "Nhóm có quyền hạn chế hoặc từ chối quyền truy cập khi pháp luật, quy định hoặc nghĩa vụ tuân thủ yêu cầu."
+        ]
+      },
+      {
+        "title": "Kiểm soát và kích hoạt của người dùng",
+        "paragraphs": [
+          "Chức năng thực thi tự động: mặc định là không hoạt động; yêu cầu người dùng kích hoạt thủ công và rõ ràng; có thể bị người dùng hủy kích hoạt bất cứ lúc nào, tùy thuộc vào các hạn chế xử lý kỹ thuật.",
+          "Không có thực thi nào xảy ra nếu không có sự khởi tạo của người dùng."
+        ]
+      },
+      {
+        "title": "Bản chất chỉ thực thi",
+        "paragraphs": [
+          "Tất cả các thực thi do Nền tảng thực hiện: không tùy ý; tuân theo logic hệ thống được xác định trước; không được điều chỉnh cho từng người dùng cụ thể; chỉ giới hạn trong các giao dịch tài sản tiền điện tử giao ngay.",
+          "Không có mối quan hệ ủy thác, tư vấn hoặc tùy ý nào được tạo ra bởi việc sử dụng Nền tảng."
+        ]
+      },
+      {
+        "title": "Nghĩa vụ của người dùng",
+        "paragraphs": [
+          "Bạn đồng ý: chỉ sử dụng Nền tảng cho các mục đích hợp pháp; tuân thủ tất cả các luật và quy định hiện hành; bảo mật thông tin đăng nhập; giám sát hoạt động liên quan đến tài khoản của bạn; thông báo kịp thời cho pháp nhân có liên quan về bất kỳ truy cập trái phép hoặc sự cố bảo mật nào."
+        ]
+      },
+      {
+        "title": "Hành vi bị cấm",
+        "paragraphs": [
+          "Bạn không được: lạm dụng hoặc can thiệp vào Nền tảng hoặc hoạt động của nó; cố gắng truy cập trái phép vào các hệ thống hoặc dữ liệu; kỹ thuật đảo ngược hoặc phá vỡ các biện pháp bảo vệ kỹ thuật; sử dụng Nền tảng cho các mục đích bất hợp pháp hoặc lạm dụng; tham gia vào hành vi có thể gây hại đến tính toàn vẹn hoặc bảo mật của Nền tảng."
+        ]
+      },
+      {
+        "title": "Tính sẵn sàng và sửa đổi",
+        "paragraphs": [
+          "Nền tảng được cung cấp \"nguyên trạng\" và \"theo khả năng hiện có\". Nhóm có thể: sửa đổi, tạm ngừng hoặc ngừng các tính năng; thực hiện bảo trì hoặc cập nhật; hạn chế quyền truy cập khi được yêu cầu vì lý do pháp lý, kỹ thuật hoặc bảo mật.",
+          "Không có đảm bảo về tính sẵn sàng không gián đoạn."
+        ]
+      },
+      {
+        "title": "Dịch vụ của bên thứ ba",
+        "paragraphs": [
+          "Nền tảng có thể tích hợp hoặc kết nối với các dịch vụ của bên thứ ba, bao gồm các địa điểm thực thi và nhà cung cấp hạ tầng. Nhóm không kiểm soát các bên thứ ba đó và không chịu trách nhiệm về hành động, tính sẵn sàng hoặc hiệu suất của họ."
+        ]
+      },
+      {
+        "title": "Giới hạn trách nhiệm",
+        "paragraphs": [
+          "Trong phạm vi tối đa được pháp luật cho phép: không chịu trách nhiệm đối với các tổn thất phát sinh từ biến động thị trường, chậm trễ thực hiện, gián đoạn hệ thống hoặc lỗi của bên thứ ba; không chịu trách nhiệm đối với các thiệt hại gián tiếp hoặc do hậu quả; trách nhiệm được giới hạn như đã nêu trong thỏa thuận khách hàng hiện hành.",
+          "Không có bất kỳ điều khoản nào trong các Điều khoản này loại trừ các trách nhiệm không thể bị loại trừ bởi luật pháp hiện hành."
+        ]
+      },
+      {
+        "title": "Sở hữu trí tuệ",
+        "paragraphs": [
+          "Tất cả quyền sở hữu trí tuệ liên quan đến Nền tảng vẫn thuộc sở hữu của nhóm Polar Tensor hoặc các nhà cấp phép của nó. Việc sử dụng Nền tảng không chuyển giao bất kỳ quyền sở hữu hoặc quyền sở hữu trí tuệ nào."
+        ]
+      },
+      {
+        "title": "Tạm ngừng và Chấm dứt",
+        "paragraphs": [
+          "Quyền truy cập vào Nền tảng có thể bị tạm ngừng hoặc chấm dứt: do vi phạm các Điều khoản này; khi pháp luật hoặc quy định yêu cầu; vì lý do bảo mật hoặc tuân thủ; khi mối quan hệ khách hàng cơ bản chấm dứt."
+        ]
+      },
+      {
+        "title": "Luật áp dụng và quyền tài phán",
+        "paragraphs": [
+          "Các Điều khoản này được điều chỉnh bởi luật pháp được quy định trong thỏa thuận khách hàng hiện hành, không ảnh hưởng đến các luật bảo vệ người tiêu dùng bắt buộc."
+        ]
+      },
+      {
+        "title": "Thay đổi",
+        "paragraphs": [
+          "Các Điều khoản này có thể được cập nhật định kỳ. Việc tiếp tục sử dụng Nền tảng đồng nghĩa với việc chấp nhận phiên bản mới nhất."
+        ]
+      }
+    ]
+  },
+  "risk": {
+    "seoTitle": "Tiết lộ rủi ro | Polar Tensor",
+    "seoDesc": "Thông báo Tiết lộ rủi ro của Polar Tensor về tài sản kỹ thuật số, giao dịch tự động, thị trường, rủi ro pháp lý, công nghệ và thanh khoản.",
+    "heroBadge": "Pháp lý",
+    "heroTitle": "Thông báo tiết lộ rủi ro",
+    "heroSubtitle": "Tài sản kỹ thuật số, giao dịch tự động và dịch vụ công nghệ.",
+    "warning": "Giao dịch tài sản kỹ thuật số liên quan đến những rủi ro đáng kể. Bạn có thể mất một phần hoặc toàn bộ số vốn của mình. Tuyên bố này không cấu thành lời khuyên đầu tư, khuyến nghị hoặc đảm bảo hiệu suất.",
+    "sections": [
+      {
+        "title": "Mục đích của thông báo này",
+        "paragraphs": [
+          "Thông báo Tiết lộ rủi ro này nhằm mục đích thông báo cho khách hàng và những người dùng tiềm năng về các rủi ro chính liên quan đến: tài sản kỹ thuật số và thị trường tài sản tiền điện tử, công nghệ giao dịch tự động và thuật toán, dịch vụ thực hiện và việc sử dụng cơ sở hạ tầng và dịch vụ của bên thứ ba.",
+          "Thông báo này là một phần của thông tin trước hợp đồng được cung cấp cho khách hàng và phải được đọc cùng với các điều khoản, tiết lộ và thỏa thuận hiện hành."
+        ]
+      },
+      {
+        "title": "Cảnh báo rủi ro chung",
+        "paragraphs": [
+          "Tài sản kỹ thuật số là sản phẩm có rủi ro cao. Tham gia vào thị trường tài sản kỹ thuật số và sử dụng công nghệ giao dịch tự động có thể dẫn đến mất một phần hoặc toàn bộ vốn.",
+          "Bạn chỉ nên sử dụng các dịch vụ nếu bạn hiểu đầy đủ bản chất của các rủi ro liên quan và có thể chịu toàn bộ tổn thất của số tiền đã phân bổ.",
+          "Hiệu suất trong quá khứ, thực tế hoặc mô phỏng, không phải là chỉ báo cho kết quả tương lai."
+        ]
+      },
+      {
+        "title": "Rủi ro thị trường",
+        "paragraphs": [
+          "Thị trường tài sản kỹ thuật số chịu sự biến động cao. Giá có thể biến động nhanh chóng và không thể đoán trước do, trong số những yếu tố khác: tâm lý thị trường và đầu cơ, điều kiện thanh khoản, sự kiện pháp lý, thay đổi công nghệ, sự kiện kinh tế vĩ mô và hành động của những người tham gia thị trường.",
+          "Những biến động bất lợi có thể dẫn đến thua lỗ nhanh chóng mà không có cảnh báo."
+        ]
+      },
+      {
+        "title": "Không đảm bảo hiệu suất hoặc bảo vệ vốn",
+        "paragraphs": [
+          "Không có thực thể nào trong nhóm cung cấp: bảo đảm lợi nhuận hoặc lợi tức; bảo hiểm hoặc bảo toàn vốn; mục tiêu hiệu suất tối thiểu; trình bày về kết quả mong đợi.",
+          "Tất cả hoạt động giao dịch được thực hiện dưới tài khoản và rủi ro duy nhất của khách hàng."
+        ]
+      },
+      {
+        "title": "Rủi ro giao dịch tự động và thuật toán",
+        "paragraphs": [
+          "Các hệ thống tự động và thuật toán hoạt động dựa trên các quy tắc và logic được xác định trước. Các rủi ro liên quan đến giao dịch tự động bao gồm, trong số những yếu tố khác: điều kiện thị trường bất lợi không được hệ thống dự đoán, thực hiện ở mức giá không thuận lợi, độ trễ trong một số điều kiện thị trường nhất định, những hạn chế vốn có đối với dữ liệu lịch sử hoặc các giả định mô hình.",
+          "Các hệ thống tự động có thể hoạt động kém hoặc không thể đoán trước trong một số điều kiện thị trường nhất định."
+        ]
+      },
+      {
+        "title": "Không tư vấn đầu tư hoặc quyền tùy nghi",
+        "paragraphs": [
+          "Các dịch vụ được cung cấp trên cơ sở thực hiện và công nghệ duy nhất. Chúng tôi không cung cấp lời khuyên đầu tư, đánh giá mức độ phù hợp, giám sát liên tục danh mục đầu tư của khách hàng hoặc hoạt động như một nhà quản lý đầu tư.",
+          "Các quyết định đánh giá, vô hiệu hóa, gửi, rút hoặc phân bổ quỹ hoàn toàn thuộc về khách hàng."
+        ]
+      },
+      {
+        "title": "Rủi ro công nghệ và hoạt động",
+        "paragraphs": [
+          "Các dịch vụ phụ thuộc vào các hệ thống công nghệ phức tạp, bao gồm phần mềm, phần cứng, mạng và cơ sở hạ tầng của bên thứ ba. Các rủi ro tiềm ẩn bao gồm: sự cố hoặc thời gian ngừng hoạt động của hệ thống, độ trễ hoặc sự chậm trễ trong thực hiện, lỗi phần mềm hoặc lỗi, sự cố an ninh mạng và lỗi nhà cung cấp bên thứ ba.",
+          "Mặc dù các biện pháp hợp lý được thực hiện để duy trì tính toàn vẹn của hệ thống, nhưng không thể đảm bảo hoạt động không bị gián đoạn và không có lỗi."
+        ]
+      },
+      {
+        "title": "Rủi ro lớp lưu ký và thực hiện",
+        "paragraphs": [
+          "Tài sản của khách hàng có thể phải chịu các sắp xếp lưu ký, bao gồm rủi ro hoạt động, rủi ro miền, các lỗi của nhà cung cấp dịch vụ bên thứ ba, tắc nghẽn hoặc lỗi mạng blockchain và các rủi ro liên quan đến các địa điểm thực hiện và nhà cung cấp thanh khoản.",
+          "Việc chuyển giao tài sản tạm thời cho mục đích thực hiện phải chịu các rủi ro hoạt động của lớp thực hiện."
+        ]
+      },
+      {
+        "title": "Rủi ro pháp lý và quy định",
+        "paragraphs": [
+          "Việc xử lý quy định đối với tài sản kỹ thuật số có thể thay đổi. Các hành động lập pháp, quy định hoặc thực thi trong tương lai có thể: hạn chế hoặc cấm một số hoạt động nhất định, áp đặt các nghĩa vụ tuân thủ bổ sung, ảnh hưởng đến tính khả dụng của dịch vụ hoặc tác động đến giá trị hoặc khả năng tiếp thị của tài sản kỹ thuật số.",
+          "Các thay đổi quy định có thể xảy ra với ít hoặc không có thông báo trước."
+        ]
+      },
+      {
+        "title": "Rủi ro thanh khoản",
+        "paragraphs": [
+          "Một số tài sản kỹ thuật số có thể có tính thanh khoản hạn chế. Điều này có thể dẫn đến: khó khăn trong việc vào hoặc thoát vị thế, tăng trượt giá, thực hiện ở các mức giá khác biệt đáng kể so với dự kiến và không thể thực hiện trong khung thời gian mong muốn."
+        ]
+      },
+      {
+        "title": "Rủi ro đối tác và bên thứ ba",
+        "paragraphs": [
+          "Các dịch vụ phụ thuộc vào các nhà cung cấp bên thứ ba, bao gồm: các sàn giao dịch, nhà cung cấp thanh khoản, bộ xử lý thanh toán, nhà cung cấp công nghệ lưu ký và nhà cung cấp cơ sở hạ tầng.",
+          "Các lỗi, sự mất khả năng thanh toán, hành vi sai trái hoặc gián đoạn hoạt động của bên thứ ba có thể ảnh hưởng xấu đến tính khả dụng của dịch vụ hoặc kết quả thực hiện."
+        ]
+      },
+      {
+        "title": "Các sự kiện bất thường và bất khả kháng",
+        "paragraphs": [
+          "Các sự kiện bất thường nằm ngoài tầm kiểm soát hợp lý — bao gồm, trong số những sự kiện khác, thiên tai, chiến tranh, tình trạng khẩn cấp về quy định, lỗi thị trường hoặc mạng lưới — có thể làm suy yếu hoặc đình chỉ dịch vụ.",
+          "Các sự kiện như vậy có thể dẫn đến thua lỗ hoặc chậm trễ mà không thể cung cấp bất kỳ đảm bảo hoặc bồi thường nào."
+        ]
+      },
+      {
+        "title": "Thừa nhận trách nhiệm của khách hàng",
+        "paragraphs": [
+          "Bằng cách sử dụng các dịch vụ, khách hàng thừa nhận và chấp nhận rằng: họ đã đọc và hiểu các rủi ro này; họ đã tự mình đánh giá các rủi ro liên quan; họ hoàn toàn chịu trách nhiệm về các quyết định và hành động của mình; họ nhận thức được những tổn thất và kỳ vọng có thể xảy ra.",
+          "Khách hàng nên tìm kiếm lời khuyên chuyên nghiệp độc lập nếu họ có bất kỳ câu hỏi nào về các rủi ro."
+        ]
+      },
+      {
+        "title": "Không có tuyên bố tin cậy",
+        "paragraphs": [
+          "Khách hàng không nên dựa vào bất kỳ tuyên bố, tài liệu hoặc thông tin liên lạc nào như là đảm bảo về khả năng sinh lời, bảo mật hoặc kết quả.",
+          "Chỉ có các tài liệu hợp đồng ràng buộc mới chi phối mối quan hệ pháp lý."
+        ]
+      }
+    ]
+  }
+}
