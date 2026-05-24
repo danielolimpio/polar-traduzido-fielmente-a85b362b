@@ -14,16 +14,28 @@ interface VideoShowcaseProps {
   showCta?: boolean;
 }
 
+const INTRO_VIDEO_BY_LANG: Record<string, string> = {
+  pt: "/videos/polar-tensor-intro.mp4",
+  en: "/videos/polar-tensor-intro-en.mp4",
+  es: "/videos/polar-tensor-intro-es.mp4",
+  it: "/videos/polar-tensor-intro-es.mp4",
+  de: "/videos/polar-tensor-intro-de.mp4",
+  fr: "/videos/polar-tensor-intro-en.mp4",
+  vi: "/videos/polar-tensor-intro-en.mp4",
+};
+
 export const VideoShowcase = ({
   badge,
   titleStart,
   titleHighlight,
   titleEnd = "",
   description,
-  videoSrc = "/videos/polar-tensor-intro.mp4",
+  videoSrc,
   showCta = true,
 }: VideoShowcaseProps) => {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
+  const lang = (i18n.language || "pt").slice(0, 2);
+  const _videoSrc = videoSrc ?? INTRO_VIDEO_BY_LANG[lang] ?? INTRO_VIDEO_BY_LANG.pt;
   const _badge = badge ?? t("video.default.badge");
   const _titleStart = titleStart ?? t("video.default.titleStart");
   const _titleHighlight = titleHighlight ?? t("video.default.titleHighlight");
