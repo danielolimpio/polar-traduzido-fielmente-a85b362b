@@ -6,9 +6,9 @@ import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Card } from "@/components/ui/card";
 import {
-  Smartphone, Apple, Bell, Wallet, TrendingUp, BarChart3, ShieldCheck, Zap, Eye, ArrowRight,
+  Smartphone, Bell, Wallet, TrendingUp, BarChart3, ShieldCheck, Zap, Eye, ArrowRight,
 } from "lucide-react";
-import { SIGNUP_URL, SITE_URL } from "@/lib/constants";
+import { SIGNUP_URL, SITE_URL, PLAY_STORE_URL } from "@/lib/constants";
 import { ResponsiveImage } from "@/components/site/ResponsiveImage";
 import appHomePic from "@/assets/hero-app.webp?w=260;520&format=avif;webp&as=picture";
 import appHomeBlur from "@/assets/hero-app.webp?w=24&blur=400&format=webp&as=src";
@@ -21,8 +21,6 @@ import appTransparencyBlur from "@/assets/app-transparency.webp?w=24&blur=400&fo
 import appPortfolioPic from "@/assets/app-portfolio.webp?w=280;560&format=avif;webp&as=picture";
 import appPortfolioBlur from "@/assets/app-portfolio.webp?w=24&blur=400&format=webp&as=src";
 
-const APP_STORE_URL = "https://apps.apple.com/app/polar-tensor";
-const PLAY_STORE_URL = "https://play.google.com/store/apps/details?id=com.polartensor";
 
 appPortfolioPic; appPortfolioBlur; // (reserved for future feature slot)
 const featurePictures = [
@@ -41,12 +39,6 @@ const DownloadApp = () => {
 
   const StoreButtons = ({ className = "" }: { className?: string }) => (
     <div className={`flex flex-col items-center justify-center gap-3 sm:flex-row ${className}`}>
-      <Button asChild variant="hero" size="lg" className="w-full sm:w-auto">
-        <a href={APP_STORE_URL} target="_blank" rel="noopener noreferrer" aria-label={t("downloadAppPage.appStoreAria")}>
-          <Apple className="mr-2 h-5 w-5" />
-          {t("downloadAppPage.appStore")}
-        </a>
-      </Button>
       <Button asChild variant="hero" size="lg" className="w-full sm:w-auto">
         <a href={PLAY_STORE_URL} target="_blank" rel="noopener noreferrer" aria-label={t("downloadAppPage.playStoreAria")}>
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" className="mr-2 h-5 w-5 fill-current">
