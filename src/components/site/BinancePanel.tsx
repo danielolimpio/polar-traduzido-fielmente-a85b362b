@@ -77,7 +77,7 @@ export const BinancePanel = () => {
                 className="font-display text-3xl font-bold tabular-nums md:text-4xl"
                 style={{ color: BINANCE }}
               >
-                192.491.814,64
+                240.483.657,51
               </div>
               <div className="mt-1 text-xs text-muted-foreground">
                 {t("binance.card1.foot")}
@@ -176,7 +176,7 @@ export const BinancePanel = () => {
             </div>
             <div className="relative mt-5">
               <div className="font-display text-3xl font-bold tabular-nums text-primary md:text-4xl">
-                +10.341,76%
+                +12.946,44%
               </div>
               <div className="mt-1 text-xs text-muted-foreground">
                 {t("binance.card3.foot")}
