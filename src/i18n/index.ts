@@ -4,11 +4,19 @@ import LanguageDetector from "i18next-browser-languagedetector";
 import pt from "./locales/pt.json";
 import en from "./locales/en.json";
 import es from "./locales/es.json";
+import vi from "./locales/vi.json";
+import fr from "./locales/fr.json";
+import de from "./locales/de.json";
+import it from "./locales/it.json";
 
 export const SUPPORTED_LANGS = [
-  { code: "pt", label: "Portuguese", flag: "pt" },
+  { code: "pt", label: "Português", flag: "br" },
   { code: "en", label: "English", flag: "gb" },
-  { code: "es", label: "Spanish", flag: "es" },
+  { code: "es", label: "Español", flag: "es" },
+  { code: "fr", label: "Français", flag: "fr" },
+  { code: "de", label: "Deutsch", flag: "de" },
+  { code: "it", label: "Italiano", flag: "it" },
+  { code: "vi", label: "Tiếng Việt", flag: "vn" },
 ] as const;
 
 export type LangCode = (typeof SUPPORTED_LANGS)[number]["code"];
@@ -21,9 +29,13 @@ i18n
       pt: { translation: pt },
       en: { translation: en },
       es: { translation: es },
+      vi: { translation: vi },
+      fr: { translation: fr },
+      de: { translation: de },
+      it: { translation: it },
     },
     fallbackLng: "pt",
-    supportedLngs: ["pt", "en", "es"],
+    supportedLngs: ["pt", "en", "es", "vi", "fr", "de", "it"],
     interpolation: { escapeValue: false },
     detection: {
       order: ["localStorage", "navigator", "htmlTag"],
@@ -36,12 +48,20 @@ const LANG_TO_OG_LOCALE: Record<string, string> = {
   pt: "pt_BR",
   en: "en_US",
   es: "es_ES",
+  vi: "vi_VN",
+  fr: "fr_FR",
+  de: "de_DE",
+  it: "it_IT",
 };
 
 const LANG_TO_HTML_LANG: Record<string, string> = {
   pt: "pt-BR",
   en: "en",
   es: "es",
+  vi: "vi",
+  fr: "fr",
+  de: "de",
+  it: "it",
 };
 
 const setOrCreateMeta = (selector: string, attr: string, value: string) => {

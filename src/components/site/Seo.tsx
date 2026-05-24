@@ -54,12 +54,21 @@ const LANG_TO_OG: Record<string, string> = {
   pt: "pt_BR",
   en: "en_US",
   es: "es_ES",
+  vi: "vi_VN",
+  fr: "fr_FR",
+  de: "de_DE",
+  it: "it_IT",
 };
 const LANG_TO_HTML: Record<string, string> = {
   pt: "pt-BR",
   en: "en",
   es: "es",
+  vi: "vi",
+  fr: "fr",
+  de: "de",
+  it: "it",
 };
+const SUPPORTED: ReadonlyArray<"pt" | "en" | "es" | "vi" | "fr" | "de" | "it"> = ["pt", "en", "es", "vi", "fr", "de", "it"];
 
 const DEFAULT_OG_IMAGE = "https://polartensor.trade/og-image.jpg";
 

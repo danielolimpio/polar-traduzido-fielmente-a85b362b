@@ -2,8 +2,19 @@ import { useTranslation } from "react-i18next";
 import { useLocation } from "react-router-dom";
 import { SITE_URL } from "./constants";
 
-export type LangCode = "pt" | "en" | "es";
-export const LANGS: LangCode[] = ["pt", "en", "es"];
+export type LangCode = "pt" | "en" | "es" | "vi" | "fr" | "de" | "it";
+export const LANGS: LangCode[] = ["pt", "en", "es", "vi", "fr", "de", "it"];
+
+// hreflang code used on <link rel="alternate"> and sitemap entries
+export const LANG_TO_HREFLANG: Record<LangCode, string> = {
+  pt: "pt-BR",
+  en: "en",
+  es: "es",
+  vi: "vi",
+  fr: "fr",
+  de: "de",
+  it: "it",
+};
 
 export type RouteKey =
   | "home"
@@ -18,19 +29,19 @@ export type RouteKey =
   | "faq"
   | "downloadApp";
 
-// PT permanece sem prefixo (idioma padrão). EN e ES usam prefixo /en e /es.
+// PT permanece sem prefixo (idioma padrão). Os demais usam prefixo /xx.
 export const ROUTE_SLUGS: Record<RouteKey, Record<LangCode, string>> = {
-  home:        { pt: "",                en: "",                es: "" },
-  about:       { pt: "sobre",           en: "about",           es: "sobre" },
-  technology:  { pt: "tecnologia",      en: "technology",      es: "tecnologia" },
-  consultancy: { pt: "consultoria",     en: "consultancy",     es: "consultoria" },
-  plans:       { pt: "planos",          en: "plans",           es: "planes" },
-  rewards:     { pt: "recompensas",     en: "rewards",         es: "recompensas" },
-  privacy:     { pt: "privacidade",     en: "privacy",         es: "privacidad" },
-  terms:       { pt: "termos",          en: "terms",           es: "terminos" },
-  risk:        { pt: "aviso-de-risco",  en: "risk-disclosure", es: "aviso-de-riesgo" },
-  faq:         { pt: "faq",             en: "faq",             es: "faq" },
-  downloadApp: { pt: "baixar-app",      en: "download-app",    es: "descargar-app" },
+  home:        { pt: "",                en: "",                es: "",                vi: "",                  fr: "",                de: "",                  it: "" },
+  about:       { pt: "sobre",           en: "about",           es: "sobre",           vi: "gioi-thieu",        fr: "a-propos",        de: "ueber-uns",         it: "chi-siamo" },
+  technology:  { pt: "tecnologia",      en: "technology",      es: "tecnologia",      vi: "cong-nghe",         fr: "technologie",     de: "technologie",       it: "tecnologia" },
+  consultancy: { pt: "consultoria",     en: "consultancy",     es: "consultoria",     vi: "tu-van",            fr: "conseil",         de: "beratung",          it: "consulenza" },
+  plans:       { pt: "planos",          en: "plans",           es: "planes",          vi: "goi-cuoc",          fr: "plans",           de: "plaene",            it: "piani" },
+  rewards:     { pt: "recompensas",     en: "rewards",         es: "recompensas",     vi: "phan-thuong",       fr: "recompenses",     de: "belohnungen",       it: "ricompense" },
+  privacy:     { pt: "privacidade",     en: "privacy",         es: "privacidad",      vi: "bao-mat",           fr: "confidentialite", de: "datenschutz",       it: "privacy" },
+  terms:       { pt: "termos",          en: "terms",           es: "terminos",        vi: "dieu-khoan",        fr: "conditions",      de: "agb",               it: "termini" },
+  risk:        { pt: "aviso-de-risco",  en: "risk-disclosure", es: "aviso-de-riesgo", vi: "canh-bao-rui-ro",   fr: "avertissement-de-risque", de: "risikohinweis", it: "avviso-di-rischio" },
+  faq:         { pt: "faq",             en: "faq",             es: "faq",             vi: "faq",               fr: "faq",             de: "faq",               it: "faq" },
+  downloadApp: { pt: "baixar-app",      en: "download-app",    es: "descargar-app",   vi: "tai-ung-dung",      fr: "telecharger-app", de: "app-herunterladen", it: "scarica-app" },
 };
 
 export const langPrefix = (lang: LangCode) => (lang === "pt" ? "" : `/${lang}`);
@@ -47,17 +58,21 @@ export const buildUrl = (key: RouteKey, lang: LangCode): string => {
   return `${SITE_URL}${path === "/" ? "/" : path}`;
 };
 
-export const buildAlternates = (key: RouteKey): Record<string, string> => ({
-  "pt-BR": buildUrl(key, "pt"),
-  pt: buildUrl(key, "pt"),
-  en: buildUrl(key, "en"),
-  es: buildUrl(key, "es"),
-  "x-default": buildUrl(key, "pt"),
-});
+export const buildAlternates = (key: RouteKey): Record<string, string> => {
+  const out: Record<string, string> = {};
+  for (const lang of LANGS) {
+    out[LANG_TO_HREFLANG[lang]] = buildUrl(key, lang);
+  }
+  out["pt"] = buildUrl(key, "pt");
+  out["x-default"] = buildUrl(key, "pt");
+  return out;
+};
+
+const NON_PT_PREFIXES = LANGS.filter((l) => l !== "pt");
 
 export const detectLangFromPath = (pathname: string): LangCode => {
   const seg = pathname.split("/")[1];
-  if (seg === "en" || seg === "es") return seg;
+  if ((NON_PT_PREFIXES as string[]).includes(seg)) return seg as LangCode;
   return "pt";
 };
 
@@ -77,14 +92,10 @@ export const useLocalizedUrl = (key: RouteKey): string => {
   return buildUrl(key, lang);
 };
 
-/**
- * Dado o pathname atual, identifica qual RouteKey ele representa
- * (em qualquer idioma). Útil para o LanguageSwitcher trocar de idioma
- * preservando a página atual.
- */
+const PREFIX_RE = new RegExp(`^/(${NON_PT_PREFIXES.join("|")})(?=/|$)`);
+
 export const matchRouteKey = (pathname: string): RouteKey | null => {
-  // Remove possível prefixo de idioma
-  const clean = pathname.replace(/^\/(en|es)(?=\/|$)/, "") || "/";
+  const clean = pathname.replace(PREFIX_RE, "") || "/";
   const slug = clean.replace(/^\//, "").split("/")[0];
   if (!slug) return "home";
   for (const lang of LANGS) {
