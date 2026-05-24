@@ -34,8 +34,8 @@
     <link rel="canonical" href="https://polartensor.trade/" />
     <link rel="alternate" hreflang="pt-BR" href="https://polartensor.trade/" />
     <link rel="alternate" hreflang="pt" href="https://polartensor.trade/" />
-    <link rel="alternate" hreflang="en" href="https://polartensor.trade/" />
-    <link rel="alternate" hreflang="es" href="https://polartensor.trade/" />
+    <link rel="alternate" hreflang="en" href="https://polartensor.trade/en" />
+    <link rel="alternate" hreflang="es" href="https://polartensor.trade/es" />
     <link rel="alternate" hreflang="x-default" href="https://polartensor.trade/" />
     <link rel="icon" type="image/webp" href="/favicon.webp" />
     <link rel="apple-touch-icon" href="/favicon.webp" />
@@ -85,8 +85,9 @@
         href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap"
       />
     </noscript>
-    <link rel="dns-prefetch" href="https://polar-tensor.com" />
     <link rel="dns-prefetch" href="https://www.googletagmanager.com" />
+    <link rel="dns-prefetch" href="https://www.youtube.com" />
+    <link rel="dns-prefetch" href="https://i.ytimg.com" />
 
     <!-- Structured data: Organization (with sameAs and contact) -->
     <script type="application/ld+json">
@@ -95,7 +96,9 @@
       "@type": "Organization",
       "@id": "https://polartensor.trade/#organization",
       "name": "Polar Tensor",
-      "alternateName": ["Polar Tensor Brasil", "PolarTensor"],
+      "legalName": "Polar Tensor Corp.",
+      "alternateName": ["Polar Tensor Brasil", "PolarTensor", "Polar Tensor Oficial"],
+      "slogan": "Trading algorítmico com IA em criptomoedas",
       "url": "https://polartensor.trade/",
       "logo": {
         "@type": "ImageObject",
@@ -104,25 +107,59 @@
         "height": 630
       },
       "image": "https://polartensor.trade/og-image.jpg",
-      "description": "Plataforma de trading algorítmico com redes neurais para o mercado de criptomoedas.",
+      "description": "Plataforma de trading algorítmico com redes neurais proprietárias para o mercado de criptomoedas, com operação automatizada 24/5 na Binance.",
       "foundingDate": "2018",
-      "founders": [
-        { "@type": "Person", "name": "Polar Tensor Team" }
+      "numberOfEmployees": { "@type": "QuantitativeValue", "minValue": 50, "maxValue": 100 },
+      "knowsAbout": [
+        "Algorithmic trading",
+        "Neural networks",
+        "Cryptocurrency trading",
+        "High-frequency trading",
+        "Artificial intelligence in finance",
+        "Binance API trading",
+        "Quantitative finance"
       ],
       "areaServed": ["BR", "US", "EU", "HK", "PA", "ES", "MX", "AR", "CO", "PT"],
       "knowsLanguage": ["pt-BR", "pt-PT", "en", "es"],
       "sameAs": [
-        "https://polar-tensor.com/",
         "https://www.instagram.com/polartensor",
         "https://twitter.com/polartensor",
-        "https://t.me/polartensor"
+        "https://t.me/polartensor",
+        "https://www.youtube.com/@PolarTensor",
+        "https://www.facebook.com/polartensor",
+        "https://www.linkedin.com/company/polar-tensor",
+        "https://play.google.com/store/apps/developer?id=Polar+Tensor"
       ],
       "contactPoint": [{
         "@type": "ContactPoint",
+        "telephone": "+5512982519116",
         "contactType": "customer support",
         "availableLanguage": ["Portuguese", "English", "Spanish"],
         "areaServed": "Worldwide"
       }]
+    }
+    </script>
+
+    <!-- Structured data: VideoObject (ajuda Google a mostrar vídeos da Polar Tensor no lugar de terceiros) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "VideoObject",
+      "name": "Polar Tensor — Apresentação Oficial",
+      "description": "Apresentação oficial da Polar Tensor: plataforma de trading algorítmico com redes neurais proprietárias para o mercado de criptomoedas, com operação automatizada 24/5 na Binance.",
+      "thumbnailUrl": ["https://polartensor.trade/og-image.jpg"],
+      "uploadDate": "2025-01-15T08:00:00-03:00",
+      "duration": "PT10M26S",
+      "contentUrl": "https://polartensor.trade/videos/apresentacao.mp4",
+      "embedUrl": "https://www.youtube.com/embed/?listType=user_uploads&list=PolarTensor",
+      "publisher": { "@id": "https://polartensor.trade/#organization" },
+      "inLanguage": "pt-BR",
+      "isFamilyFriendly": true,
+      "potentialAction": {
+        "@type": "SeekToAction",
+        "target": "https://polartensor.trade/?t={seek_to_second_number}",
+        "startOffset-input": "required name=seek_to_second_number"
+      }
     }
     </script>
 
