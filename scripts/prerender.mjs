@@ -149,6 +149,39 @@ function buildHtml(template, key, lang) {
       </noscript>`;
   html = html.replace(/<noscript>[\s\S]*?<\/noscript>/, noscript);
 
+  // Injeta WebPage + BreadcrumbList JSON-LD por rota (grafo de entidades)
+  const homeUrl = buildUrl("home", lang);
+  const breadcrumbs = key === "home"
+    ? [{ "@type": "ListItem", position: 1, name: labels.home, item: homeUrl }]
+    : [
+        { "@type": "ListItem", position: 1, name: labels.home, item: homeUrl },
+        { "@type": "ListItem", position: 2, name: labels[key], item: url },
+      ];
+  const pageJsonLd = {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebPage",
+        "@id": `${url}#webpage`,
+        url,
+        name: c.title,
+        description: c.description,
+        inLanguage: HTML_LANG[lang],
+        isPartOf: { "@id": "https://polartensor.trade/#website" },
+        about: { "@id": "https://polartensor.trade/#organization" },
+        primaryImageOfPage: { "@type": "ImageObject", url: `${SITE}/og-image.jpg` },
+        breadcrumb: { "@id": `${url}#breadcrumb` },
+      },
+      {
+        "@type": "BreadcrumbList",
+        "@id": `${url}#breadcrumb`,
+        itemListElement: breadcrumbs,
+      },
+    ],
+  };
+  const pageScript = `<script type="application/ld+json" id="seo-prerender-webpage">${JSON.stringify(pageJsonLd)}</script>`;
+  html = html.replace("</head>", `${pageScript}\n  </head>`);
+
   return html;
 }
 
