@@ -10,20 +10,21 @@ const __dirname = dirname(fileURLToPath(import.meta.url));
 const distDir = join(__dirname, "..", "dist");
 const SITE = "https://polartensor.trade";
 
-const LANGS = ["pt", "en", "es"];
+const LANGS = ["pt", "en", "es", "vi", "fr", "de", "it"];
+const HREFLANG = { pt: "pt-BR", en: "en", es: "es", vi: "vi", fr: "fr", de: "de", it: "it" };
 
 const SLUGS = {
-  home:        { pt: "",                en: "",                es: "" },
-  about:       { pt: "sobre",           en: "about",           es: "sobre" },
-  technology:  { pt: "tecnologia",      en: "technology",      es: "tecnologia" },
-  consultancy: { pt: "consultoria",     en: "consultancy",     es: "consultoria" },
-  plans:       { pt: "planos",          en: "plans",           es: "planes" },
-  rewards:     { pt: "recompensas",     en: "rewards",         es: "recompensas" },
-  privacy:     { pt: "privacidade",     en: "privacy",         es: "privacidad" },
-  terms:       { pt: "termos",          en: "terms",           es: "terminos" },
-  risk:        { pt: "aviso-de-risco",  en: "risk-disclosure", es: "aviso-de-riesgo" },
-  faq:         { pt: "faq",             en: "faq",             es: "faq" },
-  downloadApp: { pt: "baixar-app",      en: "download-app",    es: "descargar-app" },
+  home:        { pt: "",                en: "",                es: "",                vi: "",                  fr: "",                de: "",                  it: "" },
+  about:       { pt: "sobre",           en: "about",           es: "sobre",           vi: "gioi-thieu",        fr: "a-propos",        de: "ueber-uns",         it: "chi-siamo" },
+  technology:  { pt: "tecnologia",      en: "technology",      es: "tecnologia",      vi: "cong-nghe",         fr: "technologie",     de: "technologie",       it: "tecnologia" },
+  consultancy: { pt: "consultoria",     en: "consultancy",     es: "consultoria",     vi: "tu-van",            fr: "conseil",         de: "beratung",          it: "consulenza" },
+  plans:       { pt: "planos",          en: "plans",           es: "planes",          vi: "goi-cuoc",          fr: "plans",           de: "plaene",            it: "piani" },
+  rewards:     { pt: "recompensas",     en: "rewards",         es: "recompensas",     vi: "phan-thuong",       fr: "recompenses",     de: "belohnungen",       it: "ricompense" },
+  privacy:     { pt: "privacidade",     en: "privacy",         es: "privacidad",      vi: "bao-mat",           fr: "confidentialite", de: "datenschutz",       it: "privacy" },
+  terms:       { pt: "termos",          en: "terms",           es: "terminos",        vi: "dieu-khoan",        fr: "conditions",      de: "agb",               it: "termini" },
+  risk:        { pt: "aviso-de-risco",  en: "risk-disclosure", es: "aviso-de-riesgo", vi: "canh-bao-rui-ro",   fr: "avertissement-de-risque", de: "risikohinweis", it: "avviso-di-rischio" },
+  faq:         { pt: "faq",             en: "faq",             es: "faq",             vi: "faq",               fr: "faq",             de: "faq",               it: "faq" },
+  downloadApp: { pt: "baixar-app",      en: "download-app",    es: "descargar-app",   vi: "tai-ung-dung",      fr: "telecharger-app", de: "app-herunterladen", it: "scarica-app" },
 };
 
 const langPrefix = (l) => (l === "pt" ? "" : `/${l}`);
@@ -98,10 +99,26 @@ const NAV_LABELS = {
   pt: { home: "Home", about: "Sobre", technology: "Tecnologia", plans: "Planos", rewards: "Recompensas", downloadApp: "Baixar App", consultancy: "Consultoria", faq: "FAQ", risk: "Aviso de Risco", privacy: "Privacidade", terms: "Termos" },
   en: { home: "Home", about: "About", technology: "Technology", plans: "Plans", rewards: "Rewards", downloadApp: "Download App", consultancy: "Consultancy", faq: "FAQ", risk: "Risk Disclosure", privacy: "Privacy", terms: "Terms" },
   es: { home: "Inicio", about: "Sobre", technology: "Tecnología", plans: "Planes", rewards: "Recompensas", downloadApp: "Descargar App", consultancy: "Consultoría", faq: "FAQ", risk: "Aviso de Riesgo", privacy: "Privacidad", terms: "Términos" },
+  vi: { home: "Trang chủ", about: "Giới thiệu", technology: "Công nghệ", plans: "Gói cước", rewards: "Phần thưởng", downloadApp: "Tải ứng dụng", consultancy: "Tư vấn", faq: "FAQ", risk: "Cảnh báo rủi ro", privacy: "Bảo mật", terms: "Điều khoản" },
+  fr: { home: "Accueil", about: "À propos", technology: "Technologie", plans: "Plans", rewards: "Récompenses", downloadApp: "Télécharger l'app", consultancy: "Conseil", faq: "FAQ", risk: "Avertissement de risque", privacy: "Confidentialité", terms: "Conditions" },
+  de: { home: "Startseite", about: "Über uns", technology: "Technologie", plans: "Pläne", rewards: "Belohnungen", downloadApp: "App herunterladen", consultancy: "Beratung", faq: "FAQ", risk: "Risikohinweis", privacy: "Datenschutz", terms: "AGB" },
+  it: { home: "Home", about: "Chi siamo", technology: "Tecnologia", plans: "Piani", rewards: "Ricompense", downloadApp: "Scarica app", consultancy: "Consulenza", faq: "FAQ", risk: "Avviso di rischio", privacy: "Privacy", terms: "Termini" },
 };
 
-const HTML_LANG = { pt: "pt-BR", en: "en", es: "es" };
-const OG_LOCALE = { pt: "pt_BR", en: "en_US", es: "es_ES" };
+const HTML_LANG = { pt: "pt-BR", en: "en", es: "es", vi: "vi", fr: "fr", de: "de", it: "it" };
+const OG_LOCALE = { pt: "pt_BR", en: "en_US", es: "es_ES", vi: "vi_VN", fr: "fr_FR", de: "de_DE", it: "it_IT" };
+
+// Para idiomas sem conteúdo SEO próprio em CONTENT (vi/fr/de/it),
+// usamos o inglês como fallback — o componente <Seo /> ajusta dinamicamente no client.
+const CONTENT_FALLBACK_LANG = "en";
+for (const key of Object.keys(SLUGS)) {
+  for (const lang of LANGS) {
+    if (!CONTENT[key]?.[lang]) {
+      CONTENT[key] = CONTENT[key] || {};
+      CONTENT[key][lang] = CONTENT[key][CONTENT_FALLBACK_LANG];
+    }
+  }
+}
 
 function buildHtml(template, key, lang) {
   const c = CONTENT[key][lang];
@@ -130,8 +147,7 @@ function buildHtml(template, key, lang) {
 
   // Build hreflang alternates and inject before </head>
   const alts = LANGS.map((l) => {
-    const hl = l === "pt" ? "pt-BR" : l;
-    return `    <link rel="alternate" hreflang="${hl}" href="${buildUrl(key, l)}" />`;
+    return `    <link rel="alternate" hreflang="${HREFLANG[l]}" href="${buildUrl(key, l)}" />`;
   }).join("\n");
   const xDefault = `    <link rel="alternate" hreflang="x-default" href="${buildUrl(key, "pt")}" />`;
   // remove existing alternates

@@ -1,0 +1,1537 @@
+{
+  "common": {
+    "signIn": "Se connecter",
+    "signUp": "S'inscrire",
+    "signUpFree": "Inscription gratuite",
+    "signUpNow": "S'inscrire maintenant",
+    "downloadApp": "App",
+    "downloadAppFull": "Télécharger l'application Polar Tensor",
+    "openMenu": "Ouvrir le menu",
+    "language": "Langue",
+    "back": "Retour à l'accueil",
+    "startNow": "Commencer maintenant",
+    "signUpCta": "S'inscrire maintenant",
+    "accessPlatform": "Accéder à la plateforme"
+  },
+  "nav": {
+    "home": "Accueil",
+    "about": "À propos",
+    "technology": "Technologie",
+    "consultancy": "Conseil",
+    "plans": "Plans",
+    "rewards": "Récompenses",
+    "faq": "FAQ"
+  },
+  "home": {
+    "seoTitle": "Polar Tensor | Trading Crypto Algorithmique IA",
+    "seoDesc": "Polar Tensor : trading algorithmique avec des réseaux de neurones propriétaires pour la crypto. 24h/5 sur Binance, transparence totale et support multilingue."
+  },
+  "hero": {
+    "badge": "Système Polar One — Opérationnel depuis 2024",
+    "title1": "Polar Tensor",
+    "title2": "Trading IA",
+    "title3": "en Cryptomonnaies",
+    "description": "<1>Polar Tensor</1> est la plateforme de trading algorithmique alimentée par des réseaux de neurones propriétaires pour le marché des cryptos — analyse multi-périodes, exécution à faible latence et gestion automatisée des risques fonctionnant 24h/24 et 5j/7.",
+    "stat1": "Baisse maximale",
+    "stat2": "Latence",
+    "stat3": "Trades/jour",
+    "imageAlt": "Application Polar Tensor affichant le portefeuille USDT"
+  },
+  "trust": {
+    "badge": "Pourquoi Polar Tensor",
+    "title1": "L'ingénierie financière rencontre",
+    "title2": "l'apprentissage profond",
+    "subtitle": "Nous développons des algorithmes propriétaires pour le marché des cryptomonnaies depuis 2018. Siège R&D à Hong Kong, fonds enregistré au Panama.",
+    "items": [
+      {
+        "title": "Base de données robuste",
+        "desc": "Les données on-chain, le sentiment, le carnet d'ordres et les métriques de marché sur plusieurs périodes alimentent nos modèles."
+      },
+      {
+        "title": "Modèles éprouvés",
+        "desc": "Réseaux de neurones combinant l'analyse de tendance et de direction, validés dans différents régimes de marché depuis 2020."
+      },
+      {
+        "title": "Backtesting rigoureux",
+        "desc": "Chaque modèle est testé par rapport à des données historiques étendues avant d'échanger du capital réel, garantissant un avantage statistique."
+      }
+    ]
+  },
+  "techHome": {
+    "badge": "Technologie",
+    "title1": "Technologie",
+    "title2": "de trading IA avancée",
+    "subtitle": "Réseaux neuronaux basés sur la recherche, conçus pour l'excellence sur le marché des cryptomonnaies.",
+    "items": [
+      {
+        "title": "Analyse Multi-Période",
+        "desc": "Les architectures CNN avec modules d'attention capturent des motifs à travers des échelles de temps simultanées."
+      },
+      {
+        "title": "Intégration des Données",
+        "desc": "OHLCV, données on-chain, carnet d'ordres et sentiment — unifiés dans un cadre unique."
+      },
+      {
+        "title": "Exécution à Haute Fréquence",
+        "desc": "Latence inférieure à 50 ms, connexions directes aux échanges, dimensionnement dynamique des positions."
+      },
+      {
+        "title": "Performance Prouvée",
+        "desc": "Actif depuis 2020 (initialement FTX), entièrement automatisé et contrôlé par l'IA depuis 2024."
+      }
+    ]
+  },
+  "engine": {
+    "badge": "Comment ça marche",
+    "title1": "Notre",
+    "title2": "moteur d'investissement intelligent",
+    "subtitle": "Deux types de réseaux neuronaux travaillant ensemble pour maximiser la précision et minimiser les risques.",
+    "items": [
+      {
+        "title": "Réseaux de tendances",
+        "desc": "Analyse la dominance du BTC, les données on-chain et les conditions de marché à long terme pour déterminer les régimes haussiers ou baissiers."
+      },
+      {
+        "title": "Réseaux de direction",
+        "desc": "Traite les données en temps réel, les changements du carnet d'ordres, le sentiment des nouvelles et les métriques de la blockchain pour prédire les mouvements immédiats."
+      },
+      {
+        "title": "Moteur d'exécution",
+        "desc": "Les transactions à haute fréquence s'exécutent lorsque les modèles affichent une grande confiance, avec une mise à l'échelle adaptative de la position."
+      }
+    ],
+    "opTitle": "Fonctionnement continu et automatisé",
+    "opDesc": "Du lundi au vendredi, de 8h00 UTC à 22h00 UTC – fenêtres de liquidité maximale. Distribution hebdomadaire des profits chaque vendredi à 23h00 UTC."
+  },
+  "binance": {
+    "badge": "Compte Institutionnel · Binance VIP9",
+    "title1": "Opérations réelles sur",
+    "title2": "Binance",
+    "title3": "avec une",
+    "title4": "crédibilité auditable",
+    "subtitle": "Volume institutionnel, statut de privilège supérieur sur le plus grand échange au monde et flux d'exécution en direct directement depuis le back-office Polar One.",
+    "card1": {
+      "label": "Solde Binance",
+      "sub": "Valeur Totale · USDT",
+      "foot": "≈ 192 491 814,64 US$ · mis à jour en temps réel",
+      "tag": "Garde directe sur Binance"
+    },
+    "card2": {
+      "label": "Statut Binance",
+      "sub": "Mon privilège VIP",
+      "foot": "Niveau institutionnel supérieur · Frais les plus bas et priorité d'exécution"
+    },
+    "card3": {
+      "label": "Bénéfice cumulé",
+      "sub": "Aperçu des performances",
+      "foot": "Rendement cumulé · système Polar One audité",
+      "tag": "Derniers 30 jours : +20.55%"
+    },
+    "feed": {
+      "title": "Flux de trading en direct",
+      "subtitle": "Exécutions en temps réel dans le back-office Polar One",
+      "open": "Ouvrir",
+      "close": "Fermer",
+      "footer": "Données de back-office illustratives · Exécution réelle auditée sur Binance"
+    }
+  },
+  "video": {
+    "default": {
+      "badge": "Découvrez Polar Tensor",
+      "titleStart": "Un système ",
+      "titleHighlight": "100% automatisé",
+      "description": "Découvrez comment notre technologie d'IA opère sur le marché des crypto-monnaies en partenariat avec Binance.",
+      "cta": "Inscrivez-vous et commencez dès maintenant",
+      "ctaFoot": "Accès instantané • Aucun frais pour créer votre compte",
+      "fallback": "Votre navigateur ne supporte pas la vidéo HTML5."
+    },
+    "binance": {
+      "badge": "Polar Tensor Dans les coulisses · Binance",
+      "titleStart": "Découvrez le fonctionnement ",
+      "titleHighlight": "en direct sur Binance",
+      "description": "Regardez des séquences réelles des coulisses tandis que le système Polar One exécute des stratégies auditées en temps réel."
+    }
+  },
+  "performance": {
+    "badge": "Performance historique",
+    "title1": "Rendements mensuels",
+    "title2": "audités",
+    "subtitle": "Moyenne mensuelle de {{avg}}% entre 04/24 et 03/26. Les résultats passés ne garantissent pas les rendements futurs.",
+    "avgMonthly": "Rendement mensuel moyen",
+    "avgDrawdown": "Baisse mensuelle moyenne",
+    "legendYield": "Rendement mensuel",
+    "legendDrawdown": "Baisse maximale",
+    "average": "Moyenne {{avg}}%",
+    "tooltipProfit": "Bénéfice : {{val}}%",
+    "tooltipDrawdown": "Baisse : {{val}}%",
+    "footer": "Résultats audités du système Polar One. Passez la souris sur chaque barre pour voir le rendement exact et la baisse.",
+    "pdfLabel": "Document officiel · PDF",
+    "pdfTitle": "Télécharger la présentation Polar Tensor",
+    "pdfAria": "Télécharger la présentation officielle Polar Tensor en PDF"
+  },
+  "plansHome": {
+    "badge": "Plans",
+    "title1": "Choisissez votre",
+    "title2": "niveau d'accès",
+    "subtitle": "Frais de licence uniques de 10 % sur le montant déposé. Frais de performance uniquement sur les profits.",
+    "popular": "Le plus populaire",
+    "perfFee": "frais de performance",
+    "from": "À partir de",
+    "start": "Commencez maintenant",
+    "seeAll": "Voir tous les plans",
+    "items": [
+      {
+        "name": "Professionnel",
+        "min": "8 000 USDT",
+        "fee": "30%",
+        "features": [
+          "Accès au système Polar One",
+          "Distribution hebdomadaire des bénéfices",
+          "Retraits automatiques 24h/24 et 7j/7",
+          "Support standard"
+        ]
+      },
+      {
+        "name": "Élite",
+        "min": "25 000 USDT",
+        "fee": "25%",
+        "features": [
+          "Tout du plan Professionnel",
+          "Frais de performance réduits",
+          "Priorité d'exécution",
+          "Support dédié"
+        ]
+      },
+      {
+        "name": "Entreprise",
+        "min": "100 000 USDT",
+        "fee": "20%",
+        "features": [
+          "Tout du plan Élite",
+          "Frais de performance les plus bas",
+          "Gestionnaire de compte exclusif",
+          "Rapports institutionnels"
+        ]
+      }
+    ]
+  },
+  "rewardsHome": {
+    "badge": "Programme de Récompenses",
+    "title1": "Générez des revenus passifs grâce aux",
+    "title2": "parrainages",
+    "subtitle": "Invitez des personnes sur la plateforme et gagnez des récompenses jusqu'à 15 niveaux sur les frais de licence, ainsi que des récompenses résiduelles hebdomadaires sur les profits générés.",
+    "benefits": [
+      {
+        "t": "Récompenses de Licence",
+        "d": "Gains sur les frais de licence jusqu'à 15 niveaux."
+      },
+      {
+        "t": "Récompenses Résiduelles",
+        "d": "Revenu hebdomadaire sur les profits des filleuls."
+      },
+      {
+        "t": "Récompense Infinie",
+        "d": "Pourcentage sur le volume de toute l'équipe."
+      },
+      {
+        "t": "Rangs & Bonus",
+        "d": "Bonus USDT de Bronze à Diamant."
+      }
+    ],
+    "ranksTitle": "Rangs",
+    "ranksSubtitle": "Progressez en rang à mesure que le volume de votre réseau augmente.",
+    "colRank": "Rang",
+    "colVolume": "Volume",
+    "colBonus": "Bonus",
+    "ranks": [
+      {
+        "t": "Fer",
+        "v": "100 USDT",
+        "b": "—"
+      },
+      {
+        "t": "Bronze",
+        "v": "500 USDT",
+        "b": "50 USDT"
+      },
+      {
+        "t": "Argent",
+        "v": "2,500 USDT",
+        "b": "200 USDT"
+      },
+      {
+        "t": "Or",
+        "v": "8,000 USDT",
+        "b": "500 USDT"
+      },
+      {
+        "t": "Platine",
+        "v": "25,000 USDT",
+        "b": "1,500 USDT"
+      },
+      {
+        "t": "Titane",
+        "v": "100,000 USDT",
+        "b": "20,000 USDT"
+      },
+      {
+        "t": "Rubis",
+        "v": "1,000,000 USDT",
+        "b": "50,000 USDT"
+      },
+      {
+        "t": "Émeraude",
+        "v": "3,000,000 USDT",
+        "b": "150,000 USDT"
+      },
+      {
+        "t": "Diamant",
+        "v": "8,000,000 USDT",
+        "b": "500,000 USDT"
+      }
+    ]
+  },
+  "faqHome": {
+    "badge": "FAQ",
+    "title1": "Questions",
+    "title2": "fréquemment posées",
+    "items": [
+      {
+        "q": "Qu'est-ce que Polar Tensor ?",
+        "a": "Nous sommes une entreprise de technologie financière spécialisée dans le développement d'algorithmes de trading propriétaires basés sur des réseaux neuronaux pour le marché des cryptomonnaies. Nous opérons depuis 2018, avec notre première version rentable en 2020."
+      },
+      {
+        "q": "Comment fonctionne le système Polar One ?",
+        "a": "C'est un système de trading entièrement automatisé qui utilise deux types de réseaux neuronaux — tendance et direction — pour identifier les opportunités et exécuter des trades à haute fréquence avec une faible latence sur Binance."
+      },
+      {
+        "q": "Quels sont les risques encourus ?",
+        "a": "Le trading de cryptomonnaies implique des risques significatifs, y compris la volatilité, les risques de marché, réglementaires, de liquidité et technologiques. Vous pourriez perdre une partie ou la totalité de votre capital. Nous recommandons fortement de demander un conseil financier indépendant."
+      },
+      {
+        "q": "Comment fonctionnent les frais ?",
+        "a": "Nous facturons des frais de licence uniques de 10 % sur le montant déposé et des frais de performance (20 % à 30 % selon le plan) uniquement sur les profits générés. Nous distribuons les profits chaque semaine, tous les vendredis à 23:00 UTC."
+      },
+      {
+        "q": "Quelles cryptomonnaies puis-je déposer ?",
+        "a": "Nous acceptons Bitcoin, Ethereum, Solana et USDT. Les retraits sont traités automatiquement 24h/24 et 7j/7 en USDT et USDC."
+      },
+      {
+        "q": "Où l'entreprise est-elle enregistrée ?",
+        "a": "Polar Tensor Corp. est enregistrée au Panama (No. 155771852), avec Polar MSB Inc. aux États-Unis (Montana, No. D1537006, FinCEN 31000306664168) et Polar Tensor LAB Limited à Hong Kong (No. 78737300)."
+      }
+    ]
+  },
+  "ctaHome": {
+    "badge": "Commencer maintenant",
+    "title1": "Commencez à trader avec",
+    "title2": "l'IA aujourd'hui",
+    "subtitle": "Téléchargez notre application et accédez à une technologie de trading avancée basée sur les réseaux neuronaux directement depuis votre téléphone.",
+    "btn1": "S'inscrire maintenant",
+    "btn2": "Accéder à la plateforme",
+    "footer": "Disponible sur l'App Store et Google Play • Retraits automatiques en USDT et USDC"
+  },
+  "footer": {
+    "tagline": "<1>Polar Tensor</1> — plateforme de trading algorithmique avec intelligence artificielle pour le marché crypto.",
+    "platform": "Plateforme",
+    "company": "Entreprise",
+    "legal": "Légal",
+    "links": {
+      "home": "Accueil",
+      "tech": "Technologie",
+      "perf": "Performance",
+      "plans": "Plans",
+      "downloadApp": "Télécharger l'application Polar Tensor",
+      "about": "À propos",
+      "consultancy": "Conseil",
+      "faq": "FAQ",
+      "terms": "Conditions d'utilisation",
+      "privacy": "Politique de confidentialité",
+      "risk": "Divulgation des risques"
+    },
+    "regulationsBadge": "Structure corporative et réglementaire",
+    "groupTitle": "Polar Tensor Group™",
+    "groupDesc": "Nous opérons sous un groupe international agréé, avec des entités dédiées dans plusieurs juridictions pour assurer conformité, sécurité et transparence.",
+    "groupNote": "Toutes les entités ci-dessus constituent le <1>Polar Tensor Group™</1>, sous la holding et la propriété de <3>Polar Tensor Corporation™</3>.",
+    "registry": "Registre",
+    "jurisdiction": "Juridiction",
+    "regulations": [
+      {
+        "name": "Polar Tensor Corp.",
+        "jurisdiction": "République du Panama",
+        "description": "Technologie de trading automatisé"
+      },
+      {
+        "name": "Polar Tensor USA LLC",
+        "jurisdiction": "États-Unis — Wyoming",
+        "description": "Entité cliente pour les États-Unis et l'international (hors UE)"
+      },
+      {
+        "name": "Polar Tensor Europe SP ZOO",
+        "jurisdiction": "République de Pologne (UE)",
+        "description": "Entité cliente pour l'Union européenne"
+      },
+      {
+        "name": "Polar MSB Inc.",
+        "jurisdiction": "États-Unis — Montana",
+        "description": "Paiements, échange fiat et services de cartes"
+      },
+      {
+        "name": "Polar Tensor LAB Limited",
+        "jurisdiction": "Hong Kong",
+        "description": "Société de recherche et développement"
+      },
+      {
+        "name": "Polar Tensor Africa Limited",
+        "jurisdiction": "République fédérale du Nigeria",
+        "description": "Intégration client hors UE et États-Unis"
+      }
+    ],
+    "riskTitle": "Divulgation des risques",
+    "riskBody": "Le marché des cryptomonnaies implique des risques significatifs et peut ne pas convenir à tout le monde. La valeur des cryptomonnaies peut être très volatile et fluctuer rapidement. Cet avis vise à clarifier les risques associés à la technologie blockchain, aux cryptomonnaies et aux services offerts par Polar Tensor. En utilisant nos services, vous reconnaissez et acceptez qu'en interagissant avec Polar Tensor, vous comprenez que vous pouvez perdre une partie ou la totalité de vos actifs cryptographiques et acceptez d'assumer l'entière responsabilité de vos actions. Il est fortement recommandé de demander un avis financier indépendant et de mener des recherches approfondies.",
+    "copyright": "© 2026 | Polar Tensor | Tous droits réservés | Développé par",
+    "riskShort": "Le trading comporte des risques. Tradez de manière responsable."
+  },
+  "about": {
+    "seoTitle": "À propos de Polar Tensor | Partenaire Binance & Recherche en IA",
+    "seoDesc": "Polar Tensor — Partenaire Binance avec VIP 9. Algorithmes de trading crypto propriétaires depuis 2018, R&D à Hong Kong et fonds enregistré au Panama.",
+    "heroBadge": "À propos de nous",
+    "heroTitle": "Polar Tensor — Partenaire Binance",
+    "heroSubtitle": "Révolutionner le monde de la crypto avec des solutions basées sur l'IA. Trading 100% automatisé, exécuté directement sur Binance.",
+    "whoBadge": "Qui sommes-nous",
+    "whoTitle1": "Recherche, technologie et",
+    "whoTitle2": "trading algorithmique",
+    "whoSubtitle": "De la recherche à Hong Kong à l'opération 100% automatisée sur Binance — un parcours bâti sur l'ingénierie de données, l'IA et la discipline du marché.",
+    "historyTitle": "Historique",
+    "historyText": "Notre équipe a commencé à développer des algorithmes de trading propriétaires pour le marché des crypto-monnaies en <1>2018</1>, avec notre premier succès en <3>2020</3>. Le siège est situé à <5>Hong Kong</5>, où toute la R&D est effectuée, et le fonds est enregistré au <7>Panama</7>.",
+    "historyBullets": [
+      "R&D à Hong Kong",
+      "Fonds enregistré au Panama",
+      "Algorithmes propriétaires depuis 2018"
+    ],
+    "visionTitle": "Vision",
+    "visionText": "Notre objectif est de devenir le plus grand fournisseur de stratégies algorithmiques dans le secteur de la crypto d'ici <1>2027</1>. De plus, nous prévoyons d'étendre notre division logicielle pour créer des outils et des algorithmes pour d'autres fonds spéculatifs et échanges de crypto-monnaies.",
+    "visionBullets": [
+      "Leadership mondial d'ici 2027",
+      "Expansion de la division logicielle",
+      "Outils pour les fonds spéculatifs et les bourses"
+    ],
+    "partnerBadge": "Partenaire Binance",
+    "partnerTitle1": "Révolutionner le monde de la crypto avec l'",
+    "partnerTitle2": "IA",
+    "partnerSubtitle": "Trading automatisé, exécuté à 100% avec l'Intelligence Artificielle, directement sur Binance. Investissez et gagnez — pas besoin de parrainer qui que ce soit.",
+    "businessInfo": [
+      {
+        "label": "Société enregistrée depuis",
+        "value": "2018"
+      },
+      {
+        "label": "Trading depuis",
+        "value": "2020"
+      },
+      {
+        "label": "Opérant sur Binance depuis",
+        "value": "2024"
+      },
+      {
+        "label": "Compte d'entreprise Binance",
+        "value": "VIP 9"
+      }
+    ],
+    "directInvestor": "<1>Modèle direct à l'investisseur :</1> vous investissez et gagnez sans avoir à parrainer qui que ce soit. Pas de MLM, pas de réseau d'affiliation — juste la technologie appliquée au marché.",
+    "teamBadge": "Notre équipe",
+    "teamTitle1": "Les personnes derrière la",
+    "teamTitle2": "technologie",
+    "teamSubtitle": "Une équipe restreinte et hautement spécialisée, axée sur la recherche appliquée et l'exécution.",
+    "founderBadge": "Fondateur",
+    "founderName": "Felix Bick",
+    "founderBio1": "Né à Hambourg, Felix Bick a commencé sa carrière dans une banque privée allemande, où il a développé une passion pour le commerce international. Son parcours l'a ensuite mené à Shanghai et Hong Kong, où il a travaillé chez <1>Li & Fung</1>, se spécialisant dans la gestion et l'optimisation de la chaîne d'approvisionnement.",
+    "founderBio2": "Au fil du temps, sa fascination pour les motifs et l'efficacité, combinée à son intérêt pour les crypto-monnaies, l'a poussé, lui et son équipe, à commencer à développer des logiciels de trading algorithmique.",
+    "founderPhotoAlt": "Felix Bick — Fondateur de Polar Tensor",
+    "teamLabel": "L'équipe",
+    "teamSpecialists": "Spécialistes multidisciplinaires",
+    "team": [
+      {
+        "role": "Scientifiques de données en IA",
+        "count": "3x"
+      },
+      {
+        "role": "DevOps",
+        "count": "1x"
+      },
+      {
+        "role": "Mathématicien",
+        "count": "1x"
+      },
+      {
+        "role": "CTO Fondateur",
+        "count": "1x"
+      }
+    ],
+    "ctaTitle1": "Faites partie d'une plateforme avec des",
+    "ctaTitle2": "fondamentaux solides",
+    "ctaSubtitle": "Technologie, recherche et fonctionnement institutionnel à la portée de chaque investisseur."
+  },
+  "technology": {
+    "seoTitle": "Technologie | Polar Tensor — Trading Crypto Neuronal",
+    "seoDesc": "La technologie de Polar Tensor : architectures CNN avec attention, réseaux neuronaux de tendance et de direction, exécution à faible latence et intégration de données massives.",
+    "heroBadge": "Comment ça fonctionne",
+    "heroTitle": "Ingénierie de réseaux neuronaux pour les marchés crypto",
+    "heroSubtitle": "Une approche en deux étapes combinant l'analyse des tendances et la prédiction directionnelle à haute fréquence pour une exécution optimale.",
+    "stages": [
+      {
+        "title": "Réseaux de Tendance",
+        "desc": "Analyse de la dominance du BTC, des volumes de transactions et des moyennes sur plusieurs échelles de temps pour définir la direction primaire du marché.",
+        "bullets": [
+          "Évaluation quotidienne",
+          "Intégration on-chain",
+          "Cycles longs"
+        ]
+      },
+      {
+        "title": "Réseaux de Direction",
+        "desc": "Architecture CNN multi-axes avec mécanismes d'attention traitant simultanément trois échelles de temps pour des prédictions à court terme.",
+        "bullets": [
+          "Signaux haute fréquence",
+          "Vue quasi-temps réel",
+          "Analyse du carnet d'ordres"
+        ]
+      },
+      {
+        "title": "Moteur d'Exécution",
+        "desc": "Ensemble temps réel avec score de confiance dynamique et dimensionnement adaptatif des positions pour la gestion des risques.",
+        "bullets": [
+          "Décisions tick-par-tick",
+          "Connexion directe à l'échange",
+          "Contrôles stricts des risques"
+        ]
+      }
+    ],
+    "hypothesisBadge": "Hypothèse clé",
+    "hypothesisText": "L'information circule de manière bidirectionnelle entre les échelles de temps : les échelles de temps plus grandes contraignent les mouvements plus courts, tandis que les données de microstructure fournissent des signaux précoces qui se propagent vers le haut. Notre système capture les deux dimensions simultanément pour une performance optimale.",
+    "edgeBadge": "Avantage statistique",
+    "edgeTitle": "Avantage mesurable et reproductible",
+    "edgeSubtitle": "Approches systématiques de l'exploitation du marché avec une confiance quantifiable et des contrôles de risque rigoureux.",
+    "edge": [
+      {
+        "t": "Exécution basée sur la confiance",
+        "d": "Chaque transaction est associée à un niveau de confiance quantifié, régulant dynamiquement la taille de la position."
+      },
+      {
+        "t": "Consensus multi-modèles",
+        "d": "Plusieurs réseaux neuronaux doivent être d'accord avant l'exécution, réduisant ainsi le biais du modèle unique."
+      },
+      {
+        "t": "Adaptation au régime de marché",
+        "d": "Détection automatique des régimes pour maintenir l'avantage dans différentes conditions."
+      },
+      {
+        "t": "Moment d'exécution optimal",
+        "d": "Analyse de la microstructure pour réduire le slippage et l'impact sur le marché."
+      },
+      {
+        "t": "Vérification continue",
+        "d": "Les backtests statistiques garantissent que l'avantage reste significatif et ne se dégrade pas."
+      },
+      {
+        "t": "Mise à l'échelle dynamique du risque",
+        "d": "La surveillance des drawdowns en temps réel réduit l'exposition dans des scénarios défavorables."
+      }
+    ],
+    "dataBadge": "Intégration de données",
+    "dataTitle": "Intelligence provenant de multiples sources",
+    "data": [
+      {
+        "t": "Données de marché",
+        "d": "OHLCV, volumes et indicateurs techniques sur plusieurs échelles de temps, du quotidien à la sous-seconde."
+      },
+      {
+        "t": "Analyses On-Chain",
+        "d": "Activité du réseau, schémas de transactions et métriques d'adoption."
+      },
+      {
+        "t": "Dynamique du carnet d'ordres",
+        "d": "Capture de la microstructure, déséquilibre, profondeur et spreads."
+      },
+      {
+        "t": "Sentiment",
+        "d": "Actualités et médias sociaux avec une fenêtre de 15 minutes pour le contexte du marché."
+      }
+    ],
+    "metricsBadge": "Métriques",
+    "metricsTitle": "Résultats validés par la recherche",
+    "metrics": [
+      {
+        "v": "1.15",
+        "t": "Facteur de profit",
+        "d": "Constant à travers les régimes."
+      },
+      {
+        "v": "<50ms",
+        "t": "Latence de prédiction",
+        "d": "Limites ultra-faibles pour les décisions en temps réel."
+      },
+      {
+        "v": "10K+",
+        "t": "Transactions quotidiennes",
+        "d": "Exécution à haute fréquence sur plusieurs marchés."
+      },
+      {
+        "v": "24/7",
+        "t": "Couverture",
+        "d": "Surveillance et fonctionnement continus."
+      }
+    ]
+  },
+  "plansPage": {
+    "seoTitle": "Plans | Polar Tensor",
+    "seoDesc": "Plans Polar Tensor : Starter, Basic, Advanced, Professional, Elite et Enterprise. Frais de licence uniques de 10 % et commission de performance sur les bénéfices.",
+    "heroBadge": "Plans",
+    "heroTitle": "Choisissez votre niveau d'accès",
+    "heroSubtitle": "Utilisez Polar One seul et commencez à gagner immédiatement. Frais de licence uniques et performance uniquement sur les profits générés.",
+    "softwareTitle": "Utilisez Notre Logiciel de Trading",
+    "softwareP1": "Grâce à notre plateforme, vous pouvez désormais utiliser <1>Polar One</1> seul et commencer à gagner immédiatement. Des <3>frais de licence uniques de 10 %</3> seront déduits du montant déposé.",
+    "softwareP2": "Nous prélevons une <1>commission de performance</1> sur les profits générés par l'utilisation de notre logiciel, en fonction de la valeur ajoutée au trading. Les profits sont distribués chaque <3>vendredi à 23h00 UTC</3>.",
+    "softwareP3": "Vous pouvez retirer tout ou partie de votre contribution à tout moment ; cependant, des frais uniques de <1>10 %</1> seront appliqués pour couvrir les coûts opérationnels. Après <3>12 mois</3>, ces frais passent à <5>5 %</5>, et après <7>24 mois</7>, ils deviennent gratuits.",
+    "highlights": [
+      {
+        "title": "Licence unique de 10 %",
+        "desc": "Prélevé une seule fois sur le montant déposé pour débloquer l'utilisation de Polar One."
+      },
+      {
+        "title": "Profits chaque vendredi",
+        "desc": "Distribution hebdomadaire des résultats à 23h00 UTC, directement dans votre back-office."
+      },
+      {
+        "title": "Frais de sortie dégressifs",
+        "desc": "10% les 12 premiers mois, 5% après 12 mois et gratuit après 24 mois."
+      }
+    ],
+    "allBadge": "Tous les plans",
+    "allTitle": "De Starter à Enterprise",
+    "allSubtitle": "Plus le niveau est élevé, plus la commission de performance sur les profits est basse.",
+    "popular": "Le plus populaire",
+    "perfFee": "commission de performance",
+    "from": "À partir de",
+    "plans": [
+      {
+        "name": "Starter",
+        "min": "100 USDT",
+        "fee": "40%",
+        "features": [
+          "Accès au système Polar One",
+          "Distribution hebdomadaire des profits",
+          "Retraits automatiques 24/7",
+          "Support communautaire"
+        ]
+      },
+      {
+        "name": "Basic",
+        "min": "1,000 USDT",
+        "fee": "37%",
+        "features": [
+          "Tout ce qui est inclus dans le plan Starter",
+          "Rapports de performance mensuels",
+          "Accès complet au back-office",
+          "Support par e-mail"
+        ]
+      },
+      {
+        "name": "Advanced",
+        "min": "3,000 USDT",
+        "fee": "33%",
+        "features": [
+          "Tout ce qui est inclus dans le plan Basic",
+          "Alertes d'exécution en temps réel",
+          "Supports éducatifs exclusifs",
+          "Support prioritaire"
+        ]
+      },
+      {
+        "name": "Professional",
+        "min": "8,000 USDT",
+        "fee": "30%",
+        "features": [
+          "Tout ce qui est inclus dans le plan Advanced",
+          "Distribution hebdomadaire des profits",
+          "Retraits automatiques 24/7",
+          "Support standard"
+        ]
+      },
+      {
+        "name": "Elite",
+        "min": "25,000 USDT",
+        "fee": "25%",
+        "features": [
+          "Tout ce qui est inclus dans le plan Professional",
+          "Commission de performance réduite",
+          "Priorité d'exécution",
+          "Support dédié"
+        ]
+      },
+      {
+        "name": "Enterprise",
+        "min": "100,000 USDT",
+        "fee": "20%",
+        "features": [
+          "Tout ce qui est inclus dans le plan Elite",
+          "Commission de performance la plus basse",
+          "Gestionnaire de compte exclusif",
+          "Rapports institutionnels"
+        ]
+      }
+    ],
+    "faqBadge": "Foire aux questions",
+    "faqTitle": "Tout sur les frais, les profits et les retraits",
+    "faqSubtitle": "Des réponses claires concernant la licence, la performance, la distribution hebdomadaire et les règles de retrait.",
+    "faqs": [
+      {
+        "q": "Comment fonctionnent les frais de licence uniques de 10 % ?",
+        "a": "Lorsque vous déposez des fonds, des frais uniques de 10 % sont automatiquement déduits du montant versé pour débloquer l'utilisation de Polar One. Ils ne sont facturés qu'une seule fois, au moment du dépôt, et couvrent la licence du logiciel de trading algorithmique — il n'y a pas de frais mensuels ni de frais récurrents pour l'utilisation de la plateforme."
+      },
+      {
+        "q": "Les frais de licence sont-ils facturés sur chaque nouveau dépôt ?",
+        "a": "Oui. Les frais de 10 % s'appliquent à chaque nouveau montant déposé, car ils correspondent à la licence du capital qui sera opéré par Polar One. Les soldes réinvestis à partir de profits déjà distribués ne paient pas de nouvelle licence."
+      },
+      {
+        "q": "Comment la commission de performance est-elle calculée ?",
+        "a": "La commission de performance s'applique exclusivement aux profits générés par Polar One — jamais sur le capital déposé. Le pourcentage varie selon le plan (de 40 % sur Starter à 20 % sur Enterprise). S'il n'y a pas de profit dans la semaine, aucune commission de performance n'est facturée."
+      },
+      {
+        "q": "Y a-t-il une « high-water mark » sur la commission de performance ?",
+        "a": "Oui. La performance n'est facturée que sur les nouveaux profits nets supérieurs à la valeur la plus élevée jamais enregistrée sur votre compte. S'il y a des semaines avec des résultats négatifs, vous ne recommencez à payer des commissions de performance qu'après que votre compte ait dépassé la marque précédente — vous assurant de ne jamais payer deux fois pour le même profit."
+      },
+      {
+        "q": "Quand les profits sont-ils distribués ?",
+        "a": "La distribution des résultats a lieu chaque vendredi à 23h00 UTC, directement dans votre back-office. Après le crédit, vous pouvez réinvestir, conserver sur le compte ou demander un retrait à tout moment."
+      },
+      {
+        "q": "Les bénéfices sont-ils crédités automatiquement ?",
+        "a": "Oui. Le processus est 100% automatisé : à la fin du cycle hebdomadaire, le système calcule le résultat net, déduit la commission de performance correspondant à votre plan et crédite le profit disponible sur votre portefeuille interne dans le back-office."
+      },
+      {
+        "q": "Puis-je retirer mon capital à tout moment ?",
+        "a": "Oui. Vous pouvez demander un retrait partiel ou total de votre contribution quand vous le souhaitez, sans période de blocage. Les retraits sont traités automatiquement 24h/24, 7j/7, en USDT."
+      },
+      {
+        "q": "Comment fonctionnent les frais de sortie dégressifs ?",
+        "a": "Pour couvrir les coûts opérationnels, des frais uniques sont appliqués sur le montant retiré : 10% les 12 premiers mois après le dépôt, 5% entre 12 et 24 mois, et gratuit après 24 mois. Le décompte est effectué par dépôt, donc les contributions plus anciennes peuvent déjà être exemptées."
+      },
+      {
+        "q": "Existe-t-il un montant minimum ou maximum de retrait ?",
+        "a": "Il n'y a pas de montant maximum — vous pouvez retirer la totalité de votre solde disponible à tout moment. Le montant minimum de retrait est de 10 USDT pour couvrir les coûts du réseau blockchain."
+      },
+      {
+        "q": "Puis-je changer de plan après avoir commencé ?",
+        "a": "Oui. À mesure que votre solde augmente, vous pouvez migrer vers des plans supérieurs et commencer à payer une commission de performance inférieure. Le changement est automatique lorsque votre capital atteint la fourchette du niveau suivant, mais il peut également être demandé manuellement dans le back-office."
+      }
+    ]
+  },
+  "rewardsPage": {
+    "seoTitle": "Récompenses | Polar Tensor — Plan de Gains et Bonus",
+    "seoDesc": "Plan de récompenses Polar Tensor : parrainages jusqu'à 15 niveaux, résiduels sur 10 niveaux, bonus de classement jusqu'à 500 000 $ et Récompense Infinie.",
+    "heroBadge": "Récompenses",
+    "heroTitle": "Plan de Récompenses Polar Tensor",
+    "heroSubtitle": "Gains de parrainage, résiduels, bonus de classement et Récompense Infinie — un modèle transparent et évolutif aligné sur votre croissance.",
+    "rulesBadge": "Règles commerciales",
+    "rulesTitle1": "Comment fonctionne l'",
+    "rulesTitle2": "opération",
+    "rulesSubtitle": "Paramètres opérationnels qui soutiennent l'ensemble du plan de récompenses.",
+    "businessRules": [
+      {
+        "label": "Opération",
+        "value": "100% automatisée avec l'IA"
+      },
+      {
+        "label": "Rendement mensuel moyen",
+        "value": "22%"
+      },
+      {
+        "label": "Programme",
+        "value": "Du lundi au vendredi"
+      },
+      {
+        "label": "Paiements commerciaux",
+        "value": "Les vendredis"
+      },
+      {
+        "label": "Investissement minimum",
+        "value": "100 $"
+      },
+      {
+        "label": "Retrait minimum",
+        "value": "20 $"
+      },
+      {
+        "label": "Retraits",
+        "value": "24h, tous les jours"
+      },
+      {
+        "label": "Frais de retrait",
+        "value": "2 $ USD"
+      },
+      {
+        "label": "Intérêts composés",
+        "value": "Réinvestissement automatique"
+      }
+    ],
+    "referralBadge": "Parrainage",
+    "referralTitle1": "Gains de parrainage —",
+    "referralTitle2": "jusqu'à 15 niveaux",
+    "referralSubtitle": "Bonus direct sur les frais de licence de vos parrainages.",
+    "referralRule": "<1>Règle :</1> Chaque parrainage direct actif débloque un niveau.",
+    "levelLabel": "Niveau",
+    "ofLicense": "de la licence",
+    "ofTrade": "du commerce",
+    "residualBadge": "Résiduel",
+    "residualTitle1": "Gains résiduels —",
+    "residualTitle2": "jusqu'à 10 niveaux",
+    "residualSubtitle": "Gagnez des pourcentages sur les transactions de votre réseau.",
+    "rankBadge": "Rang",
+    "rankTitle1": "Bonus de ",
+    "rankTitle2": "classement",
+    "rankSubtitle": "Atteignez des rangs basés sur le volume et la jambe maximale et débloquez des bonus croissants.",
+    "rankRule": "<1>Règle :</1> Volume + Jambe maximale.",
+    "rankLabel": "Rang",
+    "bonusLabel": "bonus",
+    "ranks": [
+      {
+        "name": "Fer",
+        "bonus": "0 $"
+      },
+      {
+        "name": "Bronze",
+        "bonus": "50 $"
+      },
+      {
+        "name": "Argent",
+        "bonus": "200 $"
+      },
+      {
+        "name": "Or",
+        "bonus": "500 $"
+      },
+      {
+        "name": "Platine",
+        "bonus": "1 500 $"
+      },
+      {
+        "name": "Titane",
+        "bonus": "6 000 $"
+      },
+      {
+        "name": "Saphir",
+        "bonus": "20 000 $"
+      },
+      {
+        "name": "Rubis",
+        "bonus": "50 000 $"
+      },
+      {
+        "name": "Émeraude",
+        "bonus": "150 000 $"
+      },
+      {
+        "name": "Diamant",
+        "bonus": "500 000 $"
+      }
+    ],
+    "infiniteBadge": "Récompense Infinie",
+    "infiniteTitle1": "Récompense",
+    "infiniteTitle2": "Infinie ♾",
+    "infiniteTitle3": "par Rang",
+    "infiniteSubtitle": "Participez à un pool mondial distribué parmi les diplômés.",
+    "infiniteRule": "<1>Règle :</1> S'il y a des diplômés, le montant est partagé.",
+    "ofTeam": "de toute l'équipe",
+    "infiniteRewards": [
+      {
+        "name": "Or",
+        "value": "5%"
+      },
+      {
+        "name": "Platine",
+        "value": "7.5%"
+      },
+      {
+        "name": "Titane",
+        "value": "10%"
+      },
+      {
+        "name": "Saphir",
+        "value": "12.5%"
+      },
+      {
+        "name": "Rubis",
+        "value": "15%"
+      },
+      {
+        "name": "Émeraude",
+        "value": "17.5%"
+      },
+      {
+        "name": "Diamant",
+        "value": "20%"
+      }
+    ],
+    "ctaTitle1": "Prêt à commencer à",
+    "ctaTitle2": "construire votre réseau",
+    "ctaSubtitle": "Inscrivez-vous et débloquez tous les niveaux du plan de récompenses Polar Tensor."
+  },
+  "faqPage": {
+    "seoTitle": "FAQ Polar Tensor | Questions fréquemment posées sur Polar One",
+    "seoDesc": "Obtenez des réponses à vos questions sur Polar Tensor : technologie, frais, dépôts, retraits, sécurité, KYC, risques et programme de parrainage. Plus de 35 questions répondues.",
+    "heroBadge": "Centre d'aide",
+    "heroTitle": "Questions fréquemment posées sur Polar Tensor",
+    "heroSubtitle": "Réponses directes aux principales questions sur la technologie, le fonctionnement, la sécurité, les frais, le KYC et bien plus encore.",
+    "searchPlaceholder": "Rechercher une question… (ex. retrait, KYC, frais, risque)",
+    "searchAria": "Rechercher une question",
+    "all": "Tout",
+    "categories": {
+      "company": "À propos de l'entreprise",
+      "tech": "Technologie et Polar One",
+      "deposits": "Dépôts et Retraits",
+      "fees": "Frais et Bénéfices",
+      "risk": "Risques et Sécurité",
+      "account": "Compte et Support",
+      "referral": "Programme de parrainage"
+    },
+    "questionSingular": "question",
+    "questionPlural": "questions",
+    "noResultsTitle": "Aucune question trouvée",
+    "noResultsDesc": "Essayez un autre terme de recherche ou sélectionnez une autre catégorie.",
+    "ctaTitle": "Vous n'avez pas trouvé ce que vous cherchiez ?",
+    "ctaSubtitle": "Notre équipe parle plusieurs langues et est disponible pour clarifier toutes vos questions avant ou après l'inscription.",
+    "ctaButton": "Parler à Polar Tensor",
+    "items": [
+      {
+        "category": "company",
+        "q": "Depuis combien de temps Polar Tensor existe-t-il ?",
+        "a": "Polar Tensor a été fondé en 2018 en tant que centre de recherche pour les algorithmes de trading basés sur l'IA. La première version rentable de notre système a été mise en production en 2020, et nous avons depuis connu plusieurs itérations jusqu'à la version actuelle de Polar One."
+      },
+      {
+        "category": "company",
+        "q": "Qui sont les fondateurs et l'équipe derrière le projet ?",
+        "a": "Polar Tensor est composé d'une équipe multidisciplinaire de data scientists, d'ingénieurs en machine learning, de mathématiciens quantitatifs et de professionnels expérimentés dans les marchés financiers traditionnels et crypto. L'équipe est répartie sur nos opérations aux États-Unis, en Europe, à Hong Kong et au Panama."
+      },
+      {
+        "category": "company",
+        "q": "Polar Tensor est-il un courtier ou un fonds d'investissement ?",
+        "a": "Aucun des deux. Nous sommes une entreprise technologique qui concède sous licence l'utilisation d'un système de trading automatisé propriétaire. Vous gardez le contrôle de vos dépôts, et le système n'exécute les opérations que via des API autorisées sur des exchanges comme Binance."
+      },
+      {
+        "category": "company",
+        "q": "Pourquoi Polar Tensor a-t-il des entités dans plusieurs pays ?",
+        "a": "Chaque juridiction joue un rôle spécifique : les États-Unis (Wyoming) hébergent la structure financière réglementée (FinCEN MSB), la Pologne répond aux exigences européennes, Hong Kong concentre la recherche et le développement, et le Panama centralise l'opération technique. Cette structure assure une conformité mondiale et une résilience réglementaire."
+      },
+      {
+        "category": "company",
+        "q": "La société est-elle auditée par des tiers indépendants ?",
+        "a": "Oui. Notre structure juridique et financière est périodiquement examinée par l'un des quatre grands cabinets d'audit mondiaux (Big Four), garantissant la transparence sur la constitution de l'entreprise, la conformité réglementaire et la gouvernance."
+      },
+      {
+        "category": "tech",
+        "q": "Qu'est-ce qui distingue Polar One des bots de trading courants ?",
+        "a": "Les bots traditionnels exécutent des règles fixes (grid, DCA, moyennes mobiles). Polar One utilise deux réseaux neuronaux distincts — un pour la tendance et un pour la direction — entraînés avec des milliards de points de données de marché. Le système apprend des schémas non linéaires que les stratégies basées sur des règles ne peuvent tout simplement pas identifier."
+      },
+      {
+        "category": "tech",
+        "q": "Sur quel exchange le système opère-t-il ?",
+        "a": "Nous opérons actuellement exclusivement sur Binance, en raison de la profondeur de la liquidité, des faibles frais institutionnels et de la robustesse de l'infrastructure API. Cela permet une exécution à haute fréquence avec une latence minimale."
+      },
+      {
+        "category": "tech",
+        "q": "Quels actifs Polar One trade-t-il ?",
+        "a": "Le système opère principalement sur les paires les plus liquides du marché crypto, en se concentrant sur BTC et ETH contre USDT, avec un potentiel d'expansion à d'autres paires en fonction des conditions de marché et de la liquidité disponible."
+      },
+      {
+        "category": "tech",
+        "q": "Le système utilise-t-il un effet de levier ?",
+        "a": "Polar One opère avec un effet de levier conservateur, généralement entre 1x et 3x, en fonction de la stratégie active et des conditions de marché. L'accent est mis sur la préservation du capital : le système évite une exposition agressive et privilégie la cohérence hebdomadaire plutôt que des rendements ponctuels élevés, réduisant considérablement le risque de liquidation par rapport aux stratégies à fort effet de levier."
+      },
+      {
+        "category": "tech",
+        "q": "L'algorithme est-il réentraîné au fil du temps ?",
+        "a": "Oui. Les réseaux neuronaux sont continuellement réentraînés à mesure que de nouvelles données de marché sont incorporées. Cela permet au système de s'adapter aux changements de régime — marché haussier, marché baissier, forte volatilité ou consolidation."
+      },
+      {
+        "category": "tech",
+        "q": "Que se passe-t-il si Binance ou internet tombe en panne ?",
+        "a": "Notre infrastructure fonctionne sur des serveurs redondants dans des centres de données proches des serveurs de Binance, avec basculement automatique. En cas d'instabilité de l'exchange lui-même, le système passe en mode sécurisé, clôturant les positions ouvertes selon des protocoles prédéfinis."
+      },
+      {
+        "category": "tech",
+        "q": "Puis-je voir l'historique de fonctionnement du système ?",
+        "a": "Oui. Après inscription, vous avez accès au panneau avec l'historique détaillé des opérations, la performance hebdomadaire, le drawdown, le taux de réussite et d'autres métriques pertinentes. Toute la transparence possible dans ce qui ne compromet pas la propriété intellectuelle de l'algorithme."
+      },
+      {
+        "category": "deposits",
+        "q": "Quel est le montant minimum pour commencer ?",
+        "a": "Le montant minimum d'entrée chez Polar Tensor est de 1 000 USDT, équivalent au plan initial. Les plans intermédiaires commencent à 10 000 USDT et les plans avancés, avec des frais de performance réduits et un gestionnaire de relation dédié, commencent à 50 000 USDT. Tous les montants sont déposés en cryptomonnaies (BTC, ETH, SOL ou USDT) directement sur votre compte lié."
+      },
+      {
+        "category": "deposits",
+        "q": "Combien de temps faut-il pour que le dépôt soit confirmé ?",
+        "a": "Les dépôts en Bitcoin, Ethereum, Solana et USDT sont confirmés après le nombre standard de confirmations du réseau blockchain — généralement entre 10 et 30 minutes, selon le réseau utilisé et la congestion."
+      },
+      {
+        "category": "deposits",
+        "q": "Comment fonctionnent les retraits ?",
+        "a": "Les retraits sont traités automatiquement 24 heures sur 24, 7 jours sur 7, en USDT ou USDC. Après la demande dans le panneau, le montant est envoyé au portefeuille indiqué après validation de sécurité."
+      },
+      {
+        "category": "deposits",
+        "q": "Y a-t-il une période de blocage minimum ?",
+        "a": "Il n'y a pas de blocage obligatoire du capital. Cependant, nous recommandons un horizon minimum de quelques semaines pour que l'effet de la capitalisation hebdomadaire des profits se manifeste de manière significative."
+      },
+      {
+        "category": "deposits",
+        "q": "Puis-je déposer via PIX ou carte de crédit ?",
+        "a": "Pas directement. L'entrée de capital est exclusivement en cryptomonnaies. Vous pouvez facilement acquérir des cryptos sur des exchanges locaux via PIX et les transférer à l'adresse fournie dans votre panneau."
+      },
+      {
+        "category": "deposits",
+        "q": "Puis-je effectuer des dépôts supplémentaires après le démarrage ?",
+        "a": "Oui. Les dépôts supplémentaires sont autorisés à tout moment et commencent à générer des rendements aux côtés du capital existant. Si le dépôt dépasse la limite du plan actuel, vous pouvez migrer vers un plan supérieur."
+      },
+      {
+        "category": "fees",
+        "q": "Quand et comment les bénéfices sont-ils distribués ?",
+        "a": "Les bénéfices sont distribués chaque semaine, tous les vendredis à 23h00 UTC, automatiquement dans votre panneau. Vous pouvez choisir de les retirer ou de les réinvestir pour améliorer la capitalisation."
+      },
+      {
+        "category": "fees",
+        "q": "Le frais de performance s'applique-t-il au capital ou seulement aux profits ?",
+        "a": "Seulement aux profits. S'il n'y a pas de profit en une semaine, aucun frais de performance n'est facturé. Le frais varie entre 20% et 30% selon le plan contracté."
+      },
+      {
+        "category": "fees",
+        "q": "Le frais de licence de 10% est-il facturé chaque mois ?",
+        "a": "Non. Le frais de licence de 10% est un frais unique, facturé une seule fois sur le montant initial déposé, accordant le droit d'utilisation à vie du système dans le cadre de ce plan."
+      },
+      {
+        "category": "fees",
+        "q": "Y a-t-il des frais de retrait ou de mouvement cachés ?",
+        "a": "Nous ne facturons pas de frais de retrait supplémentaires. Vous ne supportez que les frais de réseau blockchain (frais de gaz) lors de l'envoi à votre portefeuille externe."
+      },
+      {
+        "category": "fees",
+        "q": "Les profits sont-ils garantis ?",
+        "a": "Non. Aucun système de trading sérieux n'offre de garanties de profit. Nous présentons des résultats historiques audités, mais les performances passées ne garantissent pas les résultats futurs. Le trading implique des risques réels de perte."
+      },
+      {
+        "category": "fees",
+        "q": "Existe-t-il une marque haute (high water mark) ?",
+        "a": "Oui. Le frais de performance utilise une marque haute : nous ne facturons de nouveau la performance que lorsque votre solde dépasse le pic précédent, évitant une double facturation pendant les périodes de récupération."
+      },
+      {
+        "category": "risk",
+        "q": "Mes fonds sont-ils sous la garde de Polar Tensor ?",
+        "a": "Les fonds opérationnels restent dans des comptes dédiés sur Binance, liés à votre enregistrement. Polar Tensor opère via des API avec une permission restreinte au trading — sans permission de retrait vers des adresses externes."
+      },
+      {
+        "category": "risk",
+        "q": "Que se passe-t-il si Polar Tensor cesse ses activités ?",
+        "a": "Comme le capital est alloué dans un environnement ségrégué et que nous maintenons une structure d'entreprise dans plusieurs juridictions avec un audit Big Four, il existe des protocoles formels de retour de capital et de fermeture ordonnée décrits dans les conditions d'utilisation."
+      },
+      {
+        "category": "risk",
+        "q": "Comment protégez-vous mes données personnelles ?",
+        "a": "Nous suivons des pratiques conformes à la LGPD (Brésil) et au GDPR (Europe). Les données sont cryptées en transit et au repos, avec un accès restreint par niveaux de permission et un audit interne périodique."
+      },
+      {
+        "category": "risk",
+        "q": "La plateforme exige-t-elle une authentification à deux facteurs (2FA) ?",
+        "a": "Oui. Le 2FA est obligatoire pour tous les comptes, en utilisant des applications comme Google Authenticator ou Authy. Les retraits nécessitent une confirmation par e-mail supplémentaire."
+      },
+      {
+        "category": "risk",
+        "q": "Avez-vous une assurance contre les défaillances technologiques ?",
+        "a": "Nous maintenons des protocoles d'atténuation des risques opérationnels, y compris une redondance d'infrastructure et un fonds de réserve technique. Les termes de couverture spécifiques sont dans la documentation contractuelle mise à disposition après inscription."
+      },
+      {
+        "category": "risk",
+        "q": "Est-ce un système pyramidal ou une pyramide de Ponzi ?",
+        "a": "Non. Les pyramides rémunèrent les participants plus anciens avec le capital des nouveaux entrants ; notre modèle génère des revenus exclusivement à partir de l'exécution algorithmique sur les marchés réels, avec des relevés vérifiables sur Binance et un audit externe. Il n'y a pas de promesse de rendement fixe ni de dépendance au recrutement."
+      },
+      {
+        "category": "account",
+        "q": "Qui peut ouvrir un compte chez Polar Tensor ?",
+        "a": "Les personnes majeures (plus de 18 ans) avec des documents valides, résidant dans des juridictions où nos services sont autorisés. Nous ne servons pas les résidents des pays sous sanctions internationales ou sur des listes restrictives."
+      },
+      {
+        "category": "account",
+        "q": "Dois-je passer par une vérification KYC ?",
+        "a": "Oui. En tant qu'entité réglementée (Polar MSB Inc., FinCEN), nous suivons les politiques KYC et AML. La vérification implique un document officiel, une preuve d'adresse et une preuve de vie (selfie)."
+      },
+      {
+        "category": "account",
+        "q": "Combien de temps faut-il pour approuver mon compte ?",
+        "a": "Après la soumission complète de la documentation, la vérification est généralement effectuée dans les 48 heures ouvrables. Dans les cas nécessitant un examen complémentaire, l'équipe de conformité contacte directement."
+      },
+      {
+        "category": "account",
+        "q": "Comment puis-je joindre le support ?",
+        "a": "Le support officiel est disponible via le panneau connecté, l'e-mail et WhatsApp. Pour les clients de plans supérieurs, nous offrons un service dédié avec un gestionnaire de relation."
+      },
+      {
+        "category": "account",
+        "q": "Offrez-vous un support en anglais ?",
+        "a": "Oui. Le support client est fourni en anglais (et d'autres langues), pendant des heures ouvrables prolongées, par des professionnels formés aux détails techniques de la plateforme."
+      },
+      {
+        "category": "account",
+        "q": "Puis-je avoir plus d'un compte ?",
+        "a": "Non. Nous maintenons la politique d'un compte par document individuel, conformément à nos politiques KYC et à la prévention des abus de plateforme."
+      },
+      {
+        "category": "referral",
+        "q": "Comment fonctionne le programme de parrainage ?",
+        "a": "En parrainant de nouveaux clients via votre lien unique, vous recevez une commission sur les frais de performance générés par vos filleuls. Le modèle est transparent, sans niveaux de recrutement multiples qui caractérisent les pyramides."
+      },
+      {
+        "category": "referral",
+        "q": "Dois-je être un client actif pour parrainer des personnes ?",
+        "a": "Oui. Le programme de parrainage est exclusif aux clients actifs avec un dépôt actuel. Cela garantit que ceux qui recommandent Polar Tensor connaissent réellement la plateforme."
+      },
+      {
+        "category": "referral",
+        "q": "Y a-t-il une limite de parrainage ?",
+        "a": "Il n'y a pas de limite au nombre de personnes que vous pouvez parrainer. Les commissions sont créditées chaque semaine en même temps que la distribution des profits."
+      }
+    ]
+  },
+  "consultancy": {
+    "seoTitle": "Conseil institutionnel | Polar Tensor",
+    "seoDesc": "Conseil sur mesure pour les entreprises, les investisseurs institutionnels et les particuliers fortunés. Stratégies d'IA dédiées par Polar Tensor.",
+    "heroBadge": "Services institutionnels",
+    "heroTitle": "Conseil institutionnel et fortune élevée",
+    "heroSubtitle": "Pour les entreprises, les investisseurs institutionnels et les particuliers fortunés qui nécessitent des stratégies d'investissement sur mesure et un soutien dédié.",
+    "segments": [
+      {
+        "t": "Entreprises",
+        "d": "Entreprises recherchant une gestion stratégique de leurs investissements."
+      },
+      {
+        "t": "Investisseurs institutionnels",
+        "d": "Institutions financières qui exigent des stratégies avancées."
+      },
+      {
+        "t": "Particuliers fortunés",
+        "d": "Clients privés avec des portefeuilles importants."
+      }
+    ],
+    "formTitle": "Demander un conseil",
+    "formSubtitle": "Remplissez le formulaire et notre équipe vous contactera dans un délai d'un jour ouvrable.",
+    "fullName": "Nom complet *",
+    "fullNamePh": "Votre nom",
+    "org": "Entreprise / Organisation",
+    "orgPh": "Entreprise (facultatif)",
+    "email": "E-mail *",
+    "emailPh": "vous@entreprise.com",
+    "phone": "Téléphone (facultatif)",
+    "phonePh": "+1 (555) 000-0000",
+    "clientType": "Type de client",
+    "clientTypePh": "Sélectionner une option",
+    "clientCorporate": "Client Corporatif",
+    "clientInstitutional": "Investisseur Institutionnel",
+    "clientHnw": "Particulier Fortuné",
+    "investRange": "Plage d'investissement",
+    "investRangePh": "Sélectionner une plage",
+    "range1": "100k – 500k USDT",
+    "range2": "500k – 1M USDT",
+    "range3": "1M – 5M USDT",
+    "range4": "Plus de 5M USDT",
+    "msg": "Parlez-nous de vos objectifs et de vos besoins",
+    "msgPh": "Partagez le contexte, les objectifs et les délais...",
+    "submit": "Demander un conseil",
+    "submitting": "Envoi...",
+    "toastTitle": "Demande envoyée",
+    "toastDesc": "Notre équipe institutionnelle vous contactera dans un délai d'un jour ouvrable."
+  },
+  "downloadAppPage": {
+    "seoTitle": "Télécharger l'application Polar Tensor | Trading IA",
+    "seoDesc": "Application officielle Polar Tensor pour iOS et Android. Suivez votre portefeuille USDT, les profits Polar One, les dépôts, retraits et bonus réseau sur mobile.",
+    "available": "Disponible pour iOS et Android",
+    "title1": "Téléchargez",
+    "title2": "l'application Polar Tensor",
+    "subtitle": "Accédez au trading automatisé basé sur l'IA, surveillez votre portefeuille et gérez vos fonds — le tout du bout des doigts.",
+    "imgAlt": "Application Polar Tensor — écran d'accueil avec solde USDT",
+    "appStore": "Télécharger sur l'App Store",
+    "playStore": "Télécharger sur Google Play",
+    "appStoreAria": "Télécharger Polar Tensor sur l'App Store",
+    "playStoreAria": "Télécharger Polar Tensor sur Google Play",
+    "highlights": [
+      {
+        "title": "Trading IA dans votre poche",
+        "desc": "Le système Polar One fonctionne 24h/24, 5j/7 — vous suivez chaque mouvement directement depuis votre téléphone."
+      },
+      {
+        "title": "Notifications en temps réel",
+        "desc": "Recevez des alertes pour la distribution des profits, les dépôts, les retraits et les bonus réseau."
+      },
+      {
+        "title": "Sécurité de niveau bancaire",
+        "desc": "Authentification biométrique, cryptage de bout en bout et KYC intégré."
+      }
+    ],
+    "features": [
+      {
+        "title": "Tableau de bord du compte",
+        "desc": "Suivez votre portefeuille complet en temps réel. Surveillez le solde disponible, la valeur investie dans le trading et les profits hebdomadaires avec des graphiques intuitifs. Restez informé grâce aux métriques de performance à jour et consultez vos gains avec des détails quotidiens."
+      },
+      {
+        "title": "Gestion intelligente du portefeuille",
+        "desc": "Contrôle total de vos fonds avec des dépôts, transferts et retraits fluides. Consultez l'historique complet des transactions — y compris les profits de trading, les dépôts, les retraits et toutes les activités du compte — avec la date, l'heure et les montants détaillés."
+      },
+      {
+        "title": "Interface de trading avancée",
+        "desc": "Gérez votre montant de trading actif avec l'option de réinvestissement automatique (Auto-Reinvest). Suivez votre niveau actuel, les frais de performance, l'évolution vers le niveau suivant et consultez les métriques détaillées des profits pour la semaine, la semaine dernière et les 30 derniers jours."
+      },
+      {
+        "title": "Transparence totale",
+        "desc": "Consultez les métriques de performance globale de l'entreprise et les statistiques historiques avec une transparence totale. Suivez les pourcentages hebdomadaires, comparez différentes périodes (semaine, mois, 3M, 6M, année et tout) et analysez les retours cumulés avec des graphiques interactifs."
+      }
+    ],
+    "featureAlt": "Écran {{title}} de l'application Polar Tensor",
+    "ctaTitle": "Prêt à commencer ?",
+    "ctaSubtitle": "Téléchargez l'application Polar Tensor et commencez à trader avec la précision de l'intelligence artificielle directement depuis votre téléphone.",
+    "ctaSignup": "Enregistrer mon compte d'abord"
+  },
+  "privacy": {
+    "seoTitle": "Politique de confidentialité | Polar Tensor",
+    "seoDesc": "Avis de confidentialité et protection des données de Polar Tensor : comment nous collectons, stockons, partageons et protégeons les données personnelles dans nos opérations mondiales.",
+    "heroBadge": "Légal",
+    "heroTitle": "Avis de confidentialité et protection des données",
+    "heroSubtitle": "Traitement des données personnelles et sécurité des informations.",
+    "sections": [
+      {
+        "title": "Objet et statut juridique",
+        "paragraphs": [
+          "Le présent avis de confidentialité décrit la manière dont les données personnelles sont collectées, stockées, partagées et protégées dans le cadre des services offerts par le groupe Polar Tensor.",
+          "Le présent avis est fourni conformément aux lois applicables en matière de protection des données, y compris, le cas échéant :"
+        ],
+        "list": [
+          "Règlement (UE) 2016/679 (RGPD) ;",
+          "Lois fédérales et étatiques américaines sur la protection de la vie privée ;",
+          "Autres normes internationales applicables."
+        ]
+      },
+      {
+        "title": "Contrôleurs et portée",
+        "paragraphs": [
+          "Selon le service utilisé, les données personnelles peuvent être traitées par une ou plusieurs entités du groupe, agissant en tant que contrôleurs indépendants dans leurs champs d'application respectifs :"
+        ],
+        "list": [
+          "Polar Tensor US LLC — intégration et opérations aux États-Unis ;",
+          "Polar Tensor Europe SP ZOO — opérations dans l'Union européenne ;",
+          "Polar MSB Inc. — services de paiement et de rampe d'accès/de sortie ;",
+          "Polar Tensor Corp. — exécution technique et opérations de plateforme."
+        ]
+      },
+      {
+        "title": "Catégories de données personnelles",
+        "paragraphs": [
+          "Les catégories de données personnelles suivantes peuvent être traitées, le cas échéant :"
+        ],
+        "list": [
+          "Données d'identification (nom, date de naissance, nationalité) ;",
+          "Coordonnées (e-mail, téléphone) ;",
+          "Données de compte et d'intégration ;",
+          "Données de vérification KYC et AML, y compris les documents d'identité et la preuve de vie ;",
+          "Données transactionnelles et d'activité ;",
+          "Données techniques (IP, identifiants d'appareil, journaux) ;",
+          "Communications et enregistrements de support."
+        ],
+        "after": [
+          "Les données sensibles ne sont traitées que lorsque cela est strictement nécessaire et autorisé par la loi."
+        ]
+      },
+      {
+        "title": "Finalités du traitement",
+        "paragraphs": [
+          "Les données sont traitées à des fins légitimes telles que : l'intégration et l'administration du compte, la vérification d'identité, la prévention de la fraude, la fourniture de services, l'enregistrement comptable, la sécurité et l'intégrité du système, les obligations réglementaires et la communication avec le client.",
+          "Nous n'effectuons pas de décisions automatisées ayant des effets juridiques pertinents sans garanties adéquates."
+        ]
+      },
+      {
+        "title": "Bases légales",
+        "paragraphs": [
+          "Le traitement est effectué sur une ou plusieurs des bases suivantes, le cas échéant : exécution du contrat, respect des obligations légales et réglementaires, intérêt légitime (y compris la sécurité et la prévention de la fraude) et consentement, lorsque requis."
+        ]
+      },
+      {
+        "title": "Partage et destinataires",
+        "paragraphs": [
+          "Les données peuvent être partagées, lorsque cela est nécessaire et autorisé par la loi, avec : les entités du groupe, les fournisseurs réglementés (KYC, fournisseurs, processeurs de paiement), les partenaires d'exécution et d'infrastructure, les auditeurs, les conseillers juridiques et les autorités de réglementation.",
+          "Nous ne vendons pas de données personnelles à des tiers."
+        ]
+      },
+      {
+        "title": "Transferts internationaux",
+        "paragraphs": [
+          "Lorsque des transferts internationaux ont lieu, nous appliquons des garanties adéquates telles que des décisions d'adéquation, des clauses contractuelles types ou d'autres mécanismes reconnus par la loi. Nous limitons les transferts à ce qui est nécessaire à des fins opérationnelles et de conformité."
+        ]
+      },
+      {
+        "title": "Conservation des données",
+        "paragraphs": [
+          "Les données sont conservées pendant le temps nécessaire au respect des obligations contractuelles, légales et réglementaires, ou pour la défense des droits. Les périodes varient selon le type de données et la législation applicable."
+        ]
+      },
+      {
+        "title": "Sécurité des données",
+        "paragraphs": [
+          "Nous adoptons des mesures techniques et organisationnelles adéquates pour protéger les données contre l'accès non autorisé, la perte, la destruction, l'altération et l'utilisation abusive. Malgré cela, aucun système n'est 100% sécurisé."
+        ]
+      },
+      {
+        "title": "Droits des personnes concernées",
+        "paragraphs": [
+          "Conformément à la législation applicable, vous pouvez avoir le droit d'accéder à vos données, de demander leur correction ou leur suppression, de restreindre ou de vous opposer au traitement, de demander la portabilité et de déposer une plainte auprès de l'autorité compétente.",
+          "Les demandes peuvent être soumises à vérification et à des limites légales."
+        ]
+      },
+      {
+        "title": "Cookies et technologies de suivi",
+        "paragraphs": [
+          "Nos sites peuvent utiliser des cookies et des technologies similaires pour : la sécurité, la fonctionnalité, l'analyse, la surveillance des performances et l'optimisation de l'expérience utilisateur. Des mécanismes de consentement sont fournis lorsque cela est requis."
+        ]
+      },
+      {
+        "title": "Non-renonciation aux obligations",
+        "paragraphs": [
+          "Rien dans le présent avis ne limite ou n'exclut les droits ou obligations imposées par les lois applicables en matière de protection des données."
+        ]
+      },
+      {
+        "title": "Modifications",
+        "paragraphs": [
+          "Le présent avis peut être mis à jour périodiquement pour refléter les changements légaux, réglementaires ou opérationnels. La version la plus récente sera toujours disponible sur notre site web."
+        ]
+      }
+    ]
+  },
+  "terms": {
+    "seoTitle": "Conditions d'utilisation | Polar Tensor",
+    "seoDesc": "Conditions d'utilisation de la plateforme Polar Tensor : règles d'accès, éligibilité, obligations des utilisateurs, limitation de responsabilité et plus encore.",
+    "heroBadge": "Légal",
+    "heroTitle": "Conditions d'utilisation",
+    "heroSubtitle": "Plateforme technologique et interface d'exécution.",
+    "sections": [
+      {
+        "title": "Objet et statut juridique",
+        "paragraphs": [
+          "Les présentes Conditions d'utilisation régissent l'accès et l'utilisation des plateformes technologiques, interfaces, tableaux de bord, sites web et outils logiciels liés à l'exécution, mis à disposition dans le cadre du groupe Polar Tensor.",
+          "Ces Conditions ne remplacent aucun accord client applicable régissant la conservation, les paiements ou les relations avec des entités agréées.",
+          "En accédant ou en utilisant la Plateforme, vous reconnaissez avoir lu, compris et accepté d'être lié par les présentes Conditions."
+        ]
+      },
+      {
+        "title": "Parties et portée",
+        "paragraphs": [
+          "La Plateforme est exploitée et mise à disposition par les entités suivantes, agissant strictement dans leurs rôles respectifs :"
+        ],
+        "list": [
+          "Polar Tensor Corp. — exploitation de la technologie d'exécution et de l'infrastructure de trading automatisé ;",
+          "Polar Tensor US LLC — accès client pour les utilisateurs américains et non-UE ;",
+          "Polar Tensor Europe SP ZOO — accès client pour les utilisateurs de l'UE."
+        ],
+        "after": [
+          "Les droits d'accès et les fonctionnalités peuvent varier selon la juridiction et le statut réglementaire."
+        ]
+      },
+      {
+        "title": "Nature de la Plateforme",
+        "paragraphs": [
+          "La Plateforme fournit des fonctionnalités de technologie et d'exécution uniquement, notamment : l'accès à des outils d'exécution automatisés, l'affichage des informations de compte, le lancement de processus d'exécution par instruction explicite de l'utilisateur et la connectivité technique avec des lieux d'exécution tiers.",
+          "La Plateforme ne fournit pas de conseils en investissement, de gestion discrétionnaire de portefeuille ou de recommandations personnalisées."
+        ]
+      },
+      {
+        "title": "Éligibilité et accès",
+        "paragraphs": [
+          "Vous ne pouvez accéder et utiliser la Plateforme que si : vous avez été dûment intégré par l'entité agréée applicable, vous remplissez les conditions d'éligibilité légales dans votre juridiction et votre accès n'a pas été suspendu ou résilié.",
+          "Le groupe se réserve le droit de restreindre ou de refuser l'accès lorsque cela est requis par la loi, la réglementation ou les obligations de conformité."
+        ]
+      },
+      {
+        "title": "Contrôle et activation par l'utilisateur",
+        "paragraphs": [
+          "La fonctionnalité d'exécution automatisée : est inactive par défaut ; nécessite une activation manuelle et explicite par l'utilisateur ; peut être désactivée par l'utilisateur à tout moment, sous réserve de restrictions de traitement technique.",
+          "Aucune exécution n'a lieu sans l'initiation de l'utilisateur."
+        ]
+      },
+      {
+        "title": "Nature exécution-seule",
+        "paragraphs": [
+          "Toute exécution effectuée par la Plateforme : est non discrétionnaire ; suit une logique système prédéfinie ; n'est pas personnalisée pour les utilisateurs individuels ; est limitée aux transactions de crypto-actifs au comptant.",
+          "Aucune relation fiduciaire, consultative ou discrétionnaire n'est créée par l'utilisation de la Plateforme."
+        ]
+      },
+      {
+        "title": "Obligations de l'utilisateur",
+        "paragraphs": [
+          "Vous vous engagez à : utiliser la Plateforme uniquement à des fins licites ; vous conformer à toutes les lois et réglementations applicables ; maintenir la confidentialité de vos identifiants d'accès ; surveiller l'activité associée à votre compte ; notifier rapidement l'entité applicable de tout accès non autorisé ou incident de sécurité."
+        ]
+      },
+      {
+        "title": "Conduite interdite",
+        "paragraphs": [
+          "Vous ne devez pas : utiliser abusivement ou interférer avec la Plateforme ou son fonctionnement ; tenter un accès non autorisé à des systèmes ou des données ; désosser ou contourner les protections techniques ; utiliser la Plateforme à des fins illégales ou abusives ; adopter un comportement susceptible de nuire à l'intégrité ou à la sécurité de la Plateforme."
+        ]
+      },
+      {
+        "title": "Disponibilité et modifications",
+        "paragraphs": [
+          "La Plateforme est fournie « telle quelle » et « telle que disponible ». Le groupe peut : modifier, suspendre ou interrompre des fonctionnalités ; effectuer des maintenances ou des mises à jour ; restreindre l'accès lorsque cela est requis pour des raisons légales, techniques ou de sécurité.",
+          "Il n'y a aucune garantie de disponibilité ininterrompue."
+        ]
+      },
+      {
+        "title": "Services tiers",
+        "paragraphs": [
+          "La Plateforme peut s'intégrer ou se connecter à des services tiers, y compris des lieux d'exécution et des fournisseurs d'infrastructure. Le groupe ne contrôle pas ces tiers et n'est pas responsable de leurs actions, de leur disponibilité ou de leurs performances."
+        ]
+      },
+      {
+        "title": "Limitation de responsabilité",
+        "paragraphs": [
+          "Dans la mesure maximale permise par la loi : aucune responsabilité n'est acceptée pour les pertes résultant des mouvements du marché, des retards d'exécution, des interruptions de système ou des défaillances de tiers ; aucune responsabilité n'est acceptée pour les dommages indirects ou consécutifs ; la responsabilité est limitée comme indiqué dans l'accord client applicable.",
+          "Rien dans les présentes Conditions n'exclut les responsabilités qui ne peuvent être exclues par la loi applicable."
+        ]
+      },
+      {
+        "title": "Propriété intellectuelle",
+        "paragraphs": [
+          "Toute la propriété intellectuelle associée à la Plateforme reste la propriété du groupe Polar Tensor ou de ses concédants. L'utilisation de la Plateforme ne transfère aucun droit de propriété ou de propriété intellectuelle."
+        ]
+      },
+      {
+        "title": "Suspension et résiliation",
+        "paragraphs": [
+          "L'accès à la Plateforme peut être suspendu ou résilié : en cas de violation des présentes Conditions ; lorsque la loi ou la réglementation l'exige ; pour des raisons de sécurité ou de conformité ; en cas de résiliation de la relation client sous-jacente."
+        ]
+      },
+      {
+        "title": "Loi applicable et juridiction",
+        "paragraphs": [
+          "Les présentes Conditions sont régies par les lois spécifiées dans l'accord client applicable, sans préjudice des lois impératives de protection du consommateur."
+        ]
+      },
+      {
+        "title": "Modifications",
+        "paragraphs": [
+          "Les présentes Conditions peuvent être mises à jour périodiquement. L'utilisation continue de la Plateforme constitue l'acceptation de la version la plus récente."
+        ]
+      }
+    ]
+  },
+  "risk": {
+    "seoTitle": "Divulgation des risques | Polar Tensor",
+    "seoDesc": "Déclaration de divulgation des risques de Polar Tensor concernant les actifs numériques, le trading automatisé, le marché, la réglementation, les risques technologiques et de liquidité.",
+    "heroBadge": "Légal",
+    "heroTitle": "Déclaration de divulgation des risques",
+    "heroSubtitle": "Actifs numériques, trading automatisé et services technologiques.",
+    "warning": "Le trading d'actifs numériques implique des risques significatifs. Vous pourriez perdre une partie ou la totalité de votre capital. Cette déclaration ne constitue pas un conseil en investissement, une recommandation ou une garantie de performance.",
+    "sections": [
+      {
+        "title": "Objet de la présente déclaration",
+        "paragraphs": [
+          "La présente Déclaration de Divulgation des Risques vise à informer les clients et les utilisateurs potentiels des services des principaux risques liés aux marchés des actifs numériques et des crypto-actifs, aux technologies de trading automatisé et algorithmique, aux services d'exécution et à l'utilisation d'infrastructures et de services tiers.",
+          "Cette déclaration fait partie des informations précontractuelles fournies au client et doit être lue conjointement avec les conditions, divulgations et accords applicables."
+        ]
+      },
+      {
+        "title": "Avertissement général sur les risques",
+        "paragraphs": [
+          "Les actifs numériques sont des produits à haut risque. La participation aux marchés des actifs numériques et l'utilisation de la technologie de trading automatisé peuvent entraîner une perte partielle ou totale du capital.",
+          "Vous ne devez utiliser les services que si vous comprenez pleinement la nature des risques encourus et si vous pouvez supporter la perte totale des montants alloués.",
+          "Les performances passées, réelles ou simulées, ne sont pas indicatives des résultats futurs."
+        ]
+      },
+      {
+        "title": "Risque de marché",
+        "paragraphs": [
+          "Les marchés des actifs numériques sont soumis à une forte volatilité. Les prix peuvent fluctuer rapidement et de manière imprévisible en raison, entre autres : du sentiment du marché et de la spéculation, des conditions de liquidité, des événements réglementaires, des changements technologiques, des événements macroéconomiques et des actions des participants au marché.",
+          "Des mouvements défavorables peuvent entraîner des pertes rapides et sans avertissement."
+        ]
+      },
+      {
+        "title": "Aucune garantie de performance ou de protection du capital",
+        "paragraphs": [
+          "Aucune entité du groupe n'offre : de garanties de profit ou de rendement; d'assurance ou de préservation du capital; d'objectifs de performance minimaux; de représentations sur les résultats attendus.",
+          "Toute activité de trading est effectuée au seul compte et risque du client."
+        ]
+      },
+      {
+        "title": "Risque de trading automatisé et algorithmique",
+        "paragraphs": [
+          "Les systèmes automatisés et algorithmiques fonctionnent sur la base de règles et de logiques prédéfinies. Les risques associés au trading automatisé comprennent, entre autres : des conditions de marché défavorables non anticipées par le système, une exécution à des prix défavorables, une latence dans certaines conditions de marché, des limitations inhérentes aux données historiques ou aux hypothèses de modèle.",
+          "Les systèmes automatisés peuvent avoir des performances médiocres ou imprévisibles dans certaines conditions de marché."
+        ]
+      },
+      {
+        "title": "Aucun conseil en investissement ou discrétion",
+        "paragraphs": [
+          "Les services sont fournis uniquement sur la base de l'exécution et de la technologie. Nous ne fournissons pas de conseils en investissement, d'évaluation d'adéquation, de surveillance continue du portefeuille client ou n'agissons pas en tant que gestionnaire d'investissement.",
+          "Les décisions d'évaluer, de désactiver, de déposer, de retirer ou d'allouer des fonds restent entièrement à la discrétion du client."
+        ]
+      },
+      {
+        "title": "Risque technologique et opérationnel",
+        "paragraphs": [
+          "Les services dépendent de systèmes technologiques complexes, y compris des logiciels, du matériel, des réseaux et des infrastructures tierces. Les risques potentiels incluent : les pannes ou les interruptions de système, la latence ou les retards d'exécution, les erreurs ou les bogues logiciels, les incidents de cybersécurité et la défaillance des fournisseurs tiers.",
+          "Bien que des mesures raisonnables soient mises en œuvre pour maintenir l'intégrité du système, un fonctionnement ininterrompu et sans erreur ne peut être garanti."
+        ]
+      },
+      {
+        "title": "Risque de garde et de couche d'exécution",
+        "paragraphs": [
+          "Les actifs des clients peuvent être soumis à des arrangements de garde, y compris des risques opérationnels, des risques de domaine, des défaillances de fournisseurs de services tiers, une congestion ou une défaillance du réseau blockchain et des risques associés aux lieux d'exécution et aux fournisseurs de liquidités.",
+          "Les transferts temporaires d'actifs à des fins d'exécution sont soumis aux risques opérationnels de la couche d'exécution."
+        ]
+      },
+      {
+        "title": "Risque réglementaire et juridique",
+        "paragraphs": [
+          "Le traitement réglementaire des actifs numériques peut changer. Les futures actions législatives, réglementaires ou d'application peuvent : restreindre ou interdire certaines activités, imposer des obligations de conformité supplémentaires, affecter la disponibilité des services ou avoir un impact sur la valeur ou la négociabilité des actifs numériques.",
+          "Les changements réglementaires peuvent survenir avec peu ou pas de préavis."
+        ]
+      },
+      {
+        "title": "Risque de liquidité",
+        "paragraphs": [
+          "Certains actifs numériques peuvent avoir une liquidité limitée. Cela peut entraîner : des difficultés à entrer ou à sortir de positions, une augmentation du slippage, une exécution à des prix matériellement différents de ceux attendus et une incapacité à exécuter dans les délais souhaités."
+        ]
+      },
+      {
+        "title": "Risque de contrepartie et de tiers",
+        "paragraphs": [
+          "Les services dépendent de fournisseurs tiers, y compris : les bourses, les fournisseurs de liquidités, les processeurs de paiement, les fournisseurs de technologie de garde et les fournisseurs d'infrastructure.",
+          "Les défaillances, l'insolvabilité, les actes répréhensibles ou les interruptions opérationnelles de tiers peuvent affecter négativement la disponibilité des services ou les résultats d'exécution."
+        ]
+      },
+      {
+        "title": "Événements extraordinaires et force majeure",
+        "paragraphs": [
+          "Des événements extraordinaires échappant à un contrôle raisonnable — y compris, entre autres, des catastrophes naturelles, la guerre, des urgences réglementaires, des pannes de marché ou de réseau — peuvent altérer ou suspendre les services.",
+          "De tels événements peuvent entraîner des pertes ou des retards pour lesquels aucune garantie ou compensation ne peut être fournie."
+        ]
+      },
+      {
+        "title": "Reconnaissance de la responsabilité du client",
+        "paragraphs": [
+          "En utilisant les services, les clients reconnaissent et acceptent que : ils ont lu et compris ces risques; ils ont évalué indépendamment les risques encourus; ils sont seuls responsables de leurs décisions et de leurs actions; ils sont conscients des pertes possibles et des attentes.",
+          "Les clients doivent demander des conseils professionnels indépendants s'ils ont des questions sur les risques."
+        ]
+      },
+      {
+        "title": "Aucune garantie de fiabilité",
+        "paragraphs": [
+          "Les clients ne doivent pas se fier aux déclarations, matériels ou communications comme garanties de rentabilité, de sécurité ou de résultats.",
+          "Seule la documentation contractuelle contraignante régit la relation juridique."
+        ]
+      }
+    ]
+  }
+}
