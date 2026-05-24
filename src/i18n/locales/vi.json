@@ -473,113 +473,113 @@
     "ctaSubtitle": "Công nghệ, nghiên cứu và hoạt động thể chế trong tầm tay của mọi nhà đầu tư."
   },
   "technology": {
-    "seoTitle": "Technology | Polar Tensor — Neural Crypto Trading",
-    "seoDesc": "Polar Tensor's tech: CNN architectures with attention, trend and direction neural networks, low-latency execution and massive data integration.",
-    "heroBadge": "How it works",
-    "heroTitle": "Neural network engineering for crypto markets",
-    "heroSubtitle": "A two-stage approach combining trend analysis and high-frequency directional prediction for the best execution timing.",
+    "seoTitle": "Công nghệ | Polar Tensor — Giao dịch Crypto bằng Mạng Nơ-ron",
+    "seoDesc": "Công nghệ của Polar Tensor: kiến trúc CNN với cơ chế chú ý, mạng nơ-ron xác định xu hướng và phương hướng, thực thi độ trễ thấp và tích hợp dữ liệu khổng lồ.",
+    "heroBadge": "Cách hoạt động",
+    "heroTitle": "Kỹ thuật mạng nơ-ron cho thị trường crypto",
+    "heroSubtitle": "Phương pháp tiếp cận hai giai đoạn kết hợp phân tích xu hướng và dự đoán phương hướng tần suất cao để có thời điểm thực thi tốt nhất.",
     "stages": [
       {
-        "title": "Trend Networks",
-        "desc": "Analyze BTC dominance, transaction volumes and multi-timeframe averages to define the primary market direction.",
+        "title": "Mạng lưới Xu hướng",
+        "desc": "Phân tích sự thống trị của BTC, khối lượng giao dịch và các mức trung bình đa khung thời gian để xác định hướng đi chính của thị trường.",
         "bullets": [
-          "Daily evaluation",
-          "On-chain integration",
-          "Long cycles"
+          "Đánh giá hàng ngày",
+          "Tích hợp dữ liệu on-chain",
+          "Chu kỳ dài hạn"
         ]
       },
       {
-        "title": "Direction Networks",
-        "desc": "Multi-axis CNN architecture with attention mechanisms processing three timeframes simultaneously for short-term predictions.",
+        "title": "Mạng lưới Phương hướng",
+        "desc": "Kiến trúc CNN đa trục với cơ chế chú ý xử lý đồng thời ba khung thời gian cho các dự đoán ngắn hạn.",
         "bullets": [
-          "High-frequency signals",
-          "Near-real-time view",
-          "Order book analysis"
+          "Tín hiệu tần suất cao",
+          "Góc nhìn gần thời gian thực",
+          "Phân tích sổ lệnh"
         ]
       },
       {
-        "title": "Execution Engine",
-        "desc": "Real-time ensemble with dynamic confidence scoring and adaptive position sizing for risk management.",
+        "title": "Công cụ Thực thi",
+        "desc": "Tập hợp thời gian thực với tính điểm tin cậy động và điều chỉnh kích thước vị thế linh hoạt để quản lý rủi ro.",
         "bullets": [
-          "Tick-by-tick decisions",
-          "Direct exchange connection",
-          "Strict risk controls"
+          "Quyết định theo từng tick",
+          "Kết nối trực tiếp đến sàn",
+          "Kiểm soát rủi ro nghiêm ngặt"
         ]
       }
     ],
-    "hypothesisBadge": "Core hypothesis",
-    "hypothesisText": "Information flows bidirectionally between timeframes: larger timeframes constrain shorter moves, while microstructure data provides early signals that propagate upwards. Our system captures both dimensions simultaneously for optimal performance.",
-    "edgeBadge": "Statistical edge",
-    "edgeTitle": "Measurable, replicable edge",
-    "edgeSubtitle": "Systematic approaches to market exploitation with quantifiable confidence and rigorous risk controls.",
+    "hypothesisBadge": "Giả thuyết cốt lõi",
+    "hypothesisText": "Thông tin luân chuyển hai chiều giữa các khung thời gian: khung thời gian lớn hơn hạn chế các chuyển động ngắn hơn, trong khi dữ liệu vi cấu trúc cung cấp tín hiệu sớm lan truyền lên trên. Hệ thống của chúng tôi nắm bắt đồng thời cả hai chiều để đạt hiệu suất tối ưu.",
+    "edgeBadge": "Lợi thế thống kê",
+    "edgeTitle": "Lợi thế có thể đo lường, có thể tái tạo",
+    "edgeSubtitle": "Các phương pháp tiếp cận có hệ thống để khai thác thị trường với độ tin cậy có thể định lượng và kiểm soát rủi ro nghiêm ngặt.",
     "edge": [
       {
-        "t": "Confidence-based execution",
-        "d": "Each trade carries a quantified confidence level, dynamically regulating position size."
+        "t": "Thực thi dựa trên độ tin cậy",
+        "d": "Mỗi giao dịch mang một mức độ tin cậy được định lượng, tự động điều chỉnh kích thước vị thế."
       },
       {
-        "t": "Multi-model consensus",
-        "d": "Multiple neural networks must agree before execution, reducing single-model bias."
+        "t": "Đồng thuận đa mô hình",
+        "d": "Nhiều mạng nơ-ron phải đồng thuận trước khi thực thi, giảm thiểu sai lệch của một mô hình đơn lẻ."
       },
       {
-        "t": "Market regime adaptation",
-        "d": "Automatic regime detection to maintain edge under different conditions."
+        "t": "Thích ứng với trạng thái thị trường",
+        "d": "Tự động phát hiện trạng thái để duy trì lợi thế trong các điều kiện khác nhau."
       },
       {
-        "t": "Optimal execution timing",
-        "d": "Microstructure analysis to reduce slippage and market impact."
+        "t": "Thời điểm thực thi tối ưu",
+        "d": "Phân tích vi cấu trúc để giảm trượt giá và tác động thị trường."
       },
       {
-        "t": "Continuous verification",
-        "d": "Statistical backtests ensure the edge remains significant and does not degrade."
+        "t": "Xác minh liên tục",
+        "d": "Kiểm tra lại bằng thống kê đảm bảo lợi thế vẫn đáng kể và không suy giảm."
       },
       {
-        "t": "Dynamic risk scaling",
-        "d": "Real-time drawdown monitoring reduces exposure under adverse scenarios."
+        "t": "Điều chỉnh rủi ro động",
+        "d": "Giám sát sụt giảm tài khoản theo thời gian thực giúp giảm thiểu rủi ro trong các kịch bản bất lợi."
       }
     ],
-    "dataBadge": "Data integration",
-    "dataTitle": "Intelligence from multiple sources",
+    "dataBadge": "Tích hợp dữ liệu",
+    "dataTitle": "Thông tin từ nhiều nguồn",
     "data": [
       {
-        "t": "Market Data",
-        "d": "OHLCV, volumes and technical indicators across multiple timeframes, from daily to sub-second."
+        "t": "Dữ liệu thị trường",
+        "d": "OHLCV, khối lượng và các chỉ báo kỹ thuật trên nhiều khung thời gian, từ hàng ngày đến dưới giây."
       },
       {
-        "t": "On-Chain Analytics",
-        "d": "Network activity, transaction patterns and adoption metrics."
+        "t": "Phân tích On-Chain",
+        "d": "Hoạt động mạng lưới, các mẫu giao dịch và số liệu về mức độ chấp nhận."
       },
       {
-        "t": "Order Book Dynamics",
-        "d": "Microstructure capture, imbalance, depth and spreads."
+        "t": "Động lực Sổ lệnh",
+        "d": "Nắm bắt vi cấu trúc, sự mất cân bằng, độ sâu và chênh lệch giá."
       },
       {
-        "t": "Sentiment",
-        "d": "News and social media with a 15-minute window for market context."
+        "t": "Tâm lý thị trường",
+        "d": "Tin tức và mạng xã hội trong cửa sổ 15 phút để cung cấp bối cảnh thị trường."
       }
     ],
-    "metricsBadge": "Metrics",
-    "metricsTitle": "Research-validated results",
+    "metricsBadge": "Chỉ số",
+    "metricsTitle": "Kết quả đã được xác thực qua nghiên cứu",
     "metrics": [
       {
         "v": "1.15",
-        "t": "Profit Factor",
-        "d": "Consistent across regimes."
+        "t": "Hệ số lợi nhuận",
+        "d": "Nhất quán qua các trạng thái thị trường."
       },
       {
         "v": "<50ms",
-        "t": "Prediction Latency",
-        "d": "Ultra-low limits for real-time decisions."
+        "t": "Độ trễ dự đoán",
+        "d": "Giới hạn cực thấp cho các quyết định thời gian thực."
       },
       {
         "v": "10K+",
-        "t": "Daily trades",
-        "d": "High-frequency execution across multiple markets."
+        "t": "Giao dịch hàng ngày",
+        "d": "Thực thi tần suất cao trên nhiều thị trường."
       },
       {
         "v": "24/7",
-        "t": "Coverage",
-        "d": "Continuous monitoring and operation."
+        "t": "Phạm vi hoạt động",
+        "d": "Giám sát và vận hành liên tục."
       }
     ]
   },
