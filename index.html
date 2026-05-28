@@ -315,63 +315,9 @@
     }
     </script>
 
-    <!-- Structured data: FAQ (rich snippet de Perguntas Frequentes) -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "FAQPage",
-      "mainEntity": [
-        {
-          "@type": "Question",
-          "name": "O que é a Polar Tensor?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Empresa de tecnologia financeira que desenvolve algoritmos proprietários de trading com redes neurais para o mercado de criptomoedas, operando desde 2018."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Como funciona o sistema Polar One?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Sistema totalmente automatizado que utiliza redes neurais de tendência e direção para executar trades de alta frequência com baixa latência na Binance."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Quais são os riscos?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Trading em criptomoedas envolve volatilidade e riscos de mercado, regulatórios, de liquidez e tecnológicos. Você pode perder parte ou a totalidade do capital."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Como funcionam as taxas?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Taxa única de licença de 10% sobre o depósito e taxa de performance (20% a 30%) apenas sobre lucros gerados, distribuídos semanalmente."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Onde a Polar Tensor está registrada?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Polar Tensor Corp. é registrada no Panamá, com Polar MSB Inc. nos EUA (FinCEN MSB) e Polar Tensor LAB Limited em Hong Kong."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Como faço para me cadastrar?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "O cadastro é gratuito em polar-tensor.com. Após KYC, você pode depositar em USDT, BTC, ETH ou SOL e ativar a operação automatizada."
-          }
-        }
-      ]
-    }
-    </script>
+    <!-- FAQPage JSON-LD é injetado dinamicamente apenas na rota /faq (ver src/pages/Faq.tsx).
+         NÃO duplicar aqui — Google Search Console reporta "FAQPage está duplicado"
+         se o mesmo @type aparecer em index.html e na rota /faq simultaneamente. -->
   </head>
 
   <body>
