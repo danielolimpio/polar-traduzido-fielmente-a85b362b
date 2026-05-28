@@ -82,53 +82,10 @@ describe("JSON-LD FAQPage", () => {
     })
     .filter((d): d is Record<string, unknown> => !!d && d["@type"] === "FAQPage");
 
-  it("deve existir exatamente um bloco FAQPage", () => {
-    expect(faqBlocks.length).toBe(1);
-  });
-
-  const faq = faqBlocks[0];
-
-  it("deve ter mainEntity com pelo menos 3 perguntas", () => {
-    const mainEntity = (faq?.mainEntity ?? []) as unknown[];
-    expect(Array.isArray(mainEntity)).toBe(true);
-    expect(mainEntity.length).toBeGreaterThanOrEqual(3);
-  });
-
-  it("cada Question deve ter name (>= 8 chars) e acceptedAnswer.text (>= 40 chars)", () => {
-    const mainEntity = (faq?.mainEntity ?? []) as Array<{
-      "@type"?: string;
-      name?: string;
-      acceptedAnswer?: { "@type"?: string; text?: string };
-    }>;
-    for (const q of mainEntity) {
-      expect(q["@type"]).toBe("Question");
-      expect(q.name?.trim().length ?? 0).toBeGreaterThanOrEqual(8);
-
-      expect(q.acceptedAnswer).toBeTruthy();
-      expect(q.acceptedAnswer?.["@type"]).toBe("Answer");
-
-      const answerText = q.acceptedAnswer?.text?.trim() ?? "";
-      expect(
-        answerText.length,
-        `Resposta para "${q.name}" tem só ${answerText.length} chars (Google rejeita respostas curtas/vagas)`
-      ).toBeGreaterThanOrEqual(40);
-
-      // Bloqueia respostas promocionais/vagas que o Google costuma rejeitar
-      const lower = answerText.toLowerCase();
-      const vague = [
-        "veja a seção",
-        "veja em nosso site",
-        "consulte o painel",
-        "fale com o suporte",
-        "entre em contato",
-        "saiba mais em",
-      ];
-      for (const phrase of vague) {
-        expect(
-          lower.includes(phrase),
-          `Resposta para "${q.name}" contém frase vaga "${phrase}" — Google pode marcar como item inválido`
-        ).toBe(false);
-      }
-    }
+  // FAQPage agora é injetado dinamicamente APENAS na rota /faq (src/pages/Faq.tsx).
+  // Se aparecer também em index.html, o Google Search Console reporta
+  // "O campo FAQPage está duplicado" em /faq e /es/faq.
+  it("não deve existir nenhum bloco FAQPage em index.html (é injetado por rota)", () => {
+    expect(faqBlocks.length).toBe(0);
   });
 });
