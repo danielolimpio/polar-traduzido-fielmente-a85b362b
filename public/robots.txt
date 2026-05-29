@@ -4,10 +4,15 @@
 User-agent: *
 Allow: /
 Disallow: /api/
+# Bloqueia URLs com query strings (templates de JSON-LD que o Google chegou a indexar)
+Disallow: /*?q=
+Disallow: /*?t=
 Disallow: /*?*
 
 User-agent: Googlebot
 Allow: /
+Disallow: /*?q=
+Disallow: /*?t=
 
 User-agent: Googlebot-Image
 Allow: /
@@ -33,7 +38,7 @@ Allow: /
 User-agent: LinkedInBot
 Allow: /
 
-# Bloqueia scrapers de IA (opcional)
+# Bloqueia scrapers de IA
 User-agent: GPTBot
 Disallow: /
 
