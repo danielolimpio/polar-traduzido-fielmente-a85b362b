@@ -101,3 +101,28 @@ AddDefaultCharset UTF-8
 # 6) Página de erro 404 -> também cai no React Router
 # ----------------------------------------------------------------------
 ErrorDocument 404 /index.html
+
+# ----------------------------------------------------------------------
+# 7) MIME types corretos (sitemap.xml e robots.txt servidos com header certo)
+#    Corrige "Não foi possível buscar o sitemap" no Google Search Console
+#    quando Hostinger entrega XML como text/html.
+# ----------------------------------------------------------------------
+<IfModule mod_mime.c>
+  AddType application/xml .xml
+  AddType text/plain .txt
+</IfModule>
+
+<Files "sitemap.xml">
+  <IfModule mod_headers.c>
+    Header set Content-Type "application/xml; charset=UTF-8"
+    Header set X-Robots-Tag "noindex"
+    Header set Cache-Control "public, max-age=3600"
+  </IfModule>
+</Files>
+
+<Files "robots.txt">
+  <IfModule mod_headers.c>
+    Header set Content-Type "text/plain; charset=UTF-8"
+  </IfModule>
+</Files>
+
