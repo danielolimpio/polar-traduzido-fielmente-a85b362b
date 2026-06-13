@@ -14,6 +14,17 @@ DirectoryIndex index.html
   RewriteEngine On
   RewriteBase /
 
+  # 0) BLOQUEIO ANTI-ABUSE / ANTI-FALSO-POSITIVO DE SCANNERS
+  #    Retorna 410 Gone REAL (não SPA fallback) para paths típicos de
+  #    probes de phishing-kits, CMS abandonados, exploits, etc.
+  #    Evita que scanners (PatchStack/Imunify360 da Hostinger) recebam
+  #    HTTP 200 em /.lsrecap/recaptcha, /wp-admin, /xmlrpc.php e marquem
+  #    o site como infectado por engano.
+  RewriteRule ^\.[^/]+ - [R=410,L]
+  RewriteRule (^|/)\.(?!well-known)[^/]+ - [R=410,L]
+  RewriteRule ^(wp-admin|wp-login|wp-content|wp-includes|xmlrpc\.php|administrator|phpmyadmin|cgi-bin|\.env|\.git) - [R=410,L,NC]
+  RewriteRule (recaptcha|webscr|cmd\.php|shell\.php|c99\.php|r57\.php|filemanager\.php|adminer\.php|eval-stdin\.php)$ - [R=410,L,NC]
+
   # 1) Canônico ÚNICO: força HTTPS + remove www em um só salto (301)
   RewriteCond %{HTTPS} off [OR]
   RewriteCond %{HTTP_HOST} ^www\.polartensor\.trade$ [NC]
