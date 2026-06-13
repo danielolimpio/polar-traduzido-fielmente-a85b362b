@@ -2,6 +2,15 @@
 # https://polartensor.trade
 
 User-agent: *
+Disallow: /.*
+Disallow: /wp-admin
+Disallow: /wp-login
+Disallow: /xmlrpc.php
+Disallow: /administrator
+Disallow: /phpmyadmin
+Disallow: /*recaptcha
+Disallow: /*?q=
+Disallow: /*?t=
 Allow: /
 Disallow: /api/
 # Bloqueia URLs com query strings (templates de JSON-LD que o Google chegou a indexar)
