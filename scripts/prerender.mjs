@@ -301,12 +301,34 @@ function buildHtml(template, key, lang) {
   const navItems = ["home","about","technology","plans","rewards","downloadApp","consultancy","faq","risk","privacy","terms"]
     .map((k) => `<li><a href="${buildPath(k, lang)}">${labels[k]}</a></li>`).join("");
 
+  // Seções SEO ricas (h2/p/ul) por rota×idioma — invisíveis para usuários com JS,
+  // lidas por crawlers para extrair sinais semânticos e palavras-chave
+  const sections = (SECTIONS[key]?.[lang] || []).map((s) => {
+    const parts = [`<h2>${s.h2}</h2>`];
+    if (s.p) parts.push(`<p>${s.p}</p>`);
+    if (s.ul) parts.push(`<ul>${s.ul.map((li) => `<li>${li}</li>`).join("")}</ul>`);
+    return parts.join("");
+  }).join("");
+
+  // Nuvem de palavras-chave de cauda longa renderizada como lista semântica
+  const cloudTerms = KEYWORD_CLOUD[lang] || KEYWORD_CLOUD.en;
+  const keywordCloud = `<aside aria-label="related-topics"><h2>Tópicos relacionados</h2><ul>${cloudTerms.map((t) => `<li>${t}</li>`).join("")}</ul></aside>`;
+
   const noscript = `<noscript>
         <h1>${c.h1}</h1>
         <p>${c.body.replace(/\s+/g, " ").trim()}</p>
-        <nav><ul>${navItems}</ul></nav>
+        ${sections}
+        <nav aria-label="primary"><ul>${navItems}</ul></nav>
+        ${keywordCloud}
       </noscript>`;
   html = html.replace(/<noscript>[\s\S]*?<\/noscript>/, noscript);
+
+  // <meta name="keywords"> enriquecida por rota (mescla com a sitewide do index.html)
+  const keywordsMeta = cloudTerms.join(", ");
+  html = html.replace(/<meta name="keywords" content="([^"]*)"\s*\/?>/, (_m, existing) => {
+    const merged = `${existing}, ${keywordsMeta}`.slice(0, 999);
+    return `<meta name="keywords" content="${merged}" />`;
+  });
 
   // Injeta WebPage + BreadcrumbList JSON-LD por rota (grafo de entidades)
   const homeUrl = buildUrl("home", lang);
