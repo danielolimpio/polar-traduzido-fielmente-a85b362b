@@ -1,8 +1,13 @@
-// Native PWA install trigger.
-// - Android/Chrome/Desktop: captures `beforeinstallprompt` and fires the native
-//   install prompt on the first user gesture (click/touch/keydown).
-// - iOS Safari: shows the browser's native Share sheet hint via a one-time
-//   transient alert (no custom modal) — iOS does not expose a prompt API.
+// Native PWA install trigger — uses ONLY the browser's built-in interfaces.
+// - Android/Desktop Chrome/Edge: fires the native `beforeinstallprompt`
+//   prompt on the first user gesture (click/touch/keydown) anywhere on the
+//   page. The event is captured early in index.html so it is never missed.
+// - iOS Safari: shows the browser's native instruction (a plain alert) for
+//   Share → Add to Home Screen, since iOS exposes no install API.
+// - Address-bar install icon: appears automatically once the manifest +
+//   service worker + HTTPS criteria are met (no extra code required).
+//
+// No custom modals or dialogs. Respects the browser's user-gesture rule.
 // Guards against Lovable preview iframes and already-installed PWAs.
 
 type BeforeInstallPromptEvent = Event & {
@@ -10,7 +15,11 @@ type BeforeInstallPromptEvent = Event & {
   userChoice: Promise<{ outcome: "accepted" | "dismissed" }>;
 };
 
-const STORAGE_KEY = "pwa-install-handled";
+declare global {
+  interface Window {
+    __pwaDeferredPrompt?: BeforeInstallPromptEvent | null;
+  }
+}
 
 function isInIframe(): boolean {
   try {
@@ -22,13 +31,17 @@ function isInIframe(): boolean {
 
 function isPreviewHost(): boolean {
   const h = window.location.hostname;
-  return h.includes("lovableproject.com") || h.includes("lovable.app") || h.includes("id-preview--");
+  return (
+    h.includes("lovableproject.com") ||
+    h.includes("lovable.app") ||
+    h.includes("id-preview--") ||
+    h.includes("preview--")
+  );
 }
 
 function isStandalone(): boolean {
   return (
     window.matchMedia?.("(display-mode: standalone)").matches ||
-    // iOS Safari
     (window.navigator as unknown as { standalone?: boolean }).standalone === true
   );
 }
@@ -48,8 +61,8 @@ export function initPwaInstall(): void {
   if (isInIframe() || isPreviewHost()) return;
   if (isStandalone()) return;
 
-  // 1. Register the minimal service worker — required by Chrome to fire
-  //    beforeinstallprompt and to mark the app as installable.
+  // Register the minimal service worker — required by Chromium browsers to
+  // fire `beforeinstallprompt` and to show the address-bar install icon.
   if ("serviceWorker" in navigator) {
     window.addEventListener("load", () => {
       navigator.serviceWorker.register("/sw.js").catch(() => {
@@ -58,69 +71,51 @@ export function initPwaInstall(): void {
     });
   }
 
-  let deferredPrompt: BeforeInstallPromptEvent | null = null;
-
+  // Late listener as a backup in case the early inline capture in index.html
+  // missed the event (it shouldn't, but defense-in-depth).
   window.addEventListener("beforeinstallprompt", (e) => {
-    // Prevent Chrome's default mini-infobar so we can fire it on user gesture.
     e.preventDefault();
-    deferredPrompt = e as BeforeInstallPromptEvent;
+    window.__pwaDeferredPrompt = e as BeforeInstallPromptEvent;
   });
 
   window.addEventListener("appinstalled", () => {
-    deferredPrompt = null;
-    try {
-      sessionStorage.setItem(STORAGE_KEY, "1");
-    } catch {
-      /* ignore */
-    }
+    window.__pwaDeferredPrompt = null;
   });
 
-  const handleFirstGesture = async () => {
-    try {
-      if (sessionStorage.getItem(STORAGE_KEY) === "1") return cleanup();
-    } catch {
-      /* ignore */
-    }
+  let iosShown = false;
 
-    // Android / Desktop Chrome / Edge — native install prompt.
-    if (deferredPrompt) {
+  const handleGesture = async () => {
+    // Android / Desktop Chromium — native install prompt.
+    const deferred = window.__pwaDeferredPrompt;
+    if (deferred) {
+      window.__pwaDeferredPrompt = null;
       cleanup();
       try {
-        sessionStorage.setItem(STORAGE_KEY, "1");
+        await deferred.prompt();
+        await deferred.userChoice;
       } catch {
-        /* ignore */
+        /* user dismissed or browser blocked — fine */
       }
-      try {
-        await deferredPrompt.prompt();
-        await deferredPrompt.userChoice;
-      } catch {
-        /* ignore */
-      }
-      deferredPrompt = null;
       return;
     }
 
-    // iOS Safari — no install API exists. Show the native browser instruction
-    // (a plain alert) pointing to Share → Add to Home Screen. One-shot only.
-    if (isIOS() && isSafari()) {
+    // iOS Safari — no install API; surface the browser's native instruction
+    // exactly once per page load via a plain alert (no custom dialog).
+    if (!iosShown && isIOS() && isSafari()) {
+      iosShown = true;
       cleanup();
-      try {
-        sessionStorage.setItem(STORAGE_KEY, "1");
-      } catch {
-        /* ignore */
-      }
       window.alert(
         "Para instalar a Polar Tensor: toque no ícone Compartilhar e escolha “Adicionar à Tela de Início”."
       );
     }
   };
 
-  const opts: AddEventListenerOptions = { once: false, capture: true };
+  const opts: AddEventListenerOptions = { capture: true };
   const cleanup = () => {
-    window.removeEventListener("pointerdown", handleFirstGesture, opts);
-    window.removeEventListener("keydown", handleFirstGesture, opts);
+    window.removeEventListener("pointerdown", handleGesture, opts);
+    window.removeEventListener("keydown", handleGesture, opts);
   };
 
-  window.addEventListener("pointerdown", handleFirstGesture, opts);
-  window.addEventListener("keydown", handleFirstGesture, opts);
+  window.addEventListener("pointerdown", handleGesture, opts);
+  window.addEventListener("keydown", handleGesture, opts);
 }
