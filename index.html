@@ -45,6 +45,23 @@
     <link rel="apple-touch-icon" href="/favicon.webp" />
     <link rel="manifest" href="/site.webmanifest" />
 
+    <!-- Early PWA install capture: store the event before React mounts so we
+         never miss it. Consumed by src/lib/pwa-install.ts on first user gesture. -->
+    <script>
+      (function () {
+        try {
+          window.__pwaDeferredPrompt = null;
+          window.addEventListener("beforeinstallprompt", function (e) {
+            e.preventDefault();
+            window.__pwaDeferredPrompt = e;
+          });
+          window.addEventListener("appinstalled", function () {
+            window.__pwaDeferredPrompt = null;
+          });
+        } catch (e) { /* no-op */ }
+      })();
+    </script>
+
     <!-- Open Graph -->
     <meta property="og:type" content="website" />
     <meta property="og:site_name" content="Polar Tensor" />
