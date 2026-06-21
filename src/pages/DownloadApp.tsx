@@ -2,7 +2,6 @@ import { useTranslation } from "react-i18next";
 import { SiteHeader } from "@/components/site/SiteHeader";
 import { SiteFooter } from "@/components/site/SiteFooter";
 import { Seo } from "@/components/site/Seo";
-import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Card } from "@/components/ui/card";
 import {
@@ -10,6 +9,7 @@ import {
 } from "lucide-react";
 import { SIGNUP_URL, SITE_URL, PLAY_STORE_URL } from "@/lib/constants";
 import { ResponsiveImage } from "@/components/site/ResponsiveImage";
+import { PwaInstallButton } from "@/components/site/PwaInstallButton";
 import appHomePic from "@/assets/hero-app.webp?w=260;520&format=avif;webp&as=picture";
 import appHomeBlur from "@/assets/hero-app.webp?w=24&blur=400&format=webp&as=src";
 import appWalletPic from "@/assets/app-wallet.webp?w=280;560&format=avif;webp&as=picture";
