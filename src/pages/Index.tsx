@@ -1,4 +1,3 @@
-import { Link } from "react-router-dom";
 import { Trans, useTranslation } from "react-i18next";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
@@ -38,8 +37,8 @@ import { PerformanceChart as Performance } from "@/components/site/PerformanceCh
 import { BinancePanel } from "@/components/site/BinancePanel";
 import { VideoShowcase } from "@/components/site/VideoShowcase";
 import { Seo } from "@/components/site/Seo";
-import { useLocalizedPath } from "@/lib/routes";
 import { ResponsiveImage } from "@/components/site/ResponsiveImage";
+import { PwaInstallButton } from "@/components/site/PwaInstallButton";
 
 const CtaButton = ({
   children,
