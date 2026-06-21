@@ -143,7 +143,18 @@ export const SiteFooter = () => {
               <li><Link to={techPath} className="hover:text-foreground">{t("footer.links.tech")}</Link></li>
               <li><a href={`${homePath === "/" ? "" : homePath}/#desempenho`} className="hover:text-foreground">{t("footer.links.perf")}</a></li>
               <li><a href={`${homePath === "/" ? "" : homePath}/#planos`} className="hover:text-foreground">{t("footer.links.plans")}</a></li>
-              <li><Link to={downloadAppPath} className="font-medium text-primary hover:text-foreground">{t("footer.links.downloadApp")}</Link></li>
+              <li>
+                <button
+                  type="button"
+                  onClick={async () => {
+                    const triggered = await triggerPwaInstall();
+                    if (!triggered) window.location.href = downloadAppPath;
+                  }}
+                  className="font-medium text-primary hover:text-foreground"
+                >
+                  {t("footer.links.downloadApp")}
+                </button>
+              </li>
             </ul>
           </div>
           <div>
