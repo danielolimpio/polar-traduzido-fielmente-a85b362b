@@ -3,6 +3,7 @@ import { Trans, useTranslation } from "react-i18next";
 import { Lock, ShieldCheck, Building2, Landmark, Globe2, Banknote, FlaskConical, MapPin, AlertTriangle } from "lucide-react";
 import { Logo } from "./Logo";
 import { useLocalizedPath } from "@/lib/routes";
+import { triggerPwaInstall } from "@/lib/pwa-install";
 
 const icons = [Building2, Landmark, Globe2, Banknote, FlaskConical, MapPin];
 
