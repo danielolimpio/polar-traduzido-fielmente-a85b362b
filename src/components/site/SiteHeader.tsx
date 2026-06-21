@@ -1,4 +1,4 @@
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Menu, Smartphone, X } from "lucide-react";
 import { Logo } from "./Logo";
