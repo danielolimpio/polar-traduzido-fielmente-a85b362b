@@ -8,6 +8,7 @@ import { useState } from "react";
 import { useTranslation } from "react-i18next";
 import { cn } from "@/lib/utils";
 import { useLocalizedPath } from "@/lib/routes";
+import { PwaInstallButton } from "./PwaInstallButton";
 
 export const SiteHeader = () => {
   const [open, setOpen] = useState(false);
@@ -22,7 +23,6 @@ export const SiteHeader = () => {
     { to: useLocalizedPath("rewards"), label: t("nav.rewards") },
     { to: useLocalizedPath("faq"), label: t("nav.faq") },
   ];
-  const downloadAppPath = useLocalizedPath("downloadApp");
 
   return (
     <header className="sticky top-0 z-50 border-b border-border/50 bg-background/80 backdrop-blur-xl">
@@ -46,12 +46,15 @@ export const SiteHeader = () => {
         </nav>
         <div className="flex items-center gap-2">
           <LanguageSwitcher className="hidden sm:inline-flex" />
-          <Button asChild variant="outline" size="sm" className="hidden w-[88px] justify-center border-primary/40 bg-primary/5 text-primary hover:bg-primary/10 hover:text-primary lg:inline-flex">
-            <Link to={downloadAppPath} aria-label={t("common.downloadAppFull")}>
-              <Smartphone className="mr-1.5 h-3.5 w-3.5" />
-              {t("common.downloadApp")}
-            </Link>
-          </Button>
+          <PwaInstallButton
+            variant="outline"
+            size="sm"
+            className="hidden w-[88px] justify-center border-primary/40 bg-primary/5 text-primary hover:bg-primary/10 hover:text-primary lg:inline-flex"
+            ariaLabel={t("common.downloadAppFull")}
+          >
+            <Smartphone className="mr-1.5 h-3.5 w-3.5" />
+            {t("common.downloadApp")}
+          </PwaInstallButton>
           <Button asChild variant="ghost" size="sm" className="hidden w-[80px] justify-center sm:inline-flex">
             <a href={SIGNIN_URL} target="_blank" rel="noopener noreferrer">{t("common.signIn")}</a>
           </Button>

@@ -40,6 +40,7 @@ import { VideoShowcase } from "@/components/site/VideoShowcase";
 import { Seo } from "@/components/site/Seo";
 import { useLocalizedPath } from "@/lib/routes";
 import { ResponsiveImage } from "@/components/site/ResponsiveImage";
+import { PwaInstallButton } from "@/components/site/PwaInstallButton";
 
 const CtaButton = ({
   children,
@@ -61,7 +62,6 @@ const CtaButton = ({
 
 const Hero = () => {
   const { t } = useTranslation();
-  const downloadAppPath = useLocalizedPath("downloadApp");
   return (
     <section className="relative overflow-hidden bg-gradient-hero">
       <div className="absolute inset-0 grid-bg opacity-40" />
@@ -91,12 +91,14 @@ const Hero = () => {
               <Download className="mr-2 h-4 w-4" />
               {t("common.signUpFree")}
             </CtaButton>
-            <Button asChild variant="outline" size="lg">
-              <Link to={downloadAppPath} aria-label={t("common.downloadAppFull")}>
-                <Smartphone className="mr-2 h-4 w-4" />
-                {t("common.downloadAppFull")}
-              </Link>
-            </Button>
+            <PwaInstallButton
+              variant="outline"
+              size="lg"
+              ariaLabel={t("common.downloadAppFull")}
+            >
+              <Smartphone className="mr-2 h-4 w-4" />
+              {t("common.downloadAppFull")}
+            </PwaInstallButton>
           </div>
 
           <div className="grid grid-cols-3 gap-6 pt-6">
