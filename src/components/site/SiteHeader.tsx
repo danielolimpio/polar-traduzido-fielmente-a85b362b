@@ -23,7 +23,6 @@ export const SiteHeader = () => {
     { to: useLocalizedPath("rewards"), label: t("nav.rewards") },
     { to: useLocalizedPath("faq"), label: t("nav.faq") },
   ];
-  const downloadAppPath = useLocalizedPath("downloadApp");
 
   return (
     <header className="sticky top-0 z-50 border-b border-border/50 bg-background/80 backdrop-blur-xl">
