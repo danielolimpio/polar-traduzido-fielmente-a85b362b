@@ -56,6 +56,47 @@ function isSafari(): boolean {
   return /Safari/.test(ua) && !/CriOS|FxiOS|EdgiOS|OPiOS/.test(ua);
 }
 
+let iosAlertShownThisSession = false;
+
+/**
+ * Attempt to fire the native PWA install prompt (Chromium/Android/desktop)
+ * or show the native iOS Safari install instruction.
+ * Returns true if a native UI was shown, false otherwise.
+ */
+export async function triggerPwaInstall(): Promise<boolean> {
+  if (typeof window === "undefined") return false;
+  if (isInIframe() || isPreviewHost()) return false;
+  if (isStandalone()) return false;
+
+  // Android / Desktop Chromium — native install prompt.
+  const deferred = window.__pwaDeferredPrompt;
+  if (deferred) {
+    try {
+      window.__pwaDeferredPrompt = null;
+      await deferred.prompt();
+      await deferred.userChoice;
+      return true;
+    } catch {
+      /* user dismissed or browser blocked — fine */
+      return false;
+    }
+  }
+
+  // iOS Safari — no install API; surface the browser's native instruction
+  // via a plain alert (no custom dialog).
+  if (isIOS() && isSafari()) {
+    if (!iosAlertShownThisSession) {
+      iosAlertShownThisSession = true;
+      window.alert(
+        "Para instalar a Polar Tensor: toque no ícone Compartilhar e escolha “Adicionar à Tela de Início”."
+      );
+    }
+    return true;
+  }
+
+  return false;
+}
+
 export function initPwaInstall(): void {
   if (typeof window === "undefined") return;
   if (isInIframe() || isPreviewHost()) return;
@@ -85,28 +126,9 @@ export function initPwaInstall(): void {
   let iosShown = false;
 
   const handleGesture = async () => {
-    // Android / Desktop Chromium — native install prompt.
-    const deferred = window.__pwaDeferredPrompt;
-    if (deferred) {
-      window.__pwaDeferredPrompt = null;
+    const triggered = await triggerPwaInstall();
+    if (triggered) {
       cleanup();
-      try {
-        await deferred.prompt();
-        await deferred.userChoice;
-      } catch {
-        /* user dismissed or browser blocked — fine */
-      }
-      return;
-    }
-
-    // iOS Safari — no install API; surface the browser's native instruction
-    // exactly once per page load via a plain alert (no custom dialog).
-    if (!iosShown && isIOS() && isSafari()) {
-      iosShown = true;
-      cleanup();
-      window.alert(
-        "Para instalar a Polar Tensor: toque no ícone Compartilhar e escolha “Adicionar à Tela de Início”."
-      );
     }
   };
 
