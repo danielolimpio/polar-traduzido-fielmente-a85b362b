@@ -1,14 +1,15 @@
 // Native PWA install trigger — uses ONLY the browser's built-in interfaces.
 // - Android/Desktop Chrome/Edge: fires the native `beforeinstallprompt`
-//   prompt on the first user gesture (click/touch/keydown) anywhere on the
-//   page. The event is captured early in index.html so it is never missed.
+//   prompt as soon as it is available. If the user clicks before Chrome
+//   fires the event (common on a brand-new browser without prior engagement),
+//   we ARM the trigger and fire the prompt the moment the event arrives.
 // - iOS Safari: shows the browser's native instruction (a plain alert) for
 //   Share → Add to Home Screen, since iOS exposes no install API.
 // - Address-bar install icon: appears automatically once the manifest +
 //   service worker + HTTPS criteria are met (no extra code required).
 //
-// No custom modals or dialogs. Respects the browser's user-gesture rule.
-// Guards against Lovable preview iframes and already-installed PWAs.
+// No custom modals or dialogs. Guards against Lovable preview iframes and
+// already-installed PWAs.
 
 type BeforeInstallPromptEvent = Event & {
   prompt: () => Promise<void>;
@@ -18,6 +19,7 @@ type BeforeInstallPromptEvent = Event & {
 declare global {
   interface Window {
     __pwaDeferredPrompt?: BeforeInstallPromptEvent | null;
+    __pwaInstallArmed?: boolean;
   }
 }
 
@@ -58,32 +60,33 @@ function isSafari(): boolean {
 
 let iosAlertShownThisSession = false;
 
+async function firePrompt(deferred: BeforeInstallPromptEvent): Promise<boolean> {
+  try {
+    window.__pwaDeferredPrompt = null;
+    await deferred.prompt();
+    await deferred.userChoice;
+    return true;
+  } catch {
+    return false;
+  }
+}
+
 /**
  * Attempt to fire the native PWA install prompt (Chromium/Android/desktop)
- * or show the native iOS Safari install instruction.
- * Returns true if a native UI was shown, false otherwise.
+ * or show the native iOS Safari install instruction. If the deferred prompt
+ * has not arrived yet, ARM it so the prompt fires automatically when it does.
  */
 export async function triggerPwaInstall(): Promise<boolean> {
   if (typeof window === "undefined") return false;
   if (isInIframe() || isPreviewHost()) return false;
   if (isStandalone()) return false;
 
-  // Android / Desktop Chromium — native install prompt.
   const deferred = window.__pwaDeferredPrompt;
   if (deferred) {
-    try {
-      window.__pwaDeferredPrompt = null;
-      await deferred.prompt();
-      await deferred.userChoice;
-      return true;
-    } catch {
-      /* user dismissed or browser blocked — fine */
-      return false;
-    }
+    return firePrompt(deferred);
   }
 
-  // iOS Safari — no install API; surface the browser's native instruction
-  // via a plain alert (no custom dialog).
+  // iOS Safari — no install API; surface the browser's native instruction.
   if (isIOS() && isSafari()) {
     if (!iosAlertShownThisSession) {
       iosAlertShownThisSession = true;
@@ -92,6 +95,24 @@ export async function triggerPwaInstall(): Promise<boolean> {
       );
     }
     return true;
+  }
+
+  // Chromium hasn't fired beforeinstallprompt yet (no engagement). ARM the
+  // trigger so the prompt fires the moment Chrome fires the event.
+  if (!window.__pwaInstallArmed) {
+    window.__pwaInstallArmed = true;
+    const onPrompt = (e: Event) => {
+      e.preventDefault();
+      const evt = e as BeforeInstallPromptEvent;
+      window.__pwaDeferredPrompt = evt;
+      window.removeEventListener("beforeinstallprompt", onPrompt as EventListener);
+      // Fire immediately — user gesture was recent enough on most browsers.
+      firePrompt(evt).catch(() => {
+        /* keep armed flag so a later click can retry */
+        window.__pwaInstallArmed = false;
+      });
+    };
+    window.addEventListener("beforeinstallprompt", onPrompt as EventListener);
   }
 
   return false;
@@ -105,15 +126,16 @@ export function initPwaInstall(): void {
   // Register the minimal service worker — required by Chromium browsers to
   // fire `beforeinstallprompt` and to show the address-bar install icon.
   if ("serviceWorker" in navigator) {
-    window.addEventListener("load", () => {
+    const register = () => {
       navigator.serviceWorker.register("/sw.js").catch(() => {
         /* ignore */
       });
-    });
+    };
+    if (document.readyState === "complete") register();
+    else window.addEventListener("load", register, { once: true });
   }
 
-  // Late listener as a backup in case the early inline capture in index.html
-  // missed the event (it shouldn't, but defense-in-depth).
+  // Backup listener in case the early inline capture in index.html missed it.
   window.addEventListener("beforeinstallprompt", (e) => {
     e.preventDefault();
     window.__pwaDeferredPrompt = e as BeforeInstallPromptEvent;
@@ -121,23 +143,6 @@ export function initPwaInstall(): void {
 
   window.addEventListener("appinstalled", () => {
     window.__pwaDeferredPrompt = null;
+    window.__pwaInstallArmed = false;
   });
-
-  let iosShown = false;
-
-  const handleGesture = async () => {
-    const triggered = await triggerPwaInstall();
-    if (triggered) {
-      cleanup();
-    }
-  };
-
-  const opts: AddEventListenerOptions = { capture: true };
-  const cleanup = () => {
-    window.removeEventListener("pointerdown", handleGesture, opts);
-    window.removeEventListener("keydown", handleGesture, opts);
-  };
-
-  window.addEventListener("pointerdown", handleGesture, opts);
-  window.addEventListener("keydown", handleGesture, opts);
 }
