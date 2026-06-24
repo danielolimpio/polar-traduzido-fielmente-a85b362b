@@ -878,11 +878,11 @@
     "ctaSubtitle": "Cadastre-se e desbloqueie todos os níveis do plano de recompensas Polar Tensor."
   },
   "faqPage": {
-    "seoTitle": "FAQ Polar Tensor | Perguntas frequentes sobre o Polar One",
-    "seoDesc": "Tire suas dúvidas sobre a Polar Tensor: tecnologia, taxas, depósitos, saques, segurança, KYC, riscos e programa de indicações. Mais de 35 perguntas respondidas.",
+    "seoTitle": "FAQ Polar Tensor 2026 | É confiável? Como sacar, login, app e Felix Bick",
+    "seoDesc": "Polar Tensor é confiável? Como funciona, como sacar, valor mínimo, login, app, Felix Bick, registro CVM, Polar One AI, taxa 10% e Binance VIP9. Mais de 50 perguntas respondidas.",
     "heroBadge": "Central de Ajuda",
     "heroTitle": "Perguntas frequentes sobre a Polar Tensor",
-    "heroSubtitle": "Respostas diretas para as principais dúvidas sobre tecnologia, operação, segurança, taxas, KYC e muito mais.",
+    "heroSubtitle": "Polar Tensor é confiável? Como funciona, como sacar, login, app, Felix Bick, Polar One AI, taxa 10%, Binance VIP9, KYC e mais — respostas oficiais.",
     "searchPlaceholder": "Buscar uma pergunta… (ex: saque, KYC, taxa, risco)",
     "searchAria": "Buscar pergunta",
     "all": "Todas",
@@ -1097,6 +1097,96 @@
         "category": "referral",
         "q": "Existe limite de indicações?",
         "a": "Não há limite no número de pessoas que você pode indicar. As comissões são creditadas semanalmente junto com a distribuição de lucros."
+      },
+      {
+        "category": "company",
+        "q": "Polar Tensor é confiável?",
+        "a": "Sim, a Polar Tensor é 100% confiável. Todas as operações são executadas diretamente na Binance, a maior corretora de criptomoedas do mundo, e podem ser acompanhadas em tempo real via chamada de vídeo em reuniões semanais com o próprio Felix Bick ao vivo. A conta operacional possui status VIP9 na Binance, com volume de operações superior a US$ 200 milhões, totalmente verificável por API e pelo histórico público da blockchain."
+      },
+      {
+        "category": "company",
+        "q": "Polar Tensor é golpe ou scam?",
+        "a": "Não. A Polar Tensor não é golpe nem scam. A plataforma opera de forma totalmente transparente dentro da Binance, com extratos verificáveis em tempo real e hashes de transações públicas na blockchain — algo praticamente impossível de ser fraudado. Todas as semanas há lives abertas com centenas de clientes acompanhando a conta VIP9 ao vivo e interagindo diretamente com a equipe."
+      },
+      {
+        "category": "company",
+        "q": "Polar Tensor funciona mesmo? Vale a pena?",
+        "a": "Sim, a Polar Tensor funciona e tem entregado resultados consistentes. Clientes ativos há mais de 6 meses relatam apenas experiências positivas, com saques processados normalmente em USDT e suporte ágil em português. A combinação de IA Polar One, execução na Binance VIP9 e transparência on-chain torna a plataforma uma das opções mais sólidas de trading algorítmico em cripto."
+      },
+      {
+        "category": "company",
+        "q": "Felix Bick existe? Quem é o CEO da Polar Tensor?",
+        "a": "Sim, Felix Bick é uma pessoa real, acessível e CEO oficial da Polar Tensor. Ele participa de lives semanais ao vivo, concede entrevistas presenciais para afiliados e líderes do programa e aparece em vídeos públicos no YouTube, como nesta entrevista oficial: https://www.youtube.com/watch?v=sax-lybWGPg. Qualquer pessoa pode confirmar sua identidade interagindo nas transmissões abertas."
+      },
+      {
+        "category": "deposits",
+        "q": "Polar Tensor tem problema de saque? Não libera saque?",
+        "a": "Não. Saques na Polar Tensor são processados normalmente, 24/7, diretamente em USDT (rede TRC20 ou BEP20) ou USDC. O capital nunca fica retido: você pode retirar todo o seu saldo a qualquer momento, sem prazos artificiais de carência, pois os fundos permanecem operando na sua conta vinculada na Binance."
+      },
+      {
+        "category": "deposits",
+        "q": "Como sacar dinheiro na Polar Tensor?",
+        "a": "Para sacar, basta acessar o painel logado, ir em ‘Saques’, escolher o valor e informar sua carteira USDT (TRC20 ou BEP20). A solicitação passa por validação de segurança (2FA + confirmação por e-mail) e em seguida é enviada on-chain — você pode rastrear a hash da transação na blockchain em tempo real."
+      },
+      {
+        "category": "deposits",
+        "q": "Qual o valor mínimo para investir na Polar Tensor?",
+        "a": "O valor mínimo para começar a investir na Polar Tensor é de US$ 100 em criptomoedas (USDT, BTC, ETH ou SOL). Esse valor já dá acesso completo ao sistema Polar One, com saques liberados a qualquer momento e sem prazo mínimo de permanência."
+      },
+      {
+        "category": "deposits",
+        "q": "Como investir na Polar Tensor passo a passo?",
+        "a": "1) Faça o cadastro grátis no site oficial polartensor.trade; 2) conclua o KYC enviando documento e selfie; 3) deposite a partir de US$ 100 em USDT, BTC, ETH ou SOL no endereço gerado no painel; 4) ative o plano desejado; 5) acompanhe os lucros distribuídos semanalmente e saque quando quiser."
+      },
+      {
+        "category": "account",
+        "q": "Como fazer login na Polar Tensor? Onde fica o cadastro?",
+        "a": "O login e o cadastro oficiais da Polar Tensor são feitos exclusivamente em polartensor.trade e no domínio operacional polar-tensor.com. Evite links de terceiros: sempre acesse pelo site oficial e ative o 2FA logo no primeiro acesso para máxima segurança."
+      },
+      {
+        "category": "account",
+        "q": "Polar Tensor tem app oficial?",
+        "a": "Sim. A Polar Tensor possui aplicativo PWA oficial que pode ser instalado no Android, iOS e desktop diretamente pelo site polartensor.trade — basta clicar no botão ‘Baixar App Polar Tensor’ e o navegador exibirá o prompt nativo para adicionar à tela inicial. Também há versões disponíveis nas lojas oficiais."
+      },
+      {
+        "category": "risk",
+        "q": "Polar Tensor é legalizada? Tem registro na CVM?",
+        "a": "A Polar Tensor não precisa de registro na CVM porque não custodia recursos de terceiros nem oferece valores mobiliários: o sistema apenas opera, via chave API da Binance, dentro da própria conta do cliente. A estrutura corporativa global inclui Polar MSB Inc. (registrada na FinCEN/EUA), Polar Tensor Corp. (Panamá) e Polar Tensor LAB Limited (Hong Kong), com auditoria por uma das Big Four."
+      },
+      {
+        "category": "risk",
+        "q": "Polar Tensor é MLM ou marketing multinível?",
+        "a": "Não. A Polar Tensor é uma empresa de tecnologia de trading algorítmico — não é MLM, não é pirâmide e não depende de recrutamento. Existe um programa opcional de indicações que paga comissões apenas sobre taxas de performance reais geradas pela operação na Binance, e nenhum cliente é obrigado a indicar para lucrar."
+      },
+      {
+        "category": "risk",
+        "q": "Como é possível verificar os resultados em tempo real?",
+        "a": "Todos os resultados podem ser auditados ao vivo de três formas: (1) lives semanais com a conta Binance VIP9 aberta ao vivo na tela; (2) painel do cliente com histórico completo de trades; (3) verificação pública das hashes de transações diretamente na blockchain. Essa transparência torna manipulação praticamente impossível."
+      },
+      {
+        "category": "tech",
+        "q": "O que é o Polar One AI e como funciona a rede neural?",
+        "a": "Polar One é o sistema proprietário de inteligência artificial da Polar Tensor, composto por duas redes neurais profundas — uma de tendência e outra de direção — que analisam dados on-chain, order book, sentimento e múltiplos timeframes em tempo real. O algoritmo executa trades automatizados na Binance com latência inferior a 50ms, operando 24/5 em BTC, ETH, SOL e USDT."
+      },
+      {
+        "category": "fees",
+        "q": "Como funciona a taxa de 10% da Polar Tensor?",
+        "a": "A taxa de licença de 10% é cobrada uma única vez, sobre o valor inicial depositado, e garante uso vitalício do sistema Polar One dentro do plano contratado. Não há mensalidades, não há taxa de saque por parte da plataforma — apenas a taxa de performance, cobrada exclusivamente sobre lucros reais semanais."
+      },
+      {
+        "category": "fees",
+        "q": "Quais são os retornos semanais da Polar Tensor?",
+        "a": "Os retornos variam conforme as condições de mercado e a estratégia ativa, e são distribuídos toda sexta-feira às 23h UTC. A Polar Tensor não promete retorno fixo — todos os resultados publicados são auditados e verificáveis na Binance, com foco em consistência semanal e drawdown controlado."
+      },
+      {
+        "category": "company",
+        "q": "Polar Tensor Brasil e Polar Tensor Portugal: é a mesma empresa?",
+        "a": "Sim. Polar Tensor Brasil e Polar Tensor Portugal são denominações usadas para o atendimento em língua portuguesa da mesma empresa global. O suporte oficial em português atende clientes do Brasil, Portugal e demais países lusófonos pelo site polartensor.trade."
+      },
+      {
+        "category": "company",
+        "q": "Polar Tensor x outras plataformas: qual a diferença?",
+        "a": "Diferente de plataformas que prometem retornos fixos, a Polar Tensor opera dentro da Binance com a conta do próprio cliente, sem custódia centralizada, com auditoria Big Four, status VIP9 e transparência on-chain. É um modelo de tecnologia licenciada, não um fundo fechado nem um sistema de recrutamento."
       }
     ]
   },
