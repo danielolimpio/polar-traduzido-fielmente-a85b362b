@@ -326,7 +326,7 @@ function buildHtml(template, key, lang) {
   // <meta name="keywords"> enriquecida por rota (mescla com a sitewide do index.html)
   const keywordsMeta = cloudTerms.join(", ");
   html = html.replace(/<meta name="keywords" content="([^"]*)"\s*\/?>/, (_m, existing) => {
-    const merged = `${existing}, ${keywordsMeta}`.slice(0, 999);
+    const merged = `${existing}, ${keywordsMeta}`.slice(0, 1900);
     return `<meta name="keywords" content="${merged}" />`;
   });
 
