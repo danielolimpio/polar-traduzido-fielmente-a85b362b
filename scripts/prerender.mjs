@@ -413,7 +413,18 @@ async function main() {
     }
   }
 
-  console.log(`[prerender] concluído: ${count} páginas pré-renderizadas (PT + EN + ES).`);
+  // Regenera sitemap.xml em dist/ com <lastmod> = hoje. Sinaliza ao Google
+  // que houve mudança e prioriza recrawl a cada deploy.
+  const today = new Date().toISOString().slice(0, 10);
+  const sitemapPath = join(distDir, "sitemap.xml");
+  if (existsSync(sitemapPath)) {
+    let sm = await readFile(sitemapPath, "utf8");
+    sm = sm.replace(/<lastmod>[^<]*<\/lastmod>/g, `<lastmod>${today}</lastmod>`);
+    await writeFile(sitemapPath, sm, "utf8");
+    console.log(`[prerender] sitemap.xml atualizado com lastmod=${today}`);
+  }
+
+  console.log(`[prerender] concluído: ${count} páginas pré-renderizadas.`);
 }
 
 main().catch((err) => {
