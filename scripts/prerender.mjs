@@ -323,6 +323,19 @@ function buildHtml(template, key, lang) {
   const cloudTerms = KEYWORD_CLOUD[lang] || KEYWORD_CLOUD.en;
   const keywordCloud = `<aside aria-label="related-topics"><h2>Tópicos relacionados</h2><ul>${cloudTerms.map((t) => `<li>${t}</li>`).join("")}</ul></aside>`;
 
+  // 1) Bloco SEO no DOM real dentro de #root — Google indexa como conteúdo
+  //    de primeira classe (não como noscript, que é subponderado). React
+  //    substitui essa árvore em createRoot().render() logo após hidratação.
+  const ssgBlock = `<div id="ssg-content">
+        <h1>${c.h1}</h1>
+        <p>${c.body.replace(/\s+/g, " ").trim()}</p>
+        ${sections}
+        <nav aria-label="primary"><ul>${navItems}</ul></nav>
+        ${keywordCloud}
+      </div>`;
+  html = html.replace(/<div id="root"><\/div>/, `<div id="root">${ssgBlock}</div>`);
+
+  // 2) Fallback noscript — browsers sem JS e crawlers antigos
   const noscript = `<noscript>
         <h1>${c.h1}</h1>
         <p>${c.body.replace(/\s+/g, " ").trim()}</p>
