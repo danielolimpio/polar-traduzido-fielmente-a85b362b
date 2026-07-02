@@ -345,6 +345,7 @@
       "about": "Über uns",
       "consultancy": "Beratung",
       "faq": "FAQ",
+      "blog": "Blog",
       "terms": "Nutzungsbedingungen",
       "privacy": "Datenschutzbestimmungen",
       "risk": "Risikohinweis"
@@ -1533,5 +1534,19 @@
         ]
       }
     ]
+  },
+  "blog": {
+    "seoTitle": "Polar Tensor Blog | KI-Trading, Krypto und Märkte",
+    "seoDesc": "Offizieller Polar Tensor Blog: Artikel über algorithmisches KI-Trading, Kryptowährungen, Binance, Polar One-Technologie und Finanzmärkte.",
+    "heroBadge": "Insights & Analysen",
+    "heroTitle": "Polar Tensor Blog",
+    "heroSubtitle": "Originalinhalte zu algorithmischem Trading, neuronalen Netzen im Kryptomarkt und Einblicken in das Polar One-System.",
+    "emptyTitle": "Wir bereiten die ersten Artikel vor",
+    "emptyBody": "Unser Team stellt exklusive Inhalte zu KI-Trading, Marktanalysen und Polar One-Fallstudien fertig. Schauen Sie bald wieder vorbei — oder registrieren Sie sich jetzt, um die nächste Veröffentlichung nicht zu verpassen.",
+    "exploreFaq": "Zur FAQ",
+    "readMore": "Artikel lesen",
+    "backToBlog": "Zurück zum Blog",
+    "ctaTitle": "Bleiben Sie über die nächsten Artikel informiert",
+    "ctaSubtitle": "Registrieren Sie sich kostenlos und erhalten Sie kommende Inhalte und Plattform-Updates als Erster."
   }
 }

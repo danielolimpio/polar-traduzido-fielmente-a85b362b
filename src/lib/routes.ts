@@ -27,7 +27,8 @@ export type RouteKey =
   | "terms"
   | "risk"
   | "faq"
-  | "downloadApp";
+  | "downloadApp"
+  | "blog";
 
 // PT permanece sem prefixo (idioma padrão). Os demais usam prefixo /xx.
 export const ROUTE_SLUGS: Record<RouteKey, Record<LangCode, string>> = {
@@ -42,7 +43,9 @@ export const ROUTE_SLUGS: Record<RouteKey, Record<LangCode, string>> = {
   risk:        { pt: "aviso-de-risco",  en: "risk-disclosure", es: "aviso-de-riesgo", vi: "canh-bao-rui-ro",   fr: "avertissement-de-risque", de: "risikohinweis", it: "avviso-di-rischio" },
   faq:         { pt: "faq",             en: "faq",             es: "faq",             vi: "faq",               fr: "faq",             de: "faq",               it: "faq" },
   downloadApp: { pt: "baixar-app",      en: "download-app",    es: "descargar-app",   vi: "tai-ung-dung",      fr: "telecharger-app", de: "app-herunterladen", it: "scarica-app" },
+  blog:        { pt: "blog",            en: "blog",            es: "blog",            vi: "blog",              fr: "blog",            de: "blog",              it: "blog" },
 };
+
 
 export const langPrefix = (lang: LangCode) => (lang === "pt" ? "" : `/${lang}`);
 

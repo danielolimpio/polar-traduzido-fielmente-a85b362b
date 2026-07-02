@@ -345,6 +345,7 @@
       "about": "Về chúng tôi",
       "consultancy": "Tư vấn",
       "faq": "Câu hỏi thường gặp",
+      "blog": "Blog",
       "terms": "Điều khoản sử dụng",
       "privacy": "Chính sách bảo mật",
       "risk": "Tiết lộ rủi ro"
@@ -1533,5 +1534,19 @@
         ]
       }
     ]
+  },
+  "blog": {
+    "seoTitle": "Blog Polar Tensor | Giao dịch AI, Crypto và Thị trường",
+    "seoDesc": "Blog chính thức của Polar Tensor: bài viết về giao dịch thuật toán AI, tiền mã hóa, Binance, công nghệ Polar One và thị trường tài chính.",
+    "heroBadge": "Phân tích & Kiến thức",
+    "heroTitle": "Blog Polar Tensor",
+    "heroSubtitle": "Nội dung độc quyền về giao dịch thuật toán, mạng nơ-ron áp dụng cho thị trường crypto và hậu trường của hệ thống Polar One.",
+    "emptyTitle": "Chúng tôi đang chuẩn bị những bài viết đầu tiên",
+    "emptyBody": "Đội ngũ của chúng tôi đang hoàn thiện nội dung độc quyền về giao dịch AI, phân tích thị trường và các nghiên cứu về Polar One. Hãy quay lại sớm — hoặc đăng ký ngay để không bỏ lỡ bài đăng tiếp theo.",
+    "exploreFaq": "Đi tới FAQ",
+    "readMore": "Đọc bài viết",
+    "backToBlog": "Quay lại Blog",
+    "ctaTitle": "Đón chờ những bài viết tiếp theo",
+    "ctaSubtitle": "Đăng ký miễn phí và là người đầu tiên nhận nội dung mới cùng cập nhật nền tảng."
   }
 }

@@ -122,3 +122,20 @@
     background-size: 48px 48px;
   }
 }
+
+@layer components {
+  .prose-blog {
+    @apply text-foreground text-base leading-relaxed;
+  }
+  .prose-blog > * + * { @apply mt-4; }
+  .prose-blog h2 { @apply font-display text-2xl font-bold mt-8 mb-3 text-foreground; }
+  .prose-blog h3 { @apply font-display text-xl font-semibold mt-6 mb-2 text-foreground; }
+  .prose-blog p { @apply text-muted-foreground leading-relaxed; }
+  .prose-blog a { @apply text-primary underline underline-offset-2 hover:text-primary/80; }
+  .prose-blog strong { @apply text-foreground font-semibold; }
+  .prose-blog ul { @apply list-disc pl-6 space-y-1.5 text-muted-foreground; }
+  .prose-blog ol { @apply list-decimal pl-6 space-y-1.5 text-muted-foreground; }
+  .prose-blog blockquote { @apply border-l-2 border-primary/60 pl-4 italic text-muted-foreground; }
+  .prose-blog img { @apply rounded-lg my-6; }
+  .prose-blog code { @apply rounded bg-secondary px-1.5 py-0.5 text-sm text-foreground; }
+}

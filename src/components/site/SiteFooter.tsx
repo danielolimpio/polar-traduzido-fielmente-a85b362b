@@ -34,6 +34,7 @@ export const SiteFooter = () => {
   const termsPath = useLocalizedPath("terms");
   const privacyPath = useLocalizedPath("privacy");
   const riskPath = useLocalizedPath("risk");
+  const blogPath = useLocalizedPath("blog");
   const regulations = (t("footer.regulations", { returnObjects: true }) as Array<{
     name: string; jurisdiction: string; description: string;
   }>) || [];
@@ -163,6 +164,7 @@ export const SiteFooter = () => {
               <li><Link to={aboutPath} className="hover:text-foreground">{t("footer.links.about")}</Link></li>
               <li><Link to={consultancyPath} className="hover:text-foreground">{t("footer.links.consultancy")}</Link></li>
               <li><Link to={faqPath} className="hover:text-foreground">{t("footer.links.faq")}</Link></li>
+              <li><Link to={blogPath} className="hover:text-foreground">{t("footer.links.blog")}</Link></li>
             </ul>
           </div>
           <div>
