@@ -1534,5 +1534,19 @@
         ]
       }
     ]
+  },
+  "blog": {
+    "seoTitle": "Blog Polar Tensor | Trading IA, Cripto e Mercati",
+    "seoDesc": "Blog ufficiale Polar Tensor: articoli su trading algoritmico con IA, criptovalute, Binance, tecnologia Polar One e mercati finanziari.",
+    "heroBadge": "Approfondimenti & Analisi",
+    "heroTitle": "Blog Polar Tensor",
+    "heroSubtitle": "Contenuti originali su trading algoritmico, reti neurali applicate al mercato cripto e retroscena del sistema Polar One.",
+    "emptyTitle": "Stiamo preparando i primi articoli",
+    "emptyBody": "Il nostro team sta finalizzando contenuti esclusivi su trading IA, analisi di mercato e case study Polar One. Torna presto — o iscriviti ora per non perderti la prossima uscita.",
+    "exploreFaq": "Vai alle FAQ",
+    "readMore": "Leggi l'articolo",
+    "backToBlog": "Torna al Blog",
+    "ctaTitle": "Resta aggiornato sui prossimi articoli",
+    "ctaSubtitle": "Iscriviti gratuitamente e ricevi in anteprima i prossimi contenuti e aggiornamenti della piattaforma."
   }
 }
