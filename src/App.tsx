@@ -15,6 +15,8 @@ import RiskDisclosure from "./pages/RiskDisclosure.tsx";
 import Faq from "./pages/Faq.tsx";
 import Rewards from "./pages/Rewards.tsx";
 import DownloadApp from "./pages/DownloadApp.tsx";
+import Blog from "./pages/Blog.tsx";
+import BlogPost from "./pages/BlogPost.tsx";
 import { WhatsAppFloat } from "./components/site/WhatsAppFloat.tsx";
 import { ScrollToTop } from "./components/site/ScrollToTop.tsx";
 import { LangFromPathSync } from "./components/site/LangFromPathSync.tsx";
@@ -34,6 +36,7 @@ const PAGE_BY_KEY: Record<RouteKey, JSX.Element> = {
   risk: <RiskDisclosure />,
   faq: <Faq />,
   downloadApp: <DownloadApp />,
+  blog: <Blog />,
 };
 
 const buildRoutes = () => {
@@ -44,6 +47,15 @@ const buildRoutes = () => {
       const slug = ROUTE_SLUGS[key][lang];
       const path = key === "home" ? prefix || "/" : `${prefix}/${slug}`;
       nodes.push(<Route key={`${lang}-${key}`} path={path} element={PAGE_BY_KEY[key]} />);
+      if (key === "blog") {
+        nodes.push(
+          <Route
+            key={`${lang}-blog-post`}
+            path={`${prefix}/${slug}/:slug`}
+            element={<BlogPost />}
+          />,
+        );
+      }
     }
   }
   return nodes;
