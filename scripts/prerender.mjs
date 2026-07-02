@@ -333,7 +333,7 @@ function buildHtml(template, key, lang) {
         <nav aria-label="primary"><ul>${navItems}</ul></nav>
         ${keywordCloud}
       </div>`;
-  html = html.replace(/<div id="root"><\/div>/, `<div id="root">${ssgBlock}</div>`);
+  html = html.replace('<div id="root">', `<div id="root">${ssgBlock}`);
 
   // 2) Fallback noscript — browsers sem JS e crawlers antigos
   const noscript = `<noscript>
