@@ -323,6 +323,19 @@ function buildHtml(template, key, lang) {
   const cloudTerms = KEYWORD_CLOUD[lang] || KEYWORD_CLOUD.en;
   const keywordCloud = `<aside aria-label="related-topics"><h2>Tópicos relacionados</h2><ul>${cloudTerms.map((t) => `<li>${t}</li>`).join("")}</ul></aside>`;
 
+  // 1) Bloco SEO no DOM real dentro de #root — Google indexa como conteúdo
+  //    de primeira classe (não como noscript, que é subponderado). React
+  //    substitui essa árvore em createRoot().render() logo após hidratação.
+  const ssgBlock = `<div id="ssg-content">
+        <h1>${c.h1}</h1>
+        <p>${c.body.replace(/\s+/g, " ").trim()}</p>
+        ${sections}
+        <nav aria-label="primary"><ul>${navItems}</ul></nav>
+        ${keywordCloud}
+      </div>`;
+  html = html.replace('<div id="root">', `<div id="root">${ssgBlock}`);
+
+  // 2) Fallback noscript — browsers sem JS e crawlers antigos
   const noscript = `<noscript>
         <h1>${c.h1}</h1>
         <p>${c.body.replace(/\s+/g, " ").trim()}</p>
@@ -400,7 +413,18 @@ async function main() {
     }
   }
 
-  console.log(`[prerender] concluído: ${count} páginas pré-renderizadas (PT + EN + ES).`);
+  // Regenera sitemap.xml em dist/ com <lastmod> = hoje. Sinaliza ao Google
+  // que houve mudança e prioriza recrawl a cada deploy.
+  const today = new Date().toISOString().slice(0, 10);
+  const sitemapPath = join(distDir, "sitemap.xml");
+  if (existsSync(sitemapPath)) {
+    let sm = await readFile(sitemapPath, "utf8");
+    sm = sm.replace(/<lastmod>[^<]*<\/lastmod>/g, `<lastmod>${today}</lastmod>`);
+    await writeFile(sitemapPath, sm, "utf8");
+    console.log(`[prerender] sitemap.xml atualizado com lastmod=${today}`);
+  }
+
+  console.log(`[prerender] concluído: ${count} páginas pré-renderizadas.`);
 }
 
 main().catch((err) => {

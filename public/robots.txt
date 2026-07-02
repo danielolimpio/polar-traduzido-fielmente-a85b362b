@@ -2,26 +2,18 @@
 # https://polartensor.trade
 
 User-agent: *
-Disallow: /.*
-Disallow: /wp-admin
-Disallow: /wp-login
-Disallow: /xmlrpc.php
-Disallow: /administrator
-Disallow: /phpmyadmin
-Disallow: /*recaptcha
-Disallow: /*?q=
-Disallow: /*?t=
 Allow: /
 Disallow: /api/
-# Bloqueia URLs com query strings (templates de JSON-LD que o Google chegou a indexar)
+Disallow: /wp-admin/
+Disallow: /wp-login
+Disallow: /xmlrpc.php
+Disallow: /administrator/
+Disallow: /phpmyadmin/
 Disallow: /*?q=
 Disallow: /*?t=
-Disallow: /*?*
 
 User-agent: Googlebot
 Allow: /
-Disallow: /*?q=
-Disallow: /*?t=
 
 User-agent: Googlebot-Image
 Allow: /
@@ -47,7 +39,7 @@ Allow: /
 User-agent: LinkedInBot
 Allow: /
 
-# Bloqueia scrapers de IA
+# Bloqueia scrapers de IA (opt-out de treinamento)
 User-agent: GPTBot
 Disallow: /
 
