@@ -34,6 +34,7 @@ export const SiteFooter = () => {
   const termsPath = useLocalizedPath("terms");
   const privacyPath = useLocalizedPath("privacy");
   const riskPath = useLocalizedPath("risk");
+  const blogPath = useLocalizedPath("blog");
   const regulations = (t("footer.regulations", { returnObjects: true }) as Array<{
     name: string; jurisdiction: string; description: string;
   }>) || [];
