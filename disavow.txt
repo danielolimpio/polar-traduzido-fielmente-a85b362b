@@ -1,0 +1,35 @@
+# Disavow file for polartensor.trade
+# Gerado em: 2026-07-06
+# Envie este arquivo em: https://search.google.com/search-console/disavow-links
+# Formato oficial: https://support.google.com/webmasters/answer/2648487
+#
+# Motivo: perfil de backlinks dominado por PBNs de baixa qualidade
+# (Fiverr / rede de spam) com anchor texts artificiais. Nenhum destes
+# domínios representa uma relação editorial legítima com o site.
+#
+# --- PBNs Fiverr (rede de spam identificada) ---
+domain:fiverr-affordable-seo-services.site
+domain:fiverr-cost-effective-seo.site
+domain:fiverr-quality-seo-at-affordable-rates.site
+domain:fiverr-seo-for-business-growth.site
+domain:fiverr-seo-for-small-businesses.site
+
+# --- Agências / serviços de link spam ---
+domain:jameslinks.agency
+domain:seo-growth-authority-boost-hub.shop
+
+# --- PBNs genéricos de baixa autoridade (AS <= 6) ---
+domain:8coint.com
+domain:toplikevideo.com
+domain:creativeposts.top
+domain:anchorurl.cloud
+domain:analyticshaven.top
+domain:byteshort.xyz
+domain:dailymusings.top
+domain:optimizeflow.top
+domain:portailorange.net
+domain:qwenterprise.com
+domain:rdxextremez.com
+
+# --- Ferramentas de análise que aparecem como backlink mas não agregam valor ---
+domain:backlinks-checker.com
