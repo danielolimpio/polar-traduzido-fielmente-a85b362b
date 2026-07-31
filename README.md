@@ -1,3 +1,26 @@
-# Welcome to your Lovable project
+# Polar Clone Trade
 
-TODO: Document your project here
+Crie um site clone da Polar Tensor, o site oficial é https://polar-tensor.com/ O NOSSO SITE É https://polartensor.trade quero que seja fiel a clonagem, preciso que faça tudo 100% em português, quero que clone as cores, as fontes dos textos, a qualidade do designer, seja um desenvolvedor sênior expert e faça esse clone perfeito, não aceito nada inferior, quero que copie todas as descrições e traduza para português, quero uma copia clonada fiel, 100% fiel.
+
+This project was built with [Lovable](https://lovable.dev).
+
+**Live app**: https://polar-traduzido-fielmente.lovable.app
+
+## Build with Lovable
+
+Continue developing this project in the [Lovable editor](https://lovable.dev/projects/45dfe57a-6a1a-4e6d-a843-029c4a939d03).
+
+- **Ship faster**: describe what you want to build and Lovable handles the code.
+- **Stay in sync**: every change made in Lovable is committed straight to this repository.
+- **Full ownership**: this code is yours. Push to `main` on GitHub and your changes sync back into Lovable, ready for your next prompt.
+
+## Development
+
+Prefer working locally? You need Node.js and npm — [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating).
+
+```sh
+git clone <this-repository-url>
+cd <repository-name>
+npm i
+npm run dev
+```
